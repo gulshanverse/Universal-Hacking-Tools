@@ -18,6 +18,8 @@ Universal Hacking Tools is designed to become a structured, searchable cybersecu
 | Vulnerabilities | [Vulnerability encyclopedia](vulnerabilities/README.md) |
 | Labs | [Safe hands-on labs](labs/README.md) |
 | Learning | [Learning paths](learning-paths/README.md) |
+| Knowledge graph | [Connected taxonomy](knowledge/README.md) |
+| Generated data | [JSON graph and indexes](generated/knowledge-graph.json) |
 | Getting started | [First steps](docs/getting-started/README.md) |
 | Contributing | [Contribution guide](CONTRIBUTING.md) |
 | Safety | [Security policy](SECURITY.md) |
@@ -30,7 +32,8 @@ Universal Hacking Tools is designed to become a structured, searchable cybersecu
 * **Vulnerability pages:** root cause, affected technology, impact, detection, mitigation, secure coding, safe labs, and taxonomy references.
 * **Labs:** controlled exercises with setup, expected observations, defensive interpretation, and cleanup.
 * **Learning paths:** staged progression for beginners, ethical hacking, penetration testing, bug bounty learning, blue team, SOC analysis, forensics, malware analysis, cloud security, and security engineering.
-* **Automation:** metadata validation, required-section checks, duplicate detection, internal-link checks, and generated indexes.
+* **Knowledge graph:** typed concepts, techniques, technologies, defensive controls, and deterministic relationships to tools, vulnerabilities, labs, and learning paths.
+* **Automation:** metadata validation, required-section checks, duplicate detection, internal-link checks, generated tool indexes, graph indexes, relationship validation, and artifact freshness checks.
 
 ## Tool Categories
 
@@ -52,9 +55,12 @@ Run the following locally:
 python3 scripts/validate_repository.py
 python3 scripts/generate-index.py
 python3 scripts/generate-index.py --check
+python3 scripts/generate-knowledge.py
+python3 scripts/validate-knowledge.py
+python3 scripts/generate-knowledge.py --check
 ```
 
-The GitHub Actions workflow runs the same consistency checks on pull requests and pushes.
+The GitHub Actions workflow runs the same consistency and relationship checks on pull requests and pushes.
 
 ## Contributing
 
