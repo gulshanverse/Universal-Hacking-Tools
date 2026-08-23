@@ -1,0 +1,135 @@
+[
+  {
+    "category": "",
+    "id": "android",
+    "name": "Android",
+    "path": "knowledge/technologies/android.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "aws",
+    "name": "AWS",
+    "path": "knowledge/technologies/aws.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "azure",
+    "name": "Azure",
+    "path": "knowledge/technologies/azure.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "c",
+    "name": "C",
+    "path": "knowledge/technologies/c.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "dns",
+    "name": "DNS",
+    "path": "knowledge/technologies/dns.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "docker",
+    "name": "Docker",
+    "path": "knowledge/technologies/docker.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "gcp",
+    "name": "GCP",
+    "path": "knowledge/technologies/gcp.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "http",
+    "name": "HTTP",
+    "path": "knowledge/technologies/http.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "java",
+    "name": "Java",
+    "path": "knowledge/technologies/java.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "path": "knowledge/technologies/kubernetes.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "linux",
+    "name": "Linux",
+    "path": "knowledge/technologies/linux.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "macos",
+    "name": "macOS",
+    "path": "knowledge/technologies/macos.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "mongodb",
+    "name": "MongoDB",
+    "path": "knowledge/technologies/mongodb.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "mysql",
+    "name": "MySQL",
+    "path": "knowledge/technologies/mysql.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "path": "knowledge/technologies/postgresql.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "python",
+    "name": "Python",
+    "path": "knowledge/technologies/python.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "rest-apis",
+    "name": "REST APIs",
+    "path": "knowledge/technologies/rest-apis.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "tls",
+    "name": "TLS",
+    "path": "knowledge/technologies/tls.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "windows",
+    "name": "Windows",
+    "path": "knowledge/technologies/windows.md",
+    "type": "technology"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "category": "",
+    "id": "beginner",
+    "name": "Beginner",
+    "path": "learning-paths/beginner/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
+    "id": "blue-team",
+    "name": "Blue Team",
+    "path": "learning-paths/blue-team/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
+    "id": "bug-bounty",
+    "name": "Bug Bounty",
+    "path": "learning-paths/bug-bounty/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
+    "id": "cloud-security",
+    "name": "Cloud Security",
+    "path": "learning-paths/cloud-security/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
+    "id": "digital-forensics",
+    "name": "Digital Forensics",
+    "path": "learning-paths/digital-forensics/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
+    "id": "ethical-hacking",
+    "name": "Ethical Hacking",
+    "path": "learning-paths/ethical-hacking/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
+    "id": "learning-paths",
+    "name": "Learning Paths",
+    "path": "learning-paths/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
+    "id": "malware-analysis",
+    "name": "Malware Analysis",
+    "path": "learning-paths/malware-analysis/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
+    "id": "penetration-testing",
+    "name": "Penetration Testing",
+    "path": "learning-paths/penetration-testing/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
+    "id": "security-engineering",
+    "name": "Security Engineering",
+    "path": "learning-paths/security-engineering/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
+    "id": "soc-analyst",
+    "name": "Soc Analyst",
+    "path": "learning-paths/soc-analyst/README.md",
+    "type": "learning-path"
+  }
+]

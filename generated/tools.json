@@ -1,0 +1,338 @@
+[
+  {
+    "category": "Wireless Security",
+    "id": "aircrack-ng",
+    "name": "Aircrack-ng",
+    "path": "tools/wireless/aircrack-ng.md",
+    "type": "tool"
+  },
+  {
+    "category": "Reconnaissance",
+    "id": "amass",
+    "name": "Amass",
+    "path": "tools/reconnaissance/amass.md",
+    "type": "tool"
+  },
+  {
+    "category": "Digital Forensics",
+    "id": "autopsy",
+    "name": "Autopsy",
+    "path": "tools/digital-forensics/autopsy.md",
+    "type": "tool"
+  },
+  {
+    "category": "Secure Development",
+    "id": "bandit",
+    "name": "Bandit",
+    "path": "tools/secure-development/bandit.md",
+    "type": "tool"
+  },
+  {
+    "category": "Web Security",
+    "id": "burp-suite",
+    "name": "Burp Suite",
+    "path": "tools/web-security/burp-suite.md",
+    "type": "tool"
+  },
+  {
+    "category": "Malware Analysis",
+    "id": "capa",
+    "name": "capa",
+    "path": "tools/malware-analysis/capa.md",
+    "type": "tool"
+  },
+  {
+    "category": "Secure Development",
+    "id": "checkov",
+    "name": "Checkov",
+    "path": "tools/secure-development/checkov.md",
+    "type": "tool"
+  },
+  {
+    "category": "Reverse Engineering",
+    "id": "cutter",
+    "name": "Cutter",
+    "path": "tools/reverse-engineering/cutter.md",
+    "type": "tool"
+  },
+  {
+    "category": "OSINT",
+    "id": "exiftool",
+    "name": "ExifTool",
+    "path": "tools/osint/exiftool.md",
+    "type": "tool"
+  },
+  {
+    "category": "Web Security",
+    "id": "ffuf",
+    "name": "ffuf",
+    "path": "tools/web-security/ffuf.md",
+    "type": "tool"
+  },
+  {
+    "category": "Malware Analysis",
+    "id": "floss",
+    "name": "FLOSS",
+    "path": "tools/malware-analysis/floss.md",
+    "type": "tool"
+  },
+  {
+    "category": "Reverse Engineering",
+    "id": "ghidra",
+    "name": "Ghidra",
+    "path": "tools/reverse-engineering/ghidra.md",
+    "type": "tool"
+  },
+  {
+    "category": "Web Security",
+    "id": "gobuster",
+    "name": "Gobuster",
+    "path": "tools/web-security/gobuster.md",
+    "type": "tool"
+  },
+  {
+    "category": "Vulnerability Management",
+    "id": "greenbone-openvas",
+    "name": "Greenbone Vulnerability Management",
+    "path": "tools/vulnerability-management/greenbone-openvas.md",
+    "type": "tool"
+  },
+  {
+    "category": "Container Security",
+    "id": "grype",
+    "name": "Grype",
+    "path": "tools/container-security/grype.md",
+    "type": "tool"
+  },
+  {
+    "category": "Password Security",
+    "id": "hashcat",
+    "name": "Hashcat",
+    "path": "tools/password-security/hashcat.md",
+    "type": "tool"
+  },
+  {
+    "category": "Password Security",
+    "id": "hydra",
+    "name": "THC Hydra",
+    "path": "tools/password-security/hydra.md",
+    "type": "tool"
+  },
+  {
+    "category": "Password Security",
+    "id": "john-the-ripper",
+    "name": "John the Ripper",
+    "path": "tools/password-security/john-the-ripper.md",
+    "type": "tool"
+  },
+  {
+    "category": "Wireless Security",
+    "id": "kismet",
+    "name": "Kismet",
+    "path": "tools/wireless/kismet.md",
+    "type": "tool"
+  },
+  {
+    "category": "Container Security",
+    "id": "kube-bench",
+    "name": "kube-bench",
+    "path": "tools/container-security/kube-bench.md",
+    "type": "tool"
+  },
+  {
+    "category": "Reconnaissance",
+    "id": "masscan",
+    "name": "Masscan",
+    "path": "tools/reconnaissance/masscan.md",
+    "type": "tool"
+  },
+  {
+    "category": "Web Security",
+    "id": "nikto",
+    "name": "Nikto",
+    "path": "tools/web-security/nikto.md",
+    "type": "tool"
+  },
+  {
+    "category": "Reconnaissance",
+    "id": "nmap",
+    "name": "Nmap",
+    "path": "tools/reconnaissance/nmap.md",
+    "type": "tool"
+  },
+  {
+    "category": "Web Security",
+    "id": "nuclei",
+    "name": "Nuclei",
+    "path": "tools/web-security/nuclei.md",
+    "type": "tool"
+  },
+  {
+    "category": "Vulnerability Management",
+    "id": "openscap",
+    "name": "OpenSCAP",
+    "path": "tools/vulnerability-management/openscap.md",
+    "type": "tool"
+  },
+  {
+    "category": "Defensive Security",
+    "id": "osquery",
+    "name": "osquery",
+    "path": "tools/defensive-security/osquery.md",
+    "type": "tool"
+  },
+  {
+    "category": "Secure Development",
+    "id": "osv-scanner",
+    "name": "OSV-Scanner",
+    "path": "tools/secure-development/osv-scanner.md",
+    "type": "tool"
+  },
+  {
+    "category": "Web Security",
+    "id": "owasp-zap",
+    "name": "OWASP ZAP",
+    "path": "tools/web-security/owasp-zap.md",
+    "type": "tool"
+  },
+  {
+    "category": "Cloud Security",
+    "id": "prowler",
+    "name": "Prowler",
+    "path": "tools/cloud-security/prowler.md",
+    "type": "tool"
+  },
+  {
+    "category": "Reverse Engineering",
+    "id": "radare2",
+    "name": "Radare2",
+    "path": "tools/reverse-engineering/radare2.md",
+    "type": "tool"
+  },
+  {
+    "category": "OSINT",
+    "id": "recon-ng",
+    "name": "Recon-ng",
+    "path": "tools/osint/recon-ng.md",
+    "type": "tool"
+  },
+  {
+    "category": "Secure Development",
+    "id": "semgrep",
+    "name": "Semgrep",
+    "path": "tools/secure-development/semgrep.md",
+    "type": "tool"
+  },
+  {
+    "category": "OSINT",
+    "id": "sherlock",
+    "name": "Sherlock",
+    "path": "tools/osint/sherlock.md",
+    "type": "tool"
+  },
+  {
+    "category": "Defensive Security",
+    "id": "sigma",
+    "name": "Sigma",
+    "path": "tools/defensive-security/sigma.md",
+    "type": "tool"
+  },
+  {
+    "category": "Network Security",
+    "id": "snort",
+    "name": "Snort",
+    "path": "tools/network-analysis/snort.md",
+    "type": "tool"
+  },
+  {
+    "category": "OSINT",
+    "id": "spiderfoot",
+    "name": "SpiderFoot",
+    "path": "tools/osint/spiderfoot.md",
+    "type": "tool"
+  },
+  {
+    "category": "Web Security",
+    "id": "sqlmap",
+    "name": "sqlmap",
+    "path": "tools/web-security/sqlmap.md",
+    "type": "tool"
+  },
+  {
+    "category": "Reconnaissance",
+    "id": "subfinder",
+    "name": "Subfinder",
+    "path": "tools/reconnaissance/subfinder.md",
+    "type": "tool"
+  },
+  {
+    "category": "Network Security",
+    "id": "suricata",
+    "name": "Suricata",
+    "path": "tools/network-analysis/suricata.md",
+    "type": "tool"
+  },
+  {
+    "category": "Container Security",
+    "id": "syft",
+    "name": "Syft",
+    "path": "tools/container-security/syft.md",
+    "type": "tool"
+  },
+  {
+    "category": "Network Security",
+    "id": "tcpdump",
+    "name": "tcpdump",
+    "path": "tools/network-analysis/tcpdump.md",
+    "type": "tool"
+  },
+  {
+    "category": "Reconnaissance",
+    "id": "theharvester",
+    "name": "theHarvester",
+    "path": "tools/reconnaissance/theharvester.md",
+    "type": "tool"
+  },
+  {
+    "category": "Vulnerability Management",
+    "id": "trivy",
+    "name": "Trivy",
+    "path": "tools/vulnerability-management/trivy.md",
+    "type": "tool"
+  },
+  {
+    "category": "Digital Forensics",
+    "id": "volatility3",
+    "name": "Volatility 3",
+    "path": "tools/digital-forensics/volatility3.md",
+    "type": "tool"
+  },
+  {
+    "category": "Defensive Security",
+    "id": "wazuh",
+    "name": "Wazuh",
+    "path": "tools/defensive-security/wazuh.md",
+    "type": "tool"
+  },
+  {
+    "category": "Network Security",
+    "id": "wireshark",
+    "name": "Wireshark",
+    "path": "tools/network-analysis/wireshark.md",
+    "type": "tool"
+  },
+  {
+    "category": "Malware Analysis",
+    "id": "yara",
+    "name": "YARA",
+    "path": "tools/malware-analysis/yara.md",
+    "type": "tool"
+  },
+  {
+    "category": "Network Security",
+    "id": "zeek",
+    "name": "Zeek",
+    "path": "tools/network-analysis/zeek.md",
+    "type": "tool"
+  }
+]

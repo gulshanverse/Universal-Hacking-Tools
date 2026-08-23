@@ -1,0 +1,107 @@
+[
+  {
+    "category": "",
+    "id": "edr",
+    "name": "EDR",
+    "path": "knowledge/defensive-controls/edr.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "encryption",
+    "name": "Encryption",
+    "path": "knowledge/defensive-controls/encryption.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "endpoint-detection",
+    "name": "Endpoint Detection",
+    "path": "knowledge/defensive-controls/endpoint-detection.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "firewall",
+    "name": "Firewall",
+    "path": "knowledge/defensive-controls/firewall.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "ids-ips",
+    "name": "IDS/IPS",
+    "path": "knowledge/defensive-controls/ids-ips.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "input-validation",
+    "name": "Input Validation",
+    "path": "knowledge/defensive-controls/input-validation.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "least-privilege",
+    "name": "Least Privilege",
+    "path": "knowledge/defensive-controls/least-privilege.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "mfa",
+    "name": "MFA",
+    "path": "knowledge/defensive-controls/mfa.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "network-segmentation",
+    "name": "Network Segmentation",
+    "path": "knowledge/defensive-controls/network-segmentation.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "parameterized-queries",
+    "name": "Parameterized Queries",
+    "path": "knowledge/defensive-controls/parameterized-queries.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "secrets-management",
+    "name": "Secrets Management",
+    "path": "knowledge/defensive-controls/secrets-management.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "secure-configuration",
+    "name": "Secure Configuration",
+    "path": "knowledge/defensive-controls/secure-configuration.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "secure-logging",
+    "name": "Secure Logging",
+    "path": "knowledge/defensive-controls/secure-logging.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "security-headers",
+    "name": "Security Headers",
+    "path": "knowledge/defensive-controls/security-headers.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "vulnerability-management",
+    "name": "Vulnerability Management",
+    "path": "knowledge/defensive-controls/vulnerability-management.md",
+    "type": "defensive-control"
+  }
+]

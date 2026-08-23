@@ -1,0 +1,135 @@
+[
+  {
+    "category": "",
+    "id": "cloud-configuration-assessment",
+    "name": "Cloud Configuration Assessment",
+    "path": "knowledge/techniques/cloud-configuration-assessment.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "container-security-scanning",
+    "name": "Container Security Scanning",
+    "path": "knowledge/techniques/container-security-scanning.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "content-discovery",
+    "name": "Content Discovery",
+    "path": "knowledge/techniques/content-discovery.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "digital-forensics",
+    "name": "Digital Forensics",
+    "path": "knowledge/techniques/digital-forensics.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "dns-enumeration",
+    "name": "DNS Enumeration",
+    "path": "knowledge/techniques/dns-enumeration.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "dynamic-analysis",
+    "name": "Dynamic Analysis",
+    "path": "knowledge/techniques/dynamic-analysis.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "log-analysis",
+    "name": "Log Analysis",
+    "path": "knowledge/techniques/log-analysis.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "malware-analysis",
+    "name": "Malware Analysis",
+    "path": "knowledge/techniques/malware-analysis.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "network-scanning",
+    "name": "Network Scanning",
+    "path": "knowledge/techniques/network-scanning.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "packet-analysis",
+    "name": "Packet Analysis",
+    "path": "knowledge/techniques/packet-analysis.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "reverse-engineering",
+    "name": "Reverse Engineering",
+    "path": "knowledge/techniques/reverse-engineering.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "security-testing",
+    "name": "Security Testing",
+    "path": "knowledge/techniques/security-testing.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "service-enumeration",
+    "name": "Service Enumeration",
+    "path": "knowledge/techniques/service-enumeration.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "static-analysis",
+    "name": "Static Analysis",
+    "path": "knowledge/techniques/static-analysis.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "subdomain-discovery",
+    "name": "Subdomain Discovery",
+    "path": "knowledge/techniques/subdomain-discovery.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "threat-hunting",
+    "name": "Threat Hunting",
+    "path": "knowledge/techniques/threat-hunting.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "traffic-analysis",
+    "name": "Traffic Analysis",
+    "path": "knowledge/techniques/traffic-analysis.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "vulnerability-assessment",
+    "name": "Vulnerability Assessment",
+    "path": "knowledge/techniques/vulnerability-assessment.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "web-enumeration",
+    "name": "Web Enumeration",
+    "path": "knowledge/techniques/web-enumeration.md",
+    "type": "technique"
+  }
+]

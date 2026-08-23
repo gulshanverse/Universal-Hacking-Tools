@@ -1,0 +1,142 @@
+[
+  {
+    "category": "",
+    "id": "api-security",
+    "name": "Api Security",
+    "path": "vulnerabilities/api/api-security.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "authentication-weaknesses",
+    "name": "Authentication Weaknesses",
+    "path": "vulnerabilities/authentication/authentication-weaknesses.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "broken-access-control",
+    "name": "Broken Access Control",
+    "path": "vulnerabilities/authorization/broken-access-control.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "cloud-misconfiguration",
+    "name": "Cloud Misconfiguration",
+    "path": "vulnerabilities/cloud/cloud-misconfiguration.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "command-injection",
+    "name": "Command Injection",
+    "path": "vulnerabilities/web/command-injection.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "container-security",
+    "name": "Container Security",
+    "path": "vulnerabilities/cloud/container-security.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "cross-site-scripting",
+    "name": "Cross Site Scripting",
+    "path": "vulnerabilities/web/cross-site-scripting.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "cryptographic-failures",
+    "name": "Cryptographic Failures",
+    "path": "vulnerabilities/cryptography/cryptographic-failures.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "csrf",
+    "name": "Csrf",
+    "path": "vulnerabilities/web/csrf.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "idor",
+    "name": "Idor",
+    "path": "vulnerabilities/authorization/idor.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "insecure-deserialization",
+    "name": "Insecure Deserialization",
+    "path": "vulnerabilities/web/insecure-deserialization.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "insecure-file-upload",
+    "name": "Insecure File Upload",
+    "path": "vulnerabilities/web/insecure-file-upload.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "path-traversal",
+    "name": "Path Traversal",
+    "path": "vulnerabilities/web/path-traversal.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "security-misconfiguration",
+    "name": "Security Misconfiguration",
+    "path": "vulnerabilities/configuration/security-misconfiguration.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "sensitive-data-exposure",
+    "name": "Sensitive Data Exposure",
+    "path": "vulnerabilities/web/sensitive-data-exposure.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "session-management",
+    "name": "Session Management",
+    "path": "vulnerabilities/authentication/session-management.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "sql-injection",
+    "name": "Sql Injection",
+    "path": "vulnerabilities/web/sql-injection.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "ssrf",
+    "name": "Ssrf",
+    "path": "vulnerabilities/web/ssrf.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "supply-chain-vulnerabilities",
+    "name": "Supply Chain Vulnerabilities",
+    "path": "vulnerabilities/supply-chain/supply-chain-vulnerabilities.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "",
+    "id": "xxe",
+    "name": "Xxe",
+    "path": "vulnerabilities/web/xxe.md",
+    "type": "vulnerability"
+  }
+]

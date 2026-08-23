@@ -1,0 +1,86 @@
+[
+  {
+    "category": "",
+    "id": "authentication-session-review",
+    "name": "Authentication Session Review",
+    "path": "labs/authentication/authentication-session-review.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "authorization-matrix-testing",
+    "name": "Authorization Matrix Testing",
+    "path": "labs/api/authorization-matrix-testing.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "cloud-least-privilege-review",
+    "name": "Cloud Least Privilege Review",
+    "path": "labs/cloud/cloud-least-privilege-review.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "container-sbom-and-scan",
+    "name": "Container Sbom And Scan",
+    "path": "labs/defensive/container-sbom-and-scan.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "detection-rule-engineering",
+    "name": "Detection Rule Engineering",
+    "path": "labs/defensive/detection-rule-engineering.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "evidence-first-analysis",
+    "name": "Evidence First Analysis",
+    "path": "labs/forensics/evidence-first-analysis.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "http-request-analysis",
+    "name": "Http Request Analysis",
+    "path": "labs/web/http-request-analysis.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "localhost-service-inventory",
+    "name": "Localhost Service Inventory",
+    "path": "labs/networking/localhost-service-inventory.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "memory-analysis-fundamentals",
+    "name": "Memory Analysis Fundamentals",
+    "path": "labs/forensics/memory-analysis-fundamentals.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "packet-capture-fundamentals",
+    "name": "Packet Capture Fundamentals",
+    "path": "labs/networking/packet-capture-fundamentals.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "sql-injection-concepts",
+    "name": "Sql Injection Concepts",
+    "path": "labs/web/sql-injection-concepts.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "static-malware-triage",
+    "name": "Static Malware Triage",
+    "path": "labs/defensive/static-malware-triage.md",
+    "type": "lab"
+  }
+]

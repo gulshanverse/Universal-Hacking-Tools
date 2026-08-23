@@ -14,5 +14,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate repository content
         run: python3 scripts/validate_repository.py
-      - name: Check generated indexes
+      - name: Validate knowledge graph relationships
+        run: python3 scripts/validate-knowledge.py
+      - name: Check generated tool index
         run: python3 scripts/generate-index.py --check
+      - name: Check generated knowledge artifacts
+        run: python3 scripts/generate-knowledge.py --check
