@@ -1,0 +1,11 @@
+/* Signal Archive: browse a bounded sample from the versioned entity index, then open relationship-specific detail pages. */
+import { api, type Entity, type ListResponse } from "../../lib/api";
+import { EntityCard } from "../../components/entity-card";
+import { pageMetadata } from "../../lib/metadata";
+
+export const dynamic = "force-dynamic";
+export const metadata = pageMetadata("Knowledge explorer", "Browse generated cybersecurity knowledge by type and relationship.", "/explore");
+export default async function ExplorePage() {
+  const data = await api<ListResponse<Entity>>("/knowledge", {limit:18}).catch(() => ({total:0,items:[],limit:18,offset:0}));
+  return <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6"><div className="grid gap-6 lg:grid-cols-[.75fr_1.25fr]"><div><p className="mono text-[10px] tracking-[.16em] text-[var(--copper)]">KNOWLEDGE EXPLORER</p><h1 className="display mt-2 text-5xl font-bold">Start with a node. Expand carefully.</h1><p className="mt-5 text-base leading-7 text-muted">The archive contains generated entity contracts across tools, concepts, techniques, technologies, vulnerabilities, defensive controls, labs, and learning paths. Detail pages expand a selected boundary instead of loading the complete graph.</p><dl className="mt-8 grid grid-cols-2 gap-3 text-sm"><div className="border hairline bg-white p-3"><dt className="mono text-[10px] text-muted">ENTITY TYPES</dt><dd className="display mt-1 text-3xl">8</dd></div><div className="border hairline bg-white p-3"><dt className="mono text-[10px] text-muted">BROWSER GRAPH</dt><dd className="display mt-1 text-3xl">bounded</dd></div></dl></div><div className="border border-[var(--teal)] bg-[var(--ink)] p-6 text-[var(--paper)]"><p className="mono text-[10px] tracking-[.14em] text-[var(--mist)]">ACCESSIBLE EXPLORATION</p><h2 className="display mt-2 text-3xl">Every visual relationship has a list alternative.</h2><p className="mt-3 text-sm leading-6 text-[var(--mist)]">Use detail pages to choose depth, see related records, and follow standard links. This prevents a 307-node graph from becoming an inaccessible visual wall.</p></div></div><div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{data.items.map(item => <EntityCard entity={item} key={`${item.type}:${item.id}`}/>)}</div></section>;
+}

@@ -1,0 +1,10 @@
+/* Signal Archive: path detail uses one transparent API response and relationship explorer rather than hardcoded curricula. */
+import { notFound } from "next/navigation";
+import { api, type Entity } from "../../../lib/api";
+import { RelationshipExplorer } from "../../../components/relationship-explorer";
+import { StatusBadge } from "../../../components/status-badge";
+import { pageMetadata } from "../../../lib/metadata";
+
+export const dynamic = "force-dynamic";
+export async function generateMetadata({params}:{params:Promise<{id:string}>}) { const {id}=await params; const item=await api<Entity>(`/learning-paths/${id}`).catch(()=>null); return item ? pageMetadata(item.name,item.description||"Generated learning path.",`/learning-paths/${id}`) : {}; }
+export default async function LearningPathDetail({params}:{params:Promise<{id:string}>}) { const {id}=await params; const item=await api<Entity>(`/learning-paths/${id}`).catch(()=>null); if(!item) notFound(); const stages=[["BEGINNER","Start with the documented foundations and required prerequisites."],["INTERMEDIATE","Use related entities and guided practice to extend the path."],["ADVANCED","Review defensive knowledge, limits, and authorized projects before continuing."]]; return <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6"><p className="mono text-[10px] tracking-[.16em] text-[var(--copper)]">LEARNING PATH / {item.id}</p><h1 className="display mt-2 text-5xl font-bold">{item.name}</h1><p className="mt-5 max-w-3xl text-lg leading-8 text-muted">{item.description}</p><div className="mt-5"><StatusBadge status={item.verification?.status}/></div><section className="mt-10 grid gap-4 md:grid-cols-3">{stages.map(([stage,text])=><article className="border hairline bg-white p-5" key={stage}><p className="mono text-[10px] tracking-[.14em] text-[var(--teal)]">{stage}</p><p className="mt-3 text-sm leading-6 text-muted">{text}</p></article>)}</section><div className="mt-8"><RelationshipExplorer entity={item}/></div></section>; }
