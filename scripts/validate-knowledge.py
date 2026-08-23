@@ -52,10 +52,11 @@ def collect():
     return entities, pages
 
 FIELD_TYPES = {
-    "concepts": "concept", "techniques": "technique", "technologies": "technology",
+    "concepts": "concept", "related_concepts": "concept", "techniques": "technique", "related_techniques": "technique", "technologies": "technology", "affected_technologies": "technology",
     "related_tools": "tool", "tools": "tool", "related_vulnerabilities": "vulnerability", "vulnerabilities": "vulnerability",
     "related_labs": "lab", "labs": "lab", "learning_paths": "learning-path", "defensive_controls": "defensive-control",
 }
+ALLOWED_RELATIONSHIPS = {"uses-concept", "concept-of", "related-to-concept", "concept-related-from", "implements-technique", "technique-of", "related-to-technique", "technique-related-from", "uses-technology", "technology-of", "affects-technology", "technology-affected-by", "related-to-vulnerability", "related-from-vulnerability", "uses-tool", "tool-of", "related-to-tool", "related-from-tool", "related-to-lab", "related-from-lab", "part-of-learning-path", "contains-learning-path", "mitigated-by", "control-for", "requires-prerequisite", "prerequisite-for", "related-from"}
 
 
 def validate_refs(entities, pages):
@@ -66,6 +67,11 @@ def validate_refs(entities, pages):
             for value in values:
                 if value not in entities[target_kind]:
                     ERRORS.append(f"{path}: unknown {target_kind} reference '{value}' in {field}")
+        prerequisite_values = meta.get("prerequisites", [])
+        if not isinstance(prerequisite_values, list): prerequisite_values = [prerequisite_values]
+        all_ids = set().union(*entities.values())
+        for value in prerequisite_values:
+            if value not in all_ids: ERRORS.append(f"{path}: unknown prerequisite reference '{value}'")
         text = path.read_text(encoding="utf-8")
         if kind == "tool":
             match = re.search(r"verification:\s*\n\s+status:\s*([^\n]+)", text[:text.find("\n---", 4)])
@@ -90,7 +96,15 @@ def validate_graph(entities):
     for node in graph.get("nodes", []):
         if (node.get("type"), node.get("id")) not in node_keys:
             ERRORS.append(f"graph node missing typed identity: {node}")
+    seen = set()
     for rel in graph.get("relationships", []):
+        key = (rel.get("source"), rel.get("target"), rel.get("relationship"))
+        if key in seen: ERRORS.append(f"duplicate graph relationship: {key}")
+        seen.add(key)
+        if rel.get("relationship") not in ALLOWED_RELATIONSHIPS:
+            ERRORS.append(f"unknown graph relationship type: {rel.get('relationship')}")
+        if rel.get("source") == rel.get("target"):
+            ERRORS.append(f"self-referencing graph relationship: {key}")
         for side in ("source", "target"):
             value = rel.get(side, "")
             if ":" not in value or tuple(value.split(":", 1)) not in node_keys:

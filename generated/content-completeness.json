@@ -1,0 +1,4948 @@
+{
+  "as_of": "2026-08-23",
+  "entities": [
+    {
+      "completeness_score": 61,
+      "id": "authentication-session-review",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Security Interpretation",
+        "Detection",
+        "Mitigation"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Authentication Session Review",
+      "path": "labs/authentication/authentication-session-review.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 61,
+      "id": "authorization-matrix-testing",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Security Interpretation",
+        "Detection",
+        "Mitigation"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Authorization Matrix Testing",
+      "path": "labs/api/authorization-matrix-testing.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 61,
+      "id": "cloud-least-privilege-review",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Security Interpretation",
+        "Detection",
+        "Mitigation"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Cloud Least Privilege Review",
+      "path": "labs/cloud/cloud-least-privilege-review.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 61,
+      "id": "container-sbom-and-scan",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Security Interpretation",
+        "Detection",
+        "Mitigation"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Container Sbom And Scan",
+      "path": "labs/defensive/container-sbom-and-scan.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 61,
+      "id": "evidence-first-analysis",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Security Interpretation",
+        "Detection",
+        "Mitigation"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Evidence First Analysis",
+      "path": "labs/forensics/evidence-first-analysis.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 61,
+      "id": "memory-analysis-fundamentals",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Security Interpretation",
+        "Detection",
+        "Mitigation"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Memory Analysis Fundamentals",
+      "path": "labs/forensics/memory-analysis-fundamentals.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 61,
+      "id": "sql-injection-concepts",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Security Interpretation",
+        "Detection",
+        "Mitigation"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Sql Injection Concepts",
+      "path": "labs/web/sql-injection-concepts.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 61,
+      "id": "static-malware-triage",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Security Interpretation",
+        "Detection",
+        "Mitigation"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Static Malware Triage",
+      "path": "labs/defensive/static-malware-triage.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 64,
+      "id": "http-request-analysis",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [
+        "Security Interpretation",
+        "Detection",
+        "Mitigation"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Http Request Analysis",
+      "path": "labs/web/http-request-analysis.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections"
+      ],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 64,
+      "id": "localhost-service-inventory",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [
+        "Security Interpretation",
+        "Detection",
+        "Mitigation"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Localhost Service Inventory",
+      "path": "labs/networking/localhost-service-inventory.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections"
+      ],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 64,
+      "id": "packet-capture-fundamentals",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [
+        "Security Interpretation",
+        "Detection",
+        "Mitigation"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Packet Capture Fundamentals",
+      "path": "labs/networking/packet-capture-fundamentals.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections"
+      ],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 66,
+      "id": "detection-rule-engineering",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Security Interpretation",
+        "Mitigation"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Detection Rule Engineering",
+      "path": "labs/defensive/detection-rule-engineering.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 71,
+      "id": "beginner",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Techniques"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Beginner",
+      "path": "learning-paths/beginner/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 71,
+      "id": "blue-team",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Techniques"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Blue Team",
+      "path": "learning-paths/blue-team/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 71,
+      "id": "bug-bounty",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Techniques"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Bug Bounty",
+      "path": "learning-paths/bug-bounty/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 71,
+      "id": "cloud-security",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Techniques"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Cloud Security",
+      "path": "learning-paths/cloud-security/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 71,
+      "id": "ethical-hacking",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Techniques"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Ethical Hacking",
+      "path": "learning-paths/ethical-hacking/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 71,
+      "id": "malware-analysis",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Techniques"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Malware Analysis",
+      "path": "learning-paths/malware-analysis/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 71,
+      "id": "penetration-testing",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Techniques"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Penetration Testing",
+      "path": "learning-paths/penetration-testing/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 71,
+      "id": "security-engineering",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Techniques"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Security Engineering",
+      "path": "learning-paths/security-engineering/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 71,
+      "id": "soc-analyst",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [
+        "Techniques"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Soc Analyst",
+      "path": "learning-paths/soc-analyst/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 74,
+      "id": "digital-forensics",
+      "missing_metadata": [
+        "id",
+        "type",
+        "name",
+        "status"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [
+        "Techniques"
+      ],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Digital Forensics",
+      "path": "learning-paths/digital-forensics/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "api-security",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Api Security",
+      "path": "vulnerabilities/api/api-security.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "authentication-weaknesses",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Authentication Weaknesses",
+      "path": "vulnerabilities/authentication/authentication-weaknesses.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "broken-access-control",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Broken Access Control",
+      "path": "vulnerabilities/authorization/broken-access-control.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "cloud-misconfiguration",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Cloud Misconfiguration",
+      "path": "vulnerabilities/cloud/cloud-misconfiguration.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "command-injection",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Command Injection",
+      "path": "vulnerabilities/web/command-injection.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "container-security",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Container Security",
+      "path": "vulnerabilities/cloud/container-security.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "cross-site-scripting",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Cross Site Scripting",
+      "path": "vulnerabilities/web/cross-site-scripting.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "cryptographic-failures",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Cryptographic Failures",
+      "path": "vulnerabilities/cryptography/cryptographic-failures.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "csrf",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Csrf",
+      "path": "vulnerabilities/web/csrf.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "idor",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Idor",
+      "path": "vulnerabilities/authorization/idor.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "insecure-deserialization",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Insecure Deserialization",
+      "path": "vulnerabilities/web/insecure-deserialization.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "insecure-file-upload",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Insecure File Upload",
+      "path": "vulnerabilities/web/insecure-file-upload.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "path-traversal",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Path Traversal",
+      "path": "vulnerabilities/web/path-traversal.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "security-misconfiguration",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Security Misconfiguration",
+      "path": "vulnerabilities/configuration/security-misconfiguration.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "sensitive-data-exposure",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Sensitive Data Exposure",
+      "path": "vulnerabilities/web/sensitive-data-exposure.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "session-management",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Session Management",
+      "path": "vulnerabilities/authentication/session-management.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "sql-injection",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Sql Injection",
+      "path": "vulnerabilities/web/sql-injection.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "ssrf",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Ssrf",
+      "path": "vulnerabilities/web/ssrf.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "supply-chain-vulnerabilities",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Supply Chain Vulnerabilities",
+      "path": "vulnerabilities/supply-chain/supply-chain-vulnerabilities.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 87,
+      "id": "xxe",
+      "missing_metadata": [
+        "severity",
+        "cwe"
+      ],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Xxe",
+      "path": "vulnerabilities/web/xxe.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 88,
+      "id": "containers",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [
+        "Why It Matters",
+        "Core Principles"
+      ],
+      "missing_sources": [],
+      "name": "Containers",
+      "path": "knowledge/concepts/containers.md",
+      "recommended_actions": [
+        "write missing documentation sections"
+      ],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 90,
+      "id": "api-security",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "API Security",
+      "path": "learning-paths/api-security/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 90,
+      "id": "devsecops",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "DevSecOps",
+      "path": "learning-paths/devsecops/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 90,
+      "id": "network-security",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Network Security",
+      "path": "learning-paths/network-security/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 90,
+      "id": "threat-hunting",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Threat Hunting",
+      "path": "learning-paths/threat-hunting/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 90,
+      "id": "web-security",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [
+        "sources"
+      ],
+      "name": "Web Security",
+      "path": "learning-paths/web-security/README.md",
+      "recommended_actions": [
+        "add authoritative source metadata",
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "arp",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "ARP",
+      "path": "knowledge/concepts/arp.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "dhcp",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "DHCP",
+      "path": "knowledge/concepts/dhcp.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "backup",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Backup and Recovery",
+      "path": "knowledge/defensive-controls/backup.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "csp",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Content Security Policy",
+      "path": "knowledge/defensive-controls/csp.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "dependency-management",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Dependency Management",
+      "path": "knowledge/defensive-controls/dependency-management.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "endpoint-hardening",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Endpoint Hardening",
+      "path": "knowledge/defensive-controls/endpoint-hardening.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "network-monitoring",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Network Monitoring",
+      "path": "knowledge/defensive-controls/network-monitoring.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "patch-management",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Patch Management",
+      "path": "knowledge/defensive-controls/patch-management.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "siem",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "SIEM",
+      "path": "knowledge/defensive-controls/siem.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "zero-trust",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Zero Trust",
+      "path": "knowledge/defensive-controls/zero-trust.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "ansible",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Ansible",
+      "path": "knowledge/technologies/ansible.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "dotnet",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": ".NET",
+      "path": "knowledge/technologies/dotnet.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "elasticsearch",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Elasticsearch",
+      "path": "knowledge/technologies/elasticsearch.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "grpc",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "gRPC",
+      "path": "knowledge/technologies/grpc.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "ios",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "iOS",
+      "path": "knowledge/technologies/ios.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "kafka",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Apache Kafka",
+      "path": "knowledge/technologies/kafka.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "powershell",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "PowerShell",
+      "path": "knowledge/technologies/powershell.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "redis",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Redis",
+      "path": "knowledge/technologies/redis.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "sbom",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Software Bill of Materials",
+      "path": "knowledge/technologies/sbom.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 95,
+      "id": "terraform",
+      "missing_metadata": [],
+      "missing_relationships": [
+        "relationships"
+      ],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Terraform",
+      "path": "knowledge/technologies/terraform.md",
+      "recommended_actions": [
+        "add justified typed relationships"
+      ],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "access-control",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Access Control",
+      "path": "knowledge/concepts/access-control.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "apis",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "APIs",
+      "path": "knowledge/concepts/apis.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "attack-surface",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Attack Surface",
+      "path": "knowledge/concepts/attack-surface.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "authentication",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Authentication",
+      "path": "knowledge/concepts/authentication.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "authorization",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Authorization",
+      "path": "knowledge/concepts/authorization.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "certificates",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Certificates",
+      "path": "knowledge/concepts/certificates.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "cookies",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Cookies",
+      "path": "knowledge/concepts/cookies.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "cors",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "CORS",
+      "path": "knowledge/concepts/cors.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "cryptography",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Cryptography",
+      "path": "knowledge/concepts/cryptography.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "data-classification",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Data Classification",
+      "path": "knowledge/concepts/data-classification.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "defense-in-depth",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Defense in Depth",
+      "path": "knowledge/concepts/defense-in-depth.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "digital-signatures",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Digital Signatures",
+      "path": "knowledge/concepts/digital-signatures.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "dns",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "DNS",
+      "path": "knowledge/concepts/dns.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "encryption",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Encryption",
+      "path": "knowledge/concepts/encryption.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "file-systems",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "File Systems",
+      "path": "knowledge/concepts/file-systems.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "firewalls",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Firewalls",
+      "path": "knowledge/concepts/firewalls.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "graphql",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "GraphQL",
+      "path": "knowledge/concepts/graphql.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "hashing",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Hashing",
+      "path": "knowledge/concepts/hashing.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "http",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "HTTP",
+      "path": "knowledge/concepts/http.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "http-requests",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "HTTP Requests",
+      "path": "knowledge/concepts/http-requests.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "http-responses",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "HTTP Responses",
+      "path": "knowledge/concepts/http-responses.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "https",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "HTTPS",
+      "path": "knowledge/concepts/https.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "icmp",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "ICMP",
+      "path": "knowledge/concepts/icmp.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "input-validation",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Input Validation",
+      "path": "knowledge/concepts/input-validation.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "key-management",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Key Management",
+      "path": "knowledge/concepts/key-management.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "least-privilege",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Least Privilege",
+      "path": "knowledge/concepts/least-privilege.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "memory",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Memory",
+      "path": "knowledge/concepts/memory.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "nat",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "NAT",
+      "path": "knowledge/concepts/nat.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "networking",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Networking",
+      "path": "knowledge/concepts/networking.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "osi-model",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "OSI Model",
+      "path": "knowledge/concepts/osi-model.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "permissions",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Permissions",
+      "path": "knowledge/concepts/permissions.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "pki",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "PKI",
+      "path": "knowledge/concepts/pki.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "ports",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Ports",
+      "path": "knowledge/concepts/ports.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "privacy",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Privacy",
+      "path": "knowledge/concepts/privacy.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "processes",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Processes",
+      "path": "knowledge/concepts/processes.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "proxies",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Proxies",
+      "path": "knowledge/concepts/proxies.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "randomness",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Randomness",
+      "path": "knowledge/concepts/randomness.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "rest",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "REST",
+      "path": "knowledge/concepts/rest.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "risk-management",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Risk Management",
+      "path": "knowledge/concepts/risk-management.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "routing",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Routing",
+      "path": "knowledge/concepts/routing.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "same-origin-policy",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Same-Origin Policy",
+      "path": "knowledge/concepts/same-origin-policy.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "sbom",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "SBOM",
+      "path": "knowledge/concepts/sbom.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "secure-sdlc",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Secure SDLC",
+      "path": "knowledge/concepts/secure-sdlc.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "security-monitoring",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Security Monitoring",
+      "path": "knowledge/concepts/security-monitoring.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "services",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Services",
+      "path": "knowledge/concepts/services.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "sessions",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Sessions",
+      "path": "knowledge/concepts/sessions.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "supply-chain-security",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Supply-Chain Security",
+      "path": "knowledge/concepts/supply-chain-security.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "switching",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Switching",
+      "path": "knowledge/concepts/switching.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "system-calls",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "System Calls",
+      "path": "knowledge/concepts/system-calls.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "tcp",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "TCP",
+      "path": "knowledge/concepts/tcp.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "tcp-ip",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "TCP/IP",
+      "path": "knowledge/concepts/tcp-ip.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "threat-modeling",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Threat Modeling",
+      "path": "knowledge/concepts/threat-modeling.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "tls",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "TLS",
+      "path": "knowledge/concepts/tls.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "udp",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "UDP",
+      "path": "knowledge/concepts/udp.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "users-and-groups",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Users and Groups",
+      "path": "knowledge/concepts/users-and-groups.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "vulnerability-management",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Vulnerability Management",
+      "path": "knowledge/concepts/vulnerability-management.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "websockets",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "WebSockets",
+      "path": "knowledge/concepts/websockets.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "zero-trust",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Zero Trust",
+      "path": "knowledge/concepts/zero-trust.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "concept",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "application-allowlisting",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Application Allowlisting",
+      "path": "knowledge/defensive-controls/application-allowlisting.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "asset-inventory",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Asset Inventory",
+      "path": "knowledge/defensive-controls/asset-inventory.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "data-loss-prevention",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Data Loss Prevention",
+      "path": "knowledge/defensive-controls/data-loss-prevention.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "edr",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "EDR",
+      "path": "knowledge/defensive-controls/edr.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "encryption",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Encryption",
+      "path": "knowledge/defensive-controls/encryption.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "endpoint-detection",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Endpoint Detection",
+      "path": "knowledge/defensive-controls/endpoint-detection.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "firewall",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Firewall",
+      "path": "knowledge/defensive-controls/firewall.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "ids-ips",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "IDS/IPS",
+      "path": "knowledge/defensive-controls/ids-ips.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "input-validation",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Input Validation",
+      "path": "knowledge/defensive-controls/input-validation.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "least-privilege",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Least Privilege",
+      "path": "knowledge/defensive-controls/least-privilege.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "mfa",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "MFA",
+      "path": "knowledge/defensive-controls/mfa.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "network-segmentation",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Network Segmentation",
+      "path": "knowledge/defensive-controls/network-segmentation.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "parameterized-queries",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Parameterized Queries",
+      "path": "knowledge/defensive-controls/parameterized-queries.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "rate-limiting",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Rate Limiting",
+      "path": "knowledge/defensive-controls/rate-limiting.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "secrets-management",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Secrets Management",
+      "path": "knowledge/defensive-controls/secrets-management.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "secure-configuration",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Secure Configuration",
+      "path": "knowledge/defensive-controls/secure-configuration.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "secure-cookies",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Secure Cookies",
+      "path": "knowledge/defensive-controls/secure-cookies.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "secure-logging",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Secure Logging",
+      "path": "knowledge/defensive-controls/secure-logging.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "secure-sdlc",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Secure SDLC",
+      "path": "knowledge/defensive-controls/secure-sdlc.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "security-headers",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Security Headers",
+      "path": "knowledge/defensive-controls/security-headers.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "supply-chain-controls",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Supply-Chain Controls",
+      "path": "knowledge/defensive-controls/supply-chain-controls.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "vulnerability-management",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Vulnerability Management",
+      "path": "knowledge/defensive-controls/vulnerability-management.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "api-discovery-local-app",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "API Discovery in a Local App",
+      "path": "labs/web/api-discovery-local-app.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "detection-rule-regression",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Detection Rule Regression",
+      "path": "labs/defensive/detection-rule-regression.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "dns-resolution-inventory",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "DNS Resolution and Inventory",
+      "path": "labs/networking/dns-resolution-inventory.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "graphql-schema-safety",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "GraphQL Schema Safety Review",
+      "path": "labs/web/graphql-schema-safety.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "iac-security-review",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "IaC Security Review",
+      "path": "labs/networking/iac-security-review.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "kubernetes-posture-review",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Kubernetes Posture Review",
+      "path": "labs/defensive/kubernetes-posture-review.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "memory-image-triage",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Memory Image Triage",
+      "path": "labs/forensics/memory-image-triage.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "secrets-rotation-exercise",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Secrets Rotation Exercise",
+      "path": "labs/defensive/secrets-rotation-exercise.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "timeline-analysis-synthetic",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Timeline Analysis with Synthetic Artifacts",
+      "path": "labs/forensics/timeline-analysis-synthetic.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "tls-certificate-review",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "TLS Certificate Review",
+      "path": "labs/networking/tls-certificate-review.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "lab",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "api-discovery",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "API Discovery",
+      "path": "knowledge/techniques/api-discovery.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "certificate-review",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Certificate Review",
+      "path": "knowledge/techniques/certificate-review.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "certificate-transparency",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Certificate Transparency Review",
+      "path": "knowledge/techniques/certificate-transparency.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "cloud-configuration-assessment",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Cloud Configuration Assessment",
+      "path": "knowledge/techniques/cloud-configuration-assessment.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "container-security-scanning",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Container Security Scanning",
+      "path": "knowledge/techniques/container-security-scanning.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "content-discovery",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Content Discovery",
+      "path": "knowledge/techniques/content-discovery.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "dependency-analysis",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Dependency Analysis",
+      "path": "knowledge/techniques/dependency-analysis.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "detection-engineering",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Detection Engineering",
+      "path": "knowledge/techniques/detection-engineering.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "digital-forensics",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Digital Forensics",
+      "path": "knowledge/techniques/digital-forensics.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "dns-enumeration",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "DNS Enumeration",
+      "path": "knowledge/techniques/dns-enumeration.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "dynamic-analysis",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Dynamic Analysis",
+      "path": "knowledge/techniques/dynamic-analysis.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "host-discovery",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Host Discovery",
+      "path": "knowledge/techniques/host-discovery.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "iac-scanning",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Infrastructure-as-Code Scanning",
+      "path": "knowledge/techniques/iac-scanning.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "incident-triage",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Incident Triage",
+      "path": "knowledge/techniques/incident-triage.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "log-analysis",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Log Analysis",
+      "path": "knowledge/techniques/log-analysis.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "malware-analysis",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Malware Analysis",
+      "path": "knowledge/techniques/malware-analysis.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "memory-analysis",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Memory Analysis",
+      "path": "knowledge/techniques/memory-analysis.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "network-scanning",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Network Scanning",
+      "path": "knowledge/techniques/network-scanning.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "packet-analysis",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Packet Analysis",
+      "path": "knowledge/techniques/packet-analysis.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "phishing-resistant-authentication",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Phishing-Resistant Authentication",
+      "path": "knowledge/techniques/phishing-resistant-authentication.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "reverse-engineering",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Reverse Engineering",
+      "path": "knowledge/techniques/reverse-engineering.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "secrets-detection",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Secrets Detection",
+      "path": "knowledge/techniques/secrets-detection.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "secure-code-review",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Secure Code Review",
+      "path": "knowledge/techniques/secure-code-review.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "security-testing",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Security Testing",
+      "path": "knowledge/techniques/security-testing.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "service-enumeration",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Service Enumeration",
+      "path": "knowledge/techniques/service-enumeration.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "static-analysis",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Static Analysis",
+      "path": "knowledge/techniques/static-analysis.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "subdomain-discovery",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Subdomain Discovery",
+      "path": "knowledge/techniques/subdomain-discovery.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "threat-hunting",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Threat Hunting",
+      "path": "knowledge/techniques/threat-hunting.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "threat-intelligence-analysis",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Threat Intelligence Analysis",
+      "path": "knowledge/techniques/threat-intelligence-analysis.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "timeline-analysis",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Timeline Analysis",
+      "path": "knowledge/techniques/timeline-analysis.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "traffic-analysis",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Traffic Analysis",
+      "path": "knowledge/techniques/traffic-analysis.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "vulnerability-assessment",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Vulnerability Assessment",
+      "path": "knowledge/techniques/vulnerability-assessment.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "vulnerability-prioritization",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Vulnerability Prioritization",
+      "path": "knowledge/techniques/vulnerability-prioritization.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "web-enumeration",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Web Enumeration",
+      "path": "knowledge/techniques/web-enumeration.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technique",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "android",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Android",
+      "path": "knowledge/technologies/android.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "apache",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Apache HTTP Server",
+      "path": "knowledge/technologies/apache.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "aws",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "AWS",
+      "path": "knowledge/technologies/aws.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "azure",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Azure",
+      "path": "knowledge/technologies/azure.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "c",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "C",
+      "path": "knowledge/technologies/c.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "dns",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "DNS",
+      "path": "knowledge/technologies/dns.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "docker",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Docker",
+      "path": "knowledge/technologies/docker.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "gcp",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "GCP",
+      "path": "knowledge/technologies/gcp.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "git",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Git",
+      "path": "knowledge/technologies/git.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "github-actions",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "GitHub Actions",
+      "path": "knowledge/technologies/github-actions.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "http",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "HTTP",
+      "path": "knowledge/technologies/http.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "java",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Java",
+      "path": "knowledge/technologies/java.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "kubernetes",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Kubernetes",
+      "path": "knowledge/technologies/kubernetes.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "linux",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Linux",
+      "path": "knowledge/technologies/linux.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "macos",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "macOS",
+      "path": "knowledge/technologies/macos.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "mongodb",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "MongoDB",
+      "path": "knowledge/technologies/mongodb.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "mysql",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "MySQL",
+      "path": "knowledge/technologies/mysql.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "nginx",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Nginx",
+      "path": "knowledge/technologies/nginx.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "nodejs",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Node.js",
+      "path": "knowledge/technologies/nodejs.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "php",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "PHP",
+      "path": "knowledge/technologies/php.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "postgresql",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "PostgreSQL",
+      "path": "knowledge/technologies/postgresql.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "python",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Python",
+      "path": "knowledge/technologies/python.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "rest-apis",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "REST APIs",
+      "path": "knowledge/technologies/rest-apis.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "tls",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "TLS",
+      "path": "knowledge/technologies/tls.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "windows",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Windows",
+      "path": "knowledge/technologies/windows.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "technology",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "arkime",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Arkime",
+      "path": "tools/network-analysis/arkime.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "clamav",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "ClamAV",
+      "path": "tools/malware-analysis/clamav.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "dnsx",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "dnsx",
+      "path": "tools/reconnaissance/dnsx.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "feroxbuster",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Feroxbuster",
+      "path": "tools/web-security/feroxbuster.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "gitleaks",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Gitleaks",
+      "path": "tools/secure-development/gitleaks.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "httpie",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "HTTPie",
+      "path": "tools/web-security/httpie.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "httpx",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "httpx",
+      "path": "tools/reconnaissance/httpx.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "kics",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "KICS",
+      "path": "tools/secure-development/kics.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "kube-hunter",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "kube-hunter",
+      "path": "tools/container-security/kube-hunter.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "kubescape",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Kubescape",
+      "path": "tools/container-security/kubescape.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "lynis",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Lynis",
+      "path": "tools/vulnerability-management/lynis.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "misp",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "MISP",
+      "path": "tools/defensive-security/misp.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "mitmproxy",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "mitmproxy",
+      "path": "tools/web-security/mitmproxy.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "naabu",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Naabu",
+      "path": "tools/reconnaissance/naabu.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "opencti",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "OpenCTI",
+      "path": "tools/defensive-security/opencti.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "rustscan",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "RustScan",
+      "path": "tools/reconnaissance/rustscan.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "security-onion",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Security Onion",
+      "path": "tools/defensive-security/security-onion.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "testssl-sh",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "testssl.sh",
+      "path": "tools/web-security/testssl-sh.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "tetragon",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Tetragon",
+      "path": "tools/defensive-security/tetragon.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "trufflehog",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "TruffleHog",
+      "path": "tools/secure-development/trufflehog.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "velociraptor",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Velociraptor",
+      "path": "tools/defensive-security/velociraptor.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "zmap",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "ZMap",
+      "path": "tools/reconnaissance/zmap.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "api-rate-limit-weakness",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "API Rate-Limit Weakness",
+      "path": "vulnerabilities/api/api-rate-limit-weakness.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "broken-function-level-authorization",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Broken Function Level Authorization",
+      "path": "vulnerabilities/api/broken-function-level-authorization.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "excessive-data-exposure",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Excessive Data Exposure",
+      "path": "vulnerabilities/api/excessive-data-exposure.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "file-inclusion",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "File Inclusion",
+      "path": "vulnerabilities/web/file-inclusion.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "host-header-injection",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Host Header Injection",
+      "path": "vulnerabilities/web/host-header-injection.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "http-request-smuggling",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "HTTP Request Smuggling",
+      "path": "vulnerabilities/web/http-request-smuggling.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "improper-api-inventory",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Improper API Inventory",
+      "path": "vulnerabilities/api/improper-api-inventory.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "improper-certificate-validation",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Improper Certificate Validation",
+      "path": "vulnerabilities/cryptography/improper-certificate-validation.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "mass-assignment",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Mass Assignment",
+      "path": "vulnerabilities/api/mass-assignment.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "mfa-weaknesses",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "MFA Weaknesses",
+      "path": "vulnerabilities/authentication/mfa-weaknesses.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "open-redirect",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Open Redirect",
+      "path": "vulnerabilities/web/open-redirect.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "password-reset-flaws",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Password Reset Flaws",
+      "path": "vulnerabilities/authentication/password-reset-flaws.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "predictable-randomness",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Predictable Randomness",
+      "path": "vulnerabilities/cryptography/predictable-randomness.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "prototype-pollution",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Prototype Pollution",
+      "path": "vulnerabilities/web/prototype-pollution.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "public-cloud-storage-exposure",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Public Cloud Storage Exposure",
+      "path": "vulnerabilities/cloud/public-cloud-storage-exposure.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "session-fixation",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Session Fixation",
+      "path": "vulnerabilities/authentication/session-fixation.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "session-hijacking",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Session Hijacking",
+      "path": "vulnerabilities/authentication/session-hijacking.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "weak-key-management",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Weak Key Management",
+      "path": "vulnerabilities/cryptography/weak-key-management.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "weak-password-policy",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Weak Password Policy",
+      "path": "vulnerabilities/authentication/weak-password-policy.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "id": "web-cache-poisoning",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Web Cache Poisoning",
+      "path": "vulnerabilities/web/web-cache-poisoning.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "vulnerability",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 100,
+      "id": "aircrack-ng",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Aircrack-ng",
+      "path": "tools/wireless/aircrack-ng.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "amass",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Amass",
+      "path": "tools/reconnaissance/amass.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "autopsy",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Autopsy",
+      "path": "tools/digital-forensics/autopsy.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "bandit",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Bandit",
+      "path": "tools/secure-development/bandit.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "burp-suite",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Burp Suite",
+      "path": "tools/web-security/burp-suite.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "capa",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "capa",
+      "path": "tools/malware-analysis/capa.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "checkov",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Checkov",
+      "path": "tools/secure-development/checkov.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "cutter",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Cutter",
+      "path": "tools/reverse-engineering/cutter.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "exiftool",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "ExifTool",
+      "path": "tools/osint/exiftool.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "ffuf",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "ffuf",
+      "path": "tools/web-security/ffuf.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "floss",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "FLOSS",
+      "path": "tools/malware-analysis/floss.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "ghidra",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Ghidra",
+      "path": "tools/reverse-engineering/ghidra.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "gobuster",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Gobuster",
+      "path": "tools/web-security/gobuster.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "greenbone-openvas",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Greenbone Vulnerability Management",
+      "path": "tools/vulnerability-management/greenbone-openvas.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "grype",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Grype",
+      "path": "tools/container-security/grype.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "hashcat",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Hashcat",
+      "path": "tools/password-security/hashcat.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "hydra",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "THC Hydra",
+      "path": "tools/password-security/hydra.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "john-the-ripper",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "John the Ripper",
+      "path": "tools/password-security/john-the-ripper.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "kismet",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Kismet",
+      "path": "tools/wireless/kismet.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "kube-bench",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "kube-bench",
+      "path": "tools/container-security/kube-bench.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "masscan",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Masscan",
+      "path": "tools/reconnaissance/masscan.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "nikto",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Nikto",
+      "path": "tools/web-security/nikto.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "nmap",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Nmap",
+      "path": "tools/reconnaissance/nmap.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "nuclei",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Nuclei",
+      "path": "tools/web-security/nuclei.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "openscap",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "OpenSCAP",
+      "path": "tools/vulnerability-management/openscap.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "osquery",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "osquery",
+      "path": "tools/defensive-security/osquery.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "osv-scanner",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "OSV-Scanner",
+      "path": "tools/secure-development/osv-scanner.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "owasp-zap",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "OWASP ZAP",
+      "path": "tools/web-security/owasp-zap.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "prowler",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Prowler",
+      "path": "tools/cloud-security/prowler.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "radare2",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Radare2",
+      "path": "tools/reverse-engineering/radare2.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "recon-ng",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Recon-ng",
+      "path": "tools/osint/recon-ng.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "semgrep",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Semgrep",
+      "path": "tools/secure-development/semgrep.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "sherlock",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Sherlock",
+      "path": "tools/osint/sherlock.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "sigma",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Sigma",
+      "path": "tools/defensive-security/sigma.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "snort",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Snort",
+      "path": "tools/network-analysis/snort.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "spiderfoot",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "SpiderFoot",
+      "path": "tools/osint/spiderfoot.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "sqlmap",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "sqlmap",
+      "path": "tools/web-security/sqlmap.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "subfinder",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Subfinder",
+      "path": "tools/reconnaissance/subfinder.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "suricata",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Suricata",
+      "path": "tools/network-analysis/suricata.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "syft",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Syft",
+      "path": "tools/container-security/syft.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "tcpdump",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "tcpdump",
+      "path": "tools/network-analysis/tcpdump.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "theharvester",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "theHarvester",
+      "path": "tools/reconnaissance/theharvester.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "trivy",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Trivy",
+      "path": "tools/vulnerability-management/trivy.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "volatility3",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Volatility 3",
+      "path": "tools/digital-forensics/volatility3.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "wazuh",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Wazuh",
+      "path": "tools/defensive-security/wazuh.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "wireshark",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Wireshark",
+      "path": "tools/network-analysis/wireshark.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "yara",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "YARA",
+      "path": "tools/malware-analysis/yara.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    },
+    {
+      "completeness_score": 100,
+      "id": "zeek",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Zeek",
+      "path": "tools/network-analysis/zeek.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "tool",
+      "verification_status": "partially-verified"
+    }
+  ],
+  "schema_version": "1.0",
+  "stale_after_days": 180
+}

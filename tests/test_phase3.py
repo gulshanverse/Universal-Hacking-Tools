@@ -75,7 +75,7 @@ class Phase3TestCase(unittest.TestCase):
 
     def test_health(self):
         report = HealthEngine(self.loader).report()
-        self.assertEqual(report["total_entities"], 174)
+        self.assertEqual(report["total_entities"], len(self.loader.documents))
         self.assertIn("overall_score", report)
         self.assertIsInstance(report["orphaned_entities"], list)
 

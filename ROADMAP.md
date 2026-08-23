@@ -4,9 +4,9 @@ The following roadmap distinguishes completed foundations from future work. It d
 
 1. **Phase 1 — Repository foundation:** completed architecture, templates, policies, validation, seed content, labs, learning paths, and navigation.
 2. **Phase 2 — Connected knowledge system:** completed Markdown + YAML taxonomy, relationship metadata, deterministic graph generation, typed indexes, and graph validation.
-3. **Phase 3 — Search, discovery, and knowledge intelligence:** **current implementation phase**. The local deterministic search index, aliases, bounded graph discovery, path finding, rule-based recommendations, tool comparison, health reporting, CLI, contracts, tests, and CI integration are being established here.
-4. **Phase 4 — Content quality and coverage:** deepen authoritative per-entity verification, expand concept and vulnerability coverage, improve prerequisites, and review health findings.
-5. **Phase 5 — Safe hands-on labs:** add more reproducible local, disposable, and scenario-based lab environments.
+3. **Phase 3 — Search, discovery, and knowledge intelligence:** completed local deterministic search, aliases, bounded graph discovery, path finding, rule-based recommendations, tool comparison, health reporting, CLI, contracts, tests, and CI integration.
+4. **Phase 4 — Content quality and coverage:** completed a substantial content expansion, prerequisite edges, source metadata backfill from existing references, per-entity completeness reporting, verification reporting, prioritized review queue, safer cross-linking, richer learning paths and labs, review lifecycle guidance, and CI enforcement.
+5. **Phase 5 — Safe hands-on labs:** deepen lab fixtures with more reproducible local, disposable, and scenario-based environments.
 6. **Phase 6 — Community contributions:** grow reviewer guidance, good-first-issue tasks, and maintainership processes.
 7. **Phase 7 — Searchable web interface:** evaluate a future static or dynamic documentation site that consumes generated contracts rather than parsing raw Markdown at request time.
 8. **Phase 8 — Persistence and scale:** evaluate databases or specialized search backends only after the local architecture and contracts are proven.

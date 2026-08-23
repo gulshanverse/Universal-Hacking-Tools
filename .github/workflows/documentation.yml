@@ -20,6 +20,10 @@ jobs:
         run: python3 scripts/generate-index.py --check
       - name: Validate search and knowledge contracts
         run: python3 scripts/validate-schemas.py
+      - name: Validate Phase 4 quality reports
+        run: python3 scripts/validate-quality.py
+      - name: Check generated quality reports
+        run: python3 scripts/generate-quality-reports.py --check
       - name: Check generated search artifacts
         run: python3 scripts/generate-search.py --check
       - name: Check relative Markdown links
@@ -28,7 +32,7 @@ jobs:
         run: python3 -m py_compile scripts/*.py search/**/*.py tests/*.py
       - name: Check obvious secret patterns
         run: '! grep -RInE "(BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{20,})" --exclude-dir=.git .'
-      - name: Run Phase 3 tests
+      - name: Run Phase 3 and Phase 4 tests
         run: python3 -m unittest discover -s tests -v
       - name: Check generated knowledge artifacts
         run: python3 scripts/generate-knowledge.py --check

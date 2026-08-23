@@ -127,11 +127,12 @@ def generate(as_of=AS_OF, stale_days=STALE_DAYS):
             "platforms": as_list(meta.get("platforms", [])),
             "security_domains": as_list(meta.get("security_domains", [])),
             "relationships": sorted(rels, key=lambda x: (x["target"], x["relationship"])),
+            "prerequisites": as_list(meta.get("prerequisites", [])),
             "verification": {"status": status, "last_verified": verification.get("last_verified", "")},
             "sources": meta.get("sources", {}),
             "license": meta.get("license", ""),
             "dual_use": meta.get("dual_use", ""),
-            "keywords": sorted(set(tokens([node["name"], doc if False else "", meta.get("category", ""), meta.get("subcategory", ""), meta.get("security_domains", []), meta.get("concepts", []), meta.get("techniques", []), meta.get("technologies", []), meta.get("related_vulnerabilities", [])]))),
+            "keywords": sorted(set(tokens([node["name"], doc if False else "", meta.get("category", ""), meta.get("subcategory", ""), meta.get("security_domains", []), meta.get("concepts", []), meta.get("techniques", []), meta.get("technologies", []), meta.get("related_vulnerabilities", []), meta.get("prerequisites", [])]))),
         }
         doc["aliases"] = aliases_for(doc)
         doc["tokens"] = sorted(set(tokens([doc["name"], doc["description"], doc["category"], doc["subcategory"], doc["tags"], doc["keywords"], doc["aliases"]])))

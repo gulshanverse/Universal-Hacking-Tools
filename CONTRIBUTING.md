@@ -4,7 +4,7 @@ Thank you for improving this educational cybersecurity knowledge base. Contribut
 
 ## Adding a Tool
 
-Copy [`templates/tool-template.md`](templates/tool-template.md) into the appropriate category, use a lowercase hyphenated filename, complete every front-matter field, and cite the official repository, website, and documentation. Do not invent versions, capabilities, commands, licenses, or benchmarks. Run `python3 scripts/validate_repository.py`, `python3 scripts/validate-knowledge.py`, `python3 scripts/generate-index.py`, `python3 scripts/generate-knowledge.py`, `python3 scripts/generate-search.py`, `python3 scripts/validate-schemas.py`, `python3 scripts/generate-search.py --check`, and `python3 -m unittest discover -s tests -v` before opening a pull request.
+Copy [`templates/tool-template.md`](templates/tool-template.md) into the appropriate category, use a lowercase hyphenated filename, complete every front-matter field, and cite the official repository, website, and documentation. Do not invent versions, capabilities, commands, licenses, or benchmarks. Run `python3 scripts/validate_repository.py`, `python3 scripts/validate-knowledge.py`, `python3 scripts/generate-index.py`, `python3 scripts/generate-knowledge.py`, `python3 scripts/generate-search.py`, `python3 scripts/generate-quality-reports.py`, `python3 scripts/validate-schemas.py`, `python3 scripts/validate-quality.py`, `python3 scripts/generate-search.py --check`, `python3 scripts/generate-quality-reports.py --check`, and `python3 -m unittest discover -s tests -v` before opening a pull request.
 
 ## Adding a Vulnerability
 
@@ -18,7 +18,13 @@ Copy [`templates/lab-template.md`](templates/lab-template.md). State the objecti
 
 Phase 2 uses Markdown and YAML as the source of truth for a future knowledge graph. Tools should declare `concepts`, `techniques`, `technologies`, `related_tools`, `related_vulnerabilities`, `related_labs`, `defensive_controls`, `verification`, and `sources`. Vulnerability, lab, and learning-path pages should declare their corresponding typed relationships. Use repository slugs, not display names, and mark uncertain mappings `needs-review` rather than guessing.
 
-After editing relationship metadata, run the graph and search generators, then their `--check` modes. Generated JSON under `generated/` is deterministic and must not be manually edited. The graph validator rejects unknown entity references and duplicate IDs within an entity type. Search results are offline and deterministic; the CLI never executes commands, makes network requests, or evaluates content as code.
+After editing relationship metadata, add `prerequisites` only when the dependency is genuine and use canonical IDs. Run the graph and search generators, then `python3 scripts/generate-quality-reports.py`. Generated JSON under `generated/` is deterministic and must not be manually edited. The graph validator rejects unknown entity references, invalid relationship types, duplicate relationships, and inappropriate self-references. Search results are offline and deterministic; the CLI never executes commands, makes network requests, or evaluates content as code.
+
+## Review Lifecycle
+
+Contributions move through **Draft → Technical Review → Source Verification → Security Review → Documentation Review → Approved → Merged**. Technical Review checks structure, terminology, scope, and implementation claims. Source Verification checks official repositories, standards, licenses, platforms, and dates. Security Review checks authorization boundaries, dual-use framing, lab isolation, and absence of prohibited content. Documentation Review checks links, cross-links, prerequisites, metadata, readability, and generated artifacts. A reviewer may return a contribution to an earlier stage rather than silently accepting uncertainty.
+
+Use [`docs/content-review-checklist.md`](docs/content-review-checklist.md), inspect [`generated/content-completeness.json`](generated/content-completeness.json), [`generated/verification-report.json`](generated/verification-report.json), and [`generated/review-queue.json`](generated/review-queue.json), and record unresolved issues honestly as `needs-review`.
 
 ## Style and Review
 

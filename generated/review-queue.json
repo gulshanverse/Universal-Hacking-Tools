@@ -1,0 +1,2686 @@
+{
+  "as_of": "2026-08-23",
+  "items": [
+    {
+      "id": "authentication-session-review",
+      "name": "Authentication Session Review",
+      "path": "labs/authentication/authentication-session-review.md",
+      "priority": 17,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "lab"
+    },
+    {
+      "id": "authorization-matrix-testing",
+      "name": "Authorization Matrix Testing",
+      "path": "labs/api/authorization-matrix-testing.md",
+      "priority": 17,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "lab"
+    },
+    {
+      "id": "cloud-least-privilege-review",
+      "name": "Cloud Least Privilege Review",
+      "path": "labs/cloud/cloud-least-privilege-review.md",
+      "priority": 17,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "lab"
+    },
+    {
+      "id": "container-sbom-and-scan",
+      "name": "Container Sbom And Scan",
+      "path": "labs/defensive/container-sbom-and-scan.md",
+      "priority": 17,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "lab"
+    },
+    {
+      "id": "evidence-first-analysis",
+      "name": "Evidence First Analysis",
+      "path": "labs/forensics/evidence-first-analysis.md",
+      "priority": 17,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "lab"
+    },
+    {
+      "id": "memory-analysis-fundamentals",
+      "name": "Memory Analysis Fundamentals",
+      "path": "labs/forensics/memory-analysis-fundamentals.md",
+      "priority": 17,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "lab"
+    },
+    {
+      "id": "sql-injection-concepts",
+      "name": "Sql Injection Concepts",
+      "path": "labs/web/sql-injection-concepts.md",
+      "priority": 17,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "lab"
+    },
+    {
+      "id": "static-malware-triage",
+      "name": "Static Malware Triage",
+      "path": "labs/defensive/static-malware-triage.md",
+      "priority": 17,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "lab"
+    },
+    {
+      "id": "detection-rule-engineering",
+      "name": "Detection Rule Engineering",
+      "path": "labs/defensive/detection-rule-engineering.md",
+      "priority": 15,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "lab"
+    },
+    {
+      "id": "http-request-analysis",
+      "name": "Http Request Analysis",
+      "path": "labs/web/http-request-analysis.md",
+      "priority": 15,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections"
+      ],
+      "type": "lab"
+    },
+    {
+      "id": "localhost-service-inventory",
+      "name": "Localhost Service Inventory",
+      "path": "labs/networking/localhost-service-inventory.md",
+      "priority": 15,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections"
+      ],
+      "type": "lab"
+    },
+    {
+      "id": "packet-capture-fundamentals",
+      "name": "Packet Capture Fundamentals",
+      "path": "labs/networking/packet-capture-fundamentals.md",
+      "priority": 15,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections"
+      ],
+      "type": "lab"
+    },
+    {
+      "id": "api-security",
+      "name": "API Security",
+      "path": "learning-paths/api-security/README.md",
+      "priority": 15,
+      "reasons": [
+        "add authoritative source metadata",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "devsecops",
+      "name": "DevSecOps",
+      "path": "learning-paths/devsecops/README.md",
+      "priority": 15,
+      "reasons": [
+        "add authoritative source metadata",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "network-security",
+      "name": "Network Security",
+      "path": "learning-paths/network-security/README.md",
+      "priority": 15,
+      "reasons": [
+        "add authoritative source metadata",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "threat-hunting",
+      "name": "Threat Hunting",
+      "path": "learning-paths/threat-hunting/README.md",
+      "priority": 15,
+      "reasons": [
+        "add authoritative source metadata",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "web-security",
+      "name": "Web Security",
+      "path": "learning-paths/web-security/README.md",
+      "priority": 15,
+      "reasons": [
+        "add authoritative source metadata",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "beginner",
+      "name": "Beginner",
+      "path": "learning-paths/beginner/README.md",
+      "priority": 14,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "blue-team",
+      "name": "Blue Team",
+      "path": "learning-paths/blue-team/README.md",
+      "priority": 14,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "bug-bounty",
+      "name": "Bug Bounty",
+      "path": "learning-paths/bug-bounty/README.md",
+      "priority": 14,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "cloud-security",
+      "name": "Cloud Security",
+      "path": "learning-paths/cloud-security/README.md",
+      "priority": 14,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "ethical-hacking",
+      "name": "Ethical Hacking",
+      "path": "learning-paths/ethical-hacking/README.md",
+      "priority": 14,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "malware-analysis",
+      "name": "Malware Analysis",
+      "path": "learning-paths/malware-analysis/README.md",
+      "priority": 14,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "penetration-testing",
+      "name": "Penetration Testing",
+      "path": "learning-paths/penetration-testing/README.md",
+      "priority": 14,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "security-engineering",
+      "name": "Security Engineering",
+      "path": "learning-paths/security-engineering/README.md",
+      "priority": 14,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "soc-analyst",
+      "name": "Soc Analyst",
+      "path": "learning-paths/soc-analyst/README.md",
+      "priority": 14,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections",
+        "add justified typed relationships"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "containers",
+      "name": "Containers",
+      "path": "knowledge/concepts/containers.md",
+      "priority": 12,
+      "reasons": [
+        "write missing documentation sections"
+      ],
+      "type": "concept"
+    },
+    {
+      "id": "digital-forensics",
+      "name": "Digital Forensics",
+      "path": "learning-paths/digital-forensics/README.md",
+      "priority": 12,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata",
+        "write missing documentation sections"
+      ],
+      "type": "learning-path"
+    },
+    {
+      "id": "arp",
+      "name": "ARP",
+      "path": "knowledge/concepts/arp.md",
+      "priority": 10,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "concept"
+    },
+    {
+      "id": "dhcp",
+      "name": "DHCP",
+      "path": "knowledge/concepts/dhcp.md",
+      "priority": 10,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "concept"
+    },
+    {
+      "id": "backup",
+      "name": "Backup and Recovery",
+      "path": "knowledge/defensive-controls/backup.md",
+      "priority": 10,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "defensive-control"
+    },
+    {
+      "id": "csp",
+      "name": "Content Security Policy",
+      "path": "knowledge/defensive-controls/csp.md",
+      "priority": 10,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "defensive-control"
+    },
+    {
+      "id": "dependency-management",
+      "name": "Dependency Management",
+      "path": "knowledge/defensive-controls/dependency-management.md",
+      "priority": 10,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "defensive-control"
+    },
+    {
+      "id": "endpoint-hardening",
+      "name": "Endpoint Hardening",
+      "path": "knowledge/defensive-controls/endpoint-hardening.md",
+      "priority": 10,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "defensive-control"
+    },
+    {
+      "id": "network-monitoring",
+      "name": "Network Monitoring",
+      "path": "knowledge/defensive-controls/network-monitoring.md",
+      "priority": 10,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "defensive-control"
+    },
+    {
+      "id": "patch-management",
+      "name": "Patch Management",
+      "path": "knowledge/defensive-controls/patch-management.md",
+      "priority": 10,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "defensive-control"
+    },
+    {
+      "id": "siem",
+      "name": "SIEM",
+      "path": "knowledge/defensive-controls/siem.md",
+      "priority": 10,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "defensive-control"
+    },
+    {
+      "id": "zero-trust",
+      "name": "Zero Trust",
+      "path": "knowledge/defensive-controls/zero-trust.md",
+      "priority": 10,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "defensive-control"
+    },
+    {
+      "id": "api-security",
+      "name": "Api Security",
+      "path": "vulnerabilities/api/api-security.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "authentication-weaknesses",
+      "name": "Authentication Weaknesses",
+      "path": "vulnerabilities/authentication/authentication-weaknesses.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "broken-access-control",
+      "name": "Broken Access Control",
+      "path": "vulnerabilities/authorization/broken-access-control.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "cloud-misconfiguration",
+      "name": "Cloud Misconfiguration",
+      "path": "vulnerabilities/cloud/cloud-misconfiguration.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "command-injection",
+      "name": "Command Injection",
+      "path": "vulnerabilities/web/command-injection.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "container-security",
+      "name": "Container Security",
+      "path": "vulnerabilities/cloud/container-security.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "cross-site-scripting",
+      "name": "Cross Site Scripting",
+      "path": "vulnerabilities/web/cross-site-scripting.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "cryptographic-failures",
+      "name": "Cryptographic Failures",
+      "path": "vulnerabilities/cryptography/cryptographic-failures.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "csrf",
+      "name": "Csrf",
+      "path": "vulnerabilities/web/csrf.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "idor",
+      "name": "Idor",
+      "path": "vulnerabilities/authorization/idor.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "insecure-deserialization",
+      "name": "Insecure Deserialization",
+      "path": "vulnerabilities/web/insecure-deserialization.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "insecure-file-upload",
+      "name": "Insecure File Upload",
+      "path": "vulnerabilities/web/insecure-file-upload.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "path-traversal",
+      "name": "Path Traversal",
+      "path": "vulnerabilities/web/path-traversal.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "security-misconfiguration",
+      "name": "Security Misconfiguration",
+      "path": "vulnerabilities/configuration/security-misconfiguration.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "sensitive-data-exposure",
+      "name": "Sensitive Data Exposure",
+      "path": "vulnerabilities/web/sensitive-data-exposure.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "session-management",
+      "name": "Session Management",
+      "path": "vulnerabilities/authentication/session-management.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "sql-injection",
+      "name": "Sql Injection",
+      "path": "vulnerabilities/web/sql-injection.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "ssrf",
+      "name": "Ssrf",
+      "path": "vulnerabilities/web/ssrf.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "supply-chain-vulnerabilities",
+      "name": "Supply Chain Vulnerabilities",
+      "path": "vulnerabilities/supply-chain/supply-chain-vulnerabilities.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "xxe",
+      "name": "Xxe",
+      "path": "vulnerabilities/web/xxe.md",
+      "priority": 10,
+      "reasons": [
+        "add authoritative source metadata",
+        "complete required metadata"
+      ],
+      "type": "vulnerability"
+    },
+    {
+      "id": "access-control",
+      "name": "Access Control",
+      "path": "knowledge/concepts/access-control.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "apis",
+      "name": "APIs",
+      "path": "knowledge/concepts/apis.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "attack-surface",
+      "name": "Attack Surface",
+      "path": "knowledge/concepts/attack-surface.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "authentication",
+      "name": "Authentication",
+      "path": "knowledge/concepts/authentication.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "authorization",
+      "name": "Authorization",
+      "path": "knowledge/concepts/authorization.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "certificates",
+      "name": "Certificates",
+      "path": "knowledge/concepts/certificates.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "cookies",
+      "name": "Cookies",
+      "path": "knowledge/concepts/cookies.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "cors",
+      "name": "CORS",
+      "path": "knowledge/concepts/cors.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "cryptography",
+      "name": "Cryptography",
+      "path": "knowledge/concepts/cryptography.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "data-classification",
+      "name": "Data Classification",
+      "path": "knowledge/concepts/data-classification.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "defense-in-depth",
+      "name": "Defense in Depth",
+      "path": "knowledge/concepts/defense-in-depth.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "digital-signatures",
+      "name": "Digital Signatures",
+      "path": "knowledge/concepts/digital-signatures.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "dns",
+      "name": "DNS",
+      "path": "knowledge/concepts/dns.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "encryption",
+      "name": "Encryption",
+      "path": "knowledge/concepts/encryption.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "file-systems",
+      "name": "File Systems",
+      "path": "knowledge/concepts/file-systems.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "firewalls",
+      "name": "Firewalls",
+      "path": "knowledge/concepts/firewalls.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "graphql",
+      "name": "GraphQL",
+      "path": "knowledge/concepts/graphql.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "hashing",
+      "name": "Hashing",
+      "path": "knowledge/concepts/hashing.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "http",
+      "name": "HTTP",
+      "path": "knowledge/concepts/http.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "http-requests",
+      "name": "HTTP Requests",
+      "path": "knowledge/concepts/http-requests.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "http-responses",
+      "name": "HTTP Responses",
+      "path": "knowledge/concepts/http-responses.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "https",
+      "name": "HTTPS",
+      "path": "knowledge/concepts/https.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "icmp",
+      "name": "ICMP",
+      "path": "knowledge/concepts/icmp.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "input-validation",
+      "name": "Input Validation",
+      "path": "knowledge/concepts/input-validation.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "key-management",
+      "name": "Key Management",
+      "path": "knowledge/concepts/key-management.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "least-privilege",
+      "name": "Least Privilege",
+      "path": "knowledge/concepts/least-privilege.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "memory",
+      "name": "Memory",
+      "path": "knowledge/concepts/memory.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "nat",
+      "name": "NAT",
+      "path": "knowledge/concepts/nat.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "networking",
+      "name": "Networking",
+      "path": "knowledge/concepts/networking.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "osi-model",
+      "name": "OSI Model",
+      "path": "knowledge/concepts/osi-model.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "permissions",
+      "name": "Permissions",
+      "path": "knowledge/concepts/permissions.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "pki",
+      "name": "PKI",
+      "path": "knowledge/concepts/pki.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "ports",
+      "name": "Ports",
+      "path": "knowledge/concepts/ports.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "privacy",
+      "name": "Privacy",
+      "path": "knowledge/concepts/privacy.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "processes",
+      "name": "Processes",
+      "path": "knowledge/concepts/processes.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "proxies",
+      "name": "Proxies",
+      "path": "knowledge/concepts/proxies.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "randomness",
+      "name": "Randomness",
+      "path": "knowledge/concepts/randomness.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "rest",
+      "name": "REST",
+      "path": "knowledge/concepts/rest.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "risk-management",
+      "name": "Risk Management",
+      "path": "knowledge/concepts/risk-management.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "routing",
+      "name": "Routing",
+      "path": "knowledge/concepts/routing.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "same-origin-policy",
+      "name": "Same-Origin Policy",
+      "path": "knowledge/concepts/same-origin-policy.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "sbom",
+      "name": "SBOM",
+      "path": "knowledge/concepts/sbom.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "secure-sdlc",
+      "name": "Secure SDLC",
+      "path": "knowledge/concepts/secure-sdlc.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "security-monitoring",
+      "name": "Security Monitoring",
+      "path": "knowledge/concepts/security-monitoring.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "services",
+      "name": "Services",
+      "path": "knowledge/concepts/services.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "sessions",
+      "name": "Sessions",
+      "path": "knowledge/concepts/sessions.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "supply-chain-security",
+      "name": "Supply-Chain Security",
+      "path": "knowledge/concepts/supply-chain-security.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "switching",
+      "name": "Switching",
+      "path": "knowledge/concepts/switching.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "system-calls",
+      "name": "System Calls",
+      "path": "knowledge/concepts/system-calls.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "tcp",
+      "name": "TCP",
+      "path": "knowledge/concepts/tcp.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "tcp-ip",
+      "name": "TCP/IP",
+      "path": "knowledge/concepts/tcp-ip.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "threat-modeling",
+      "name": "Threat Modeling",
+      "path": "knowledge/concepts/threat-modeling.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "tls",
+      "name": "TLS",
+      "path": "knowledge/concepts/tls.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "udp",
+      "name": "UDP",
+      "path": "knowledge/concepts/udp.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "users-and-groups",
+      "name": "Users and Groups",
+      "path": "knowledge/concepts/users-and-groups.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "vulnerability-management",
+      "name": "Vulnerability Management",
+      "path": "knowledge/concepts/vulnerability-management.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "websockets",
+      "name": "WebSockets",
+      "path": "knowledge/concepts/websockets.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "zero-trust",
+      "name": "Zero Trust",
+      "path": "knowledge/concepts/zero-trust.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "concept"
+    },
+    {
+      "id": "application-allowlisting",
+      "name": "Application Allowlisting",
+      "path": "knowledge/defensive-controls/application-allowlisting.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "asset-inventory",
+      "name": "Asset Inventory",
+      "path": "knowledge/defensive-controls/asset-inventory.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "data-loss-prevention",
+      "name": "Data Loss Prevention",
+      "path": "knowledge/defensive-controls/data-loss-prevention.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "edr",
+      "name": "EDR",
+      "path": "knowledge/defensive-controls/edr.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "encryption",
+      "name": "Encryption",
+      "path": "knowledge/defensive-controls/encryption.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "endpoint-detection",
+      "name": "Endpoint Detection",
+      "path": "knowledge/defensive-controls/endpoint-detection.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "firewall",
+      "name": "Firewall",
+      "path": "knowledge/defensive-controls/firewall.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "ids-ips",
+      "name": "IDS/IPS",
+      "path": "knowledge/defensive-controls/ids-ips.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "input-validation",
+      "name": "Input Validation",
+      "path": "knowledge/defensive-controls/input-validation.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "least-privilege",
+      "name": "Least Privilege",
+      "path": "knowledge/defensive-controls/least-privilege.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "mfa",
+      "name": "MFA",
+      "path": "knowledge/defensive-controls/mfa.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "network-segmentation",
+      "name": "Network Segmentation",
+      "path": "knowledge/defensive-controls/network-segmentation.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "parameterized-queries",
+      "name": "Parameterized Queries",
+      "path": "knowledge/defensive-controls/parameterized-queries.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "rate-limiting",
+      "name": "Rate Limiting",
+      "path": "knowledge/defensive-controls/rate-limiting.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "secrets-management",
+      "name": "Secrets Management",
+      "path": "knowledge/defensive-controls/secrets-management.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "secure-configuration",
+      "name": "Secure Configuration",
+      "path": "knowledge/defensive-controls/secure-configuration.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "secure-cookies",
+      "name": "Secure Cookies",
+      "path": "knowledge/defensive-controls/secure-cookies.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "secure-logging",
+      "name": "Secure Logging",
+      "path": "knowledge/defensive-controls/secure-logging.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "secure-sdlc",
+      "name": "Secure SDLC",
+      "path": "knowledge/defensive-controls/secure-sdlc.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "security-headers",
+      "name": "Security Headers",
+      "path": "knowledge/defensive-controls/security-headers.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "supply-chain-controls",
+      "name": "Supply-Chain Controls",
+      "path": "knowledge/defensive-controls/supply-chain-controls.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "vulnerability-management",
+      "name": "Vulnerability Management",
+      "path": "knowledge/defensive-controls/vulnerability-management.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "defensive-control"
+    },
+    {
+      "id": "ansible",
+      "name": "Ansible",
+      "path": "knowledge/technologies/ansible.md",
+      "priority": 8,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "technology"
+    },
+    {
+      "id": "dotnet",
+      "name": ".NET",
+      "path": "knowledge/technologies/dotnet.md",
+      "priority": 8,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "technology"
+    },
+    {
+      "id": "elasticsearch",
+      "name": "Elasticsearch",
+      "path": "knowledge/technologies/elasticsearch.md",
+      "priority": 8,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "technology"
+    },
+    {
+      "id": "grpc",
+      "name": "gRPC",
+      "path": "knowledge/technologies/grpc.md",
+      "priority": 8,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "technology"
+    },
+    {
+      "id": "ios",
+      "name": "iOS",
+      "path": "knowledge/technologies/ios.md",
+      "priority": 8,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "technology"
+    },
+    {
+      "id": "kafka",
+      "name": "Apache Kafka",
+      "path": "knowledge/technologies/kafka.md",
+      "priority": 8,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "technology"
+    },
+    {
+      "id": "powershell",
+      "name": "PowerShell",
+      "path": "knowledge/technologies/powershell.md",
+      "priority": 8,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "technology"
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "path": "knowledge/technologies/redis.md",
+      "priority": 8,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "technology"
+    },
+    {
+      "id": "sbom",
+      "name": "Software Bill of Materials",
+      "path": "knowledge/technologies/sbom.md",
+      "priority": 8,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "technology"
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "path": "knowledge/technologies/terraform.md",
+      "priority": 8,
+      "reasons": [
+        "add justified typed relationships"
+      ],
+      "type": "technology"
+    },
+    {
+      "id": "api-rate-limit-weakness",
+      "name": "API Rate-Limit Weakness",
+      "path": "vulnerabilities/api/api-rate-limit-weakness.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "broken-function-level-authorization",
+      "name": "Broken Function Level Authorization",
+      "path": "vulnerabilities/api/broken-function-level-authorization.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "excessive-data-exposure",
+      "name": "Excessive Data Exposure",
+      "path": "vulnerabilities/api/excessive-data-exposure.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "file-inclusion",
+      "name": "File Inclusion",
+      "path": "vulnerabilities/web/file-inclusion.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "host-header-injection",
+      "name": "Host Header Injection",
+      "path": "vulnerabilities/web/host-header-injection.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "http-request-smuggling",
+      "name": "HTTP Request Smuggling",
+      "path": "vulnerabilities/web/http-request-smuggling.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "improper-api-inventory",
+      "name": "Improper API Inventory",
+      "path": "vulnerabilities/api/improper-api-inventory.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "improper-certificate-validation",
+      "name": "Improper Certificate Validation",
+      "path": "vulnerabilities/cryptography/improper-certificate-validation.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "mass-assignment",
+      "name": "Mass Assignment",
+      "path": "vulnerabilities/api/mass-assignment.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "mfa-weaknesses",
+      "name": "MFA Weaknesses",
+      "path": "vulnerabilities/authentication/mfa-weaknesses.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "open-redirect",
+      "name": "Open Redirect",
+      "path": "vulnerabilities/web/open-redirect.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "password-reset-flaws",
+      "name": "Password Reset Flaws",
+      "path": "vulnerabilities/authentication/password-reset-flaws.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "predictable-randomness",
+      "name": "Predictable Randomness",
+      "path": "vulnerabilities/cryptography/predictable-randomness.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "prototype-pollution",
+      "name": "Prototype Pollution",
+      "path": "vulnerabilities/web/prototype-pollution.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "public-cloud-storage-exposure",
+      "name": "Public Cloud Storage Exposure",
+      "path": "vulnerabilities/cloud/public-cloud-storage-exposure.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "session-fixation",
+      "name": "Session Fixation",
+      "path": "vulnerabilities/authentication/session-fixation.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "session-hijacking",
+      "name": "Session Hijacking",
+      "path": "vulnerabilities/authentication/session-hijacking.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "weak-key-management",
+      "name": "Weak Key Management",
+      "path": "vulnerabilities/cryptography/weak-key-management.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "weak-password-policy",
+      "name": "Weak Password Policy",
+      "path": "vulnerabilities/authentication/weak-password-policy.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "web-cache-poisoning",
+      "name": "Web Cache Poisoning",
+      "path": "vulnerabilities/web/web-cache-poisoning.md",
+      "priority": 8,
+      "reasons": [],
+      "type": "vulnerability"
+    },
+    {
+      "id": "api-discovery-local-app",
+      "name": "API Discovery in a Local App",
+      "path": "labs/web/api-discovery-local-app.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "lab"
+    },
+    {
+      "id": "detection-rule-regression",
+      "name": "Detection Rule Regression",
+      "path": "labs/defensive/detection-rule-regression.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "lab"
+    },
+    {
+      "id": "dns-resolution-inventory",
+      "name": "DNS Resolution and Inventory",
+      "path": "labs/networking/dns-resolution-inventory.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "lab"
+    },
+    {
+      "id": "graphql-schema-safety",
+      "name": "GraphQL Schema Safety Review",
+      "path": "labs/web/graphql-schema-safety.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "lab"
+    },
+    {
+      "id": "iac-security-review",
+      "name": "IaC Security Review",
+      "path": "labs/networking/iac-security-review.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "lab"
+    },
+    {
+      "id": "kubernetes-posture-review",
+      "name": "Kubernetes Posture Review",
+      "path": "labs/defensive/kubernetes-posture-review.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "lab"
+    },
+    {
+      "id": "memory-image-triage",
+      "name": "Memory Image Triage",
+      "path": "labs/forensics/memory-image-triage.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "lab"
+    },
+    {
+      "id": "secrets-rotation-exercise",
+      "name": "Secrets Rotation Exercise",
+      "path": "labs/defensive/secrets-rotation-exercise.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "lab"
+    },
+    {
+      "id": "timeline-analysis-synthetic",
+      "name": "Timeline Analysis with Synthetic Artifacts",
+      "path": "labs/forensics/timeline-analysis-synthetic.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "lab"
+    },
+    {
+      "id": "tls-certificate-review",
+      "name": "TLS Certificate Review",
+      "path": "labs/networking/tls-certificate-review.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "lab"
+    },
+    {
+      "id": "api-discovery",
+      "name": "API Discovery",
+      "path": "knowledge/techniques/api-discovery.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "certificate-review",
+      "name": "Certificate Review",
+      "path": "knowledge/techniques/certificate-review.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "certificate-transparency",
+      "name": "Certificate Transparency Review",
+      "path": "knowledge/techniques/certificate-transparency.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "cloud-configuration-assessment",
+      "name": "Cloud Configuration Assessment",
+      "path": "knowledge/techniques/cloud-configuration-assessment.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "container-security-scanning",
+      "name": "Container Security Scanning",
+      "path": "knowledge/techniques/container-security-scanning.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "content-discovery",
+      "name": "Content Discovery",
+      "path": "knowledge/techniques/content-discovery.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "dependency-analysis",
+      "name": "Dependency Analysis",
+      "path": "knowledge/techniques/dependency-analysis.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "detection-engineering",
+      "name": "Detection Engineering",
+      "path": "knowledge/techniques/detection-engineering.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "digital-forensics",
+      "name": "Digital Forensics",
+      "path": "knowledge/techniques/digital-forensics.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "dns-enumeration",
+      "name": "DNS Enumeration",
+      "path": "knowledge/techniques/dns-enumeration.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "dynamic-analysis",
+      "name": "Dynamic Analysis",
+      "path": "knowledge/techniques/dynamic-analysis.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "host-discovery",
+      "name": "Host Discovery",
+      "path": "knowledge/techniques/host-discovery.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "iac-scanning",
+      "name": "Infrastructure-as-Code Scanning",
+      "path": "knowledge/techniques/iac-scanning.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "incident-triage",
+      "name": "Incident Triage",
+      "path": "knowledge/techniques/incident-triage.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "log-analysis",
+      "name": "Log Analysis",
+      "path": "knowledge/techniques/log-analysis.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "malware-analysis",
+      "name": "Malware Analysis",
+      "path": "knowledge/techniques/malware-analysis.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "memory-analysis",
+      "name": "Memory Analysis",
+      "path": "knowledge/techniques/memory-analysis.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "network-scanning",
+      "name": "Network Scanning",
+      "path": "knowledge/techniques/network-scanning.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "packet-analysis",
+      "name": "Packet Analysis",
+      "path": "knowledge/techniques/packet-analysis.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "phishing-resistant-authentication",
+      "name": "Phishing-Resistant Authentication",
+      "path": "knowledge/techniques/phishing-resistant-authentication.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "reverse-engineering",
+      "name": "Reverse Engineering",
+      "path": "knowledge/techniques/reverse-engineering.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "secrets-detection",
+      "name": "Secrets Detection",
+      "path": "knowledge/techniques/secrets-detection.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "secure-code-review",
+      "name": "Secure Code Review",
+      "path": "knowledge/techniques/secure-code-review.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "security-testing",
+      "name": "Security Testing",
+      "path": "knowledge/techniques/security-testing.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "service-enumeration",
+      "name": "Service Enumeration",
+      "path": "knowledge/techniques/service-enumeration.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "static-analysis",
+      "name": "Static Analysis",
+      "path": "knowledge/techniques/static-analysis.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "subdomain-discovery",
+      "name": "Subdomain Discovery",
+      "path": "knowledge/techniques/subdomain-discovery.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "threat-hunting",
+      "name": "Threat Hunting",
+      "path": "knowledge/techniques/threat-hunting.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "threat-intelligence-analysis",
+      "name": "Threat Intelligence Analysis",
+      "path": "knowledge/techniques/threat-intelligence-analysis.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "timeline-analysis",
+      "name": "Timeline Analysis",
+      "path": "knowledge/techniques/timeline-analysis.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "traffic-analysis",
+      "name": "Traffic Analysis",
+      "path": "knowledge/techniques/traffic-analysis.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "vulnerability-assessment",
+      "name": "Vulnerability Assessment",
+      "path": "knowledge/techniques/vulnerability-assessment.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "vulnerability-prioritization",
+      "name": "Vulnerability Prioritization",
+      "path": "knowledge/techniques/vulnerability-prioritization.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "web-enumeration",
+      "name": "Web Enumeration",
+      "path": "knowledge/techniques/web-enumeration.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "technique"
+    },
+    {
+      "id": "arkime",
+      "name": "Arkime",
+      "path": "tools/network-analysis/arkime.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "clamav",
+      "name": "ClamAV",
+      "path": "tools/malware-analysis/clamav.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "dnsx",
+      "name": "dnsx",
+      "path": "tools/reconnaissance/dnsx.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "feroxbuster",
+      "name": "Feroxbuster",
+      "path": "tools/web-security/feroxbuster.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "gitleaks",
+      "name": "Gitleaks",
+      "path": "tools/secure-development/gitleaks.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "httpie",
+      "name": "HTTPie",
+      "path": "tools/web-security/httpie.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "httpx",
+      "name": "httpx",
+      "path": "tools/reconnaissance/httpx.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "kics",
+      "name": "KICS",
+      "path": "tools/secure-development/kics.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "kube-hunter",
+      "name": "kube-hunter",
+      "path": "tools/container-security/kube-hunter.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "kubescape",
+      "name": "Kubescape",
+      "path": "tools/container-security/kubescape.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "lynis",
+      "name": "Lynis",
+      "path": "tools/vulnerability-management/lynis.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "misp",
+      "name": "MISP",
+      "path": "tools/defensive-security/misp.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "mitmproxy",
+      "name": "mitmproxy",
+      "path": "tools/web-security/mitmproxy.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "naabu",
+      "name": "Naabu",
+      "path": "tools/reconnaissance/naabu.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "opencti",
+      "name": "OpenCTI",
+      "path": "tools/defensive-security/opencti.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "rustscan",
+      "name": "RustScan",
+      "path": "tools/reconnaissance/rustscan.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "security-onion",
+      "name": "Security Onion",
+      "path": "tools/defensive-security/security-onion.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "testssl-sh",
+      "name": "testssl.sh",
+      "path": "tools/web-security/testssl-sh.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "tetragon",
+      "name": "Tetragon",
+      "path": "tools/defensive-security/tetragon.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "trufflehog",
+      "name": "TruffleHog",
+      "path": "tools/secure-development/trufflehog.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "velociraptor",
+      "name": "Velociraptor",
+      "path": "tools/defensive-security/velociraptor.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "zmap",
+      "name": "ZMap",
+      "path": "tools/reconnaissance/zmap.md",
+      "priority": 7,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "path": "knowledge/technologies/android.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "apache",
+      "name": "Apache HTTP Server",
+      "path": "knowledge/technologies/apache.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "path": "knowledge/technologies/aws.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "azure",
+      "name": "Azure",
+      "path": "knowledge/technologies/azure.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "path": "knowledge/technologies/c.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "dns",
+      "name": "DNS",
+      "path": "knowledge/technologies/dns.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "path": "knowledge/technologies/docker.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "gcp",
+      "name": "GCP",
+      "path": "knowledge/technologies/gcp.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "path": "knowledge/technologies/git.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "github-actions",
+      "name": "GitHub Actions",
+      "path": "knowledge/technologies/github-actions.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "http",
+      "name": "HTTP",
+      "path": "knowledge/technologies/http.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "path": "knowledge/technologies/java.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "path": "knowledge/technologies/kubernetes.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "linux",
+      "name": "Linux",
+      "path": "knowledge/technologies/linux.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "macos",
+      "name": "macOS",
+      "path": "knowledge/technologies/macos.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "path": "knowledge/technologies/mongodb.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "path": "knowledge/technologies/mysql.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "nginx",
+      "name": "Nginx",
+      "path": "knowledge/technologies/nginx.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "path": "knowledge/technologies/nodejs.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "path": "knowledge/technologies/php.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "path": "knowledge/technologies/postgresql.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "path": "knowledge/technologies/python.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "rest-apis",
+      "name": "REST APIs",
+      "path": "knowledge/technologies/rest-apis.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "tls",
+      "name": "TLS",
+      "path": "knowledge/technologies/tls.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "windows",
+      "name": "Windows",
+      "path": "knowledge/technologies/windows.md",
+      "priority": 6,
+      "reasons": [],
+      "type": "technology"
+    },
+    {
+      "id": "aircrack-ng",
+      "name": "Aircrack-ng",
+      "path": "tools/wireless/aircrack-ng.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "amass",
+      "name": "Amass",
+      "path": "tools/reconnaissance/amass.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "autopsy",
+      "name": "Autopsy",
+      "path": "tools/digital-forensics/autopsy.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "bandit",
+      "name": "Bandit",
+      "path": "tools/secure-development/bandit.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "burp-suite",
+      "name": "Burp Suite",
+      "path": "tools/web-security/burp-suite.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "capa",
+      "name": "capa",
+      "path": "tools/malware-analysis/capa.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "checkov",
+      "name": "Checkov",
+      "path": "tools/secure-development/checkov.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "cutter",
+      "name": "Cutter",
+      "path": "tools/reverse-engineering/cutter.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "exiftool",
+      "name": "ExifTool",
+      "path": "tools/osint/exiftool.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "ffuf",
+      "name": "ffuf",
+      "path": "tools/web-security/ffuf.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "floss",
+      "name": "FLOSS",
+      "path": "tools/malware-analysis/floss.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "path": "tools/reverse-engineering/ghidra.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "gobuster",
+      "name": "Gobuster",
+      "path": "tools/web-security/gobuster.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "greenbone-openvas",
+      "name": "Greenbone Vulnerability Management",
+      "path": "tools/vulnerability-management/greenbone-openvas.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "grype",
+      "name": "Grype",
+      "path": "tools/container-security/grype.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "hashcat",
+      "name": "Hashcat",
+      "path": "tools/password-security/hashcat.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "hydra",
+      "name": "THC Hydra",
+      "path": "tools/password-security/hydra.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "john-the-ripper",
+      "name": "John the Ripper",
+      "path": "tools/password-security/john-the-ripper.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "kismet",
+      "name": "Kismet",
+      "path": "tools/wireless/kismet.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "kube-bench",
+      "name": "kube-bench",
+      "path": "tools/container-security/kube-bench.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "masscan",
+      "name": "Masscan",
+      "path": "tools/reconnaissance/masscan.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "nikto",
+      "name": "Nikto",
+      "path": "tools/web-security/nikto.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "nmap",
+      "name": "Nmap",
+      "path": "tools/reconnaissance/nmap.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "nuclei",
+      "name": "Nuclei",
+      "path": "tools/web-security/nuclei.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "openscap",
+      "name": "OpenSCAP",
+      "path": "tools/vulnerability-management/openscap.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "osquery",
+      "name": "osquery",
+      "path": "tools/defensive-security/osquery.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "osv-scanner",
+      "name": "OSV-Scanner",
+      "path": "tools/secure-development/osv-scanner.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "owasp-zap",
+      "name": "OWASP ZAP",
+      "path": "tools/web-security/owasp-zap.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "prowler",
+      "name": "Prowler",
+      "path": "tools/cloud-security/prowler.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "radare2",
+      "name": "Radare2",
+      "path": "tools/reverse-engineering/radare2.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "recon-ng",
+      "name": "Recon-ng",
+      "path": "tools/osint/recon-ng.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "semgrep",
+      "name": "Semgrep",
+      "path": "tools/secure-development/semgrep.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "sherlock",
+      "name": "Sherlock",
+      "path": "tools/osint/sherlock.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "sigma",
+      "name": "Sigma",
+      "path": "tools/defensive-security/sigma.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "snort",
+      "name": "Snort",
+      "path": "tools/network-analysis/snort.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "spiderfoot",
+      "name": "SpiderFoot",
+      "path": "tools/osint/spiderfoot.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "sqlmap",
+      "name": "sqlmap",
+      "path": "tools/web-security/sqlmap.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "subfinder",
+      "name": "Subfinder",
+      "path": "tools/reconnaissance/subfinder.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "suricata",
+      "name": "Suricata",
+      "path": "tools/network-analysis/suricata.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "syft",
+      "name": "Syft",
+      "path": "tools/container-security/syft.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "tcpdump",
+      "name": "tcpdump",
+      "path": "tools/network-analysis/tcpdump.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "theharvester",
+      "name": "theHarvester",
+      "path": "tools/reconnaissance/theharvester.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "trivy",
+      "name": "Trivy",
+      "path": "tools/vulnerability-management/trivy.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "volatility3",
+      "name": "Volatility 3",
+      "path": "tools/digital-forensics/volatility3.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "wazuh",
+      "name": "Wazuh",
+      "path": "tools/defensive-security/wazuh.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "wireshark",
+      "name": "Wireshark",
+      "path": "tools/network-analysis/wireshark.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "yara",
+      "name": "YARA",
+      "path": "tools/malware-analysis/yara.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    },
+    {
+      "id": "zeek",
+      "name": "Zeek",
+      "path": "tools/network-analysis/zeek.md",
+      "priority": 4,
+      "reasons": [],
+      "type": "tool"
+    }
+  ],
+  "schema_version": "1.0",
+  "total_items": 307
+}

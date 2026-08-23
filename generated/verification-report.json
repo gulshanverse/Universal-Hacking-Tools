@@ -1,0 +1,98 @@
+{
+  "as_of": "2026-08-23",
+  "by_entity_type": {
+    "concept": {
+      "deprecated": 0,
+      "missing_authoritative_source": 0,
+      "needs_review": 61,
+      "partially_verified": 0,
+      "stale": 0,
+      "total": 61,
+      "unverified": 0,
+      "verified": 0
+    },
+    "defensive-control": {
+      "deprecated": 0,
+      "missing_authoritative_source": 0,
+      "needs_review": 30,
+      "partially_verified": 0,
+      "stale": 0,
+      "total": 30,
+      "unverified": 0,
+      "verified": 0
+    },
+    "lab": {
+      "deprecated": 0,
+      "missing_authoritative_source": 12,
+      "needs_review": 10,
+      "partially_verified": 0,
+      "stale": 0,
+      "total": 22,
+      "unverified": 12,
+      "verified": 0
+    },
+    "learning-path": {
+      "deprecated": 0,
+      "missing_authoritative_source": 15,
+      "needs_review": 5,
+      "partially_verified": 0,
+      "stale": 0,
+      "total": 15,
+      "unverified": 10,
+      "verified": 0
+    },
+    "technique": {
+      "deprecated": 0,
+      "missing_authoritative_source": 0,
+      "needs_review": 34,
+      "partially_verified": 0,
+      "stale": 0,
+      "total": 34,
+      "unverified": 0,
+      "verified": 0
+    },
+    "technology": {
+      "deprecated": 0,
+      "missing_authoritative_source": 0,
+      "needs_review": 35,
+      "partially_verified": 0,
+      "stale": 0,
+      "total": 35,
+      "unverified": 0,
+      "verified": 0
+    },
+    "tool": {
+      "deprecated": 0,
+      "missing_authoritative_source": 0,
+      "needs_review": 22,
+      "partially_verified": 48,
+      "stale": 0,
+      "total": 70,
+      "unverified": 0,
+      "verified": 0
+    },
+    "vulnerability": {
+      "deprecated": 0,
+      "missing_authoritative_source": 20,
+      "needs_review": 20,
+      "partially_verified": 0,
+      "stale": 0,
+      "total": 40,
+      "unverified": 20,
+      "verified": 0
+    }
+  },
+  "schema_version": "1.0",
+  "stale_verification": [],
+  "total_entities": 307,
+  "totals": {
+    "deprecated": 0,
+    "missing_authoritative_source": 47,
+    "needs_review": 217,
+    "partially_verified": 48,
+    "stale": 0,
+    "total": 307,
+    "unverified": 42,
+    "verified": 0
+  }
+}
