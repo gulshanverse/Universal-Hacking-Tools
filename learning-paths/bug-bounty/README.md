@@ -1,3 +1,20 @@
+---
+id: bug-bounty
+type: learning-path
+name: Bug Bounty Learning
+status: unverified
+verification:
+  status: unverified
+  confidence: unknown
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Legacy page standardized in Phase 5; claims require future evidence-level review.
+sources:
+  - https://github.com/gulshanverse/Universal-Hacking-Tools
+
+---
+
 # Bug Bounty Learning
 
 > A staged, safety-first learning path.

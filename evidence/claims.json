@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "claims": [
+    {
+      "entity": "tool:nmap",
+      "id": "tool-purpose",
+      "statement": "Nmap is used for network discovery and service enumeration in authorized environments.",
+      "evidence": [
+        {"source": "https://nmap.org/book/man.html", "note": "The official reference describes host discovery and service/version detection capabilities."}
+      ],
+      "status": "partially-verified",
+      "confidence": "medium"
+    },
+    {
+      "entity": "tool:owasp-zap",
+      "id": "tool-purpose",
+      "statement": "OWASP ZAP is an open-source web application security testing proxy.",
+      "evidence": [
+        {"source": "https://www.zaproxy.org/", "note": "The official project site describes ZAP as a web application security scanner and proxy."}
+      ],
+      "status": "partially-verified",
+      "confidence": "medium"
+    },
+    {
+      "entity": "vulnerability:sql-injection",
+      "id": "root-cause",
+      "statement": "SQL injection occurs when untrusted input changes the intended structure of a database query.",
+      "evidence": [
+        {"source": "https://cwe.mitre.org/", "note": "CWE-89 documents the improper neutralization of special elements used in an SQL command."}
+      ],
+      "status": "partially-verified",
+      "confidence": "medium"
+    },
+    {
+      "entity": "concept:threat-modeling",
+      "id": "concept-definition",
+      "statement": "Threat modeling identifies assets, trust boundaries, threats, and mitigations during system design and review.",
+      "evidence": [
+        {"source": "https://csrc.nist.gov/Projects/ssdf", "note": "NIST provides a threat-modeling definition and security-engineering context."}
+      ],
+      "status": "partially-verified",
+      "confidence": "medium"
+    },
+    {
+      "entity": "defensive-control:least-privilege",
+      "id": "control-purpose",
+      "statement": "Least privilege limits an identity, process, or workload to the access required for an authorized task.",
+      "evidence": [
+        {"source": "https://www.nist.gov/cyberframework", "note": "NIST defines least privilege as restricting access to the minimum necessary."}
+      ],
+      "status": "partially-verified",
+      "confidence": "medium"
+    }
+  ]
+}

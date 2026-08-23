@@ -1,3 +1,20 @@
+---
+id: memory-analysis-fundamentals
+type: lab
+name: Memory Analysis Fundamentals
+status: unverified
+verification:
+  status: unverified
+  confidence: unknown
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Legacy page standardized in Phase 5; claims require future evidence-level review.
+sources:
+  - https://github.com/gulshanverse/Universal-Hacking-Tools
+
+---
+
 # Memory Analysis Fundamentals
 
 > Controlled, authorized lab exercise.

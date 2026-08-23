@@ -3,6 +3,13 @@ id: sbom
 type: technology
 name: Software Bill of Materials
 status: needs-review
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://www.ntia.gov/sbom
 ---

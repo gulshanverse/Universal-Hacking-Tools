@@ -1,0 +1,78 @@
+{
+  "claims": [
+    {
+      "confidence": "medium",
+      "entity": "concept:threat-modeling",
+      "evidence": [
+        {
+          "note": "NIST provides a threat-modeling definition and security-engineering context.",
+          "source": "https://csrc.nist.gov/Projects/ssdf"
+        }
+      ],
+      "id": "concept-definition",
+      "statement": "Threat modeling identifies assets, trust boundaries, threats, and mitigations during system design and review.",
+      "status": "partially-verified"
+    },
+    {
+      "confidence": "medium",
+      "entity": "defensive-control:least-privilege",
+      "evidence": [
+        {
+          "note": "NIST defines least privilege as restricting access to the minimum necessary.",
+          "source": "https://www.nist.gov/cyberframework"
+        }
+      ],
+      "id": "control-purpose",
+      "statement": "Least privilege limits an identity, process, or workload to the access required for an authorized task.",
+      "status": "partially-verified"
+    },
+    {
+      "confidence": "medium",
+      "entity": "tool:nmap",
+      "evidence": [
+        {
+          "note": "The official reference describes host discovery and service/version detection capabilities.",
+          "source": "https://nmap.org/book/man.html"
+        }
+      ],
+      "id": "tool-purpose",
+      "statement": "Nmap is used for network discovery and service enumeration in authorized environments.",
+      "status": "partially-verified"
+    },
+    {
+      "confidence": "medium",
+      "entity": "tool:owasp-zap",
+      "evidence": [
+        {
+          "note": "The official project site describes ZAP as a web application security scanner and proxy.",
+          "source": "https://www.zaproxy.org/"
+        }
+      ],
+      "id": "tool-purpose",
+      "statement": "OWASP ZAP is an open-source web application security testing proxy.",
+      "status": "partially-verified"
+    },
+    {
+      "confidence": "medium",
+      "entity": "vulnerability:sql-injection",
+      "evidence": [
+        {
+          "note": "CWE-89 documents the improper neutralization of special elements used in an SQL command.",
+          "source": "https://cwe.mitre.org/"
+        }
+      ],
+      "id": "root-cause",
+      "statement": "SQL injection occurs when untrusted input changes the intended structure of a database query.",
+      "status": "partially-verified"
+    }
+  ],
+  "confidence_counts": {
+    "medium": 5
+  },
+  "findings": [],
+  "schema_version": "1.0",
+  "status_counts": {
+    "partially-verified": 5
+  },
+  "total_claims": 5
+}

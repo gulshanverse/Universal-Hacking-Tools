@@ -4,8 +4,17 @@ type: concept
 name: Memory
 status: needs-review
 prerequisites:
-  - processes
-  - digital-forensics
+  - target: processes
+    type: required
+  - target: digital-forensics
+    type: recommended
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://csrc.nist.gov/glossary/term/memory
 ---

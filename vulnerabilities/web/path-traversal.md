@@ -1,3 +1,23 @@
+---
+id: path-traversal
+type: vulnerability
+name: Path Traversal
+status: needs-review
+verification:
+  status: needs-review
+  confidence: unknown
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Legacy page standardized in Phase 5; claims require future evidence-level review.
+sources:
+  - https://cwe.mitre.org/
+  - https://owasp.org/www-project-top-ten/
+  - https://attack.mitre.org/
+  - https://owasp.org/
+  - https://csrc.nist.gov/Projects/ssdf
+---
+
 # Path Traversal
 
 > Defensive knowledge page for understanding, detecting, and mitigating path traversal.

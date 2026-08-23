@@ -23,6 +23,13 @@ defensive_controls:
   - mfa
   - secure-logging
   - secrets-management
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://cwe.mitre.org/
   - https://owasp.org/www-project-top-ten/

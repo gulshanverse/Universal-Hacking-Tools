@@ -36,6 +36,11 @@ defensive_controls:
   - secure-configuration
   - secure-logging
 verification:
+  status: needs-review
+  confidence: low
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
   status: partially-verified
   last_verified: 2026-08-23
 sources:

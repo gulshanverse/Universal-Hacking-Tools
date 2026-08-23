@@ -3,6 +3,13 @@ id: backup
 type: defensive-control
 name: Backup and Recovery
 status: needs-review
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://csrc.nist.gov/glossary/term/backup
 ---

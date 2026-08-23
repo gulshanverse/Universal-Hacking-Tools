@@ -3,6 +3,13 @@ id: same-origin-policy
 type: concept
 name: Same-Origin Policy
 status: needs-review
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
   - https://www.nist.gov/cyberframework

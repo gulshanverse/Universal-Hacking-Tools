@@ -4,8 +4,17 @@ type: concept
 name: Risk Management
 status: needs-review
 prerequisites:
-  - threat-modeling
-  - vulnerability-management
+  - target: threat-modeling
+    type: required
+  - target: vulnerability-management
+    type: recommended
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://csrc.nist.gov/pubs/sp/800/39/final
 ---

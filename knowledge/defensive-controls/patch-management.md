@@ -3,6 +3,13 @@ id: patch-management
 type: defensive-control
 name: Patch Management
 status: needs-review
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://csrc.nist.gov/pubs/sp/800/40/r4/final
 ---

@@ -23,6 +23,17 @@ labs:
   - api-discovery-local-app
 technologies:
   - linux
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
+
+sources:
+  - https://github.com/gulshanverse/Universal-Hacking-Tools
+
 ---
 
 # Web Security

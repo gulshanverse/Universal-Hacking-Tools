@@ -4,8 +4,17 @@ type: concept
 name: Processes
 status: needs-review
 prerequisites:
-  - linux
-  - security-monitoring
+  - target: linux
+    type: required
+  - target: security-monitoring
+    type: recommended
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://man7.org/linux/man-pages/man5/proc.5.html
 ---

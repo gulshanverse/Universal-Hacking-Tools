@@ -3,6 +3,13 @@ id: cors
 type: concept
 name: CORS
 status: needs-review
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://fetch.spec.whatwg.org/#http-cors-protocol
   - https://www.nist.gov/cyberframework

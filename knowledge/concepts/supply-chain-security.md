@@ -4,8 +4,17 @@ type: concept
 name: Supply-Chain Security
 status: needs-review
 prerequisites:
-  - vulnerability-management
-  - threat-modeling
+  - target: vulnerability-management
+    type: required
+  - target: threat-modeling
+    type: recommended
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://www.cisa.gov/topics/cyber-threats-and-advisories/software-supply-chain-security
 ---

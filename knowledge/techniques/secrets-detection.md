@@ -4,8 +4,17 @@ type: technique
 name: Secrets Detection
 status: needs-review
 prerequisites:
-  - secrets-management
-  - secure-sdlc
+  - target: secrets-management
+    type: required
+  - target: secure-sdlc
+    type: recommended
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://www.nist.gov/cyberframework
 ---

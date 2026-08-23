@@ -4,8 +4,17 @@ type: technique
 name: Secure Code Review
 status: needs-review
 prerequisites:
-  - secure-sdlc
-  - input-validation
+  - target: secure-sdlc
+    type: required
+  - target: input-validation
+    type: recommended
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://www.nist.gov/cyberframework
 ---

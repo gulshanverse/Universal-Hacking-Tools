@@ -3,6 +3,13 @@ id: authentication
 type: concept
 name: Authentication
 status: needs-review
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://pages.nist.gov/800-63-4/
   - https://www.nist.gov/cyberframework

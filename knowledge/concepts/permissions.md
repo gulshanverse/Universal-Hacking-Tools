@@ -4,8 +4,17 @@ type: concept
 name: Permissions
 status: needs-review
 prerequisites:
-  - authorization
-  - access-control
+  - target: authorization
+    type: required
+  - target: access-control
+    type: recommended
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://csrc.nist.gov/glossary/term/permission
 ---

@@ -4,8 +4,17 @@ type: technique
 name: Host Discovery
 status: needs-review
 prerequisites:
-  - networking
-  - attack-surface
+  - target: networking
+    type: required
+  - target: attack-surface
+    type: recommended
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://www.nist.gov/cyberframework
 ---

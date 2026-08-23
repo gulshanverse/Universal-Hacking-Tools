@@ -1,3 +1,23 @@
+---
+id: security-misconfiguration
+type: vulnerability
+name: Security Misconfiguration
+status: needs-review
+verification:
+  status: needs-review
+  confidence: unknown
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Legacy page standardized in Phase 5; claims require future evidence-level review.
+sources:
+  - https://cwe.mitre.org/
+  - https://owasp.org/www-project-top-ten/
+  - https://attack.mitre.org/
+  - https://owasp.org/
+  - https://csrc.nist.gov/Projects/ssdf
+---
+
 # Security Misconfiguration
 
 > Defensive knowledge page for understanding, detecting, and mitigating security misconfiguration.

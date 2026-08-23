@@ -4,8 +4,17 @@ type: concept
 name: WebSockets
 status: needs-review
 prerequisites:
-  - http
-  - tls
+  - target: http
+    type: required
+  - target: tls
+    type: recommended
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://www.rfc-editor.org/rfc/rfc6455
 ---

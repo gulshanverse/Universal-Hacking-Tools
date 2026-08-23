@@ -4,8 +4,17 @@ type: concept
 name: System Calls
 status: needs-review
 prerequisites:
-  - processes
-  - linux
+  - target: processes
+    type: required
+  - target: linux
+    type: recommended
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://man7.org/linux/man-pages/man2/syscalls.2.html
 ---

@@ -1,3 +1,20 @@
+---
+id: http-request-analysis
+type: lab
+name: HTTP Request Analysis
+status: unverified
+verification:
+  status: unverified
+  confidence: unknown
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Legacy page standardized in Phase 5; claims require future evidence-level review.
+sources:
+  - https://github.com/gulshanverse/Universal-Hacking-Tools
+
+---
+
 # HTTP Request Analysis
 
 > Controlled, authorized lab exercise.

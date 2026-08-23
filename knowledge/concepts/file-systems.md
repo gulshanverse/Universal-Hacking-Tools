@@ -4,8 +4,17 @@ type: concept
 name: File Systems
 status: needs-review
 prerequisites:
-  - linux
-  - digital-forensics
+  - target: linux
+    type: required
+  - target: digital-forensics
+    type: recommended
+verification:
+  status: needs-review
+  confidence: low
+  last_verified:
+  verification_method: manual-review
+  reviewer: repository-audit
+  review_notes: Phase 5 metadata audit only; factual claims remain pending claim-level evidence.
 sources:
   - https://csrc.nist.gov/glossary/term/file_system
 ---
