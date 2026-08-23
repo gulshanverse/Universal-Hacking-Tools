@@ -46,7 +46,8 @@ def collect():
     for p in (ROOT / "labs").glob("**/*.md"):
         if p.name != "README.md": add("lab", p, parse_meta(p.read_text(encoding="utf-8")))
     for p in (ROOT / "learning-paths").glob("**/README.md"):
-        add("learning-path", p, parse_meta(p.read_text(encoding="utf-8")))
+        if p.parent.name != "learning-paths":
+            add("learning-path", p, parse_meta(p.read_text(encoding="utf-8")))
     for directory, kind in [("concepts", "concept"), ("techniques", "technique"), ("technologies", "technology"), ("defensive-controls", "defensive-control")]:
         for p in (ROOT / "knowledge" / directory).glob("*.md"):
             if p.name != "README.md": add(kind, p, parse_meta(p.read_text(encoding="utf-8")))

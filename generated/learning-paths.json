@@ -43,13 +43,6 @@
   },
   {
     "category": "",
-    "id": "learning-paths",
-    "name": "Learning Paths",
-    "path": "learning-paths/README.md",
-    "type": "learning-path"
-  },
-  {
-    "category": "",
     "id": "malware-analysis",
     "name": "Malware Analysis",
     "path": "learning-paths/malware-analysis/README.md",
