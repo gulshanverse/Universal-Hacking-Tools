@@ -1,6 +1,13 @@
 [
   {
     "category": "",
+    "id": "api-discovery-local-app",
+    "name": "API Discovery in a Local App",
+    "path": "labs/web/api-discovery-local-app.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
     "id": "authentication-session-review",
     "name": "Authentication Session Review",
     "path": "labs/authentication/authentication-session-review.md",
@@ -36,6 +43,20 @@
   },
   {
     "category": "",
+    "id": "detection-rule-regression",
+    "name": "Detection Rule Regression",
+    "path": "labs/defensive/detection-rule-regression.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "dns-resolution-inventory",
+    "name": "DNS Resolution and Inventory",
+    "path": "labs/networking/dns-resolution-inventory.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
     "id": "evidence-first-analysis",
     "name": "Evidence First Analysis",
     "path": "labs/forensics/evidence-first-analysis.md",
@@ -43,9 +64,30 @@
   },
   {
     "category": "",
+    "id": "graphql-schema-safety",
+    "name": "GraphQL Schema Safety Review",
+    "path": "labs/web/graphql-schema-safety.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
     "id": "http-request-analysis",
     "name": "Http Request Analysis",
     "path": "labs/web/http-request-analysis.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "iac-security-review",
+    "name": "IaC Security Review",
+    "path": "labs/networking/iac-security-review.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "kubernetes-posture-review",
+    "name": "Kubernetes Posture Review",
+    "path": "labs/defensive/kubernetes-posture-review.md",
     "type": "lab"
   },
   {
@@ -64,9 +106,23 @@
   },
   {
     "category": "",
+    "id": "memory-image-triage",
+    "name": "Memory Image Triage",
+    "path": "labs/forensics/memory-image-triage.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
     "id": "packet-capture-fundamentals",
     "name": "Packet Capture Fundamentals",
     "path": "labs/networking/packet-capture-fundamentals.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "secrets-rotation-exercise",
+    "name": "Secrets Rotation Exercise",
+    "path": "labs/defensive/secrets-rotation-exercise.md",
     "type": "lab"
   },
   {
@@ -81,6 +137,20 @@
     "id": "static-malware-triage",
     "name": "Static Malware Triage",
     "path": "labs/defensive/static-malware-triage.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "timeline-analysis-synthetic",
+    "name": "Timeline Analysis with Synthetic Artifacts",
+    "path": "labs/forensics/timeline-analysis-synthetic.md",
+    "type": "lab"
+  },
+  {
+    "category": "",
+    "id": "tls-certificate-review",
+    "name": "TLS Certificate Review",
+    "path": "labs/networking/tls-certificate-review.md",
     "type": "lab"
   }
 ]

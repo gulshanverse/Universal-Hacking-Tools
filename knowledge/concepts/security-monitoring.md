@@ -3,6 +3,10 @@ id: security-monitoring
 type: concept
 name: Security Monitoring
 status: needs-review
+sources:
+  - https://csrc.nist.gov/pubs/sp/800/92/final
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Security Monitoring

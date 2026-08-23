@@ -3,6 +3,10 @@ id: sessions
 type: concept
 name: Sessions
 status: needs-review
+sources:
+  - https://owasp.org/www-project-web-security-testing-guide/
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Sessions

@@ -3,6 +3,10 @@ id: access-control
 type: concept
 name: Access Control
 status: needs-review
+sources:
+  - https://csrc.nist.gov/glossary/term/access_control
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Access Control

@@ -11,6 +11,10 @@ related_vulnerabilities:
   - authentication-weaknesses
   - session-management
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://www.cisecurity.org/controls
+
 ---
 
 # MFA

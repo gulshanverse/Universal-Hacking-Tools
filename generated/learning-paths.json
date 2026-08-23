@@ -1,6 +1,13 @@
 [
   {
     "category": "",
+    "id": "api-security",
+    "name": "API Security",
+    "path": "learning-paths/api-security/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
     "id": "beginner",
     "name": "Beginner",
     "path": "learning-paths/beginner/README.md",
@@ -29,6 +36,13 @@
   },
   {
     "category": "",
+    "id": "devsecops",
+    "name": "DevSecOps",
+    "path": "learning-paths/devsecops/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
     "id": "digital-forensics",
     "name": "Digital Forensics",
     "path": "learning-paths/digital-forensics/README.md",
@@ -50,6 +64,13 @@
   },
   {
     "category": "",
+    "id": "network-security",
+    "name": "Network Security",
+    "path": "learning-paths/network-security/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
     "id": "penetration-testing",
     "name": "Penetration Testing",
     "path": "learning-paths/penetration-testing/README.md",
@@ -67,6 +88,20 @@
     "id": "soc-analyst",
     "name": "Soc Analyst",
     "path": "learning-paths/soc-analyst/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
+    "id": "threat-hunting",
+    "name": "Threat Hunting",
+    "path": "learning-paths/threat-hunting/README.md",
+    "type": "learning-path"
+  },
+  {
+    "category": "",
+    "id": "web-security",
+    "name": "Web Security",
+    "path": "learning-paths/web-security/README.md",
     "type": "learning-path"
   }
 ]

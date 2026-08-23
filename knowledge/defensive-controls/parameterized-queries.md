@@ -10,6 +10,10 @@ techniques:
 related_vulnerabilities:
   - sql-injection
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://www.cisecurity.org/controls
+
 ---
 
 # Parameterized Queries

@@ -3,6 +3,10 @@ id: authorization
 type: concept
 name: Authorization
 status: needs-review
+sources:
+  - https://csrc.nist.gov/glossary/term/authorization
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Authorization

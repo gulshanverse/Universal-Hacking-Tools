@@ -11,6 +11,10 @@ techniques:
 related_vulnerabilities:
   - security-misconfiguration
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://www.cisecurity.org/controls
+
 ---
 
 # IDS/IPS

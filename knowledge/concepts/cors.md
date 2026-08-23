@@ -3,6 +3,10 @@ id: cors
 type: concept
 name: CORS
 status: needs-review
+sources:
+  - https://fetch.spec.whatwg.org/#http-cors-protocol
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # CORS

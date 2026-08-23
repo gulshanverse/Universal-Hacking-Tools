@@ -3,6 +3,10 @@ id: ports
 type: concept
 name: Ports
 status: needs-review
+sources:
+  - https://www.rfc-editor.org/rfc/rfc6335
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Ports

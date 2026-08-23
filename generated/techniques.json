@@ -1,6 +1,27 @@
 [
   {
     "category": "",
+    "id": "api-discovery",
+    "name": "API Discovery",
+    "path": "knowledge/techniques/api-discovery.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "certificate-review",
+    "name": "Certificate Review",
+    "path": "knowledge/techniques/certificate-review.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "certificate-transparency",
+    "name": "Certificate Transparency Review",
+    "path": "knowledge/techniques/certificate-transparency.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
     "id": "cloud-configuration-assessment",
     "name": "Cloud Configuration Assessment",
     "path": "knowledge/techniques/cloud-configuration-assessment.md",
@@ -18,6 +39,20 @@
     "id": "content-discovery",
     "name": "Content Discovery",
     "path": "knowledge/techniques/content-discovery.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "dependency-analysis",
+    "name": "Dependency Analysis",
+    "path": "knowledge/techniques/dependency-analysis.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "detection-engineering",
+    "name": "Detection Engineering",
+    "path": "knowledge/techniques/detection-engineering.md",
     "type": "technique"
   },
   {
@@ -43,6 +78,27 @@
   },
   {
     "category": "",
+    "id": "host-discovery",
+    "name": "Host Discovery",
+    "path": "knowledge/techniques/host-discovery.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "iac-scanning",
+    "name": "Infrastructure-as-Code Scanning",
+    "path": "knowledge/techniques/iac-scanning.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "incident-triage",
+    "name": "Incident Triage",
+    "path": "knowledge/techniques/incident-triage.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
     "id": "log-analysis",
     "name": "Log Analysis",
     "path": "knowledge/techniques/log-analysis.md",
@@ -53,6 +109,13 @@
     "id": "malware-analysis",
     "name": "Malware Analysis",
     "path": "knowledge/techniques/malware-analysis.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "memory-analysis",
+    "name": "Memory Analysis",
+    "path": "knowledge/techniques/memory-analysis.md",
     "type": "technique"
   },
   {
@@ -71,9 +134,30 @@
   },
   {
     "category": "",
+    "id": "phishing-resistant-authentication",
+    "name": "Phishing-Resistant Authentication",
+    "path": "knowledge/techniques/phishing-resistant-authentication.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
     "id": "reverse-engineering",
     "name": "Reverse Engineering",
     "path": "knowledge/techniques/reverse-engineering.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "secrets-detection",
+    "name": "Secrets Detection",
+    "path": "knowledge/techniques/secrets-detection.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "secure-code-review",
+    "name": "Secure Code Review",
+    "path": "knowledge/techniques/secure-code-review.md",
     "type": "technique"
   },
   {
@@ -113,6 +197,20 @@
   },
   {
     "category": "",
+    "id": "threat-intelligence-analysis",
+    "name": "Threat Intelligence Analysis",
+    "path": "knowledge/techniques/threat-intelligence-analysis.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "timeline-analysis",
+    "name": "Timeline Analysis",
+    "path": "knowledge/techniques/timeline-analysis.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
     "id": "traffic-analysis",
     "name": "Traffic Analysis",
     "path": "knowledge/techniques/traffic-analysis.md",
@@ -123,6 +221,13 @@
     "id": "vulnerability-assessment",
     "name": "Vulnerability Assessment",
     "path": "knowledge/techniques/vulnerability-assessment.md",
+    "type": "technique"
+  },
+  {
+    "category": "",
+    "id": "vulnerability-prioritization",
+    "name": "Vulnerability Prioritization",
+    "path": "knowledge/techniques/vulnerability-prioritization.md",
     "type": "technique"
   },
   {

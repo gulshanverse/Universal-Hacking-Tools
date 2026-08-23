@@ -7,6 +7,10 @@ tools:
   - wireshark
   - ghidra
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://csrc.nist.gov/Projects/ssdf
+
 ---
 
 # Android

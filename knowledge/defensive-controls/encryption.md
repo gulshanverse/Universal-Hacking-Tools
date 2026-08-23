@@ -11,6 +11,10 @@ related_vulnerabilities:
   - cryptographic-failures
   - sensitive-data-exposure
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://www.cisecurity.org/controls
+
 ---
 
 # Encryption

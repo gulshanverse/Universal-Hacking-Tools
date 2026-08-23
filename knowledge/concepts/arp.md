@@ -3,6 +3,10 @@ id: arp
 type: concept
 name: ARP
 status: needs-review
+sources:
+  - https://www.rfc-editor.org/rfc/rfc826
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # ARP

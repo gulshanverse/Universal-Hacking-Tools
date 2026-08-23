@@ -7,6 +7,10 @@ tools:
   - wireshark
   - owasp-zap
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://csrc.nist.gov/Projects/ssdf
+
 ---
 
 # TLS

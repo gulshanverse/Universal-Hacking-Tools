@@ -43,6 +43,20 @@
   },
   {
     "category": "",
+    "id": "certificates",
+    "name": "Certificates",
+    "path": "knowledge/concepts/certificates.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "containers",
+    "name": "Containers",
+    "path": "knowledge/concepts/containers.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
     "id": "cookies",
     "name": "Cookies",
     "path": "knowledge/concepts/cookies.md",
@@ -64,9 +78,30 @@
   },
   {
     "category": "",
+    "id": "data-classification",
+    "name": "Data Classification",
+    "path": "knowledge/concepts/data-classification.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "defense-in-depth",
+    "name": "Defense in Depth",
+    "path": "knowledge/concepts/defense-in-depth.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
     "id": "dhcp",
     "name": "DHCP",
     "path": "knowledge/concepts/dhcp.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "digital-signatures",
+    "name": "Digital Signatures",
+    "path": "knowledge/concepts/digital-signatures.md",
     "type": "concept"
   },
   {
@@ -81,6 +116,27 @@
     "id": "encryption",
     "name": "Encryption",
     "path": "knowledge/concepts/encryption.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "file-systems",
+    "name": "File Systems",
+    "path": "knowledge/concepts/file-systems.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "firewalls",
+    "name": "Firewalls",
+    "path": "knowledge/concepts/firewalls.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "graphql",
+    "name": "GraphQL",
+    "path": "knowledge/concepts/graphql.md",
     "type": "concept"
   },
   {
@@ -120,6 +176,13 @@
   },
   {
     "category": "",
+    "id": "icmp",
+    "name": "ICMP",
+    "path": "knowledge/concepts/icmp.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
     "id": "input-validation",
     "name": "Input Validation",
     "path": "knowledge/concepts/input-validation.md",
@@ -127,9 +190,58 @@
   },
   {
     "category": "",
+    "id": "key-management",
+    "name": "Key Management",
+    "path": "knowledge/concepts/key-management.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "least-privilege",
+    "name": "Least Privilege",
+    "path": "knowledge/concepts/least-privilege.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "memory",
+    "name": "Memory",
+    "path": "knowledge/concepts/memory.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "nat",
+    "name": "NAT",
+    "path": "knowledge/concepts/nat.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
     "id": "networking",
     "name": "Networking",
     "path": "knowledge/concepts/networking.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "osi-model",
+    "name": "OSI Model",
+    "path": "knowledge/concepts/osi-model.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "permissions",
+    "name": "Permissions",
+    "path": "knowledge/concepts/permissions.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "pki",
+    "name": "PKI",
+    "path": "knowledge/concepts/pki.md",
     "type": "concept"
   },
   {
@@ -148,9 +260,65 @@
   },
   {
     "category": "",
+    "id": "processes",
+    "name": "Processes",
+    "path": "knowledge/concepts/processes.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "proxies",
+    "name": "Proxies",
+    "path": "knowledge/concepts/proxies.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "randomness",
+    "name": "Randomness",
+    "path": "knowledge/concepts/randomness.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "rest",
+    "name": "REST",
+    "path": "knowledge/concepts/rest.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "risk-management",
+    "name": "Risk Management",
+    "path": "knowledge/concepts/risk-management.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "routing",
+    "name": "Routing",
+    "path": "knowledge/concepts/routing.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
     "id": "same-origin-policy",
     "name": "Same-Origin Policy",
     "path": "knowledge/concepts/same-origin-policy.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "sbom",
+    "name": "SBOM",
+    "path": "knowledge/concepts/sbom.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "secure-sdlc",
+    "name": "Secure SDLC",
+    "path": "knowledge/concepts/secure-sdlc.md",
     "type": "concept"
   },
   {
@@ -172,6 +340,27 @@
     "id": "sessions",
     "name": "Sessions",
     "path": "knowledge/concepts/sessions.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "supply-chain-security",
+    "name": "Supply-Chain Security",
+    "path": "knowledge/concepts/supply-chain-security.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "switching",
+    "name": "Switching",
+    "path": "knowledge/concepts/switching.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "system-calls",
+    "name": "System Calls",
+    "path": "knowledge/concepts/system-calls.md",
     "type": "concept"
   },
   {
@@ -211,9 +400,30 @@
   },
   {
     "category": "",
+    "id": "users-and-groups",
+    "name": "Users and Groups",
+    "path": "knowledge/concepts/users-and-groups.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
     "id": "vulnerability-management",
     "name": "Vulnerability Management",
     "path": "knowledge/concepts/vulnerability-management.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "websockets",
+    "name": "WebSockets",
+    "path": "knowledge/concepts/websockets.md",
+    "type": "concept"
+  },
+  {
+    "category": "",
+    "id": "zero-trust",
+    "name": "Zero Trust",
+    "path": "knowledge/concepts/zero-trust.md",
     "type": "concept"
   }
 ]

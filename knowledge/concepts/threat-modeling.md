@@ -3,6 +3,10 @@ id: threat-modeling
 type: concept
 name: Threat Modeling
 status: needs-review
+sources:
+  - https://csrc.nist.gov/Projects/ssdf
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Threat Modeling

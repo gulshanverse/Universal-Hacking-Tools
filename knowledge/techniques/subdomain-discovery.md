@@ -22,6 +22,10 @@ related_vulnerabilities:
 defensive_controls:
   - secure-configuration
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://owasp.org/www-project-web-security-testing-guide/
+
 ---
 
 # Subdomain Discovery

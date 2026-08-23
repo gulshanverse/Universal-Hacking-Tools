@@ -24,6 +24,10 @@ defensive_controls:
   - ids-ips
   - network-segmentation
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://owasp.org/www-project-web-security-testing-guide/
+
 ---
 
 # Traffic Analysis

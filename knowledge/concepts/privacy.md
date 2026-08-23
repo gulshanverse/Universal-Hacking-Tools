@@ -3,6 +3,10 @@ id: privacy
 type: concept
 name: Privacy
 status: needs-review
+sources:
+  - https://www.nist.gov/privacy-framework
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Privacy

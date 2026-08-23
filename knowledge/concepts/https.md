@@ -3,6 +3,10 @@ id: https
 type: concept
 name: HTTPS
 status: needs-review
+sources:
+  - https://www.rfc-editor.org/rfc/rfc2818
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # HTTPS

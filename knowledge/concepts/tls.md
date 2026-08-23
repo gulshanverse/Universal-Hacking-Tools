@@ -3,6 +3,10 @@ id: tls
 type: concept
 name: TLS
 status: needs-review
+sources:
+  - https://www.rfc-editor.org/rfc/rfc8446
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # TLS

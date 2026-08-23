@@ -3,6 +3,10 @@ id: dns
 type: concept
 name: DNS
 status: needs-review
+sources:
+  - https://www.rfc-editor.org/rfc/rfc1034
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # DNS

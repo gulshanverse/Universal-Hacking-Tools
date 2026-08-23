@@ -9,6 +9,10 @@ tools:
   - grype
   - semgrep
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://csrc.nist.gov/Projects/ssdf
+
 ---
 
 # Docker

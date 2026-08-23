@@ -13,6 +13,10 @@ related_vulnerabilities:
   - command-injection
   - path-traversal
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://www.cisecurity.org/controls
+
 ---
 
 # Input Validation

@@ -14,6 +14,13 @@
     "type": "tool"
   },
   {
+    "category": "Network Analysis",
+    "id": "arkime",
+    "name": "Arkime",
+    "path": "tools/network-analysis/arkime.md",
+    "type": "tool"
+  },
+  {
     "category": "Digital Forensics",
     "id": "autopsy",
     "name": "Autopsy",
@@ -49,6 +56,13 @@
     "type": "tool"
   },
   {
+    "category": "Malware Analysis",
+    "id": "clamav",
+    "name": "ClamAV",
+    "path": "tools/malware-analysis/clamav.md",
+    "type": "tool"
+  },
+  {
     "category": "Reverse Engineering",
     "id": "cutter",
     "name": "Cutter",
@@ -56,10 +70,24 @@
     "type": "tool"
   },
   {
+    "category": "Reconnaissance",
+    "id": "dnsx",
+    "name": "dnsx",
+    "path": "tools/reconnaissance/dnsx.md",
+    "type": "tool"
+  },
+  {
     "category": "OSINT",
     "id": "exiftool",
     "name": "ExifTool",
     "path": "tools/osint/exiftool.md",
+    "type": "tool"
+  },
+  {
+    "category": "Web Security",
+    "id": "feroxbuster",
+    "name": "Feroxbuster",
+    "path": "tools/web-security/feroxbuster.md",
     "type": "tool"
   },
   {
@@ -81,6 +109,13 @@
     "id": "ghidra",
     "name": "Ghidra",
     "path": "tools/reverse-engineering/ghidra.md",
+    "type": "tool"
+  },
+  {
+    "category": "Secure Development",
+    "id": "gitleaks",
+    "name": "Gitleaks",
+    "path": "tools/secure-development/gitleaks.md",
     "type": "tool"
   },
   {
@@ -112,6 +147,20 @@
     "type": "tool"
   },
   {
+    "category": "Web Security",
+    "id": "httpie",
+    "name": "HTTPie",
+    "path": "tools/web-security/httpie.md",
+    "type": "tool"
+  },
+  {
+    "category": "Reconnaissance",
+    "id": "httpx",
+    "name": "httpx",
+    "path": "tools/reconnaissance/httpx.md",
+    "type": "tool"
+  },
+  {
     "category": "Password Security",
     "id": "hydra",
     "name": "THC Hydra",
@@ -123,6 +172,13 @@
     "id": "john-the-ripper",
     "name": "John the Ripper",
     "path": "tools/password-security/john-the-ripper.md",
+    "type": "tool"
+  },
+  {
+    "category": "Secure Development",
+    "id": "kics",
+    "name": "KICS",
+    "path": "tools/secure-development/kics.md",
     "type": "tool"
   },
   {
@@ -140,10 +196,52 @@
     "type": "tool"
   },
   {
+    "category": "Container Security",
+    "id": "kube-hunter",
+    "name": "kube-hunter",
+    "path": "tools/container-security/kube-hunter.md",
+    "type": "tool"
+  },
+  {
+    "category": "Container Security",
+    "id": "kubescape",
+    "name": "Kubescape",
+    "path": "tools/container-security/kubescape.md",
+    "type": "tool"
+  },
+  {
+    "category": "Vulnerability Management",
+    "id": "lynis",
+    "name": "Lynis",
+    "path": "tools/vulnerability-management/lynis.md",
+    "type": "tool"
+  },
+  {
     "category": "Reconnaissance",
     "id": "masscan",
     "name": "Masscan",
     "path": "tools/reconnaissance/masscan.md",
+    "type": "tool"
+  },
+  {
+    "category": "Defensive Security",
+    "id": "misp",
+    "name": "MISP",
+    "path": "tools/defensive-security/misp.md",
+    "type": "tool"
+  },
+  {
+    "category": "Web Security",
+    "id": "mitmproxy",
+    "name": "mitmproxy",
+    "path": "tools/web-security/mitmproxy.md",
+    "type": "tool"
+  },
+  {
+    "category": "Reconnaissance",
+    "id": "naabu",
+    "name": "Naabu",
+    "path": "tools/reconnaissance/naabu.md",
     "type": "tool"
   },
   {
@@ -165,6 +263,13 @@
     "id": "nuclei",
     "name": "Nuclei",
     "path": "tools/web-security/nuclei.md",
+    "type": "tool"
+  },
+  {
+    "category": "Defensive Security",
+    "id": "opencti",
+    "name": "OpenCTI",
+    "path": "tools/defensive-security/opencti.md",
     "type": "tool"
   },
   {
@@ -214,6 +319,20 @@
     "id": "recon-ng",
     "name": "Recon-ng",
     "path": "tools/osint/recon-ng.md",
+    "type": "tool"
+  },
+  {
+    "category": "Reconnaissance",
+    "id": "rustscan",
+    "name": "RustScan",
+    "path": "tools/reconnaissance/rustscan.md",
+    "type": "tool"
+  },
+  {
+    "category": "Defensive Security",
+    "id": "security-onion",
+    "name": "Security Onion",
+    "path": "tools/defensive-security/security-onion.md",
     "type": "tool"
   },
   {
@@ -287,6 +406,20 @@
     "type": "tool"
   },
   {
+    "category": "Web Security",
+    "id": "testssl-sh",
+    "name": "testssl.sh",
+    "path": "tools/web-security/testssl-sh.md",
+    "type": "tool"
+  },
+  {
+    "category": "Defensive Security",
+    "id": "tetragon",
+    "name": "Tetragon",
+    "path": "tools/defensive-security/tetragon.md",
+    "type": "tool"
+  },
+  {
     "category": "Reconnaissance",
     "id": "theharvester",
     "name": "theHarvester",
@@ -298,6 +431,20 @@
     "id": "trivy",
     "name": "Trivy",
     "path": "tools/vulnerability-management/trivy.md",
+    "type": "tool"
+  },
+  {
+    "category": "Secure Development",
+    "id": "trufflehog",
+    "name": "TruffleHog",
+    "path": "tools/secure-development/trufflehog.md",
+    "type": "tool"
+  },
+  {
+    "category": "Defensive Security",
+    "id": "velociraptor",
+    "name": "Velociraptor",
+    "path": "tools/defensive-security/velociraptor.md",
     "type": "tool"
   },
   {
@@ -333,6 +480,13 @@
     "id": "zeek",
     "name": "Zeek",
     "path": "tools/network-analysis/zeek.md",
+    "type": "tool"
+  },
+  {
+    "category": "Reconnaissance",
+    "id": "zmap",
+    "name": "ZMap",
+    "path": "tools/reconnaissance/zmap.md",
     "type": "tool"
   }
 ]

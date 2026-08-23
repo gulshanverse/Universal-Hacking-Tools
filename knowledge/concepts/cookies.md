@@ -3,6 +3,10 @@ id: cookies
 type: concept
 name: Cookies
 status: needs-review
+sources:
+  - https://www.rfc-editor.org/rfc/rfc6265
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Cookies

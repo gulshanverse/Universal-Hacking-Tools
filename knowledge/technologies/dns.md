@@ -8,6 +8,10 @@ tools:
   - subfinder
   - wireshark
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://csrc.nist.gov/Projects/ssdf
+
 ---
 
 # DNS

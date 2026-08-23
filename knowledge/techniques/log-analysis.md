@@ -24,6 +24,10 @@ defensive_controls:
   - secure-logging
   - ids-ips
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://owasp.org/www-project-web-security-testing-guide/
+
 ---
 
 # Log Analysis

@@ -3,6 +3,10 @@ id: dhcp
 type: concept
 name: DHCP
 status: needs-review
+sources:
+  - https://www.rfc-editor.org/rfc/rfc2131
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # DHCP

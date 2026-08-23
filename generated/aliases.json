@@ -3,8 +3,35 @@
     "aircrack ng": [
       "tool:aircrack-ng"
     ],
+    "apache": [
+      "technology:apache"
+    ],
+    "api discovery local app": [
+      "lab:api-discovery-local-app"
+    ],
+    "api rate limit weakness": [
+      "vulnerability:api-rate-limit-weakness"
+    ],
+    "backup": [
+      "defensive-control:backup"
+    ],
+    "certificate transparency": [
+      "technique:certificate-transparency"
+    ],
     "cross-site request forgery": [
       "vulnerability:csrf"
+    ],
+    "csp": [
+      "defensive-control:csp"
+    ],
+    "dns resolution inventory": [
+      "lab:dns-resolution-inventory"
+    ],
+    "dotnet": [
+      "technology:dotnet"
+    ],
+    "graphql schema safety": [
+      "lab:graphql-schema-safety"
     ],
     "greenbone": [
       "tool:greenbone-openvas"
@@ -15,11 +42,17 @@
     "hydra": [
       "tool:hydra"
     ],
+    "iac scanning": [
+      "technique:iac-scanning"
+    ],
     "ids": [
       "defensive-control:ids-ips"
     ],
     "ids ips": [
       "defensive-control:ids-ips"
+    ],
+    "infrastructure as code scanning": [
+      "technique:iac-scanning"
     ],
     "intrusion detection system": [
       "defensive-control:ids-ips"
@@ -36,11 +69,20 @@
     "jtr": [
       "tool:john-the-ripper"
     ],
+    "kafka": [
+      "technology:kafka"
+    ],
     "kube bench": [
       "tool:kube-bench"
     ],
+    "kube hunter": [
+      "tool:kube-hunter"
+    ],
     "multi-factor authentication": [
       "defensive-control:mfa"
+    ],
+    "nodejs": [
+      "technology:nodejs"
     ],
     "openvas": [
       "tool:greenbone-openvas"
@@ -51,17 +93,35 @@
     "osv scanner": [
       "tool:osv-scanner"
     ],
+    "phishing resistant authentication": [
+      "technique:phishing-resistant-authentication"
+    ],
     "recon ng": [
       "tool:recon-ng"
     ],
     "same origin policy": [
       "concept:same-origin-policy"
     ],
+    "sbom": [
+      "technology:sbom"
+    ],
     "sqli": [
       "vulnerability:sql-injection"
     ],
+    "supply chain controls": [
+      "defensive-control:supply-chain-controls"
+    ],
+    "supply chain security": [
+      "concept:supply-chain-security"
+    ],
     "tcp ip": [
       "concept:tcp-ip"
+    ],
+    "testssl sh": [
+      "tool:testssl-sh"
+    ],
+    "timeline analysis synthetic": [
+      "lab:timeline-analysis-synthetic"
     ],
     "volatility": [
       "tool:volatility3"

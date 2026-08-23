@@ -23,6 +23,10 @@ defensive_controls:
   - firewall
   - secure-logging
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://owasp.org/www-project-web-security-testing-guide/
+
 ---
 
 # Service Enumeration

@@ -3,6 +3,10 @@ id: attack-surface
 type: concept
 name: Attack Surface
 status: needs-review
+sources:
+  - https://csrc.nist.gov/glossary/term/attack_surface
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Attack Surface

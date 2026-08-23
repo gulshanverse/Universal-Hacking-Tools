@@ -9,6 +9,10 @@ tools:
   - ffuf
   - nikto
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://csrc.nist.gov/Projects/ssdf
+
 ---
 
 # HTTP

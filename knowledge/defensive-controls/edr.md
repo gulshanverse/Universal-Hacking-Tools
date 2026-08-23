@@ -12,6 +12,10 @@ related_vulnerabilities:
   - container-security
   - sensitive-data-exposure
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://www.cisecurity.org/controls
+
 ---
 
 # EDR

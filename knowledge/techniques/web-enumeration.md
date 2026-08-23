@@ -25,6 +25,10 @@ defensive_controls:
   - security-headers
   - secure-logging
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://owasp.org/www-project-web-security-testing-guide/
+
 ---
 
 # Web Enumeration

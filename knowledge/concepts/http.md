@@ -3,6 +3,10 @@ id: http
 type: concept
 name: HTTP
 status: needs-review
+sources:
+  - https://www.rfc-editor.org/rfc/rfc9110
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # HTTP

@@ -3,6 +3,10 @@ id: input-validation
 type: concept
 name: Input Validation
 status: needs-review
+sources:
+  - https://cwe.mitre.org/data/definitions/20.html
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Input Validation

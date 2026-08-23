@@ -3,6 +3,10 @@ id: same-origin-policy
 type: concept
 name: Same-Origin Policy
 status: needs-review
+sources:
+  - https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Same-Origin Policy

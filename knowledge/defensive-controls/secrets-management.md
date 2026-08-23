@@ -11,6 +11,10 @@ related_vulnerabilities:
   - sensitive-data-exposure
   - supply-chain-vulnerabilities
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://www.cisecurity.org/controls
+
 ---
 
 # Secrets Management

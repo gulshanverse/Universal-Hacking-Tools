@@ -12,6 +12,10 @@ related_vulnerabilities:
   - csrf
   - security-misconfiguration
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://www.cisecurity.org/controls
+
 ---
 
 # Security Headers

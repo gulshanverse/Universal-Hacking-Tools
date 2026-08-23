@@ -1,6 +1,48 @@
 [
   {
     "category": "",
+    "id": "application-allowlisting",
+    "name": "Application Allowlisting",
+    "path": "knowledge/defensive-controls/application-allowlisting.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "asset-inventory",
+    "name": "Asset Inventory",
+    "path": "knowledge/defensive-controls/asset-inventory.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "backup",
+    "name": "Backup and Recovery",
+    "path": "knowledge/defensive-controls/backup.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "csp",
+    "name": "Content Security Policy",
+    "path": "knowledge/defensive-controls/csp.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "data-loss-prevention",
+    "name": "Data Loss Prevention",
+    "path": "knowledge/defensive-controls/data-loss-prevention.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "dependency-management",
+    "name": "Dependency Management",
+    "path": "knowledge/defensive-controls/dependency-management.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
     "id": "edr",
     "name": "EDR",
     "path": "knowledge/defensive-controls/edr.md",
@@ -18,6 +60,13 @@
     "id": "endpoint-detection",
     "name": "Endpoint Detection",
     "path": "knowledge/defensive-controls/endpoint-detection.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "endpoint-hardening",
+    "name": "Endpoint Hardening",
+    "path": "knowledge/defensive-controls/endpoint-hardening.md",
     "type": "defensive-control"
   },
   {
@@ -57,6 +106,13 @@
   },
   {
     "category": "",
+    "id": "network-monitoring",
+    "name": "Network Monitoring",
+    "path": "knowledge/defensive-controls/network-monitoring.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
     "id": "network-segmentation",
     "name": "Network Segmentation",
     "path": "knowledge/defensive-controls/network-segmentation.md",
@@ -67,6 +123,20 @@
     "id": "parameterized-queries",
     "name": "Parameterized Queries",
     "path": "knowledge/defensive-controls/parameterized-queries.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "patch-management",
+    "name": "Patch Management",
+    "path": "knowledge/defensive-controls/patch-management.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "rate-limiting",
+    "name": "Rate Limiting",
+    "path": "knowledge/defensive-controls/rate-limiting.md",
     "type": "defensive-control"
   },
   {
@@ -85,9 +155,23 @@
   },
   {
     "category": "",
+    "id": "secure-cookies",
+    "name": "Secure Cookies",
+    "path": "knowledge/defensive-controls/secure-cookies.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
     "id": "secure-logging",
     "name": "Secure Logging",
     "path": "knowledge/defensive-controls/secure-logging.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "secure-sdlc",
+    "name": "Secure SDLC",
+    "path": "knowledge/defensive-controls/secure-sdlc.md",
     "type": "defensive-control"
   },
   {
@@ -99,9 +183,30 @@
   },
   {
     "category": "",
+    "id": "siem",
+    "name": "SIEM",
+    "path": "knowledge/defensive-controls/siem.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "supply-chain-controls",
+    "name": "Supply-Chain Controls",
+    "path": "knowledge/defensive-controls/supply-chain-controls.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
     "id": "vulnerability-management",
     "name": "Vulnerability Management",
     "path": "knowledge/defensive-controls/vulnerability-management.md",
+    "type": "defensive-control"
+  },
+  {
+    "category": "",
+    "id": "zero-trust",
+    "name": "Zero Trust",
+    "path": "knowledge/defensive-controls/zero-trust.md",
     "type": "defensive-control"
   }
 ]

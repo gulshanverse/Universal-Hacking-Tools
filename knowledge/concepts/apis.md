@@ -3,6 +3,10 @@ id: apis
 type: concept
 name: APIs
 status: needs-review
+sources:
+  - https://owasp.org/API-Security/
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # APIs

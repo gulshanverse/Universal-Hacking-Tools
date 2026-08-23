@@ -3,6 +3,10 @@ id: authentication
 type: concept
 name: Authentication
 status: needs-review
+sources:
+  - https://pages.nist.gov/800-63-4/
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Authentication

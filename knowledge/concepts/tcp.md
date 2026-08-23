@@ -3,6 +3,10 @@ id: tcp
 type: concept
 name: TCP
 status: needs-review
+sources:
+  - https://www.rfc-editor.org/rfc/rfc9293
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # TCP

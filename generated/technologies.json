@@ -8,6 +8,20 @@
   },
   {
     "category": "",
+    "id": "ansible",
+    "name": "Ansible",
+    "path": "knowledge/technologies/ansible.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "apache",
+    "name": "Apache HTTP Server",
+    "path": "knowledge/technologies/apache.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
     "id": "aws",
     "name": "AWS",
     "path": "knowledge/technologies/aws.md",
@@ -43,9 +57,44 @@
   },
   {
     "category": "",
+    "id": "dotnet",
+    "name": ".NET",
+    "path": "knowledge/technologies/dotnet.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "elasticsearch",
+    "name": "Elasticsearch",
+    "path": "knowledge/technologies/elasticsearch.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
     "id": "gcp",
     "name": "GCP",
     "path": "knowledge/technologies/gcp.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "git",
+    "name": "Git",
+    "path": "knowledge/technologies/git.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "github-actions",
+    "name": "GitHub Actions",
+    "path": "knowledge/technologies/github-actions.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "grpc",
+    "name": "gRPC",
+    "path": "knowledge/technologies/grpc.md",
     "type": "technology"
   },
   {
@@ -57,9 +106,23 @@
   },
   {
     "category": "",
+    "id": "ios",
+    "name": "iOS",
+    "path": "knowledge/technologies/ios.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
     "id": "java",
     "name": "Java",
     "path": "knowledge/technologies/java.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "kafka",
+    "name": "Apache Kafka",
+    "path": "knowledge/technologies/kafka.md",
     "type": "technology"
   },
   {
@@ -99,9 +162,37 @@
   },
   {
     "category": "",
+    "id": "nginx",
+    "name": "Nginx",
+    "path": "knowledge/technologies/nginx.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "nodejs",
+    "name": "Node.js",
+    "path": "knowledge/technologies/nodejs.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "php",
+    "name": "PHP",
+    "path": "knowledge/technologies/php.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
     "id": "postgresql",
     "name": "PostgreSQL",
     "path": "knowledge/technologies/postgresql.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "powershell",
+    "name": "PowerShell",
+    "path": "knowledge/technologies/powershell.md",
     "type": "technology"
   },
   {
@@ -113,9 +204,30 @@
   },
   {
     "category": "",
+    "id": "redis",
+    "name": "Redis",
+    "path": "knowledge/technologies/redis.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
     "id": "rest-apis",
     "name": "REST APIs",
     "path": "knowledge/technologies/rest-apis.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "sbom",
+    "name": "Software Bill of Materials",
+    "path": "knowledge/technologies/sbom.md",
+    "type": "technology"
+  },
+  {
+    "category": "",
+    "id": "terraform",
+    "name": "Terraform",
+    "path": "knowledge/technologies/terraform.md",
     "type": "technology"
   },
   {

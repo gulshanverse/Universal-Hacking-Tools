@@ -12,6 +12,10 @@ related_vulnerabilities:
   - idor
   - cloud-misconfiguration
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://www.cisecurity.org/controls
+
 ---
 
 # Least Privilege

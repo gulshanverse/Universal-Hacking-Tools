@@ -12,6 +12,10 @@ related_vulnerabilities:
   - cloud-misconfiguration
   - container-security
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://www.cisecurity.org/controls
+
 ---
 
 # Network Segmentation

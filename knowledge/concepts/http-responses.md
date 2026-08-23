@@ -3,6 +3,10 @@ id: http-responses
 type: concept
 name: HTTP Responses
 status: needs-review
+sources:
+  - https://www.rfc-editor.org/rfc/rfc9110
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # HTTP Responses

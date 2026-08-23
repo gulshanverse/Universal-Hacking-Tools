@@ -23,6 +23,10 @@ defensive_controls:
   - secure-logging
   - secure-configuration
 
+sources:
+  - https://www.nist.gov/cyberframework
+  - https://owasp.org/www-project-web-security-testing-guide/
+
 ---
 
 # DNS Enumeration

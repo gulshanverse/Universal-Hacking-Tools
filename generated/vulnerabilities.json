@@ -1,5 +1,12 @@
 [
   {
+    "category": "api",
+    "id": "api-rate-limit-weakness",
+    "name": "API Rate-Limit Weakness",
+    "path": "vulnerabilities/api/api-rate-limit-weakness.md",
+    "type": "vulnerability"
+  },
+  {
     "category": "",
     "id": "api-security",
     "name": "Api Security",
@@ -18,6 +25,13 @@
     "id": "broken-access-control",
     "name": "Broken Access Control",
     "path": "vulnerabilities/authorization/broken-access-control.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "api",
+    "id": "broken-function-level-authorization",
+    "name": "Broken Function Level Authorization",
+    "path": "vulnerabilities/api/broken-function-level-authorization.md",
     "type": "vulnerability"
   },
   {
@@ -63,10 +77,52 @@
     "type": "vulnerability"
   },
   {
+    "category": "api",
+    "id": "excessive-data-exposure",
+    "name": "Excessive Data Exposure",
+    "path": "vulnerabilities/api/excessive-data-exposure.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "web",
+    "id": "file-inclusion",
+    "name": "File Inclusion",
+    "path": "vulnerabilities/web/file-inclusion.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "web",
+    "id": "host-header-injection",
+    "name": "Host Header Injection",
+    "path": "vulnerabilities/web/host-header-injection.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "web",
+    "id": "http-request-smuggling",
+    "name": "HTTP Request Smuggling",
+    "path": "vulnerabilities/web/http-request-smuggling.md",
+    "type": "vulnerability"
+  },
+  {
     "category": "",
     "id": "idor",
     "name": "Idor",
     "path": "vulnerabilities/authorization/idor.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "api",
+    "id": "improper-api-inventory",
+    "name": "Improper API Inventory",
+    "path": "vulnerabilities/api/improper-api-inventory.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "cryptography",
+    "id": "improper-certificate-validation",
+    "name": "Improper Certificate Validation",
+    "path": "vulnerabilities/cryptography/improper-certificate-validation.md",
     "type": "vulnerability"
   },
   {
@@ -84,10 +140,59 @@
     "type": "vulnerability"
   },
   {
+    "category": "api",
+    "id": "mass-assignment",
+    "name": "Mass Assignment",
+    "path": "vulnerabilities/api/mass-assignment.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "authentication",
+    "id": "mfa-weaknesses",
+    "name": "MFA Weaknesses",
+    "path": "vulnerabilities/authentication/mfa-weaknesses.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "web",
+    "id": "open-redirect",
+    "name": "Open Redirect",
+    "path": "vulnerabilities/web/open-redirect.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "authentication",
+    "id": "password-reset-flaws",
+    "name": "Password Reset Flaws",
+    "path": "vulnerabilities/authentication/password-reset-flaws.md",
+    "type": "vulnerability"
+  },
+  {
     "category": "",
     "id": "path-traversal",
     "name": "Path Traversal",
     "path": "vulnerabilities/web/path-traversal.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "cryptography",
+    "id": "predictable-randomness",
+    "name": "Predictable Randomness",
+    "path": "vulnerabilities/cryptography/predictable-randomness.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "web",
+    "id": "prototype-pollution",
+    "name": "Prototype Pollution",
+    "path": "vulnerabilities/web/prototype-pollution.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "cloud",
+    "id": "public-cloud-storage-exposure",
+    "name": "Public Cloud Storage Exposure",
+    "path": "vulnerabilities/cloud/public-cloud-storage-exposure.md",
     "type": "vulnerability"
   },
   {
@@ -102,6 +207,20 @@
     "id": "sensitive-data-exposure",
     "name": "Sensitive Data Exposure",
     "path": "vulnerabilities/web/sensitive-data-exposure.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "authentication",
+    "id": "session-fixation",
+    "name": "Session Fixation",
+    "path": "vulnerabilities/authentication/session-fixation.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "authentication",
+    "id": "session-hijacking",
+    "name": "Session Hijacking",
+    "path": "vulnerabilities/authentication/session-hijacking.md",
     "type": "vulnerability"
   },
   {
@@ -130,6 +249,27 @@
     "id": "supply-chain-vulnerabilities",
     "name": "Supply Chain Vulnerabilities",
     "path": "vulnerabilities/supply-chain/supply-chain-vulnerabilities.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "cryptography",
+    "id": "weak-key-management",
+    "name": "Weak Key Management",
+    "path": "vulnerabilities/cryptography/weak-key-management.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "authentication",
+    "id": "weak-password-policy",
+    "name": "Weak Password Policy",
+    "path": "vulnerabilities/authentication/weak-password-policy.md",
+    "type": "vulnerability"
+  },
+  {
+    "category": "web",
+    "id": "web-cache-poisoning",
+    "name": "Web Cache Poisoning",
+    "path": "vulnerabilities/web/web-cache-poisoning.md",
     "type": "vulnerability"
   },
   {

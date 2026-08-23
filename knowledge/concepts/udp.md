@@ -3,6 +3,10 @@ id: udp
 type: concept
 name: UDP
 status: needs-review
+sources:
+  - https://www.rfc-editor.org/rfc/rfc768
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # UDP

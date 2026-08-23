@@ -3,6 +3,10 @@ id: tcp-ip
 type: concept
 name: TCP/IP
 status: needs-review
+sources:
+  - https://www.rfc-editor.org/rfc/rfc1122
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # TCP/IP

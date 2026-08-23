@@ -3,6 +3,10 @@ id: encryption
 type: concept
 name: Encryption
 status: needs-review
+sources:
+  - https://csrc.nist.gov/glossary/term/encryption
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Encryption

@@ -3,6 +3,10 @@ id: hashing
 type: concept
 name: Hashing
 status: needs-review
+sources:
+  - https://csrc.nist.gov/glossary/term/hash_function
+  - https://www.nist.gov/cyberframework
+
 ---
 
 # Hashing
