@@ -12,6 +12,44 @@ official_website: https://projectdiscovery.io/opensource/subfinder
 documentation: https://docs.projectdiscovery.io/tools/subfinder/overview
 security_domains: [Reconnaissance, Subdomain discovery]
 dual_use: true
+
+concepts:
+  - attack-surface
+  - dns
+  - networking
+  - ports
+  - services
+  - tcp-ip
+techniques:
+  - dns-enumeration
+  - network-scanning
+  - service-enumeration
+  - subdomain-discovery
+technologies:
+  - dns
+  - linux
+  - macos
+  - windows
+related_tools:
+  - amass
+  - nmap
+  - theharvester
+related_vulnerabilities:
+  - security-misconfiguration
+related_labs:
+  - localhost-service-inventory
+  - packet-capture-fundamentals
+defensive_controls:
+  - firewall
+  - network-segmentation
+  - secure-logging
+verification:
+  status: partially-verified
+  last_verified: 2026-08-23
+sources:
+  official_repository: https://github.com/projectdiscovery/subfinder
+  official_website: https://projectdiscovery.io/opensource/subfinder
+  official_documentation: https://docs.projectdiscovery.io/tools/subfinder/overview
 status: Verify against upstream documentation.
 ---
 
@@ -197,3 +235,48 @@ See the related category index in [`tools/reconnaissance/README.md`](../reconnai
 5. [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 
 > Verify upstream documentation for current versions, installation instructions, capabilities, licenses, and platform support before use.
+## Related Knowledge
+
+### Concepts
+
+- [Networking](../../knowledge/concepts/networking.md)
+- [TCP/IP](../../knowledge/concepts/tcp-ip.md)
+- [DNS](../../knowledge/concepts/dns.md)
+- [Ports](../../knowledge/concepts/ports.md)
+- [Services](../../knowledge/concepts/services.md)
+- [Attack Surface](../../knowledge/concepts/attack-surface.md)
+
+### Techniques
+
+- [Network Scanning](../../knowledge/techniques/network-scanning.md)
+- [Service Enumeration](../../knowledge/techniques/service-enumeration.md)
+- [DNS Enumeration](../../knowledge/techniques/dns-enumeration.md)
+- [Subdomain Discovery](../../knowledge/techniques/subdomain-discovery.md)
+
+### Technologies
+
+- [Linux](../../knowledge/technologies/linux.md)
+- [Windows](../../knowledge/technologies/windows.md)
+- [macOS](../../knowledge/technologies/macos.md)
+- [DNS](../../knowledge/technologies/dns.md)
+
+### Vulnerabilities
+
+- [Security Misconfiguration](../../vulnerabilities/configuration/security-misconfiguration.md)
+
+### Labs
+
+- [Localhost Service Inventory](../../labs/networking/localhost-service-inventory.md)
+- [Packet Capture Fundamentals](../../labs/networking/packet-capture-fundamentals.md)
+
+### Defensive Controls
+
+- [Firewall](../../knowledge/defensive-controls/firewall.md)
+- [Network Segmentation](../../knowledge/defensive-controls/network-segmentation.md)
+- [Secure Logging](../../knowledge/defensive-controls/secure-logging.md)
+
+### Related Tools
+
+- [nmap](nmap.md)
+- [amass](amass.md)
+- [theharvester](theharvester.md)

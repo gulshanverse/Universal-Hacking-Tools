@@ -12,6 +12,44 @@ official_website: https://github.com/aquasecurity/kube-bench
 documentation: https://github.com/aquasecurity/kube-bench#readme
 security_domains: [Container Security, Kubernetes configuration assessment]
 dual_use: true
+
+concepts:
+  - attack-surface
+  - security-monitoring
+  - threat-modeling
+  - vulnerability-management
+techniques:
+  - cloud-configuration-assessment
+  - container-security-scanning
+  - static-analysis
+  - vulnerability-assessment
+technologies:
+  - docker
+  - kubernetes
+  - linux
+related_tools:
+  - grype
+  - syft
+related_vulnerabilities:
+  - cloud-misconfiguration
+  - container-security
+  - supply-chain-vulnerabilities
+related_labs:
+  - localhost-service-inventory
+  - packet-capture-fundamentals
+defensive_controls:
+  - least-privilege
+  - network-segmentation
+  - secure-configuration
+  - secure-logging
+  - vulnerability-management
+verification:
+  status: partially-verified
+  last_verified: 2026-08-23
+sources:
+  official_repository: https://github.com/aquasecurity/kube-bench
+  official_website: https://github.com/aquasecurity/kube-bench
+  official_documentation: https://github.com/aquasecurity/kube-bench#readme
 status: Verify against upstream documentation.
 ---
 
@@ -197,3 +235,48 @@ See the related category index in [`tools/container-security/README.md`](../cont
 5. [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 
 > Verify upstream documentation for current versions, installation instructions, capabilities, licenses, and platform support before use.
+## Related Knowledge
+
+### Concepts
+
+- [Attack Surface](../../knowledge/concepts/attack-surface.md)
+- [Threat Modeling](../../knowledge/concepts/threat-modeling.md)
+- [Vulnerability Management](../../knowledge/concepts/vulnerability-management.md)
+- [Security Monitoring](../../knowledge/concepts/security-monitoring.md)
+
+### Techniques
+
+- [Container Security Scanning](../../knowledge/techniques/container-security-scanning.md)
+- [Vulnerability Assessment](../../knowledge/techniques/vulnerability-assessment.md)
+- [Static Analysis](../../knowledge/techniques/static-analysis.md)
+- [Cloud Configuration Assessment](../../knowledge/techniques/cloud-configuration-assessment.md)
+
+### Technologies
+
+- [Docker](../../knowledge/technologies/docker.md)
+- [Kubernetes](../../knowledge/technologies/kubernetes.md)
+- [Linux](../../knowledge/technologies/linux.md)
+
+### Vulnerabilities
+
+- [Container Security](../../vulnerabilities/cloud/container-security.md)
+- [Supply Chain Vulnerabilities](../../vulnerabilities/supply-chain/supply-chain-vulnerabilities.md)
+- [Cloud Misconfiguration](../../vulnerabilities/cloud/cloud-misconfiguration.md)
+
+### Labs
+
+- [Localhost Service Inventory](../../labs/networking/localhost-service-inventory.md)
+- [Packet Capture Fundamentals](../../labs/networking/packet-capture-fundamentals.md)
+
+### Defensive Controls
+
+- [Secure Configuration](../../knowledge/defensive-controls/secure-configuration.md)
+- [Least Privilege](../../knowledge/defensive-controls/least-privilege.md)
+- [Vulnerability Management](../../knowledge/defensive-controls/vulnerability-management.md)
+- [Secure Logging](../../knowledge/defensive-controls/secure-logging.md)
+- [Network Segmentation](../../knowledge/defensive-controls/network-segmentation.md)
+
+### Related Tools
+
+- [syft](syft.md)
+- [grype](grype.md)

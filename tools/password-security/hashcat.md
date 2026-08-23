@@ -12,6 +12,43 @@ official_website: https://hashcat.net/hashcat/
 documentation: https://hashcat.net/wiki/
 security_domains: [Password Security, Password auditing]
 dual_use: true
+
+concepts:
+  - access-control
+  - authentication
+  - authorization
+  - cryptography
+  - hashing
+  - sessions
+techniques:
+  - log-analysis
+  - security-testing
+  - vulnerability-assessment
+technologies:
+  - linux
+  - windows
+related_tools:
+  - hydra
+  - john-the-ripper
+related_vulnerabilities:
+  - authentication-weaknesses
+  - cryptographic-failures
+  - session-management
+related_labs:
+  - localhost-service-inventory
+  - packet-capture-fundamentals
+defensive_controls:
+  - encryption
+  - least-privilege
+  - mfa
+  - secure-logging
+verification:
+  status: partially-verified
+  last_verified: 2026-08-23
+sources:
+  official_repository: https://github.com/hashcat/hashcat
+  official_website: https://hashcat.net/hashcat/
+  official_documentation: https://hashcat.net/wiki/
 status: Verify against upstream documentation.
 ---
 
@@ -197,3 +234,47 @@ See the related category index in [`tools/password-security/README.md`](../passw
 5. [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 
 > Verify upstream documentation for current versions, installation instructions, capabilities, licenses, and platform support before use.
+## Related Knowledge
+
+### Concepts
+
+- [Authentication](../../knowledge/concepts/authentication.md)
+- [Authorization](../../knowledge/concepts/authorization.md)
+- [Access Control](../../knowledge/concepts/access-control.md)
+- [Hashing](../../knowledge/concepts/hashing.md)
+- [Cryptography](../../knowledge/concepts/cryptography.md)
+- [Sessions](../../knowledge/concepts/sessions.md)
+
+### Techniques
+
+- [Security Testing](../../knowledge/techniques/security-testing.md)
+- [Vulnerability Assessment](../../knowledge/techniques/vulnerability-assessment.md)
+- [Log Analysis](../../knowledge/techniques/log-analysis.md)
+
+### Technologies
+
+- [Linux](../../knowledge/technologies/linux.md)
+- [Windows](../../knowledge/technologies/windows.md)
+
+### Vulnerabilities
+
+- [Authentication Weaknesses](../../vulnerabilities/authentication/authentication-weaknesses.md)
+- [Session Management](../../vulnerabilities/authentication/session-management.md)
+- [Cryptographic Failures](../../vulnerabilities/cryptography/cryptographic-failures.md)
+
+### Labs
+
+- [Localhost Service Inventory](../../labs/networking/localhost-service-inventory.md)
+- [Packet Capture Fundamentals](../../labs/networking/packet-capture-fundamentals.md)
+
+### Defensive Controls
+
+- [MFA](../../knowledge/defensive-controls/mfa.md)
+- [Least Privilege](../../knowledge/defensive-controls/least-privilege.md)
+- [Secure Logging](../../knowledge/defensive-controls/secure-logging.md)
+- [Encryption](../../knowledge/defensive-controls/encryption.md)
+
+### Related Tools
+
+- [john-the-ripper](john-the-ripper.md)
+- [hydra](hydra.md)

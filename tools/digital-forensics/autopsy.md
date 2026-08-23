@@ -12,6 +12,38 @@ official_website: https://www.autopsy.com/
 documentation: https://sleuthkit.org/autopsy/docs/
 security_domains: [Digital Forensics, Digital forensics]
 dual_use: true
+
+concepts:
+  - attack-surface
+  - authentication
+  - security-monitoring
+techniques:
+  - digital-forensics
+  - log-analysis
+  - static-analysis
+technologies:
+  - linux
+  - macos
+  - windows
+related_tools:
+  - volatility3
+related_vulnerabilities:
+  - security-misconfiguration
+  - sensitive-data-exposure
+related_labs:
+  - localhost-service-inventory
+  - packet-capture-fundamentals
+defensive_controls:
+  - edr
+  - endpoint-detection
+  - secure-logging
+verification:
+  status: partially-verified
+  last_verified: 2026-08-23
+sources:
+  official_repository: https://github.com/sleuthkit/autopsy
+  official_website: https://www.autopsy.com/
+  official_documentation: https://sleuthkit.org/autopsy/docs/
 status: Verify against upstream documentation.
 ---
 
@@ -197,3 +229,42 @@ See the related category index in [`tools/digital-forensics/README.md`](../digit
 5. [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 
 > Verify upstream documentation for current versions, installation instructions, capabilities, licenses, and platform support before use.
+## Related Knowledge
+
+### Concepts
+
+- [Security Monitoring](../../knowledge/concepts/security-monitoring.md)
+- [Attack Surface](../../knowledge/concepts/attack-surface.md)
+- [Authentication](../../knowledge/concepts/authentication.md)
+
+### Techniques
+
+- [Digital Forensics](../../knowledge/techniques/digital-forensics.md)
+- [Log Analysis](../../knowledge/techniques/log-analysis.md)
+- [Static Analysis](../../knowledge/techniques/static-analysis.md)
+
+### Technologies
+
+- [Linux](../../knowledge/technologies/linux.md)
+- [Windows](../../knowledge/technologies/windows.md)
+- [macOS](../../knowledge/technologies/macos.md)
+
+### Vulnerabilities
+
+- [Sensitive Data Exposure](../../vulnerabilities/web/sensitive-data-exposure.md)
+- [Security Misconfiguration](../../vulnerabilities/configuration/security-misconfiguration.md)
+
+### Labs
+
+- [Localhost Service Inventory](../../labs/networking/localhost-service-inventory.md)
+- [Packet Capture Fundamentals](../../labs/networking/packet-capture-fundamentals.md)
+
+### Defensive Controls
+
+- [Secure Logging](../../knowledge/defensive-controls/secure-logging.md)
+- [EDR](../../knowledge/defensive-controls/edr.md)
+- [Endpoint Detection](../../knowledge/defensive-controls/endpoint-detection.md)
+
+### Related Tools
+
+- [volatility3](volatility3.md)

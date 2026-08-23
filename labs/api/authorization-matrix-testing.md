@@ -50,3 +50,11 @@ Stop services, delete temporary credentials and artifacts, revert snapshots, rem
 ## Further Learning
 
 Read the linked tool pages, the relevant OWASP or NIST guidance, and the upstream documentation. Repeat the exercise with a changed fixture and explain why the result differs.
+
+## Related Knowledge
+
+- [Networking](../../knowledge/concepts/networking.md)
+- [Security Monitoring](../../knowledge/concepts/security-monitoring.md)
+- [Network Scanning](../../knowledge/techniques/network-scanning.md)
+- [Packet Analysis](../../knowledge/techniques/packet-analysis.md)
+- [Secure Logging](../../knowledge/defensive-controls/secure-logging.md)

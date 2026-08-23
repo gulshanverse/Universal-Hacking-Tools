@@ -12,6 +12,40 @@ official_website: https://rada.re/n/
 documentation: https://book.rada.re/
 security_domains: [Reverse Engineering, Binary analysis]
 dual_use: true
+
+concepts:
+  - attack-surface
+  - security-monitoring
+  - threat-modeling
+techniques:
+  - dynamic-analysis
+  - reverse-engineering
+  - static-analysis
+technologies:
+  - c
+  - linux
+  - macos
+  - windows
+related_tools:
+  - cutter
+  - ghidra
+related_vulnerabilities:
+  - container-security
+  - supply-chain-vulnerabilities
+related_labs:
+  - localhost-service-inventory
+  - packet-capture-fundamentals
+defensive_controls:
+  - endpoint-detection
+  - secure-configuration
+  - secure-logging
+verification:
+  status: partially-verified
+  last_verified: 2026-08-23
+sources:
+  official_repository: https://github.com/radareorg/radare2
+  official_website: https://rada.re/n/
+  official_documentation: https://book.rada.re/
 status: Verify against upstream documentation.
 ---
 
@@ -197,3 +231,44 @@ See the related category index in [`tools/reverse-engineering/README.md`](../rev
 5. [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 
 > Verify upstream documentation for current versions, installation instructions, capabilities, licenses, and platform support before use.
+## Related Knowledge
+
+### Concepts
+
+- [Threat Modeling](../../knowledge/concepts/threat-modeling.md)
+- [Security Monitoring](../../knowledge/concepts/security-monitoring.md)
+- [Attack Surface](../../knowledge/concepts/attack-surface.md)
+
+### Techniques
+
+- [Static Analysis](../../knowledge/techniques/static-analysis.md)
+- [Dynamic Analysis](../../knowledge/techniques/dynamic-analysis.md)
+- [Reverse Engineering](../../knowledge/techniques/reverse-engineering.md)
+
+### Technologies
+
+- [Linux](../../knowledge/technologies/linux.md)
+- [Windows](../../knowledge/technologies/windows.md)
+- [macOS](../../knowledge/technologies/macos.md)
+- [C](../../knowledge/technologies/c.md)
+
+### Vulnerabilities
+
+- [Container Security](../../vulnerabilities/cloud/container-security.md)
+- [Supply Chain Vulnerabilities](../../vulnerabilities/supply-chain/supply-chain-vulnerabilities.md)
+
+### Labs
+
+- [Localhost Service Inventory](../../labs/networking/localhost-service-inventory.md)
+- [Packet Capture Fundamentals](../../labs/networking/packet-capture-fundamentals.md)
+
+### Defensive Controls
+
+- [Endpoint Detection](../../knowledge/defensive-controls/endpoint-detection.md)
+- [Secure Logging](../../knowledge/defensive-controls/secure-logging.md)
+- [Secure Configuration](../../knowledge/defensive-controls/secure-configuration.md)
+
+### Related Tools
+
+- [ghidra](ghidra.md)
+- [cutter](cutter.md)

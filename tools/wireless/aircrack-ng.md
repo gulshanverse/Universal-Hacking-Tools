@@ -12,6 +12,41 @@ official_website: https://www.aircrack-ng.org/
 documentation: https://www.aircrack-ng.org/documentation.html
 security_domains: [Wireless Security, Wireless security auditing]
 dual_use: true
+
+concepts:
+  - attack-surface
+  - authentication
+  - authorization
+  - security-monitoring
+techniques:
+  - digital-forensics
+  - log-analysis
+  - packet-analysis
+  - threat-hunting
+technologies:
+  - linux
+  - macos
+  - windows
+related_tools:
+  - kismet
+related_vulnerabilities:
+  - security-misconfiguration
+  - sensitive-data-exposure
+related_labs:
+  - localhost-service-inventory
+  - packet-capture-fundamentals
+defensive_controls:
+  - edr
+  - endpoint-detection
+  - ids-ips
+  - secure-logging
+verification:
+  status: partially-verified
+  last_verified: 2026-08-23
+sources:
+  official_repository: https://github.com/aircrack-ng/aircrack-ng
+  official_website: https://www.aircrack-ng.org/
+  official_documentation: https://www.aircrack-ng.org/documentation.html
 status: Verify against upstream documentation.
 ---
 
@@ -197,3 +232,45 @@ See the related category index in [`tools/wireless/README.md`](../wireless/READM
 5. [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 
 > Verify upstream documentation for current versions, installation instructions, capabilities, licenses, and platform support before use.
+## Related Knowledge
+
+### Concepts
+
+- [Security Monitoring](../../knowledge/concepts/security-monitoring.md)
+- [Authentication](../../knowledge/concepts/authentication.md)
+- [Authorization](../../knowledge/concepts/authorization.md)
+- [Attack Surface](../../knowledge/concepts/attack-surface.md)
+
+### Techniques
+
+- [Threat Hunting](../../knowledge/techniques/threat-hunting.md)
+- [Log Analysis](../../knowledge/techniques/log-analysis.md)
+- [Packet Analysis](../../knowledge/techniques/packet-analysis.md)
+- [Digital Forensics](../../knowledge/techniques/digital-forensics.md)
+
+### Technologies
+
+- [Linux](../../knowledge/technologies/linux.md)
+- [Windows](../../knowledge/technologies/windows.md)
+- [macOS](../../knowledge/technologies/macos.md)
+
+### Vulnerabilities
+
+- [Security Misconfiguration](../../vulnerabilities/configuration/security-misconfiguration.md)
+- [Sensitive Data Exposure](../../vulnerabilities/web/sensitive-data-exposure.md)
+
+### Labs
+
+- [Localhost Service Inventory](../../labs/networking/localhost-service-inventory.md)
+- [Packet Capture Fundamentals](../../labs/networking/packet-capture-fundamentals.md)
+
+### Defensive Controls
+
+- [IDS/IPS](../../knowledge/defensive-controls/ids-ips.md)
+- [EDR](../../knowledge/defensive-controls/edr.md)
+- [Secure Logging](../../knowledge/defensive-controls/secure-logging.md)
+- [Endpoint Detection](../../knowledge/defensive-controls/endpoint-detection.md)
+
+### Related Tools
+
+- [kismet](kismet.md)

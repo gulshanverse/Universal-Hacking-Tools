@@ -12,6 +12,47 @@ official_website: https://prowler.com/
 documentation: https://docs.prowler.com/
 security_domains: [Cloud Security, Cloud security posture]
 dual_use: true
+
+concepts:
+  - access-control
+  - attack-surface
+  - authentication
+  - authorization
+  - security-monitoring
+  - vulnerability-management
+techniques:
+  - cloud-configuration-assessment
+  - threat-hunting
+  - vulnerability-assessment
+technologies:
+  - aws
+  - azure
+  - gcp
+  - kubernetes
+  - linux
+related_tools:
+
+related_vulnerabilities:
+  - broken-access-control
+  - cloud-misconfiguration
+  - sensitive-data-exposure
+  - supply-chain-vulnerabilities
+related_labs:
+  - localhost-service-inventory
+  - packet-capture-fundamentals
+defensive_controls:
+  - least-privilege
+  - network-segmentation
+  - secrets-management
+  - secure-configuration
+  - secure-logging
+verification:
+  status: partially-verified
+  last_verified: 2026-08-23
+sources:
+  official_repository: https://github.com/prowler-cloud/prowler
+  official_website: https://prowler.com/
+  official_documentation: https://docs.prowler.com/
 status: Verify against upstream documentation.
 ---
 
@@ -197,3 +238,51 @@ See the related category index in [`tools/cloud-security/README.md`](../cloud-se
 5. [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 
 > Verify upstream documentation for current versions, installation instructions, capabilities, licenses, and platform support before use.
+## Related Knowledge
+
+### Concepts
+
+- [Authentication](../../knowledge/concepts/authentication.md)
+- [Authorization](../../knowledge/concepts/authorization.md)
+- [Access Control](../../knowledge/concepts/access-control.md)
+- [Attack Surface](../../knowledge/concepts/attack-surface.md)
+- [Vulnerability Management](../../knowledge/concepts/vulnerability-management.md)
+- [Security Monitoring](../../knowledge/concepts/security-monitoring.md)
+
+### Techniques
+
+- [Cloud Configuration Assessment](../../knowledge/techniques/cloud-configuration-assessment.md)
+- [Vulnerability Assessment](../../knowledge/techniques/vulnerability-assessment.md)
+- [Threat Hunting](../../knowledge/techniques/threat-hunting.md)
+
+### Technologies
+
+- [AWS](../../knowledge/technologies/aws.md)
+- [Azure](../../knowledge/technologies/azure.md)
+- [GCP](../../knowledge/technologies/gcp.md)
+- [Linux](../../knowledge/technologies/linux.md)
+- [Kubernetes](../../knowledge/technologies/kubernetes.md)
+
+### Vulnerabilities
+
+- [Cloud Misconfiguration](../../vulnerabilities/cloud/cloud-misconfiguration.md)
+- [Broken Access Control](../../vulnerabilities/authorization/broken-access-control.md)
+- [Sensitive Data Exposure](../../vulnerabilities/web/sensitive-data-exposure.md)
+- [Supply Chain Vulnerabilities](../../vulnerabilities/supply-chain/supply-chain-vulnerabilities.md)
+
+### Labs
+
+- [Localhost Service Inventory](../../labs/networking/localhost-service-inventory.md)
+- [Packet Capture Fundamentals](../../labs/networking/packet-capture-fundamentals.md)
+
+### Defensive Controls
+
+- [Least Privilege](../../knowledge/defensive-controls/least-privilege.md)
+- [Secure Configuration](../../knowledge/defensive-controls/secure-configuration.md)
+- [Secure Logging](../../knowledge/defensive-controls/secure-logging.md)
+- [Network Segmentation](../../knowledge/defensive-controls/network-segmentation.md)
+- [Secrets Management](../../knowledge/defensive-controls/secrets-management.md)
+
+### Related Tools
+
+See the [Cloud Security category](README.md) for future additions and compare capabilities against the official upstream documentation.

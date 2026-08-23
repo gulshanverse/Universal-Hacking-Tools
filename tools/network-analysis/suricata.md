@@ -12,6 +12,43 @@ official_website: https://suricata.io/
 documentation: https://docs.suricata.io/
 security_domains: [Network Security, IDS/IPS and NSM]
 dual_use: true
+
+concepts:
+  - attack-surface
+  - authentication
+  - authorization
+  - security-monitoring
+techniques:
+  - digital-forensics
+  - log-analysis
+  - packet-analysis
+  - threat-hunting
+technologies:
+  - linux
+  - macos
+  - windows
+related_tools:
+  - tcpdump
+  - wireshark
+  - zeek
+related_vulnerabilities:
+  - security-misconfiguration
+  - sensitive-data-exposure
+related_labs:
+  - localhost-service-inventory
+  - packet-capture-fundamentals
+defensive_controls:
+  - edr
+  - endpoint-detection
+  - ids-ips
+  - secure-logging
+verification:
+  status: partially-verified
+  last_verified: 2026-08-23
+sources:
+  official_repository: https://github.com/OISF/suricata
+  official_website: https://suricata.io/
+  official_documentation: https://docs.suricata.io/
 status: Verify against upstream documentation.
 ---
 
@@ -197,3 +234,47 @@ See the related category index in [`tools/network-analysis/README.md`](../networ
 5. [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 
 > Verify upstream documentation for current versions, installation instructions, capabilities, licenses, and platform support before use.
+## Related Knowledge
+
+### Concepts
+
+- [Security Monitoring](../../knowledge/concepts/security-monitoring.md)
+- [Authentication](../../knowledge/concepts/authentication.md)
+- [Authorization](../../knowledge/concepts/authorization.md)
+- [Attack Surface](../../knowledge/concepts/attack-surface.md)
+
+### Techniques
+
+- [Threat Hunting](../../knowledge/techniques/threat-hunting.md)
+- [Log Analysis](../../knowledge/techniques/log-analysis.md)
+- [Packet Analysis](../../knowledge/techniques/packet-analysis.md)
+- [Digital Forensics](../../knowledge/techniques/digital-forensics.md)
+
+### Technologies
+
+- [Linux](../../knowledge/technologies/linux.md)
+- [Windows](../../knowledge/technologies/windows.md)
+- [macOS](../../knowledge/technologies/macos.md)
+
+### Vulnerabilities
+
+- [Security Misconfiguration](../../vulnerabilities/configuration/security-misconfiguration.md)
+- [Sensitive Data Exposure](../../vulnerabilities/web/sensitive-data-exposure.md)
+
+### Labs
+
+- [Localhost Service Inventory](../../labs/networking/localhost-service-inventory.md)
+- [Packet Capture Fundamentals](../../labs/networking/packet-capture-fundamentals.md)
+
+### Defensive Controls
+
+- [IDS/IPS](../../knowledge/defensive-controls/ids-ips.md)
+- [EDR](../../knowledge/defensive-controls/edr.md)
+- [Secure Logging](../../knowledge/defensive-controls/secure-logging.md)
+- [Endpoint Detection](../../knowledge/defensive-controls/endpoint-detection.md)
+
+### Related Tools
+
+- [wireshark](wireshark.md)
+- [tcpdump](tcpdump.md)
+- [zeek](zeek.md)

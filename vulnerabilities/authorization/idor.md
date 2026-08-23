@@ -63,3 +63,34 @@ A technique mapping is context-dependent. Use the [MITRE ATT&CK](https://attack.
 * [MITRE CWE](https://cwe.mitre.org/)
 * [OWASP](https://owasp.org/)
 * [NIST Secure Software Development Framework](https://csrc.nist.gov/Projects/ssdf)
+
+## Related Knowledge
+
+### Concepts
+
+- [Threat Modeling](../../knowledge/concepts/threat-modeling.md)
+- [Vulnerability Management](../../knowledge/concepts/vulnerability-management.md)
+
+### Techniques
+
+- [Vulnerability Assessment](../../knowledge/techniques/vulnerability-assessment.md)
+- [Security Testing](../../knowledge/techniques/security-testing.md)
+
+### Technologies
+
+- [HTTP](../../knowledge/technologies/http.md)
+- [REST APIs](../../knowledge/technologies/rest-apis.md)
+
+### Tools
+
+- [OWASP ZAP](../../tools/web-security/owasp-zap.md)
+- [Burp Suite](../../tools/web-security/burp-suite.md)
+
+### Labs
+
+- [HTTP Request Analysis](../../labs/web/http-request-analysis.md)
+
+### Defensive Controls
+
+- [Secure Logging](../../knowledge/defensive-controls/secure-logging.md)
+- [Secure Configuration](../../knowledge/defensive-controls/secure-configuration.md)

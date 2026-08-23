@@ -37,3 +37,9 @@ Read the concepts first, complete the beginner lab, repeat with a documented hyp
 ## Expected Skills
 
 You should be able to explain the underlying concept, select an appropriate authorized tool, preserve evidence, communicate uncertainty, recommend mitigation, and verify a fix.
+
+## Related Knowledge
+
+- [Networking](../../knowledge/concepts/networking.md)
+- [Security Testing](../../knowledge/techniques/security-testing.md)
+- [Secure Configuration](../../knowledge/defensive-controls/secure-configuration.md)

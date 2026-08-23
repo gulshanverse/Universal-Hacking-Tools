@@ -12,6 +12,36 @@ official_website: https://www.spiderfoot.net/
 documentation: https://www.spiderfoot.net/documentation/
 security_domains: [OSINT, OSINT automation]
 dual_use: true
+
+concepts:
+  - attack-surface
+  - privacy
+techniques:
+  - static-analysis
+  - subdomain-discovery
+technologies:
+  - linux
+  - macos
+  - windows
+related_tools:
+  - exiftool
+  - recon-ng
+  - sherlock
+related_vulnerabilities:
+  - sensitive-data-exposure
+related_labs:
+  - localhost-service-inventory
+  - packet-capture-fundamentals
+defensive_controls:
+  - secure-configuration
+  - secure-logging
+verification:
+  status: partially-verified
+  last_verified: 2026-08-23
+sources:
+  official_repository: https://github.com/smicallef/spiderfoot
+  official_website: https://www.spiderfoot.net/
+  official_documentation: https://www.spiderfoot.net/documentation/
 status: Verify against upstream documentation.
 ---
 
@@ -197,3 +227,40 @@ See the related category index in [`tools/osint/README.md`](../osint/README.md) 
 5. [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 
 > Verify upstream documentation for current versions, installation instructions, capabilities, licenses, and platform support before use.
+## Related Knowledge
+
+### Concepts
+
+- [Attack Surface](../../knowledge/concepts/attack-surface.md)
+- [Privacy](../../knowledge/concepts/privacy.md)
+
+### Techniques
+
+- [Subdomain Discovery](../../knowledge/techniques/subdomain-discovery.md)
+- [Static Analysis](../../knowledge/techniques/static-analysis.md)
+
+### Technologies
+
+- [Linux](../../knowledge/technologies/linux.md)
+- [Windows](../../knowledge/technologies/windows.md)
+- [macOS](../../knowledge/technologies/macos.md)
+
+### Vulnerabilities
+
+- [Sensitive Data Exposure](../../vulnerabilities/web/sensitive-data-exposure.md)
+
+### Labs
+
+- [Localhost Service Inventory](../../labs/networking/localhost-service-inventory.md)
+- [Packet Capture Fundamentals](../../labs/networking/packet-capture-fundamentals.md)
+
+### Defensive Controls
+
+- [Secure Logging](../../knowledge/defensive-controls/secure-logging.md)
+- [Secure Configuration](../../knowledge/defensive-controls/secure-configuration.md)
+
+### Related Tools
+
+- [recon-ng](recon-ng.md)
+- [exiftool](exiftool.md)
+- [sherlock](sherlock.md)

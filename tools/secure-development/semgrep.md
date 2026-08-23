@@ -12,6 +12,59 @@ official_website: https://semgrep.dev/
 documentation: https://semgrep.dev/docs/
 security_domains: [Secure Development, Static analysis]
 dual_use: true
+
+concepts:
+  - apis
+  - authentication
+  - authorization
+  - input-validation
+  - threat-modeling
+  - vulnerability-management
+techniques:
+  - cloud-configuration-assessment
+  - container-security-scanning
+  - security-testing
+  - static-analysis
+  - vulnerability-assessment
+technologies:
+  - docker
+  - java
+  - kubernetes
+  - linux
+  - python
+  - rest-apis
+  - windows
+related_tools:
+  - bandit
+  - checkov
+  - osv-scanner
+related_vulnerabilities:
+  - api-security
+  - cloud-misconfiguration
+  - command-injection
+  - container-security
+  - path-traversal
+  - sql-injection
+  - supply-chain-vulnerabilities
+  - cross-site-scripting
+related_labs:
+  - localhost-service-inventory
+  - packet-capture-fundamentals
+defensive_controls:
+  - encryption
+  - input-validation
+  - parameterized-queries
+  - secrets-management
+  - secure-configuration
+  - security-headers
+  - vulnerability-management
+verification:
+  status: partially-verified
+  last_verified: 2026-08-23
+sources:
+  official_repository: https://github.com/semgrep/semgrep
+  official_website: https://semgrep.dev/
+  official_documentation: https://semgrep.dev/docs/
 status: Verify against upstream documentation.
 ---
 
@@ -197,3 +250,62 @@ See the related category index in [`tools/secure-development/README.md`](../secu
 5. [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 
 > Verify upstream documentation for current versions, installation instructions, capabilities, licenses, and platform support before use.
+## Related Knowledge
+
+### Concepts
+
+- [Threat Modeling](../../knowledge/concepts/threat-modeling.md)
+- [Vulnerability Management](../../knowledge/concepts/vulnerability-management.md)
+- [Input Validation](../../knowledge/concepts/input-validation.md)
+- [Authentication](../../knowledge/concepts/authentication.md)
+- [Authorization](../../knowledge/concepts/authorization.md)
+- [APIs](../../knowledge/concepts/apis.md)
+
+### Techniques
+
+- [Security Testing](../../knowledge/techniques/security-testing.md)
+- [Vulnerability Assessment](../../knowledge/techniques/vulnerability-assessment.md)
+- [Static Analysis](../../knowledge/techniques/static-analysis.md)
+- [Container Security Scanning](../../knowledge/techniques/container-security-scanning.md)
+- [Cloud Configuration Assessment](../../knowledge/techniques/cloud-configuration-assessment.md)
+
+### Technologies
+
+- [Linux](../../knowledge/technologies/linux.md)
+- [Windows](../../knowledge/technologies/windows.md)
+- [Docker](../../knowledge/technologies/docker.md)
+- [Kubernetes](../../knowledge/technologies/kubernetes.md)
+- [REST APIs](../../knowledge/technologies/rest-apis.md)
+- [Python](../../knowledge/technologies/python.md)
+- [Java](../../knowledge/technologies/java.md)
+
+### Vulnerabilities
+
+- [Sql Injection](../../vulnerabilities/web/sql-injection.md)
+- [Command Injection](../../vulnerabilities/web/command-injection.md)
+- [Path Traversal](../../vulnerabilities/web/path-traversal.md)
+- [Api Security](../../vulnerabilities/api/api-security.md)
+- [Supply Chain Vulnerabilities](../../vulnerabilities/supply-chain/supply-chain-vulnerabilities.md)
+- [Container Security](../../vulnerabilities/cloud/container-security.md)
+- [Cloud Misconfiguration](../../vulnerabilities/cloud/cloud-misconfiguration.md)
+
+### Labs
+
+- [Localhost Service Inventory](../../labs/networking/localhost-service-inventory.md)
+- [Packet Capture Fundamentals](../../labs/networking/packet-capture-fundamentals.md)
+
+### Defensive Controls
+
+- [Input Validation](../../knowledge/defensive-controls/input-validation.md)
+- [Parameterized Queries](../../knowledge/defensive-controls/parameterized-queries.md)
+- [Secure Configuration](../../knowledge/defensive-controls/secure-configuration.md)
+- [Secrets Management](../../knowledge/defensive-controls/secrets-management.md)
+- [Encryption](../../knowledge/defensive-controls/encryption.md)
+- [Security Headers](../../knowledge/defensive-controls/security-headers.md)
+- [Vulnerability Management](../../knowledge/defensive-controls/vulnerability-management.md)
+
+### Related Tools
+
+- [bandit](bandit.md)
+- [checkov](checkov.md)
+- [osv-scanner](osv-scanner.md)

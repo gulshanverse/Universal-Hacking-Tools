@@ -12,6 +12,71 @@ official_website: https://cirt.net/Nikto2
 documentation: https://github.com/sullo/nikto/wiki
 security_domains: [Web Security, Web server assessment]
 dual_use: true
+
+concepts:
+  - apis
+  - authentication
+  - authorization
+  - cookies
+  - cors
+  - http
+  - http-requests
+  - http-responses
+  - https
+  - input-validation
+  - same-origin-policy
+  - sessions
+techniques:
+  - content-discovery
+  - security-testing
+  - vulnerability-assessment
+  - web-enumeration
+technologies:
+  - http
+  - linux
+  - rest-apis
+  - tls
+  - windows
+related_tools:
+  - burp-suite
+  - nuclei
+  - owasp-zap
+related_vulnerabilities:
+  - api-security
+  - authentication-weaknesses
+  - broken-access-control
+  - command-injection
+  - cross-site-scripting
+  - cryptographic-failures
+  - csrf
+  - idor
+  - insecure-deserialization
+  - insecure-file-upload
+  - path-traversal
+  - security-misconfiguration
+  - sensitive-data-exposure
+  - session-management
+  - sql-injection
+  - ssrf
+  - xxe
+related_labs:
+  - localhost-service-inventory
+  - packet-capture-fundamentals
+defensive_controls:
+  - input-validation
+  - least-privilege
+  - mfa
+  - parameterized-queries
+  - secure-configuration
+  - secure-logging
+  - security-headers
+verification:
+  status: partially-verified
+  last_verified: 2026-08-23
+sources:
+  official_repository: https://github.com/sullo/nikto
+  official_website: https://cirt.net/Nikto2
+  official_documentation: https://github.com/sullo/nikto/wiki
 status: Verify against upstream documentation.
 ---
 
@@ -197,3 +262,75 @@ See the related category index in [`tools/web-security/README.md`](../web-securi
 5. [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 
 > Verify upstream documentation for current versions, installation instructions, capabilities, licenses, and platform support before use.
+## Related Knowledge
+
+### Concepts
+
+- [HTTP](../../knowledge/concepts/http.md)
+- [HTTPS](../../knowledge/concepts/https.md)
+- [HTTP Requests](../../knowledge/concepts/http-requests.md)
+- [HTTP Responses](../../knowledge/concepts/http-responses.md)
+- [Cookies](../../knowledge/concepts/cookies.md)
+- [Sessions](../../knowledge/concepts/sessions.md)
+- [APIs](../../knowledge/concepts/apis.md)
+- [Input Validation](../../knowledge/concepts/input-validation.md)
+- [Authentication](../../knowledge/concepts/authentication.md)
+- [Authorization](../../knowledge/concepts/authorization.md)
+- [Same-Origin Policy](../../knowledge/concepts/same-origin-policy.md)
+- [CORS](../../knowledge/concepts/cors.md)
+
+### Techniques
+
+- [Web Enumeration](../../knowledge/techniques/web-enumeration.md)
+- [Content Discovery](../../knowledge/techniques/content-discovery.md)
+- [Vulnerability Assessment](../../knowledge/techniques/vulnerability-assessment.md)
+- [Security Testing](../../knowledge/techniques/security-testing.md)
+
+### Technologies
+
+- [HTTP](../../knowledge/technologies/http.md)
+- [TLS](../../knowledge/technologies/tls.md)
+- [REST APIs](../../knowledge/technologies/rest-apis.md)
+- [Linux](../../knowledge/technologies/linux.md)
+- [Windows](../../knowledge/technologies/windows.md)
+
+### Vulnerabilities
+
+- [Sql Injection](../../vulnerabilities/web/sql-injection.md)
+- [Cross Site Scripting](../../vulnerabilities/web/cross-site-scripting.md)
+- [Csrf](../../vulnerabilities/web/csrf.md)
+- [Ssrf](../../vulnerabilities/web/ssrf.md)
+- [Xxe](../../vulnerabilities/web/xxe.md)
+- [Command Injection](../../vulnerabilities/web/command-injection.md)
+- [Path Traversal](../../vulnerabilities/web/path-traversal.md)
+- [Idor](../../vulnerabilities/authorization/idor.md)
+- [Broken Access Control](../../vulnerabilities/authorization/broken-access-control.md)
+- [Authentication Weaknesses](../../vulnerabilities/authentication/authentication-weaknesses.md)
+- [Session Management](../../vulnerabilities/authentication/session-management.md)
+- [Security Misconfiguration](../../vulnerabilities/configuration/security-misconfiguration.md)
+- [Cryptographic Failures](../../vulnerabilities/cryptography/cryptographic-failures.md)
+- [Insecure Deserialization](../../vulnerabilities/web/insecure-deserialization.md)
+- [Api Security](../../vulnerabilities/api/api-security.md)
+- [Insecure File Upload](../../vulnerabilities/web/insecure-file-upload.md)
+- [Sensitive Data Exposure](../../vulnerabilities/web/sensitive-data-exposure.md)
+
+### Labs
+
+- [Localhost Service Inventory](../../labs/networking/localhost-service-inventory.md)
+- [Packet Capture Fundamentals](../../labs/networking/packet-capture-fundamentals.md)
+
+### Defensive Controls
+
+- [Input Validation](../../knowledge/defensive-controls/input-validation.md)
+- [Parameterized Queries](../../knowledge/defensive-controls/parameterized-queries.md)
+- [Security Headers](../../knowledge/defensive-controls/security-headers.md)
+- [MFA](../../knowledge/defensive-controls/mfa.md)
+- [Secure Logging](../../knowledge/defensive-controls/secure-logging.md)
+- [Least Privilege](../../knowledge/defensive-controls/least-privilege.md)
+- [Secure Configuration](../../knowledge/defensive-controls/secure-configuration.md)
+
+### Related Tools
+
+- [owasp-zap](owasp-zap.md)
+- [burp-suite](burp-suite.md)
+- [nuclei](nuclei.md)
