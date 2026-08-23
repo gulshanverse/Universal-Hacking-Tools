@@ -1,0 +1,13 @@
+.DS_Store
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pcap
+*.raw
+*.dd
