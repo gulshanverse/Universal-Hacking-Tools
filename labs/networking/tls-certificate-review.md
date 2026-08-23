@@ -3,6 +3,8 @@ id: tls-certificate-review
 type: lab
 name: TLS Certificate Review
 status: needs-review
+execution_mode: executable
+definition: definitions/tls-certificate-review.yaml
 prerequisites:
   - target: authorization
     type: required

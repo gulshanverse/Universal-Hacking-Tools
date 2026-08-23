@@ -3,6 +3,7 @@ id: memory-image-triage
 type: lab
 name: Memory Image Triage
 status: needs-review
+execution_mode: guided
 prerequisites:
   - target: authorization
     type: required

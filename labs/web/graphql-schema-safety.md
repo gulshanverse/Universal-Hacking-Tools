@@ -3,6 +3,7 @@ id: graphql-schema-safety
 type: lab
 name: GraphQL Schema Safety Review
 status: needs-review
+execution_mode: guided
 prerequisites:
   - target: authorization
     type: required

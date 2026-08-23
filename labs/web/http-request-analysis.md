@@ -3,6 +3,7 @@ id: http-request-analysis
 type: lab
 name: HTTP Request Analysis
 status: unverified
+execution_mode: guided
 verification:
   status: unverified
   confidence: unknown

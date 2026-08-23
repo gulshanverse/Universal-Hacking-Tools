@@ -1,0 +1,8 @@
+{
+  "fixture_type": "synthetic-certificate",
+  "issuer": "Example Lab CA",
+  "key_algorithm": "ECDSA-P256",
+  "notes": "Synthetic metadata only; not a live certificate.",
+  "subject": "app.lab.test",
+  "validity_days": 30
+}

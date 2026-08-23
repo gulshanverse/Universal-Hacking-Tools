@@ -3,6 +3,7 @@ id: timeline-analysis-synthetic
 type: lab
 name: Timeline Analysis with Synthetic Artifacts
 status: needs-review
+execution_mode: guided
 prerequisites:
   - target: authorization
     type: required

@@ -3,6 +3,7 @@ id: detection-rule-engineering
 type: lab
 name: Detection Rule Engineering
 status: unverified
+execution_mode: guided
 verification:
   status: unverified
   confidence: unknown

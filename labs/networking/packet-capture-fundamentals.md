@@ -3,6 +3,7 @@ id: packet-capture-fundamentals
 type: lab
 name: Packet Capture Fundamentals
 status: unverified
+execution_mode: guided
 verification:
   status: unverified
   confidence: unknown

@@ -1,0 +1,20 @@
+{
+  "as_of": "2026-08-23",
+  "executable_labs": 6,
+  "health_score": 100.0,
+  "missing": {
+    "assessment": [],
+    "cleanup": [],
+    "evidence": [],
+    "knowledge_relationships": [],
+    "objectives": [],
+    "prerequisites": [],
+    "safety_declarations": [],
+    "unsafe_configuration": []
+  },
+  "safe_executable_labs": 6,
+  "schema_version": "1.0",
+  "total_labs": 22,
+  "unsafe_executable_labs": 0,
+  "valid": true
+}

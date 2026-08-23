@@ -3,6 +3,8 @@ id: detection-rule-regression
 type: lab
 name: Detection Rule Regression
 status: needs-review
+execution_mode: executable
+definition: definitions/detection-rule-regression.yaml
 prerequisites:
   - target: authorization
     type: required

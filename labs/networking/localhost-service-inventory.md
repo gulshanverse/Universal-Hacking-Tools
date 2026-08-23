@@ -3,6 +3,7 @@ id: localhost-service-inventory
 type: lab
 name: Localhost Service Inventory
 status: unverified
+execution_mode: guided
 verification:
   status: unverified
   confidence: unknown

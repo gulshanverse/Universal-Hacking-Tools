@@ -3,6 +3,8 @@ id: kubernetes-posture-review
 type: lab
 name: Kubernetes Posture Review
 status: needs-review
+execution_mode: executable
+definition: definitions/kubernetes-posture-review.yaml
 prerequisites:
   - target: authorization
     type: required

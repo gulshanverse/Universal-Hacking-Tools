@@ -3,6 +3,7 @@ id: sql-injection-concepts
 type: lab
 name: SQL Injection Concepts in a Lab
 status: unverified
+execution_mode: documentation-only
 verification:
   status: unverified
   confidence: unknown

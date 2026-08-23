@@ -1,0 +1,15 @@
+{
+  "fixture_type": "synthetic-dns-zone",
+  "records": [
+    {
+      "name": "app.lab.test",
+      "type": "A",
+      "value": "192.0.2.10"
+    },
+    {
+      "name": "api.lab.test",
+      "type": "CNAME",
+      "value": "app.lab.test"
+    }
+  ]
+}

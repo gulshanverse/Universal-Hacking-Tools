@@ -1,0 +1,121 @@
+{
+  "allowed_actions": [
+    "inspect_log"
+  ],
+  "assessment": {
+    "criteria": [
+      {
+        "evidence_id": "detection-observation",
+        "feedback": "Record at least one event and explain the defensive response or tuning question.",
+        "field": "events",
+        "id": "detection-observation-present",
+        "type": "field-nonempty"
+      }
+    ],
+    "type": "deterministic-evidence"
+  },
+  "category": "defensive",
+  "cleanup": {
+    "automatic": true,
+    "reset_supported": true,
+    "retention": "ephemeral"
+  },
+  "description": "Review synthetic security events against a documented detection expectation and record a defensive observation.",
+  "difficulty": "intermediate",
+  "environment": {
+    "isolation": "dedicated-ephemeral",
+    "network_policy": "isolated-no-internet",
+    "resources": {
+      "cpu_limit": 1.0,
+      "execution_timeout": 180,
+      "max_instances": 1,
+      "memory_limit": "256m",
+      "pids_limit": 64
+    },
+    "type": "local-fixture"
+  },
+  "evidence": [
+    {
+      "description": "A structured interpretation of synthetic events and detection state.",
+      "id": "detection-observation",
+      "required": true,
+      "type": "log-entry"
+    }
+  ],
+  "id": "detection-rule-regression",
+  "learning": {
+    "concepts": [
+      "security-monitoring",
+      "attack-surface"
+    ],
+    "defensive_controls": [
+      "siem",
+      "secure-logging",
+      "network-monitoring"
+    ],
+    "learning_paths": [
+      "blue-team",
+      "soc-analyst"
+    ],
+    "techniques": [
+      "detection-engineering",
+      "log-analysis"
+    ],
+    "tools": [
+      "sigma"
+    ],
+    "vulnerabilities": []
+  },
+  "name": "Detection Rule Regression",
+  "objectives": [
+    "Identify the expected signal in synthetic events.",
+    "Explain a detection gap and a safe follow-up test."
+  ],
+  "prerequisites": [
+    {
+      "target": "security-monitoring",
+      "type": "required"
+    },
+    {
+      "target": "detection-engineering",
+      "type": "recommended"
+    }
+  ],
+  "safety": {
+    "authorized_only": true,
+    "host_mounts": false,
+    "host_networking": false,
+    "internet_access": false,
+    "isolation_required": true,
+    "privileged": false,
+    "scope": "local-synthetic-fixture"
+  },
+  "targets": [
+    {
+      "fixture": "logs/events.json",
+      "id": "synthetic-events",
+      "role": "synthetic security event set",
+      "type": "synthetic-fixture"
+    }
+  ],
+  "tasks": [
+    {
+      "action": "inspect_log",
+      "description": "Inspect the event fixture and record the event type, severity, and detection state.",
+      "evidence_id": "detection-observation",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Start with the fields named in the task and stay inside the local fixture."
+        },
+        {
+          "level": 2,
+          "text": "Record an observation before writing a defensive interpretation."
+        }
+      ],
+      "id": "review-events",
+      "objective": "Match a synthetic event to the documented detection expectation.",
+      "target": "synthetic-events"
+    }
+  ]
+}

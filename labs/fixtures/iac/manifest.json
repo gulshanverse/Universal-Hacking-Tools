@@ -1,0 +1,17 @@
+{
+  "findings": [
+    {
+      "category": "public-access",
+      "id": "iac-001",
+      "severity": "medium"
+    }
+  ],
+  "fixture_type": "synthetic-iac-manifest",
+  "resources": [
+    {
+      "intended_remediation": "Restrict access to the lab role.",
+      "name": "lab-bucket",
+      "public_access": true
+    }
+  ]
+}

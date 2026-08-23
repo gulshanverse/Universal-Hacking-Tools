@@ -3,6 +3,7 @@ id: cloud-least-privilege-review
 type: lab
 name: Cloud Least-Privilege Review
 status: unverified
+execution_mode: guided
 verification:
   status: unverified
   confidence: unknown

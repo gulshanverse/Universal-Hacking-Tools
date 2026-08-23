@@ -1,0 +1,13 @@
+{
+  "fixture_type": "synthetic-container-posture",
+  "settings": {
+    "cap_drop": [
+      "ALL"
+    ],
+    "host_mounts": false,
+    "network": "isolated",
+    "privileged": false,
+    "read_only": true,
+    "user": "non-root"
+  }
+}

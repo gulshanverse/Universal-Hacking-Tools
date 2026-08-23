@@ -3,6 +3,7 @@ id: authorization-matrix-testing
 type: lab
 name: Authorization Matrix Testing
 status: unverified
+execution_mode: guided
 verification:
   status: unverified
   confidence: unknown

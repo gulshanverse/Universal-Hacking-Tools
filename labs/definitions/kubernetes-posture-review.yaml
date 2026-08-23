@@ -1,0 +1,123 @@
+{
+  "allowed_actions": [
+    "inspect_container_config"
+  ],
+  "assessment": {
+    "criteria": [
+      {
+        "evidence_id": "container-observation",
+        "feedback": "Record the posture settings and identify one hardening control.",
+        "field": "settings",
+        "id": "container-observation-present",
+        "type": "field-nonempty"
+      }
+    ],
+    "type": "deterministic-evidence"
+  },
+  "category": "containers",
+  "cleanup": {
+    "automatic": true,
+    "reset_supported": true,
+    "retention": "ephemeral"
+  },
+  "description": "Review a synthetic container configuration for safe posture observations without starting a container or using host resources.",
+  "difficulty": "beginner",
+  "environment": {
+    "isolation": "dedicated-ephemeral",
+    "network_policy": "isolated-no-internet",
+    "resources": {
+      "cpu_limit": 1.0,
+      "execution_timeout": 180,
+      "max_instances": 1,
+      "memory_limit": "256m",
+      "pids_limit": 64
+    },
+    "type": "local-fixture"
+  },
+  "evidence": [
+    {
+      "description": "A structured posture review of the synthetic container configuration.",
+      "id": "container-observation",
+      "required": true,
+      "type": "configuration"
+    }
+  ],
+  "id": "kubernetes-posture-review",
+  "learning": {
+    "concepts": [
+      "containers",
+      "least-privilege",
+      "supply-chain-security"
+    ],
+    "defensive_controls": [
+      "least-privilege",
+      "secure-configuration",
+      "network-segmentation"
+    ],
+    "learning_paths": [
+      "devsecops",
+      "cloud-security"
+    ],
+    "techniques": [
+      "container-security-scanning"
+    ],
+    "tools": [
+      "trivy"
+    ],
+    "vulnerabilities": [
+      "container-security"
+    ]
+  },
+  "name": "Kubernetes Posture Review",
+  "objectives": [
+    "Identify bounded container posture settings in a local fixture.",
+    "Explain why least privilege and non-root execution reduce risk."
+  ],
+  "prerequisites": [
+    {
+      "target": "containers",
+      "type": "required"
+    },
+    {
+      "target": "vulnerability-management",
+      "type": "recommended"
+    }
+  ],
+  "safety": {
+    "authorized_only": true,
+    "host_mounts": false,
+    "host_networking": false,
+    "internet_access": false,
+    "isolation_required": true,
+    "privileged": false,
+    "scope": "local-synthetic-fixture"
+  },
+  "targets": [
+    {
+      "fixture": "containers/posture.json",
+      "id": "container-posture",
+      "role": "synthetic container configuration",
+      "type": "synthetic-fixture"
+    }
+  ],
+  "tasks": [
+    {
+      "action": "inspect_container_config",
+      "description": "Inspect the fixture and record user, capabilities, filesystem, and network settings.",
+      "evidence_id": "container-observation",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Start with the fields named in the task and stay inside the local fixture."
+        },
+        {
+          "level": 2,
+          "text": "Record an observation before writing a defensive interpretation."
+        }
+      ],
+      "id": "review-posture",
+      "objective": "Summarize the synthetic container security posture.",
+      "target": "container-posture"
+    }
+  ]
+}

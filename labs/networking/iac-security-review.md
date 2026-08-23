@@ -3,6 +3,8 @@ id: iac-security-review
 type: lab
 name: IaC Security Review
 status: needs-review
+execution_mode: executable
+definition: definitions/iac-security-review.yaml
 prerequisites:
   - target: authorization
     type: required

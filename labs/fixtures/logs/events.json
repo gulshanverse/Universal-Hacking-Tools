@@ -1,0 +1,11 @@
+{
+  "events": [
+    {
+      "detection_state": "expected",
+      "id": "evt-001",
+      "severity": "medium",
+      "type": "access-policy-review"
+    }
+  ],
+  "fixture_type": "synthetic-security-events"
+}

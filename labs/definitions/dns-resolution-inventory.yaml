@@ -1,0 +1,118 @@
+{
+  "allowed_actions": [
+    "inspect_dns_record"
+  ],
+  "assessment": {
+    "criteria": [
+      {
+        "evidence_id": "dns-observation",
+        "feedback": "Record at least one fixture record and explain why scope remains local.",
+        "field": "records",
+        "id": "dns-observation-present",
+        "type": "field-nonempty"
+      }
+    ],
+    "type": "deterministic-evidence"
+  },
+  "category": "networking",
+  "cleanup": {
+    "automatic": true,
+    "reset_supported": true,
+    "retention": "ephemeral"
+  },
+  "description": "Inspect a synthetic DNS zone and explain the observable inventory without querying external systems.",
+  "difficulty": "beginner",
+  "environment": {
+    "isolation": "dedicated-ephemeral",
+    "network_policy": "isolated-no-internet",
+    "resources": {
+      "cpu_limit": 1.0,
+      "execution_timeout": 180,
+      "max_instances": 1,
+      "memory_limit": "256m",
+      "pids_limit": 64
+    },
+    "type": "local-fixture"
+  },
+  "evidence": [
+    {
+      "description": "A structured inventory of the synthetic DNS records.",
+      "id": "dns-observation",
+      "required": true,
+      "type": "observation"
+    }
+  ],
+  "id": "dns-resolution-inventory",
+  "learning": {
+    "concepts": [
+      "dns",
+      "networking"
+    ],
+    "defensive_controls": [
+      "asset-inventory",
+      "network-monitoring"
+    ],
+    "learning_paths": [
+      "network-security"
+    ],
+    "techniques": [
+      "dns-enumeration"
+    ],
+    "tools": [
+      "dnsx"
+    ],
+    "vulnerabilities": []
+  },
+  "name": "DNS Resolution and Inventory",
+  "objectives": [
+    "Record the authoritative records in a local synthetic zone.",
+    "Connect inventory observations to ownership and monitoring."
+  ],
+  "prerequisites": [
+    {
+      "target": "authorization",
+      "type": "required"
+    },
+    {
+      "target": "threat-modeling",
+      "type": "recommended"
+    }
+  ],
+  "safety": {
+    "authorized_only": true,
+    "host_mounts": false,
+    "host_networking": false,
+    "internet_access": false,
+    "isolation_required": true,
+    "privileged": false,
+    "scope": "local-synthetic-fixture"
+  },
+  "targets": [
+    {
+      "fixture": "dns/zone.json",
+      "id": "dns-zone",
+      "role": "synthetic DNS zone",
+      "type": "synthetic-fixture"
+    }
+  ],
+  "tasks": [
+    {
+      "action": "inspect_dns_record",
+      "description": "Inspect the local fixture and record its names, types, and values.",
+      "evidence_id": "dns-observation",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Start with the fields named in the task and stay inside the local fixture."
+        },
+        {
+          "level": 2,
+          "text": "Record an observation before writing a defensive interpretation."
+        }
+      ],
+      "id": "inventory-zone",
+      "objective": "Produce a bounded inventory of the fixture records.",
+      "target": "dns-zone"
+    }
+  ]
+}

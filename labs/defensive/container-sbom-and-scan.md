@@ -3,6 +3,7 @@ id: container-sbom-and-scan
 type: lab
 name: Container Image SBOM and Scan
 status: unverified
+execution_mode: guided
 verification:
   status: unverified
   confidence: unknown

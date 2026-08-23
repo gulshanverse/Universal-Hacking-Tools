@@ -3,6 +3,7 @@ id: memory-analysis-fundamentals
 type: lab
 name: Memory Analysis Fundamentals
 status: unverified
+execution_mode: guided
 verification:
   status: unverified
   confidence: unknown

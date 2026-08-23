@@ -1,0 +1,121 @@
+{
+  "allowed_actions": [
+    "inspect_http_response"
+  ],
+  "assessment": {
+    "criteria": [
+      {
+        "evidence_id": "api-observation",
+        "feedback": "Record route and method observations and identify one authorization review question.",
+        "field": "routes",
+        "id": "api-observation-present",
+        "type": "field-nonempty"
+      }
+    ],
+    "type": "deterministic-evidence"
+  },
+  "category": "api",
+  "cleanup": {
+    "automatic": true,
+    "reset_supported": true,
+    "retention": "ephemeral"
+  },
+  "description": "Inspect a synthetic API response map and document discovered endpoints without a server or external network.",
+  "difficulty": "beginner",
+  "environment": {
+    "isolation": "dedicated-ephemeral",
+    "network_policy": "isolated-no-internet",
+    "resources": {
+      "cpu_limit": 1.0,
+      "execution_timeout": 180,
+      "max_instances": 1,
+      "memory_limit": "256m",
+      "pids_limit": 64
+    },
+    "type": "local-fixture"
+  },
+  "evidence": [
+    {
+      "description": "A structured inventory of synthetic API routes.",
+      "id": "api-observation",
+      "required": true,
+      "type": "request-response"
+    }
+  ],
+  "id": "api-discovery-local-app",
+  "learning": {
+    "concepts": [
+      "apis",
+      "authorization",
+      "http-requests"
+    ],
+    "defensive_controls": [
+      "least-privilege",
+      "secure-logging"
+    ],
+    "learning_paths": [
+      "api-security"
+    ],
+    "techniques": [
+      "api-discovery"
+    ],
+    "tools": [
+      "httpie"
+    ],
+    "vulnerabilities": [
+      "broken-function-level-authorization"
+    ]
+  },
+  "name": "API Discovery in a Local App",
+  "objectives": [
+    "Identify documented routes in a local synthetic response map.",
+    "Relate endpoint inventory to authorization and exposure review."
+  ],
+  "prerequisites": [
+    {
+      "target": "apis",
+      "type": "required"
+    },
+    {
+      "target": "authorization",
+      "type": "recommended"
+    }
+  ],
+  "safety": {
+    "authorized_only": true,
+    "host_mounts": false,
+    "host_networking": false,
+    "internet_access": false,
+    "isolation_required": true,
+    "privileged": false,
+    "scope": "local-synthetic-fixture"
+  },
+  "targets": [
+    {
+      "fixture": "api/routes.json",
+      "id": "api-response-map",
+      "role": "synthetic API response map",
+      "type": "synthetic-fixture"
+    }
+  ],
+  "tasks": [
+    {
+      "action": "inspect_http_response",
+      "description": "Inspect the response map and record route, method, and access metadata.",
+      "evidence_id": "api-observation",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Start with the fields named in the task and stay inside the local fixture."
+        },
+        {
+          "level": 2,
+          "text": "Record an observation before writing a defensive interpretation."
+        }
+      ],
+      "id": "discover-routes",
+      "objective": "Inventory the local API routes and their intended access classes.",
+      "target": "api-response-map"
+    }
+  ]
+}

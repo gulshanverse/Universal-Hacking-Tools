@@ -3,6 +3,8 @@ id: dns-resolution-inventory
 type: lab
 name: DNS Resolution and Inventory
 status: needs-review
+execution_mode: executable
+definition: definitions/dns-resolution-inventory.yaml
 prerequisites:
   - target: authorization
     type: required

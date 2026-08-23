@@ -3,6 +3,7 @@ id: authentication-session-review
 type: lab
 name: Authentication and Session Review
 status: unverified
+execution_mode: guided
 verification:
   status: unverified
   confidence: unknown

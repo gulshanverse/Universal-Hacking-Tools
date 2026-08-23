@@ -1,0 +1,120 @@
+{
+  "allowed_actions": [
+    "inspect_tls_metadata"
+  ],
+  "assessment": {
+    "criteria": [
+      {
+        "evidence_id": "tls-observation",
+        "feedback": "Capture the subject and validity fields, then state that the fixture is not a live certificate.",
+        "field": "subject",
+        "id": "tls-observation-present",
+        "type": "field-nonempty"
+      }
+    ],
+    "type": "deterministic-evidence"
+  },
+  "category": "networking",
+  "cleanup": {
+    "automatic": true,
+    "reset_supported": true,
+    "retention": "ephemeral"
+  },
+  "description": "Review synthetic certificate metadata and identify configuration observations without contacting a remote service.",
+  "difficulty": "beginner",
+  "environment": {
+    "isolation": "dedicated-ephemeral",
+    "network_policy": "isolated-no-internet",
+    "resources": {
+      "cpu_limit": 1.0,
+      "execution_timeout": 180,
+      "max_instances": 1,
+      "memory_limit": "256m",
+      "pids_limit": 64
+    },
+    "type": "local-fixture"
+  },
+  "evidence": [
+    {
+      "description": "A structured review of synthetic certificate metadata.",
+      "id": "tls-observation",
+      "required": true,
+      "type": "configuration"
+    }
+  ],
+  "id": "tls-certificate-review",
+  "learning": {
+    "concepts": [
+      "tls",
+      "certificates",
+      "cryptography"
+    ],
+    "defensive_controls": [
+      "secure-configuration"
+    ],
+    "learning_paths": [
+      "network-security"
+    ],
+    "techniques": [
+      "certificate-review"
+    ],
+    "tools": [
+      "testssl-sh"
+    ],
+    "vulnerabilities": [
+      "improper-certificate-validation"
+    ]
+  },
+  "name": "TLS Certificate Review",
+  "objectives": [
+    "Read certificate metadata from a local fixture.",
+    "Distinguish an observation from a production security conclusion."
+  ],
+  "prerequisites": [
+    {
+      "target": "certificates",
+      "type": "required"
+    },
+    {
+      "target": "cryptography",
+      "type": "recommended"
+    }
+  ],
+  "safety": {
+    "authorized_only": true,
+    "host_mounts": false,
+    "host_networking": false,
+    "internet_access": false,
+    "isolation_required": true,
+    "privileged": false,
+    "scope": "local-synthetic-fixture"
+  },
+  "targets": [
+    {
+      "fixture": "tls/certificate.json",
+      "id": "tls-certificate",
+      "role": "synthetic certificate metadata",
+      "type": "synthetic-fixture"
+    }
+  ],
+  "tasks": [
+    {
+      "action": "inspect_tls_metadata",
+      "description": "Inspect the certificate fixture and note issuer, subject, and validity fields.",
+      "evidence_id": "tls-observation",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Start with the fields named in the task and stay inside the local fixture."
+        },
+        {
+          "level": 2,
+          "text": "Record an observation before writing a defensive interpretation."
+        }
+      ],
+      "id": "review-certificate",
+      "objective": "Summarize the synthetic certificate metadata.",
+      "target": "tls-certificate"
+    }
+  ]
+}

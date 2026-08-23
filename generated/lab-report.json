@@ -1,0 +1,13 @@
+{
+  "as_of": "2026-08-23",
+  "assessment_coverage": 6,
+  "documentation_only": 2,
+  "evidence_coverage": 6,
+  "executable": 6,
+  "guided": 14,
+  "knowledge_relationship_coverage": 6,
+  "safe_executable": 6,
+  "schema_version": "1.0",
+  "total_labs": 22,
+  "unsafe_executable": 0
+}

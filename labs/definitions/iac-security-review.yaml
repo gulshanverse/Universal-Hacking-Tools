@@ -1,0 +1,123 @@
+{
+  "allowed_actions": [
+    "inspect_iac_manifest"
+  ],
+  "assessment": {
+    "criteria": [
+      {
+        "evidence_id": "iac-observation",
+        "feedback": "Record the finding and propose a least-privilege remediation without applying it.",
+        "field": "findings",
+        "id": "iac-observation-present",
+        "type": "field-nonempty"
+      }
+    ],
+    "type": "deterministic-evidence"
+  },
+  "category": "cloud",
+  "cleanup": {
+    "automatic": true,
+    "reset_supported": true,
+    "retention": "ephemeral"
+  },
+  "description": "Review a synthetic infrastructure manifest for bounded configuration findings without applying changes to any account.",
+  "difficulty": "beginner",
+  "environment": {
+    "isolation": "dedicated-ephemeral",
+    "network_policy": "isolated-no-internet",
+    "resources": {
+      "cpu_limit": 1.0,
+      "execution_timeout": 180,
+      "max_instances": 1,
+      "memory_limit": "256m",
+      "pids_limit": 64
+    },
+    "type": "local-fixture"
+  },
+  "evidence": [
+    {
+      "description": "A structured finding from the synthetic IaC manifest.",
+      "id": "iac-observation",
+      "required": true,
+      "type": "finding"
+    }
+  ],
+  "id": "iac-security-review",
+  "learning": {
+    "concepts": [
+      "least-privilege",
+      "threat-modeling",
+      "secure-sdlc"
+    ],
+    "defensive_controls": [
+      "least-privilege",
+      "secure-configuration"
+    ],
+    "learning_paths": [
+      "cloud-security",
+      "devsecops"
+    ],
+    "techniques": [
+      "iac-scanning",
+      "cloud-configuration-assessment"
+    ],
+    "tools": [
+      "checkov"
+    ],
+    "vulnerabilities": [
+      "cloud-misconfiguration"
+    ]
+  },
+  "name": "IaC Security Review",
+  "objectives": [
+    "Identify a deliberately unsafe setting in a local manifest.",
+    "Map the observation to least privilege and secure configuration."
+  ],
+  "prerequisites": [
+    {
+      "target": "least-privilege",
+      "type": "required"
+    },
+    {
+      "target": "threat-modeling",
+      "type": "recommended"
+    }
+  ],
+  "safety": {
+    "authorized_only": true,
+    "host_mounts": false,
+    "host_networking": false,
+    "internet_access": false,
+    "isolation_required": true,
+    "privileged": false,
+    "scope": "local-synthetic-fixture"
+  },
+  "targets": [
+    {
+      "fixture": "iac/manifest.json",
+      "id": "iac-manifest",
+      "role": "synthetic infrastructure manifest",
+      "type": "synthetic-fixture"
+    }
+  ],
+  "tasks": [
+    {
+      "action": "inspect_iac_manifest",
+      "description": "Inspect the local manifest and record resource exposure and intended remediation.",
+      "evidence_id": "iac-observation",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Start with the fields named in the task and stay inside the local fixture."
+        },
+        {
+          "level": 2,
+          "text": "Record an observation before writing a defensive interpretation."
+        }
+      ],
+      "id": "review-manifest",
+      "objective": "Find and explain the synthetic configuration finding.",
+      "target": "iac-manifest"
+    }
+  ]
+}

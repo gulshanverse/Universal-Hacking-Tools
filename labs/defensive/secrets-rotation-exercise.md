@@ -3,6 +3,7 @@ id: secrets-rotation-exercise
 type: lab
 name: Secrets Rotation Exercise
 status: needs-review
+execution_mode: guided
 prerequisites:
   - target: authorization
     type: required

@@ -3,6 +3,8 @@ id: api-discovery-local-app
 type: lab
 name: API Discovery in a Local App
 status: needs-review
+execution_mode: executable
+definition: definitions/api-discovery-local-app.yaml
 prerequisites:
   - target: authorization
     type: required

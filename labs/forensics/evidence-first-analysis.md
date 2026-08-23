@@ -3,6 +3,7 @@ id: evidence-first-analysis
 type: lab
 name: Evidence-First Analysis Workflow
 status: unverified
+execution_mode: guided
 verification:
   status: unverified
   confidence: unknown

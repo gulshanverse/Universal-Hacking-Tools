@@ -1,0 +1,15 @@
+{
+  "fixture_type": "synthetic-api-response-map",
+  "routes": [
+    {
+      "access": "authenticated",
+      "method": "GET",
+      "path": "/items"
+    },
+    {
+      "access": "public",
+      "method": "GET",
+      "path": "/health"
+    }
+  ]
+}
