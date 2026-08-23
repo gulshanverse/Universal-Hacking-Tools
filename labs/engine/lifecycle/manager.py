@@ -140,6 +140,19 @@ class LabManager:
         path, state, definition = self._get(instance_id)
         return {"instance_id": instance_id, "records": store.load(path), "validation": store.validate(path, definition)[0]}
 
+    def submit_evidence(self, instance_id, task_id, evidence_id, value):
+        """Record structured, allowlisted evidence without accepting files or commands."""
+        path, state, definition = self._get(instance_id)
+        if state["state"] != "running": raise ValueError("evidence can be submitted only in running state")
+        task = next((item for item in definition.get("tasks", []) if item.get("id") == task_id), None)
+        if task is None: raise ValueError(f"unknown task: {task_id}")
+        if task.get("evidence_id") != evidence_id: raise ValueError("evidence id is not allowed for this task")
+        evidence = next((item for item in definition.get("evidence", []) if item.get("id") == evidence_id), None)
+        if evidence is None: raise ValueError(f"unknown evidence id: {evidence_id}")
+        recorded = store.record(path, instance_id, task_id, evidence_id, evidence["type"], value)
+        self._audit(path, "evidence-submitted", state, task_id=task_id, evidence_id=evidence_id)
+        return recorded
+
     def assess(self, instance_id):
         path, state, definition = self._get(instance_id)
         errors, records = store.validate(path, definition)
