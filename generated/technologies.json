@@ -1,6 +1,8 @@
 [
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "android",
     "name": "Android",
     "path": "knowledge/technologies/android.md",
@@ -8,6 +10,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "ansible",
     "name": "Ansible",
     "path": "knowledge/technologies/ansible.md",
@@ -15,6 +19,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "apache",
     "name": "Apache HTTP Server",
     "path": "knowledge/technologies/apache.md",
@@ -22,6 +28,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "aws",
     "name": "AWS",
     "path": "knowledge/technologies/aws.md",
@@ -29,6 +37,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "azure",
     "name": "Azure",
     "path": "knowledge/technologies/azure.md",
@@ -36,6 +46,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "c",
     "name": "C",
     "path": "knowledge/technologies/c.md",
@@ -43,6 +55,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "dns",
     "name": "DNS",
     "path": "knowledge/technologies/dns.md",
@@ -50,6 +64,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "docker",
     "name": "Docker",
     "path": "knowledge/technologies/docker.md",
@@ -57,6 +73,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "dotnet",
     "name": ".NET",
     "path": "knowledge/technologies/dotnet.md",
@@ -64,6 +82,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "elasticsearch",
     "name": "Elasticsearch",
     "path": "knowledge/technologies/elasticsearch.md",
@@ -71,6 +91,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "gcp",
     "name": "GCP",
     "path": "knowledge/technologies/gcp.md",
@@ -78,6 +100,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "git",
     "name": "Git",
     "path": "knowledge/technologies/git.md",
@@ -85,6 +109,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "github-actions",
     "name": "GitHub Actions",
     "path": "knowledge/technologies/github-actions.md",
@@ -92,6 +118,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "grpc",
     "name": "gRPC",
     "path": "knowledge/technologies/grpc.md",
@@ -99,6 +127,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "http",
     "name": "HTTP",
     "path": "knowledge/technologies/http.md",
@@ -106,6 +136,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "ios",
     "name": "iOS",
     "path": "knowledge/technologies/ios.md",
@@ -113,6 +145,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "java",
     "name": "Java",
     "path": "knowledge/technologies/java.md",
@@ -120,6 +154,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "kafka",
     "name": "Apache Kafka",
     "path": "knowledge/technologies/kafka.md",
@@ -127,6 +163,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "kubernetes",
     "name": "Kubernetes",
     "path": "knowledge/technologies/kubernetes.md",
@@ -134,6 +172,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "linux",
     "name": "Linux",
     "path": "knowledge/technologies/linux.md",
@@ -141,6 +181,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "macos",
     "name": "macOS",
     "path": "knowledge/technologies/macos.md",
@@ -148,6 +190,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "mongodb",
     "name": "MongoDB",
     "path": "knowledge/technologies/mongodb.md",
@@ -155,6 +199,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "mysql",
     "name": "MySQL",
     "path": "knowledge/technologies/mysql.md",
@@ -162,6 +208,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "nginx",
     "name": "Nginx",
     "path": "knowledge/technologies/nginx.md",
@@ -169,6 +217,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "nodejs",
     "name": "Node.js",
     "path": "knowledge/technologies/nodejs.md",
@@ -176,6 +226,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "php",
     "name": "PHP",
     "path": "knowledge/technologies/php.md",
@@ -183,6 +235,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "postgresql",
     "name": "PostgreSQL",
     "path": "knowledge/technologies/postgresql.md",
@@ -190,6 +244,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "powershell",
     "name": "PowerShell",
     "path": "knowledge/technologies/powershell.md",
@@ -197,6 +253,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "python",
     "name": "Python",
     "path": "knowledge/technologies/python.md",
@@ -204,6 +262,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "redis",
     "name": "Redis",
     "path": "knowledge/technologies/redis.md",
@@ -211,6 +271,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "rest-apis",
     "name": "REST APIs",
     "path": "knowledge/technologies/rest-apis.md",
@@ -218,6 +280,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "sbom",
     "name": "Software Bill of Materials",
     "path": "knowledge/technologies/sbom.md",
@@ -225,6 +289,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "terraform",
     "name": "Terraform",
     "path": "knowledge/technologies/terraform.md",
@@ -232,6 +298,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "tls",
     "name": "TLS",
     "path": "knowledge/technologies/tls.md",
@@ -239,6 +307,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "windows",
     "name": "Windows",
     "path": "knowledge/technologies/windows.md",

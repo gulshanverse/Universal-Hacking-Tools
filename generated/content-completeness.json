@@ -4,6 +4,8 @@
     {
       "completeness_score": 82,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "authentication-session-review",
       "missing_metadata": [],
       "missing_relationships": [
@@ -28,6 +30,8 @@
     {
       "completeness_score": 82,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "authorization-matrix-testing",
       "missing_metadata": [],
       "missing_relationships": [
@@ -52,6 +56,8 @@
     {
       "completeness_score": 82,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "cloud-least-privilege-review",
       "missing_metadata": [],
       "missing_relationships": [
@@ -76,6 +82,8 @@
     {
       "completeness_score": 82,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "container-sbom-and-scan",
       "missing_metadata": [],
       "missing_relationships": [
@@ -100,6 +108,8 @@
     {
       "completeness_score": 82,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "evidence-first-analysis",
       "missing_metadata": [],
       "missing_relationships": [
@@ -124,6 +134,8 @@
     {
       "completeness_score": 82,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "memory-analysis-fundamentals",
       "missing_metadata": [],
       "missing_relationships": [
@@ -148,6 +160,8 @@
     {
       "completeness_score": 82,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "documentation-only",
       "id": "sql-injection-concepts",
       "missing_metadata": [],
       "missing_relationships": [
@@ -172,6 +186,8 @@
     {
       "completeness_score": 82,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "documentation-only",
       "id": "static-malware-triage",
       "missing_metadata": [],
       "missing_relationships": [
@@ -196,6 +212,8 @@
     {
       "completeness_score": 85,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "http-request-analysis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -217,6 +235,8 @@
     {
       "completeness_score": 85,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "localhost-service-inventory",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -238,6 +258,8 @@
     {
       "completeness_score": 85,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "packet-capture-fundamentals",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -259,6 +281,8 @@
     {
       "completeness_score": 87,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "detection-rule-engineering",
       "missing_metadata": [],
       "missing_relationships": [
@@ -282,6 +306,8 @@
     {
       "completeness_score": 88,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "containers",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -302,6 +328,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "api-security",
       "missing_metadata": [
         "severity",
@@ -322,6 +350,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "authentication-weaknesses",
       "missing_metadata": [
         "severity",
@@ -342,6 +372,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "broken-access-control",
       "missing_metadata": [
         "severity",
@@ -362,6 +394,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "cloud-misconfiguration",
       "missing_metadata": [
         "severity",
@@ -382,6 +416,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "command-injection",
       "missing_metadata": [
         "severity",
@@ -402,6 +438,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "container-security",
       "missing_metadata": [
         "severity",
@@ -422,6 +460,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "cross-site-scripting",
       "missing_metadata": [
         "severity",
@@ -442,6 +482,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "cryptographic-failures",
       "missing_metadata": [
         "severity",
@@ -462,6 +504,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "csrf",
       "missing_metadata": [
         "severity",
@@ -482,6 +526,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "idor",
       "missing_metadata": [
         "severity",
@@ -502,6 +548,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "insecure-deserialization",
       "missing_metadata": [
         "severity",
@@ -522,6 +570,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "insecure-file-upload",
       "missing_metadata": [
         "severity",
@@ -542,6 +592,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "path-traversal",
       "missing_metadata": [
         "severity",
@@ -562,6 +614,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "security-misconfiguration",
       "missing_metadata": [
         "severity",
@@ -582,6 +636,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "sensitive-data-exposure",
       "missing_metadata": [
         "severity",
@@ -602,6 +658,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "session-management",
       "missing_metadata": [
         "severity",
@@ -622,6 +680,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "sql-injection",
       "missing_metadata": [
         "severity",
@@ -642,6 +702,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "ssrf",
       "missing_metadata": [
         "severity",
@@ -662,6 +724,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "supply-chain-vulnerabilities",
       "missing_metadata": [
         "severity",
@@ -682,6 +746,8 @@
     {
       "completeness_score": 90,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "xxe",
       "missing_metadata": [
         "severity",
@@ -702,6 +768,8 @@
     {
       "completeness_score": 92,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "beginner",
       "missing_metadata": [],
       "missing_relationships": [
@@ -724,28 +792,8 @@
     {
       "completeness_score": 92,
       "confidence": "unknown",
-      "id": "blue-team",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sections": [
-        "Techniques"
-      ],
-      "missing_sources": [],
-      "name": "Blue Team",
-      "path": "learning-paths/blue-team/README.md",
-      "recommended_actions": [
-        "write missing documentation sections",
-        "add justified typed relationships"
-      ],
-      "stale_verification": false,
-      "type": "learning-path",
-      "verification_status": "unverified"
-    },
-    {
-      "completeness_score": 92,
-      "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "bug-bounty",
       "missing_metadata": [],
       "missing_relationships": [
@@ -768,28 +816,8 @@
     {
       "completeness_score": 92,
       "confidence": "unknown",
-      "id": "cloud-security",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sections": [
-        "Techniques"
-      ],
-      "missing_sources": [],
-      "name": "Cloud Security",
-      "path": "learning-paths/cloud-security/README.md",
-      "recommended_actions": [
-        "write missing documentation sections",
-        "add justified typed relationships"
-      ],
-      "stale_verification": false,
-      "type": "learning-path",
-      "verification_status": "unverified"
-    },
-    {
-      "completeness_score": 92,
-      "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "ethical-hacking",
       "missing_metadata": [],
       "missing_relationships": [
@@ -812,6 +840,8 @@
     {
       "completeness_score": 92,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "malware-analysis",
       "missing_metadata": [],
       "missing_relationships": [
@@ -834,6 +864,8 @@
     {
       "completeness_score": 92,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "penetration-testing",
       "missing_metadata": [],
       "missing_relationships": [
@@ -856,6 +888,8 @@
     {
       "completeness_score": 92,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "security-engineering",
       "missing_metadata": [],
       "missing_relationships": [
@@ -876,30 +910,10 @@
       "verification_status": "unverified"
     },
     {
-      "completeness_score": 92,
-      "confidence": "unknown",
-      "id": "soc-analyst",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sections": [
-        "Techniques"
-      ],
-      "missing_sources": [],
-      "name": "SOC Analyst",
-      "path": "learning-paths/soc-analyst/README.md",
-      "recommended_actions": [
-        "write missing documentation sections",
-        "add justified typed relationships"
-      ],
-      "stale_verification": false,
-      "type": "learning-path",
-      "verification_status": "unverified"
-    },
-    {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "arp",
       "missing_metadata": [],
       "missing_relationships": [
@@ -919,6 +933,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "dhcp",
       "missing_metadata": [],
       "missing_relationships": [
@@ -938,6 +954,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "backup",
       "missing_metadata": [],
       "missing_relationships": [
@@ -957,6 +975,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "csp",
       "missing_metadata": [],
       "missing_relationships": [
@@ -976,6 +996,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "dependency-management",
       "missing_metadata": [],
       "missing_relationships": [
@@ -995,6 +1017,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "endpoint-hardening",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1014,25 +1038,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
-      "id": "network-monitoring",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sections": [],
-      "missing_sources": [],
-      "name": "Network Monitoring",
-      "path": "knowledge/defensive-controls/network-monitoring.md",
-      "recommended_actions": [
-        "add justified typed relationships"
-      ],
-      "stale_verification": false,
-      "type": "defensive-control",
-      "verification_status": "needs-review"
-    },
-    {
-      "completeness_score": 95,
-      "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "patch-management",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1052,25 +1059,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
-      "id": "siem",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sections": [],
-      "missing_sources": [],
-      "name": "SIEM",
-      "path": "knowledge/defensive-controls/siem.md",
-      "recommended_actions": [
-        "add justified typed relationships"
-      ],
-      "stale_verification": false,
-      "type": "defensive-control",
-      "verification_status": "needs-review"
-    },
-    {
-      "completeness_score": 95,
-      "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "zero-trust",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1089,45 +1079,51 @@
     },
     {
       "completeness_score": 95,
-      "confidence": "low",
-      "id": "api-security",
+      "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
+      "id": "blue-team",
       "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
+      "missing_relationships": [],
+      "missing_sections": [
+        "Techniques"
       ],
-      "missing_sections": [],
       "missing_sources": [],
-      "name": "API Security",
-      "path": "learning-paths/api-security/README.md",
+      "name": "Blue Team",
+      "path": "learning-paths/blue-team/README.md",
       "recommended_actions": [
-        "add justified typed relationships"
+        "write missing documentation sections"
       ],
       "stale_verification": false,
       "type": "learning-path",
-      "verification_status": "needs-review"
-    },
-    {
-      "completeness_score": 95,
-      "confidence": "low",
-      "id": "devsecops",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sections": [],
-      "missing_sources": [],
-      "name": "DevSecOps",
-      "path": "learning-paths/devsecops/README.md",
-      "recommended_actions": [
-        "add justified typed relationships"
-      ],
-      "stale_verification": false,
-      "type": "learning-path",
-      "verification_status": "needs-review"
+      "verification_status": "unverified"
     },
     {
       "completeness_score": 95,
       "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
+      "id": "cloud-security",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [
+        "Techniques"
+      ],
+      "missing_sources": [],
+      "name": "Cloud Security",
+      "path": "learning-paths/cloud-security/README.md",
+      "recommended_actions": [
+        "write missing documentation sections"
+      ],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "unverified"
+    },
+    {
+      "completeness_score": 95,
+      "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
       "id": "digital-forensics",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1146,26 +1142,30 @@
     },
     {
       "completeness_score": 95,
-      "confidence": "low",
-      "id": "network-security",
+      "confidence": "unknown",
+      "definition": "",
+      "execution_mode": "",
+      "id": "soc-analyst",
       "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
+      "missing_relationships": [],
+      "missing_sections": [
+        "Techniques"
       ],
-      "missing_sections": [],
       "missing_sources": [],
-      "name": "Network Security",
-      "path": "learning-paths/network-security/README.md",
+      "name": "SOC Analyst",
+      "path": "learning-paths/soc-analyst/README.md",
       "recommended_actions": [
-        "add justified typed relationships"
+        "write missing documentation sections"
       ],
       "stale_verification": false,
       "type": "learning-path",
-      "verification_status": "needs-review"
+      "verification_status": "unverified"
     },
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "threat-hunting",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1185,6 +1185,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "web-security",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1204,6 +1206,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "ansible",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1223,6 +1227,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "dotnet",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1242,6 +1248,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "elasticsearch",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1261,6 +1269,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "grpc",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1280,6 +1290,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "ios",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1299,6 +1311,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "kafka",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1318,6 +1332,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "powershell",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1337,6 +1353,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "redis",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1356,6 +1374,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "sbom",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1375,6 +1395,8 @@
     {
       "completeness_score": 95,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "terraform",
       "missing_metadata": [],
       "missing_relationships": [
@@ -1394,6 +1416,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "access-control",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1409,6 +1433,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "apis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1424,6 +1450,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "attack-surface",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1439,6 +1467,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "authentication",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1454,6 +1484,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "authorization",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1469,6 +1501,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "certificates",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1484,6 +1518,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "cookies",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1499,6 +1535,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "cors",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1514,6 +1552,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "cryptography",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1529,6 +1569,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "data-classification",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1544,6 +1586,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "defense-in-depth",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1559,6 +1603,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "digital-signatures",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1574,6 +1620,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "dns",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1589,6 +1637,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "encryption",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1604,6 +1654,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "file-systems",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1619,6 +1671,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "firewalls",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1634,6 +1688,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "graphql",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1649,6 +1705,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "hashing",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1664,6 +1722,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "http",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1679,6 +1739,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "http-requests",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1694,6 +1756,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "http-responses",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1709,6 +1773,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "https",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1724,6 +1790,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "icmp",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1739,6 +1807,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "input-validation",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1754,6 +1824,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "key-management",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1769,6 +1841,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "least-privilege",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1784,6 +1858,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "memory",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1799,6 +1875,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "nat",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1814,6 +1892,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "networking",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1829,6 +1909,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "osi-model",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1844,6 +1926,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "permissions",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1859,6 +1943,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "pki",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1874,6 +1960,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "ports",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1889,6 +1977,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "privacy",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1904,6 +1994,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "processes",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1919,6 +2011,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "proxies",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1934,6 +2028,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "randomness",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1949,6 +2045,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "rest",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1964,6 +2062,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "risk-management",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1979,6 +2079,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "routing",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -1994,6 +2096,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "same-origin-policy",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2009,6 +2113,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "sbom",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2024,6 +2130,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "secure-sdlc",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2039,6 +2147,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "security-monitoring",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2054,6 +2164,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "services",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2069,6 +2181,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "sessions",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2084,6 +2198,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "supply-chain-security",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2099,6 +2215,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "switching",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2114,6 +2232,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "system-calls",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2129,6 +2249,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "tcp",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2144,6 +2266,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "tcp-ip",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2159,6 +2283,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "threat-modeling",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2174,6 +2300,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "tls",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2189,6 +2317,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "udp",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2204,6 +2334,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "users-and-groups",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2219,6 +2351,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "vulnerability-management",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2234,6 +2368,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "websockets",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2249,6 +2385,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "zero-trust",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2264,6 +2402,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "application-allowlisting",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2279,6 +2419,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "asset-inventory",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2294,6 +2436,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "data-loss-prevention",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2309,6 +2453,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "edr",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2324,6 +2470,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "encryption",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2339,6 +2487,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "endpoint-detection",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2354,6 +2504,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "firewall",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2369,6 +2521,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "ids-ips",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2384,6 +2538,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "input-validation",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2399,6 +2555,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "least-privilege",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2414,6 +2572,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "mfa",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2429,6 +2589,25 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
+      "id": "network-monitoring",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Network Monitoring",
+      "path": "knowledge/defensive-controls/network-monitoring.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "network-segmentation",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2444,6 +2623,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "parameterized-queries",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2459,6 +2640,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "rate-limiting",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2474,6 +2657,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "secrets-management",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2489,6 +2674,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "secure-configuration",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2504,6 +2691,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "secure-cookies",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2519,6 +2708,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "secure-logging",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2534,6 +2725,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "secure-sdlc",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2549,6 +2742,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "security-headers",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2564,6 +2759,25 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
+      "id": "siem",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "SIEM",
+      "path": "knowledge/defensive-controls/siem.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "defensive-control",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "supply-chain-controls",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2579,6 +2793,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "vulnerability-management",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2594,6 +2810,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "definitions/api-discovery-local-app.yaml",
+      "execution_mode": "executable",
       "id": "api-discovery-local-app",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2609,6 +2827,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "definitions/detection-rule-regression.yaml",
+      "execution_mode": "executable",
       "id": "detection-rule-regression",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2624,6 +2844,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "definitions/dns-resolution-inventory.yaml",
+      "execution_mode": "executable",
       "id": "dns-resolution-inventory",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2639,6 +2861,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "graphql-schema-safety",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2654,6 +2878,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "definitions/iac-security-review.yaml",
+      "execution_mode": "executable",
       "id": "iac-security-review",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2669,6 +2895,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "definitions/kubernetes-posture-review.yaml",
+      "execution_mode": "executable",
       "id": "kubernetes-posture-review",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2684,6 +2912,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "memory-image-triage",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2699,6 +2929,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "secrets-rotation-exercise",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2714,6 +2946,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "timeline-analysis-synthetic",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2729,6 +2963,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "definitions/tls-certificate-review.yaml",
+      "execution_mode": "executable",
       "id": "tls-certificate-review",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2744,6 +2980,59 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
+      "id": "api-security",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "API Security",
+      "path": "learning-paths/api-security/README.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
+      "id": "devsecops",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "DevSecOps",
+      "path": "learning-paths/devsecops/README.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
+      "id": "network-security",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sections": [],
+      "missing_sources": [],
+      "name": "Network Security",
+      "path": "learning-paths/network-security/README.md",
+      "recommended_actions": [],
+      "stale_verification": false,
+      "type": "learning-path",
+      "verification_status": "needs-review"
+    },
+    {
+      "completeness_score": 98,
+      "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "api-discovery",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2759,6 +3048,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "certificate-review",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2774,6 +3065,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "certificate-transparency",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2789,6 +3082,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "cloud-configuration-assessment",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2804,6 +3099,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "container-security-scanning",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2819,6 +3116,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "content-discovery",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2834,6 +3133,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "dependency-analysis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2849,6 +3150,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "detection-engineering",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2864,6 +3167,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "digital-forensics",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2879,6 +3184,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "dns-enumeration",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2894,6 +3201,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "dynamic-analysis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2909,6 +3218,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "host-discovery",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2924,6 +3235,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "iac-scanning",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2939,6 +3252,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "incident-triage",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2954,6 +3269,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "log-analysis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2969,6 +3286,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "malware-analysis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2984,6 +3303,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "memory-analysis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -2999,6 +3320,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "network-scanning",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3014,6 +3337,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "packet-analysis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3029,6 +3354,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "phishing-resistant-authentication",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3044,6 +3371,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "reverse-engineering",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3059,6 +3388,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "secrets-detection",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3074,6 +3405,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "secure-code-review",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3089,6 +3422,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "security-testing",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3104,6 +3439,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "service-enumeration",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3119,6 +3456,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "static-analysis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3134,6 +3473,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "subdomain-discovery",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3149,6 +3490,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "threat-hunting",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3164,6 +3507,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "threat-intelligence-analysis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3179,6 +3524,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "timeline-analysis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3194,6 +3541,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "traffic-analysis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3209,6 +3558,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "vulnerability-assessment",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3224,6 +3575,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "vulnerability-prioritization",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3239,6 +3592,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "web-enumeration",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3254,6 +3609,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "android",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3269,6 +3626,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "apache",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3284,6 +3643,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "aws",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3299,6 +3660,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "azure",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3314,6 +3677,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "c",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3329,6 +3694,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "dns",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3344,6 +3711,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "docker",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3359,6 +3728,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "gcp",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3374,6 +3745,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "git",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3389,6 +3762,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "github-actions",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3404,6 +3779,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "http",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3419,6 +3796,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "java",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3434,6 +3813,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "kubernetes",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3449,6 +3830,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "linux",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3464,6 +3847,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "macos",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3479,6 +3864,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "mongodb",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3494,6 +3881,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "mysql",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3509,6 +3898,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "nginx",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3524,6 +3915,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "nodejs",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3539,6 +3932,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "php",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3554,6 +3949,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "postgresql",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3569,6 +3966,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "python",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3584,6 +3983,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "rest-apis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3599,6 +4000,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "tls",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3614,6 +4017,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "windows",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3629,6 +4034,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "arkime",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3644,6 +4051,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "clamav",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3659,6 +4068,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "dnsx",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3674,6 +4085,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "feroxbuster",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3689,6 +4102,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "gitleaks",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3704,6 +4119,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "httpie",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3719,6 +4136,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "httpx",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3734,6 +4153,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "kics",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3749,6 +4170,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "kube-hunter",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3764,6 +4187,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "kubescape",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3779,6 +4204,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "lynis",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3794,6 +4221,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "misp",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3809,6 +4238,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "mitmproxy",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3824,6 +4255,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "naabu",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3839,6 +4272,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "opencti",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3854,6 +4289,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "rustscan",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3869,6 +4306,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "security-onion",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3884,6 +4323,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "testssl-sh",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3899,6 +4340,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "tetragon",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3914,6 +4357,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "trufflehog",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3929,6 +4374,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "velociraptor",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3944,6 +4391,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "zmap",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3959,6 +4408,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "api-rate-limit-weakness",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3974,6 +4425,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "broken-function-level-authorization",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -3989,6 +4442,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "excessive-data-exposure",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4004,6 +4459,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "file-inclusion",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4019,6 +4476,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "host-header-injection",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4034,6 +4493,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "http-request-smuggling",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4049,6 +4510,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "improper-api-inventory",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4064,6 +4527,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "improper-certificate-validation",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4079,6 +4544,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "mass-assignment",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4094,6 +4561,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "mfa-weaknesses",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4109,6 +4578,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "open-redirect",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4124,6 +4595,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "password-reset-flaws",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4139,6 +4612,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "predictable-randomness",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4154,6 +4629,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "prototype-pollution",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4169,6 +4646,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "public-cloud-storage-exposure",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4184,6 +4663,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "session-fixation",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4199,6 +4680,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "session-hijacking",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4214,6 +4697,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "weak-key-management",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4229,6 +4714,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "weak-password-policy",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4244,6 +4731,8 @@
     {
       "completeness_score": 98,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "web-cache-poisoning",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4259,6 +4748,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "aircrack-ng",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4274,6 +4765,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "amass",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4289,6 +4782,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "autopsy",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4304,6 +4799,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "bandit",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4319,6 +4816,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "burp-suite",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4334,6 +4833,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "capa",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4349,6 +4850,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "checkov",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4364,6 +4867,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "cutter",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4379,6 +4884,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "exiftool",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4394,6 +4901,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "ffuf",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4409,6 +4918,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "floss",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4424,6 +4935,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "ghidra",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4439,6 +4952,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "gobuster",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4454,6 +4969,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "greenbone-openvas",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4469,6 +4986,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "grype",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4484,6 +5003,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "hashcat",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4499,6 +5020,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "hydra",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4514,6 +5037,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "john-the-ripper",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4529,6 +5054,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "kismet",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4544,6 +5071,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "kube-bench",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4559,6 +5088,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "masscan",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4574,6 +5105,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "nikto",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4589,6 +5122,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "nmap",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4604,6 +5139,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "nuclei",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4619,6 +5156,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "openscap",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4634,6 +5173,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "osquery",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4649,6 +5190,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "osv-scanner",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4664,6 +5207,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "owasp-zap",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4679,6 +5224,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "prowler",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4694,6 +5241,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "radare2",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4709,6 +5258,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "recon-ng",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4724,6 +5275,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "semgrep",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4739,6 +5292,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "sherlock",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4754,6 +5309,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "sigma",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4769,6 +5326,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "snort",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4784,6 +5343,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "spiderfoot",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4799,6 +5360,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "sqlmap",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4814,6 +5377,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "subfinder",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4829,6 +5394,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "suricata",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4844,6 +5411,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "syft",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4859,6 +5428,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "tcpdump",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4874,6 +5445,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "theharvester",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4889,6 +5462,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "trivy",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4904,6 +5479,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "volatility3",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4919,6 +5496,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "wazuh",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4934,6 +5513,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "wireshark",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4949,6 +5530,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "yara",
       "missing_metadata": [],
       "missing_relationships": [],
@@ -4964,6 +5547,8 @@
     {
       "completeness_score": 100,
       "confidence": "low",
+      "definition": "",
+      "execution_mode": "",
       "id": "zeek",
       "missing_metadata": [],
       "missing_relationships": [],

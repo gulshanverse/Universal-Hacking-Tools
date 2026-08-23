@@ -3,9 +3,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Policies and enforcement mechanisms that constrain access to resources and actions.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "access-control",
       "keywords": [
         "access",
@@ -83,9 +85,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Programmatic interfaces that expose data or operations across trust boundaries.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "apis",
       "keywords": [
         "apis"
@@ -103,6 +107,10 @@
         {
           "relationship": "prerequisite-for-recommended",
           "target": "concept:rest"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:api-discovery-local-app"
         },
         {
           "relationship": "prerequisite-for-required",
@@ -190,9 +198,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A local-network mechanism for resolving IPv4 addresses to link-layer addresses.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "arp",
       "keywords": [
         "arp"
@@ -237,9 +247,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The set of exposed assets, interfaces, trust boundaries, and paths that may require protection.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "attack-surface",
       "keywords": [
         "attack",
@@ -254,6 +266,10 @@
         {
           "relationship": "prerequisite-for-recommended",
           "target": "concept:firewalls"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:detection-rule-regression"
         },
         {
           "relationship": "prerequisite-for-recommended",
@@ -506,9 +522,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The process of establishing confidence in an identity or presented credential.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "authentication",
       "keywords": [
         "authentication"
@@ -682,9 +700,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The decision process that determines what an authenticated principal may do.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "authorization",
       "keywords": [
         "authorization"
@@ -710,6 +730,10 @@
         {
           "relationship": "prerequisite-for-recommended",
           "target": "concept:zero-trust"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:api-discovery-local-app"
         },
         {
           "relationship": "prerequisite-for-required",
@@ -894,9 +918,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Signed data structures that bind identities or attributes to public keys.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "certificates",
       "keywords": [
         "certificates",
@@ -925,6 +951,10 @@
         {
           "relationship": "requires-prerequisite-recommended",
           "target": "concept:tls"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:tls-certificate-review"
         },
         {
           "relationship": "prerequisite-for-required",
@@ -974,9 +1004,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A packaging and isolation model for applications and their dependencies, with security boundaries defined by the runtime and configuration.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "containers",
       "keywords": [
         "containers",
@@ -1001,6 +1033,10 @@
         {
           "relationship": "requires-prerequisite-recommended",
           "target": "concept:processes"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:kubernetes-posture-review"
         },
         {
           "relationship": "requires-prerequisite-required",
@@ -1053,9 +1089,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Small pieces of state sent between an HTTP user agent and a server under defined scope and attribute rules.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "cookies",
       "keywords": [
         "cookies"
@@ -1136,9 +1174,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A browser mechanism through which servers declare permitted cross-origin access.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "cors",
       "keywords": [
         "cors"
@@ -1212,9 +1252,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The discipline of designing and using mechanisms for confidentiality, integrity, authentication, and non-repudiation.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "cryptography",
       "keywords": [
         "cryptography"
@@ -1240,6 +1282,10 @@
         {
           "relationship": "prerequisite-for-required",
           "target": "concept:randomness"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:tls-certificate-review"
         },
         {
           "relationship": "concept-of",
@@ -1294,9 +1340,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A method for labeling information so handling and protection match sensitivity.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "data-classification",
       "keywords": [
         "classification",
@@ -1366,9 +1414,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Using layered, independent safeguards so one failure does not expose the whole system.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "defense-in-depth",
       "keywords": [
         "defense",
@@ -1432,9 +1482,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A protocol for dynamically configuring hosts with network parameters.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "dhcp",
       "keywords": [
         "dhcp"
@@ -1477,9 +1529,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Cryptographic evidence used to support integrity and signer authentication.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "digital-signatures",
       "keywords": [
         "cryptography",
@@ -1545,9 +1599,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The distributed naming system that maps domain names to resource records.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "dns",
       "keywords": [
         "dns"
@@ -1558,6 +1614,10 @@
       "platforms": [],
       "prerequisites": [],
       "relationships": [
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:dns-resolution-inventory"
+        },
         {
           "relationship": "concept-of",
           "target": "technique:dns-enumeration"
@@ -1625,9 +1685,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The transformation of data to protect confidentiality using a cryptographic key.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "encryption",
       "keywords": [
         "encryption"
@@ -1681,9 +1743,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Structures and rules for storing, naming, protecting, and recovering files.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "file-systems",
       "keywords": [
         "digital",
@@ -1759,9 +1823,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Policy enforcement points that control traffic between trust zones.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "firewalls",
       "keywords": [
         "attack",
@@ -1827,9 +1893,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A query language and execution model for APIs with client-selected fields.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "graphql",
       "keywords": [
         "apis",
@@ -1895,9 +1963,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Mapping input data to a fixed-size digest for integrity, lookup, or password-storage designs.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "hashing",
       "keywords": [
         "hashing"
@@ -1959,9 +2029,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The application protocol used to transfer web resources and API messages.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "http",
       "keywords": [
         "http"
@@ -2075,9 +2147,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Client messages that identify a method, target, headers, and optional content for an HTTP operation.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "http-requests",
       "keywords": [
         "http",
@@ -2089,6 +2163,10 @@
       "platforms": [],
       "prerequisites": [],
       "relationships": [
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:api-discovery-local-app"
+        },
         {
           "relationship": "prerequisite-for-recommended",
           "target": "technique:api-discovery"
@@ -2180,9 +2258,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Server messages that communicate status, headers, and optional content to an HTTP client.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "http-responses",
       "keywords": [
         "http",
@@ -2275,9 +2355,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "HTTP carried over a protected transport, commonly TLS, to provide confidentiality and integrity in transit.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "https",
       "keywords": [
         "https"
@@ -2367,9 +2449,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A control and diagnostic protocol used with IP networks.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "icmp",
       "keywords": [
         "icmp",
@@ -2424,9 +2508,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The process of checking untrusted input against an explicit, context-appropriate contract.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "input-validation",
       "keywords": [
         "input",
@@ -2526,9 +2612,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The lifecycle controls for generating, storing, using, rotating, and retiring cryptographic keys.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "key-management",
       "keywords": [
         "cryptography",
@@ -2597,9 +2685,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Granting only the access required for a task, identity, process, or workload.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "least-privilege",
       "keywords": [
         "access",
@@ -2630,6 +2720,14 @@
         {
           "relationship": "requires-prerequisite-required",
           "target": "concept:authorization"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:iac-security-review"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:kubernetes-posture-review"
         }
       ],
       "security_domains": [],
@@ -2669,9 +2767,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Volatile storage used by running programs and operating-system components.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "memory",
       "keywords": [
         "digital",
@@ -2742,9 +2842,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A mechanism that translates address or port information across a network boundary.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "nat",
       "keywords": [
         "ip",
@@ -2812,9 +2914,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The systems and protocols that allow hosts, services, and users to exchange data.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "networking",
       "keywords": [
         "networking"
@@ -2844,6 +2948,10 @@
         {
           "relationship": "prerequisite-for-required",
           "target": "concept:switching"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:dns-resolution-inventory"
         },
         {
           "relationship": "prerequisite-for-required",
@@ -2924,9 +3032,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A layered model for reasoning about network communication and security boundaries.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "osi-model",
       "keywords": [
         "model",
@@ -2983,9 +3093,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Rules that govern which principals or processes may access resources.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "permissions",
       "keywords": [
         "access",
@@ -3051,9 +3163,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The people, processes, and technologies used to manage public-key certificates and trust.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "pki",
       "keywords": [
         "cryptography",
@@ -3128,9 +3242,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Transport-layer identifiers that help a host direct traffic to services.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "ports",
       "keywords": [
         "ports"
@@ -3216,9 +3332,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The responsible protection of people\u2019s data, choices, identity, and freedom from unnecessary observation or disclosure.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "privacy",
       "keywords": [
         "privacy"
@@ -3297,9 +3415,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Operating-system execution units with identity, resources, and observable lifecycle events.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "processes",
       "keywords": [
         "linux",
@@ -3391,9 +3511,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Intermediaries that mediate requests, responses, or connections between parties.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "proxies",
       "keywords": [
         "http",
@@ -3457,9 +3579,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The generation and evaluation of unpredictable values used in security mechanisms.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "randomness",
       "keywords": [
         "cryptography",
@@ -3515,9 +3639,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A resource-oriented architectural style commonly used for HTTP APIs.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "rest",
       "keywords": [
         "apis",
@@ -3580,9 +3706,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A structured process for identifying, evaluating, treating, and monitoring security risk.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "risk-management",
       "keywords": [
         "management",
@@ -3659,9 +3787,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The process of selecting paths for packets between networks.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "routing",
       "keywords": [
         "ip",
@@ -3733,9 +3863,11 @@
         "same origin policy"
       ],
       "category": "",
+      "definition": "",
       "description": "A browser security boundary that restricts how documents and scripts from different origins interact.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "same-origin-policy",
       "keywords": [
         "origin",
@@ -3816,9 +3948,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A machine-readable inventory of software components and relationships.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "sbom",
       "keywords": [
         "chain",
@@ -3888,9 +4022,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Security activities integrated across software planning, design, implementation, release, and maintenance.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "secure-sdlc",
       "keywords": [
         "management",
@@ -3922,6 +4058,10 @@
         {
           "relationship": "requires-prerequisite-recommended",
           "target": "concept:vulnerability-management"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:iac-security-review"
         },
         {
           "relationship": "prerequisite-for-recommended",
@@ -3978,9 +4118,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The collection and analysis of telemetry to identify risk, anomalies, and security events.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "security-monitoring",
       "keywords": [
         "monitoring",
@@ -3995,6 +4137,10 @@
         {
           "relationship": "prerequisite-for-recommended",
           "target": "concept:processes"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:detection-rule-regression"
         },
         {
           "relationship": "prerequisite-for-required",
@@ -4204,9 +4350,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Network or local processes that expose capabilities through defined interfaces.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "services",
       "keywords": [
         "services"
@@ -4286,9 +4434,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Server- or client-associated state used to maintain continuity across related requests.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "sessions",
       "keywords": [
         "sessions"
@@ -4377,9 +4527,11 @@
         "supply chain security"
       ],
       "category": "",
+      "definition": "",
       "description": "Protection of software, dependencies, build systems, and delivery paths from tampering or weakness.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "supply-chain-security",
       "keywords": [
         "chain",
@@ -4416,6 +4568,10 @@
         {
           "relationship": "requires-prerequisite-required",
           "target": "concept:vulnerability-management"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:kubernetes-posture-review"
         },
         {
           "relationship": "prerequisite-for-required",
@@ -4467,9 +4623,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Forwarding frames within a local network using link-layer information.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "switching",
       "keywords": [
         "networking",
@@ -4524,9 +4682,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Interfaces through which programs request operating-system services.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "system-calls",
       "keywords": [
         "calls",
@@ -4590,9 +4750,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A connection-oriented transport protocol that provides ordered, reliable byte streams.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "tcp",
       "keywords": [
         "tcp"
@@ -4644,9 +4806,11 @@
         "tcp ip"
       ],
       "category": "",
+      "definition": "",
       "description": "The layered protocol suite used to move data across interconnected networks.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "tcp-ip",
       "keywords": [
         "ip",
@@ -4746,9 +4910,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A structured way to identify assets, trust boundaries, threats, and security requirements.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "threat-modeling",
       "keywords": [
         "modeling",
@@ -4795,6 +4961,10 @@
         {
           "relationship": "prerequisite-for-recommended",
           "target": "lab:graphql-schema-safety"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:iac-security-review"
         },
         {
           "relationship": "prerequisite-for-recommended",
@@ -5049,9 +5219,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A protocol for authenticated, confidential, and integrity-protected communication.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "tls",
       "keywords": [
         "tls"
@@ -5073,6 +5245,10 @@
         {
           "relationship": "prerequisite-for-recommended",
           "target": "concept:websockets"
+        },
+        {
+          "relationship": "concept-taught-by",
+          "target": "lab:tls-certificate-review"
         },
         {
           "relationship": "concept-of",
@@ -5115,9 +5291,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A connectionless transport protocol that provides datagrams without TCP-style delivery guarantees.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "udp",
       "keywords": [
         "udp"
@@ -5168,9 +5346,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Operating-system identity groupings used to assign ownership and access.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "users-and-groups",
       "keywords": [
         "and",
@@ -5238,9 +5418,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The repeatable process of finding, prioritizing, remediating, and verifying weaknesses.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "vulnerability-management",
       "keywords": [
         "management",
@@ -5467,9 +5649,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A protocol for long-lived, bidirectional communication over a web connection.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "websockets",
       "keywords": [
         "http",
@@ -5534,9 +5718,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A security approach that continuously evaluates access instead of trusting network location alone.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "zero-trust",
       "keywords": [
         "access",
@@ -5617,9 +5803,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Restricting execution to approved software or rulesets with managed exceptions.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "application-allowlisting",
       "keywords": [
         "allowlisting",
@@ -5669,9 +5857,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "An authoritative record of systems, software, owners, exposure, and lifecycle state.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "asset-inventory",
       "keywords": [
         "asset",
@@ -5683,6 +5873,10 @@
       "platforms": [],
       "prerequisites": [],
       "relationships": [
+        {
+          "relationship": "control-reinforced-by",
+          "target": "lab:dns-resolution-inventory"
+        },
         {
           "relationship": "control-for",
           "target": "tool:misp"
@@ -5732,9 +5926,11 @@
         "backup"
       ],
       "category": "",
+      "definition": "",
       "description": "Protected, tested copies and recovery procedures for resilience after loss or compromise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "backup",
       "keywords": [
         "and",
@@ -5783,9 +5979,11 @@
         "csp"
       ],
       "category": "",
+      "definition": "",
       "description": "A browser policy that constrains executable and embeddable web content.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "csp",
       "keywords": [
         "content",
@@ -5831,9 +6029,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Policy and technical controls that reduce unauthorized disclosure of sensitive data.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "data-loss-prevention",
       "keywords": [
         "data",
@@ -5893,9 +6093,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Inventorying, pinning, reviewing, updating, and removing software dependencies.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "dependency-management",
       "keywords": [
         "dependency",
@@ -5938,9 +6140,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Endpoint telemetry and response capability for investigating and containing host activity.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "edr",
       "keywords": [
         "analysis",
@@ -6114,9 +6318,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Protecting data in transit or at rest with reviewed cryptographic designs and managed keys.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "encryption",
       "keywords": [
         "analysis",
@@ -6254,9 +6460,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Host-level collection and analysis designed to identify suspicious or policy-relevant activity.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "endpoint-detection",
       "keywords": [
         "analysis",
@@ -6466,9 +6674,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Reducing host attack surface through secure configuration, patching, and controlled execution.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "endpoint-hardening",
       "keywords": [
         "endpoint",
@@ -6514,9 +6724,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A control that permits or denies traffic according to defined policy.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "firewall",
       "keywords": [
         "enumeration",
@@ -6637,9 +6849,11 @@
         "ips"
       ],
       "category": "",
+      "definition": "",
       "description": "Network controls that detect or prevent activity matching defined signals or rules.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "ids-ips",
       "keywords": [
         "analysis",
@@ -6787,9 +7001,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Constraining untrusted input before it reaches an interpreter, parser, or sensitive operation.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "input-validation",
       "keywords": [
         "command",
@@ -6958,9 +7174,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Granting only the access required for a task, identity, process, or workload.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "least-privilege",
       "keywords": [
         "access",
@@ -6982,6 +7200,18 @@
       "platforms": [],
       "prerequisites": [],
       "relationships": [
+        {
+          "relationship": "control-reinforced-by",
+          "target": "lab:api-discovery-local-app"
+        },
+        {
+          "relationship": "control-reinforced-by",
+          "target": "lab:iac-security-review"
+        },
+        {
+          "relationship": "control-reinforced-by",
+          "target": "lab:kubernetes-posture-review"
+        },
         {
           "relationship": "control-for",
           "target": "technique:cloud-configuration-assessment"
@@ -7168,9 +7398,11 @@
         "multi-factor authentication"
       ],
       "category": "",
+      "definition": "",
       "description": "Authentication using multiple independent factors to increase assurance.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "mfa",
       "keywords": [
         "analysis",
@@ -7311,9 +7543,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Continuous observation of network health, policy, and security-relevant behavior.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "network-monitoring",
       "keywords": [
         "monitoring",
@@ -7324,7 +7558,16 @@
       "path": "knowledge/defensive-controls/network-monitoring.md",
       "platforms": [],
       "prerequisites": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "relationship": "control-reinforced-by",
+          "target": "lab:detection-rule-regression"
+        },
+        {
+          "relationship": "control-reinforced-by",
+          "target": "lab:dns-resolution-inventory"
+        }
+      ],
       "security_domains": [],
       "sources": [
         "https://csrc.nist.gov/pubs/sp/800/94/final"
@@ -7357,9 +7600,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Separating systems and trust zones to constrain reachability and blast radius.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "network-segmentation",
       "keywords": [
         "analysis",
@@ -7379,6 +7624,10 @@
       "platforms": [],
       "prerequisites": [],
       "relationships": [
+        {
+          "relationship": "control-reinforced-by",
+          "target": "lab:kubernetes-posture-review"
+        },
         {
           "relationship": "control-for",
           "target": "technique:network-scanning"
@@ -7511,9 +7760,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Separating SQL code from values so data is not interpreted as query structure.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "parameterized-queries",
       "keywords": [
         "analysis",
@@ -7635,9 +7886,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A lifecycle for assessing, deploying, and verifying software and firmware updates.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "patch-management",
       "keywords": [
         "management",
@@ -7682,9 +7935,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A control that constrains request or action frequency to protect availability and abuse resistance.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "rate-limiting",
       "keywords": [
         "limiting",
@@ -7738,9 +7993,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Protecting, rotating, scoping, and auditing credentials and other sensitive machine secrets.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "secrets-management",
       "keywords": [
         "analysis",
@@ -7873,9 +8130,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Maintaining systems and services in a documented, hardened, and monitored state.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "secure-configuration",
       "keywords": [
         "assessment",
@@ -7894,6 +8153,18 @@
       "platforms": [],
       "prerequisites": [],
       "relationships": [
+        {
+          "relationship": "control-reinforced-by",
+          "target": "lab:iac-security-review"
+        },
+        {
+          "relationship": "control-reinforced-by",
+          "target": "lab:kubernetes-posture-review"
+        },
+        {
+          "relationship": "control-reinforced-by",
+          "target": "lab:tls-certificate-review"
+        },
         {
           "relationship": "control-for",
           "target": "technique:cloud-configuration-assessment"
@@ -8156,9 +8427,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Cookie attributes and lifecycle controls that reduce session exposure.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "secure-cookies",
       "keywords": [
         "cookies",
@@ -8211,9 +8484,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Protected, useful, and appropriately retained records that support detection and investigation.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "secure-logging",
       "keywords": [
         "analysis",
@@ -8236,6 +8511,14 @@
       "platforms": [],
       "prerequisites": [],
       "relationships": [
+        {
+          "relationship": "control-reinforced-by",
+          "target": "lab:api-discovery-local-app"
+        },
+        {
+          "relationship": "control-reinforced-by",
+          "target": "lab:detection-rule-regression"
+        },
         {
           "relationship": "control-for",
           "target": "technique:cloud-configuration-assessment"
@@ -8649,9 +8932,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Security practices embedded throughout software development and maintenance.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "secure-sdlc",
       "keywords": [
         "sdlc",
@@ -8699,9 +8984,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "HTTP response policies that help constrain browser behavior and reduce web attack surface.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "security-headers",
       "keywords": [
         "cross",
@@ -8863,9 +9150,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A platform and process for collecting, correlating, searching, and retaining security telemetry.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "siem",
       "keywords": [
         "siem"
@@ -8875,7 +9164,12 @@
       "path": "knowledge/defensive-controls/siem.md",
       "platforms": [],
       "prerequisites": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "relationship": "control-reinforced-by",
+          "target": "lab:detection-rule-regression"
+        }
+      ],
       "security_domains": [],
       "sources": [
         "https://csrc.nist.gov/pubs/sp/800/92/final"
@@ -8911,9 +9205,11 @@
         "supply chain controls"
       ],
       "category": "",
+      "definition": "",
       "description": "Controls for provenance, build integrity, artifact signing, and dependency risk.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "supply-chain-controls",
       "keywords": [
         "chain",
@@ -8968,9 +9264,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A governance and engineering process for prioritizing and remediating weaknesses.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "vulnerability-management",
       "keywords": [
         "assessment",
@@ -9103,9 +9401,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Continuous, context-aware access decisions that do not rely on network location alone.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "zero-trust",
       "keywords": [
         "trust",
@@ -9155,9 +9455,11 @@
         "api discovery local app"
       ],
       "category": "",
+      "definition": "definitions/api-discovery-local-app.yaml",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "executable",
       "id": "api-discovery-local-app",
       "keywords": [
         "a",
@@ -9186,16 +9488,52 @@
       ],
       "relationships": [
         {
+          "relationship": "teaches-concept",
+          "target": "concept:apis"
+        },
+        {
           "relationship": "requires-prerequisite-required",
           "target": "concept:authorization"
+        },
+        {
+          "relationship": "teaches-concept",
+          "target": "concept:authorization"
+        },
+        {
+          "relationship": "teaches-concept",
+          "target": "concept:http-requests"
         },
         {
           "relationship": "requires-prerequisite-recommended",
           "target": "concept:threat-modeling"
         },
         {
+          "relationship": "reinforces-control",
+          "target": "defensive-control:least-privilege"
+        },
+        {
+          "relationship": "reinforces-control",
+          "target": "defensive-control:secure-logging"
+        },
+        {
+          "relationship": "belongs-to-learning-path",
+          "target": "learning-path:api-security"
+        },
+        {
+          "relationship": "practices-technique",
+          "target": "technique:api-discovery"
+        },
+        {
+          "relationship": "uses-tool",
+          "target": "tool:httpie"
+        },
+        {
           "relationship": "related-from-lab",
           "target": "vulnerability:api-rate-limit-weakness"
+        },
+        {
+          "relationship": "demonstrates-vulnerability",
+          "target": "vulnerability:broken-function-level-authorization"
         },
         {
           "relationship": "related-from-lab",
@@ -9250,9 +9588,11 @@
         "authentication session review"
       ],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "authentication-session-review",
       "keywords": [
         "and",
@@ -9295,9 +9635,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "authorization-matrix-testing",
       "keywords": [
         "authorization",
@@ -9340,9 +9682,11 @@
         "cloud least privilege review"
       ],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "cloud-least-privilege-review",
       "keywords": [
         "cloud",
@@ -9387,9 +9731,11 @@
         "container sbom and scan"
       ],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "container-sbom-and-scan",
       "keywords": [
         "and",
@@ -9434,9 +9780,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "detection-rule-engineering",
       "keywords": [
         "detection",
@@ -9477,9 +9825,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "definitions/detection-rule-regression.yaml",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "executable",
       "id": "detection-rule-regression",
       "keywords": [
         "authorization",
@@ -9505,12 +9855,52 @@
       ],
       "relationships": [
         {
+          "relationship": "teaches-concept",
+          "target": "concept:attack-surface"
+        },
+        {
           "relationship": "requires-prerequisite-required",
           "target": "concept:authorization"
         },
         {
+          "relationship": "teaches-concept",
+          "target": "concept:security-monitoring"
+        },
+        {
           "relationship": "requires-prerequisite-recommended",
           "target": "concept:threat-modeling"
+        },
+        {
+          "relationship": "reinforces-control",
+          "target": "defensive-control:network-monitoring"
+        },
+        {
+          "relationship": "reinforces-control",
+          "target": "defensive-control:secure-logging"
+        },
+        {
+          "relationship": "reinforces-control",
+          "target": "defensive-control:siem"
+        },
+        {
+          "relationship": "belongs-to-learning-path",
+          "target": "learning-path:blue-team"
+        },
+        {
+          "relationship": "belongs-to-learning-path",
+          "target": "learning-path:soc-analyst"
+        },
+        {
+          "relationship": "practices-technique",
+          "target": "technique:detection-engineering"
+        },
+        {
+          "relationship": "practices-technique",
+          "target": "technique:log-analysis"
+        },
+        {
+          "relationship": "uses-tool",
+          "target": "tool:sigma"
         }
       ],
       "security_domains": [],
@@ -9546,9 +9936,11 @@
         "dns resolution inventory"
       ],
       "category": "",
+      "definition": "definitions/dns-resolution-inventory.yaml",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "executable",
       "id": "dns-resolution-inventory",
       "keywords": [
         "and",
@@ -9579,8 +9971,36 @@
           "target": "concept:authorization"
         },
         {
+          "relationship": "teaches-concept",
+          "target": "concept:dns"
+        },
+        {
+          "relationship": "teaches-concept",
+          "target": "concept:networking"
+        },
+        {
           "relationship": "requires-prerequisite-recommended",
           "target": "concept:threat-modeling"
+        },
+        {
+          "relationship": "reinforces-control",
+          "target": "defensive-control:asset-inventory"
+        },
+        {
+          "relationship": "reinforces-control",
+          "target": "defensive-control:network-monitoring"
+        },
+        {
+          "relationship": "belongs-to-learning-path",
+          "target": "learning-path:network-security"
+        },
+        {
+          "relationship": "practices-technique",
+          "target": "technique:dns-enumeration"
+        },
+        {
+          "relationship": "uses-tool",
+          "target": "tool:dnsx"
         }
       ],
       "security_domains": [],
@@ -9618,9 +10038,11 @@
         "evidence first analysis workflow"
       ],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "evidence-first-analysis",
       "keywords": [
         "analysis",
@@ -9665,9 +10087,11 @@
         "graphql schema safety"
       ],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "graphql-schema-safety",
       "keywords": [
         "authorization",
@@ -9734,9 +10158,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "http-request-analysis",
       "keywords": [
         "analysis",
@@ -9838,9 +10264,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "definitions/iac-security-review.yaml",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "executable",
       "id": "iac-security-review",
       "keywords": [
         "authorization",
@@ -9870,8 +10298,52 @@
           "target": "concept:authorization"
         },
         {
+          "relationship": "teaches-concept",
+          "target": "concept:least-privilege"
+        },
+        {
+          "relationship": "teaches-concept",
+          "target": "concept:secure-sdlc"
+        },
+        {
           "relationship": "requires-prerequisite-recommended",
           "target": "concept:threat-modeling"
+        },
+        {
+          "relationship": "teaches-concept",
+          "target": "concept:threat-modeling"
+        },
+        {
+          "relationship": "reinforces-control",
+          "target": "defensive-control:least-privilege"
+        },
+        {
+          "relationship": "reinforces-control",
+          "target": "defensive-control:secure-configuration"
+        },
+        {
+          "relationship": "belongs-to-learning-path",
+          "target": "learning-path:cloud-security"
+        },
+        {
+          "relationship": "belongs-to-learning-path",
+          "target": "learning-path:devsecops"
+        },
+        {
+          "relationship": "practices-technique",
+          "target": "technique:cloud-configuration-assessment"
+        },
+        {
+          "relationship": "practices-technique",
+          "target": "technique:iac-scanning"
+        },
+        {
+          "relationship": "uses-tool",
+          "target": "tool:checkov"
+        },
+        {
+          "relationship": "demonstrates-vulnerability",
+          "target": "vulnerability:cloud-misconfiguration"
         }
       ],
       "security_domains": [],
@@ -9905,9 +10377,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "definitions/kubernetes-posture-review.yaml",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "executable",
       "id": "kubernetes-posture-review",
       "keywords": [
         "authorization",
@@ -9937,8 +10411,52 @@
           "target": "concept:authorization"
         },
         {
+          "relationship": "teaches-concept",
+          "target": "concept:containers"
+        },
+        {
+          "relationship": "teaches-concept",
+          "target": "concept:least-privilege"
+        },
+        {
+          "relationship": "teaches-concept",
+          "target": "concept:supply-chain-security"
+        },
+        {
           "relationship": "requires-prerequisite-recommended",
           "target": "concept:threat-modeling"
+        },
+        {
+          "relationship": "reinforces-control",
+          "target": "defensive-control:least-privilege"
+        },
+        {
+          "relationship": "reinforces-control",
+          "target": "defensive-control:network-segmentation"
+        },
+        {
+          "relationship": "reinforces-control",
+          "target": "defensive-control:secure-configuration"
+        },
+        {
+          "relationship": "belongs-to-learning-path",
+          "target": "learning-path:cloud-security"
+        },
+        {
+          "relationship": "belongs-to-learning-path",
+          "target": "learning-path:devsecops"
+        },
+        {
+          "relationship": "practices-technique",
+          "target": "technique:container-security-scanning"
+        },
+        {
+          "relationship": "uses-tool",
+          "target": "tool:trivy"
+        },
+        {
+          "relationship": "demonstrates-vulnerability",
+          "target": "vulnerability:container-security"
         }
       ],
       "security_domains": [],
@@ -9972,9 +10490,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "localhost-service-inventory",
       "keywords": [
         "inventory",
@@ -10296,9 +10816,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "memory-analysis-fundamentals",
       "keywords": [
         "analysis",
@@ -10339,9 +10861,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "memory-image-triage",
       "keywords": [
         "authorization",
@@ -10406,9 +10930,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "packet-capture-fundamentals",
       "keywords": [
         "capture",
@@ -10730,9 +11256,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "secrets-rotation-exercise",
       "keywords": [
         "authorization",
@@ -10798,9 +11326,11 @@
         "sql injection concepts"
       ],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "documentation-only",
       "id": "sql-injection-concepts",
       "keywords": [
         "a",
@@ -10846,9 +11376,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "documentation-only",
       "id": "static-malware-triage",
       "keywords": [
         "malware",
@@ -10891,9 +11423,11 @@
         "timeline analysis synthetic"
       ],
       "category": "",
+      "definition": "",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "guided",
       "id": "timeline-analysis-synthetic",
       "keywords": [
         "analysis",
@@ -10962,9 +11496,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "definitions/tls-certificate-review.yaml",
       "description": "Controlled, authorized lab exercise.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "executable",
       "id": "tls-certificate-review",
       "keywords": [
         "authorization",
@@ -10994,8 +11530,40 @@
           "target": "concept:authorization"
         },
         {
+          "relationship": "teaches-concept",
+          "target": "concept:certificates"
+        },
+        {
+          "relationship": "teaches-concept",
+          "target": "concept:cryptography"
+        },
+        {
           "relationship": "requires-prerequisite-recommended",
           "target": "concept:threat-modeling"
+        },
+        {
+          "relationship": "teaches-concept",
+          "target": "concept:tls"
+        },
+        {
+          "relationship": "reinforces-control",
+          "target": "defensive-control:secure-configuration"
+        },
+        {
+          "relationship": "belongs-to-learning-path",
+          "target": "learning-path:network-security"
+        },
+        {
+          "relationship": "practices-technique",
+          "target": "technique:certificate-review"
+        },
+        {
+          "relationship": "uses-tool",
+          "target": "tool:testssl-sh"
+        },
+        {
+          "relationship": "demonstrates-vulnerability",
+          "target": "vulnerability:improper-certificate-validation"
         }
       ],
       "security_domains": [],
@@ -11029,9 +11597,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "api-security",
       "keywords": [
         "api",
@@ -11061,7 +11631,12 @@
           "type": "required"
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "relationship": "contains-lab",
+          "target": "lab:api-discovery-local-app"
+        }
+      ],
       "security_domains": [],
       "sources": [
         "https://github.com/gulshanverse/Universal-Hacking-Tools"
@@ -11112,9 +11687,11 @@
         "beginner"
       ],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "beginner",
       "keywords": [
         "beginner",
@@ -11155,9 +11732,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "blue-team",
       "keywords": [
         "blue",
@@ -11168,7 +11747,12 @@
       "path": "learning-paths/blue-team/README.md",
       "platforms": [],
       "prerequisites": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "relationship": "contains-lab",
+          "target": "lab:detection-rule-regression"
+        }
+      ],
       "security_domains": [],
       "sources": [
         "https://github.com/gulshanverse/Universal-Hacking-Tools"
@@ -11200,9 +11784,11 @@
         "bug bounty"
       ],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "bug-bounty",
       "keywords": [
         "bounty",
@@ -11244,9 +11830,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "cloud-security",
       "keywords": [
         "cloud",
@@ -11257,7 +11845,16 @@
       "path": "learning-paths/cloud-security/README.md",
       "platforms": [],
       "prerequisites": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "relationship": "contains-lab",
+          "target": "lab:iac-security-review"
+        },
+        {
+          "relationship": "contains-lab",
+          "target": "lab:kubernetes-posture-review"
+        }
+      ],
       "security_domains": [],
       "sources": [
         "https://github.com/gulshanverse/Universal-Hacking-Tools"
@@ -11287,9 +11884,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "devsecops",
       "keywords": [
         "chain",
@@ -11319,7 +11918,16 @@
           "type": "required"
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "relationship": "contains-lab",
+          "target": "lab:iac-security-review"
+        },
+        {
+          "relationship": "contains-lab",
+          "target": "lab:kubernetes-posture-review"
+        }
+      ],
       "security_domains": [],
       "sources": [
         "https://github.com/gulshanverse/Universal-Hacking-Tools"
@@ -11370,9 +11978,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "digital-forensics",
       "keywords": [
         "digital",
@@ -11422,9 +12032,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "ethical-hacking",
       "keywords": [
         "ethical",
@@ -11465,9 +12077,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "malware-analysis",
       "keywords": [
         "analysis",
@@ -11508,9 +12122,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "network-security",
       "keywords": [
         "firewalls",
@@ -11540,7 +12156,16 @@
           "type": "required"
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "relationship": "contains-lab",
+          "target": "lab:dns-resolution-inventory"
+        },
+        {
+          "relationship": "contains-lab",
+          "target": "lab:tls-certificate-review"
+        }
+      ],
       "security_domains": [],
       "sources": [
         "https://github.com/gulshanverse/Universal-Hacking-Tools"
@@ -11590,9 +12215,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "penetration-testing",
       "keywords": [
         "penetration",
@@ -11633,9 +12260,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "security-engineering",
       "keywords": [
         "engineering",
@@ -11676,9 +12305,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "soc-analyst",
       "keywords": [
         "analyst",
@@ -11689,7 +12320,12 @@
       "path": "learning-paths/soc-analyst/README.md",
       "platforms": [],
       "prerequisites": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "relationship": "contains-lab",
+          "target": "lab:detection-rule-regression"
+        }
+      ],
       "security_domains": [],
       "sources": [
         "https://github.com/gulshanverse/Universal-Hacking-Tools"
@@ -11719,9 +12355,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "threat-hunting",
       "keywords": [
         "hunting",
@@ -11796,9 +12434,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A staged, safety-first learning path.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "web-security",
       "keywords": [
         "cookies",
@@ -11880,9 +12520,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Map documented and observed API routes and schemas in an authorized application.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "api-discovery",
       "keywords": [
         "api",
@@ -11913,6 +12555,10 @@
         {
           "relationship": "requires-prerequisite-recommended",
           "target": "concept:http-requests"
+        },
+        {
+          "relationship": "technique-practiced-by",
+          "target": "lab:api-discovery-local-app"
         },
         {
           "relationship": "technique-of",
@@ -11955,9 +12601,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Check certificate identity, validity, chain, and configuration in an approved scope.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "certificate-review",
       "keywords": [
         "certificate",
@@ -11987,6 +12635,10 @@
         {
           "relationship": "requires-prerequisite-recommended",
           "target": "concept:pki"
+        },
+        {
+          "relationship": "technique-practiced-by",
+          "target": "lab:tls-certificate-review"
         }
       ],
       "security_domains": [],
@@ -12026,9 +12678,11 @@
         "certificate transparency"
       ],
       "category": "",
+      "definition": "",
       "description": "Use public certificate logs to improve owned-domain inventory and detection.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "certificate-transparency",
       "keywords": [
         "attack",
@@ -12099,9 +12753,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Review cloud identity, storage, network, logging, and workload settings against policy.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "cloud-configuration-assessment",
       "keywords": [
         "access",
@@ -12170,6 +12826,10 @@
         {
           "relationship": "mitigated-by",
           "target": "defensive-control:secure-logging"
+        },
+        {
+          "relationship": "technique-practiced-by",
+          "target": "lab:iac-security-review"
         },
         {
           "relationship": "uses-technology",
@@ -12317,9 +12977,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Assess image contents, configuration, provenance, and known weaknesses before deployment.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "container-security-scanning",
       "keywords": [
         "access",
@@ -12376,6 +13038,10 @@
         {
           "relationship": "mitigated-by",
           "target": "defensive-control:vulnerability-management"
+        },
+        {
+          "relationship": "technique-practiced-by",
+          "target": "lab:kubernetes-posture-review"
         },
         {
           "relationship": "uses-technology",
@@ -12517,9 +13183,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Identify expected and unexpected application paths in a controlled scope.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "content-discovery",
       "keywords": [
         "access",
@@ -12698,9 +13366,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Inventory dependencies and assess their version, provenance, and vulnerability risk.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "dependency-analysis",
       "keywords": [
         "analysis",
@@ -12775,9 +13445,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Create, test, tune, and maintain detections against defined behaviors.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "detection-engineering",
       "keywords": [
         "detection",
@@ -12809,6 +13481,10 @@
         {
           "relationship": "requires-prerequisite-recommended",
           "target": "concept:threat-modeling"
+        },
+        {
+          "relationship": "technique-practiced-by",
+          "target": "lab:detection-rule-regression"
         },
         {
           "relationship": "technique-of",
@@ -12863,9 +13539,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Preserve and interpret artifacts to answer a defined investigative question.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "digital-forensics",
       "keywords": [
         "access",
@@ -13070,9 +13748,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Organize DNS records and resolution behavior for owned domains.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "dns-enumeration",
       "keywords": [
         "access",
@@ -13114,6 +13794,10 @@
         {
           "relationship": "mitigated-by",
           "target": "defensive-control:secure-logging"
+        },
+        {
+          "relationship": "technique-practiced-by",
+          "target": "lab:dns-resolution-inventory"
         },
         {
           "relationship": "uses-technology",
@@ -13232,9 +13916,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Observe behavior in an isolated, controlled environment.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "dynamic-analysis",
       "keywords": [
         "access",
@@ -13400,9 +14086,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Identify reachable hosts within a defined authorized inventory.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "host-discovery",
       "keywords": [
         "attack",
@@ -13476,9 +14164,11 @@
         "infrastructure as code scanning"
       ],
       "category": "",
+      "definition": "",
       "description": "Review declarative infrastructure for insecure settings before deployment.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "iac-scanning",
       "keywords": [
         "as",
@@ -13508,6 +14198,10 @@
         {
           "relationship": "requires-prerequisite-required",
           "target": "defensive-control:secure-configuration"
+        },
+        {
+          "relationship": "technique-practiced-by",
+          "target": "lab:iac-security-review"
         },
         {
           "relationship": "technique-of",
@@ -13555,9 +14249,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Rapidly scope and prioritize a suspected security event using defensible evidence.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "incident-triage",
       "keywords": [
         "incident",
@@ -13636,9 +14332,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Extract evidence and patterns from security-relevant records.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "log-analysis",
       "keywords": [
         "access",
@@ -13693,6 +14391,10 @@
         {
           "relationship": "technique-of",
           "target": "defensive-control:secure-logging"
+        },
+        {
+          "relationship": "technique-practiced-by",
+          "target": "lab:detection-rule-regression"
         },
         {
           "relationship": "uses-technology",
@@ -13861,9 +14563,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Safely characterize suspicious software to support detection and response.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "malware-analysis",
       "keywords": [
         "access",
@@ -14031,9 +14735,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Interpret a preserved memory image for a defined forensic question.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "memory-analysis",
       "keywords": [
         "analysis",
@@ -14096,9 +14802,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Measure the exposure and reachability of approved network assets.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "network-scanning",
       "keywords": [
         "access",
@@ -14290,9 +14998,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Inspect packet captures to understand protocol behavior and evidence.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "packet-analysis",
       "keywords": [
         "access",
@@ -14507,9 +15217,11 @@
         "phishing resistant authentication"
       ],
       "category": "",
+      "definition": "",
       "description": "Use authentication factors and flows designed to resist credential replay and phishing.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "phishing-resistant-authentication",
       "keywords": [
         "authentication",
@@ -14575,9 +15287,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Recover program structure and behavior for authorized research or defense.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "reverse-engineering",
       "keywords": [
         "access",
@@ -14742,9 +15456,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Find likely secrets in owned code and repositories so they can be rotated and removed.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "secrets-detection",
       "keywords": [
         "detection",
@@ -14824,9 +15540,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Review source and design for security requirements, misuse cases, and regression coverage.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "secure-code-review",
       "keywords": [
         "code",
@@ -14901,9 +15619,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Use repeatable tests to evaluate security requirements and controls.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "security-testing",
       "keywords": [
         "access",
@@ -15244,9 +15964,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Identify and characterize services within an approved scope.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "service-enumeration",
       "keywords": [
         "access",
@@ -15415,9 +16137,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Inspect code, files, or binaries without executing the subject artifact.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "static-analysis",
       "keywords": [
         "access",
@@ -15668,9 +16392,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Find public or internal names that belong to an authorized domain inventory.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "subdomain-discovery",
       "keywords": [
         "access",
@@ -15848,9 +16574,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Form and test hypotheses against security telemetry.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "threat-hunting",
       "keywords": [
         "access",
@@ -16092,9 +16820,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Evaluate, contextualize, and responsibly share intelligence with provenance and confidence.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "threat-intelligence-analysis",
       "keywords": [
         "analysis",
@@ -16169,9 +16899,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Correlate artifact timestamps to reconstruct an investigative sequence.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "timeline-analysis",
       "keywords": [
         "analysis",
@@ -16240,9 +16972,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Interpret network flows and protocol signals for troubleshooting or defense.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "traffic-analysis",
       "keywords": [
         "access",
@@ -16402,9 +17136,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Find, prioritize, validate, and track weaknesses without exceeding scope.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "vulnerability-assessment",
       "keywords": [
         "access",
@@ -16741,9 +17477,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Rank remediation using exploitability, exposure, asset importance, and compensating controls.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "vulnerability-prioritization",
       "keywords": [
         "management",
@@ -16810,9 +17548,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Map routes, methods, parameters, and application surfaces in an authorized application.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "web-enumeration",
       "keywords": [
         "access",
@@ -17014,9 +17754,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A mobile operating-system platform with application, permission, package, and device security boundaries.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "android",
       "keywords": [
         "android"
@@ -17072,9 +17814,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "An automation platform whose inventories, modules, and credentials require least privilege.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "ansible",
       "keywords": [
         "ansible"
@@ -17120,9 +17864,11 @@
         "apache"
       ],
       "category": "",
+      "definition": "",
       "description": "A web server whose modules, virtual hosts, permissions, and logs require secure configuration.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "apache",
       "keywords": [
         "apache",
@@ -17184,9 +17930,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A public cloud platform whose security model includes customer and provider responsibilities.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "aws",
       "keywords": [
         "aws"
@@ -17249,9 +17997,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A public cloud platform with identity, compute, network, storage, and audit capabilities.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "azure",
       "keywords": [
         "azure"
@@ -17314,9 +18064,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A systems programming language used in operating systems, network tools, and security-sensitive software.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "c",
       "keywords": [
         "c"
@@ -17400,9 +18152,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "The naming and resolution system that supports service discovery and policy boundaries.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "dns",
       "keywords": [
         "dns"
@@ -17484,9 +18238,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A container tooling ecosystem for building, distributing, and running isolated application processes.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "docker",
       "keywords": [
         "docker"
@@ -17599,9 +18355,11 @@
         "dotnet"
       ],
       "category": "",
+      "definition": "",
       "description": "A software development and runtime ecosystem for applications and services.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "dotnet",
       "keywords": [
         "net"
@@ -17644,9 +18402,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A search and analytics engine whose exposed interfaces, roles, and data require protection.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "elasticsearch",
       "keywords": [
         "elasticsearch"
@@ -17691,9 +18451,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A public cloud platform with identity, data, compute, network, and audit capabilities.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "gcp",
       "keywords": [
         "gcp"
@@ -17756,9 +18518,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A distributed version-control system whose history and remotes may contain sensitive code or secrets.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "git",
       "keywords": [
         "git"
@@ -17815,9 +18579,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A CI/CD automation platform whose workflows and tokens form a software supply-chain boundary.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "github-actions",
       "keywords": [
         "actions",
@@ -17871,9 +18637,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A remote procedure call framework commonly secured with transport and identity controls.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "grpc",
       "keywords": [
         "grpc"
@@ -17918,9 +18686,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A web and API application protocol represented as requests and responses.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "http",
       "keywords": [
         "http"
@@ -18065,9 +18835,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A mobile operating system with application, identity, data, and platform security boundaries.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "ios",
       "keywords": [
         "ios"
@@ -18112,9 +18884,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A programming and runtime ecosystem used by security tooling and applications.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "java",
       "keywords": [
         "java"
@@ -18189,9 +18963,11 @@
         "kafka"
       ],
       "category": "",
+      "definition": "",
       "description": "A distributed event-streaming platform whose topics, brokers, identities, and retention require security review.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "kafka",
       "keywords": [
         "apache",
@@ -18240,9 +19016,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A platform for orchestrating containerized workloads and their network, identity, and lifecycle controls.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "kubernetes",
       "keywords": [
         "kubernetes"
@@ -18361,9 +19139,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A family of Unix-like operating systems widely used for servers, workstations, and security tooling.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "linux",
       "keywords": [
         "linux"
@@ -18801,9 +19581,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A desktop operating system with application, identity, filesystem, and endpoint security controls.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "macos",
       "keywords": [
         "macos"
@@ -18982,9 +19764,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A document-oriented database whose exposure and authorization configuration require careful review.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "mongodb",
       "keywords": [
         "mongodb"
@@ -19039,9 +19823,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A relational database system commonly integrated with web applications and APIs.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "mysql",
       "keywords": [
         "mysql"
@@ -19095,9 +19881,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A web server and reverse proxy whose configuration forms part of an application attack surface.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "nginx",
       "keywords": [
         "nginx"
@@ -19160,9 +19948,11 @@
         "nodejs"
       ],
       "category": "",
+      "definition": "",
       "description": "A JavaScript runtime used for server-side applications and tooling.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "nodejs",
       "keywords": [
         "js",
@@ -19213,9 +20003,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A server-side programming language commonly used in web applications.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "php",
       "keywords": [
         "php"
@@ -19263,9 +20055,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A relational database system whose security depends on authorization, query handling, configuration, and patching.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "postgresql",
       "keywords": [
         "postgresql"
@@ -19322,9 +20116,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A command and automation environment with powerful administrative and monitoring implications.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "powershell",
       "keywords": [
         "powershell"
@@ -19367,9 +20163,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A programming language widely used for automation, analysis, and security tooling.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "python",
       "keywords": [
         "python"
@@ -19443,9 +20241,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "An in-memory data platform whose network exposure, authentication, and data handling require review.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "redis",
       "keywords": [
         "redis"
@@ -19491,9 +20291,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "HTTP-based interfaces that expose resources and operations across application boundaries.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "rest-apis",
       "keywords": [
         "apis",
@@ -19627,9 +20429,11 @@
         "sbom"
       ],
       "category": "",
+      "definition": "",
       "description": "A machine-readable inventory of software components used for supply-chain visibility.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "sbom",
       "keywords": [
         "bill",
@@ -19679,9 +20483,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "An infrastructure-as-code workflow whose state, providers, and plans must be protected.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "terraform",
       "keywords": [
         "terraform"
@@ -19727,9 +20533,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A transport protection protocol commonly used to secure application traffic.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "tls",
       "keywords": [
         "tls"
@@ -19830,9 +20638,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "A family of operating systems with enterprise identity, endpoint, and event-logging ecosystems.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "windows",
       "keywords": [
         "windows"
@@ -20122,9 +20932,11 @@
         "aircrack ng"
       ],
       "category": "Wireless Security",
+      "definition": "",
       "description": "Wi-Fi security assessment. This page is written for lawful, authorized security education.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "aircrack-ng",
       "keywords": [
         "aircrack",
@@ -20327,9 +21139,11 @@
     {
       "aliases": [],
       "category": "Reconnaissance",
+      "definition": "",
       "description": "External attack surface mapping. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "amass",
       "keywords": [
         "amass",
@@ -20565,9 +21379,11 @@
     {
       "aliases": [],
       "category": "Network Analysis",
+      "definition": "",
       "description": "A network capture and indexing system for authorized monitoring and investigation.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "arkime",
       "keywords": [
         "analysis",
@@ -20722,9 +21538,11 @@
     {
       "aliases": [],
       "category": "Digital Forensics",
+      "definition": "",
       "description": "Forensic case analysis. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "autopsy",
       "keywords": [
         "analysis",
@@ -20904,9 +21722,11 @@
     {
       "aliases": [],
       "category": "Secure Development",
+      "definition": "",
       "description": "Python code security checks. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "bandit",
       "keywords": [
         "analysis",
@@ -21238,9 +22058,11 @@
     {
       "aliases": [],
       "category": "Web Security",
+      "definition": "",
       "description": "Web security assessment platform. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "burp-suite",
       "keywords": [
         "access",
@@ -21720,9 +22542,11 @@
     {
       "aliases": [],
       "category": "Malware Analysis",
+      "definition": "",
       "description": "Executable capability identification. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "capa",
       "keywords": [
         "analysis",
@@ -21938,9 +22762,11 @@
     {
       "aliases": [],
       "category": "Secure Development",
+      "definition": "",
       "description": "Infrastructure configuration analysis. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "checkov",
       "keywords": [
         "analysis",
@@ -22049,6 +22875,10 @@
         {
           "relationship": "mitigated-by",
           "target": "defensive-control:vulnerability-management"
+        },
+        {
+          "relationship": "tool-of",
+          "target": "lab:iac-security-review"
         },
         {
           "relationship": "related-to-lab",
@@ -22276,9 +23106,11 @@
     {
       "aliases": [],
       "category": "Malware Analysis",
+      "definition": "",
       "description": "An antivirus engine for scanning files and streams in defensive workflows.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "clamav",
       "keywords": [
         "analysis",
@@ -22453,9 +23285,11 @@
     {
       "aliases": [],
       "category": "Reverse Engineering",
+      "definition": "",
       "description": "Graphical binary analysis. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "cutter",
       "keywords": [
         "analysis",
@@ -22653,9 +23487,11 @@
     {
       "aliases": [],
       "category": "Reconnaissance",
+      "definition": "",
       "description": "A DNS toolkit for resolving and inspecting approved domain inventories.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "dnsx",
       "keywords": [
         "attack",
@@ -22696,6 +23532,10 @@
         {
           "relationship": "mitigated-by",
           "target": "defensive-control:secure-logging"
+        },
+        {
+          "relationship": "tool-of",
+          "target": "lab:dns-resolution-inventory"
         },
         {
           "relationship": "related-to-lab",
@@ -22790,9 +23630,11 @@
     {
       "aliases": [],
       "category": "OSINT",
+      "definition": "",
       "description": "File metadata inspection. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "exiftool",
       "keywords": [
         "analysis",
@@ -22965,9 +23807,11 @@
     {
       "aliases": [],
       "category": "Web Security",
+      "definition": "",
       "description": "A content-discovery tool for controlled web-application assessments.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "feroxbuster",
       "keywords": [
         "attack",
@@ -23121,9 +23965,11 @@
     {
       "aliases": [],
       "category": "Web Security",
+      "definition": "",
       "description": "Web content discovery. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "ffuf",
       "keywords": [
         "access",
@@ -23542,9 +24388,11 @@
     {
       "aliases": [],
       "category": "Malware Analysis",
+      "definition": "",
       "description": "String extraction from binaries. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "floss",
       "keywords": [
         "analysis",
@@ -23757,9 +24605,11 @@
     {
       "aliases": [],
       "category": "Reverse Engineering",
+      "definition": "",
       "description": "Static binary analysis. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "ghidra",
       "keywords": [
         "analysis",
@@ -23984,9 +24834,11 @@
     {
       "aliases": [],
       "category": "Secure Development",
+      "definition": "",
       "description": "A scanner for detecting likely secrets in repositories and files that you own.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "gitleaks",
       "keywords": [
         "actions",
@@ -24176,9 +25028,11 @@
     {
       "aliases": [],
       "category": "Web Security",
+      "definition": "",
       "description": "Directory and DNS enumeration. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "gobuster",
       "keywords": [
         "access",
@@ -24588,9 +25442,11 @@
         "openvas"
       ],
       "category": "Vulnerability Management",
+      "definition": "",
       "description": "Managed vulnerability assessment. This page is written for lawful, authorized security education.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "greenbone-openvas",
       "keywords": [
         "analysis",
@@ -24806,9 +25662,11 @@
     {
       "aliases": [],
       "category": "Container Security",
+      "definition": "",
       "description": "Image and filesystem vulnerability scanning. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "grype",
       "keywords": [
         "analysis",
@@ -25033,9 +25891,11 @@
     {
       "aliases": [],
       "category": "Password Security",
+      "definition": "",
       "description": "Offline password-strength auditing. This page is written for lawful, authorized security education.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "hashcat",
       "keywords": [
         "access",
@@ -25250,9 +26110,11 @@
     {
       "aliases": [],
       "category": "Web Security",
+      "definition": "",
       "description": "A human-friendly HTTP client for API development and controlled testing.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "httpie",
       "keywords": [
         "api",
@@ -25306,6 +26168,10 @@
         {
           "relationship": "mitigated-by",
           "target": "defensive-control:secure-logging"
+        },
+        {
+          "relationship": "tool-of",
+          "target": "lab:api-discovery-local-app"
         },
         {
           "relationship": "related-to-lab",
@@ -25424,9 +26290,11 @@
     {
       "aliases": [],
       "category": "Reconnaissance",
+      "definition": "",
       "description": "A fast HTTP probing utility for characterizing approved web assets.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "httpx",
       "keywords": [
         "attack",
@@ -25582,9 +26450,11 @@
         "hydra"
       ],
       "category": "Password Security",
+      "definition": "",
       "description": "Authorized authentication resilience testing. This page is written for lawful, authorized security education.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "hydra",
       "keywords": [
         "access",
@@ -25796,9 +26666,11 @@
         "jtr"
       ],
       "category": "Password Security",
+      "definition": "",
       "description": "Password-strength auditing. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "john-the-ripper",
       "keywords": [
         "access",
@@ -26017,9 +26889,11 @@
     {
       "aliases": [],
       "category": "Secure Development",
+      "definition": "",
       "description": "A query-based scanner for insecure infrastructure-as-code patterns.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "kics",
       "keywords": [
         "analysis",
@@ -26214,9 +27088,11 @@
     {
       "aliases": [],
       "category": "Wireless Security",
+      "definition": "",
       "description": "Wireless discovery and monitoring. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "kismet",
       "keywords": [
         "analysis",
@@ -26414,9 +27290,11 @@
         "kube bench"
       ],
       "category": "Container Security",
+      "definition": "",
       "description": "Kubernetes CIS benchmark checks. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "kube-bench",
       "keywords": [
         "analysis",
@@ -26655,9 +27533,11 @@
         "kube hunter"
       ],
       "category": "Container Security",
+      "definition": "",
       "description": "A Kubernetes security assessment tool intended for authorized clusters and labs.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "kube-hunter",
       "keywords": [
         "access",
@@ -26811,9 +27691,11 @@
     {
       "aliases": [],
       "category": "Container Security",
+      "definition": "",
       "description": "A Kubernetes security posture and workload assessment tool.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "kubescape",
       "keywords": [
         "assessment",
@@ -26953,9 +27835,11 @@
     {
       "aliases": [],
       "category": "Vulnerability Management",
+      "definition": "",
       "description": "A host-based security auditing tool for authorized systems.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "lynis",
       "keywords": [
         "assessment",
@@ -27081,9 +27965,11 @@
     {
       "aliases": [],
       "category": "Reconnaissance",
+      "definition": "",
       "description": "Large-scope port discovery. This page is written for lawful, authorized security education.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "masscan",
       "keywords": [
         "attack",
@@ -27312,9 +28198,11 @@
     {
       "aliases": [],
       "category": "Defensive Security",
+      "definition": "",
       "description": "A platform for sharing and correlating threat-intelligence indicators under organizational governance.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "misp",
       "keywords": [
         "analysis",
@@ -27462,9 +28350,11 @@
     {
       "aliases": [],
       "category": "Web Security",
+      "definition": "",
       "description": "An interactive HTTPS proxy for inspecting traffic in an authorized lab.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "mitmproxy",
       "keywords": [
         "analysis",
@@ -27661,9 +28551,11 @@
     {
       "aliases": [],
       "category": "Reconnaissance",
+      "definition": "",
       "description": "A focused port scanner for approved asset inventories.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "naabu",
       "keywords": [
         "attack",
@@ -27817,9 +28709,11 @@
     {
       "aliases": [],
       "category": "Web Security",
+      "definition": "",
       "description": "Web server misconfiguration checks. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "nikto",
       "keywords": [
         "access",
@@ -28222,9 +29116,11 @@
     {
       "aliases": [],
       "category": "Reconnaissance",
+      "definition": "",
       "description": "Network discovery and service enumeration. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "nmap",
       "keywords": [
         "attack",
@@ -28471,9 +29367,11 @@
     {
       "aliases": [],
       "category": "Web Security",
+      "definition": "",
       "description": "Repeatable vulnerability checks. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "nuclei",
       "keywords": [
         "access",
@@ -28908,9 +29806,11 @@
     {
       "aliases": [],
       "category": "Defensive Security",
+      "definition": "",
       "description": "A platform for organizing threat-intelligence knowledge and relationships.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "opencti",
       "keywords": [
         "analysis",
@@ -29087,9 +29987,11 @@
     {
       "aliases": [],
       "category": "Vulnerability Management",
+      "definition": "",
       "description": "Standards-based configuration assessment. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "openscap",
       "keywords": [
         "analysis",
@@ -29313,9 +30215,11 @@
         "os query"
       ],
       "category": "Defensive Security",
+      "definition": "",
       "description": "SQL-powered endpoint inventory. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "osquery",
       "keywords": [
         "analysis",
@@ -29555,9 +30459,11 @@
         "osv scanner"
       ],
       "category": "Secure Development",
+      "definition": "",
       "description": "Open-source dependency vulnerability scanning. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "osv-scanner",
       "keywords": [
         "analysis",
@@ -29889,9 +30795,11 @@
         "zap"
       ],
       "category": "Web Security",
+      "definition": "",
       "description": "Web application security testing. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "owasp-zap",
       "keywords": [
         "access",
@@ -30410,9 +31318,11 @@
     {
       "aliases": [],
       "category": "Cloud Security",
+      "definition": "",
       "description": "Cloud security assessment. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "prowler",
       "keywords": [
         "access",
@@ -30667,9 +31577,11 @@
     {
       "aliases": [],
       "category": "Reverse Engineering",
+      "definition": "",
       "description": "Command-line reverse engineering. This page is written for lawful, authorized security education.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "radare2",
       "keywords": [
         "analysis",
@@ -30869,9 +31781,11 @@
         "recon ng"
       ],
       "category": "OSINT",
+      "definition": "",
       "description": "Modular reconnaissance workflow. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "recon-ng",
       "keywords": [
         "analysis",
@@ -31042,9 +31956,11 @@
     {
       "aliases": [],
       "category": "Reconnaissance",
+      "definition": "",
       "description": "A modern port-discovery front end for authorized lab and assessment workflows.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "rustscan",
       "keywords": [
         "discovery",
@@ -31193,9 +32109,11 @@
     {
       "aliases": [],
       "category": "Defensive Security",
+      "definition": "",
       "description": "A defensive platform integrating network and host security monitoring components.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "security-onion",
       "keywords": [
         "analysis",
@@ -31358,9 +32276,11 @@
     {
       "aliases": [],
       "category": "Secure Development",
+      "definition": "",
       "description": "Code pattern analysis. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "semgrep",
       "keywords": [
         "analysis",
@@ -31745,9 +32665,11 @@
     {
       "aliases": [],
       "category": "OSINT",
+      "definition": "",
       "description": "Public username presence checks. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "sherlock",
       "keywords": [
         "analysis",
@@ -31920,9 +32842,11 @@
     {
       "aliases": [],
       "category": "Defensive Security",
+      "definition": "",
       "description": "Portable log detections. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "sigma",
       "keywords": [
         "analysis",
@@ -31989,6 +32913,10 @@
         {
           "relationship": "mitigated-by",
           "target": "defensive-control:secure-logging"
+        },
+        {
+          "relationship": "tool-of",
+          "target": "lab:detection-rule-regression"
         },
         {
           "relationship": "related-to-lab",
@@ -32147,9 +33075,11 @@
     {
       "aliases": [],
       "category": "Network Security",
+      "definition": "",
       "description": "Network intrusion detection. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "snort",
       "keywords": [
         "analysis",
@@ -32356,9 +33286,11 @@
     {
       "aliases": [],
       "category": "OSINT",
+      "definition": "",
       "description": "Automated OSINT collection. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "spiderfoot",
       "keywords": [
         "analysis",
@@ -32527,9 +33459,11 @@
     {
       "aliases": [],
       "category": "Web Security",
+      "definition": "",
       "description": "SQL injection validation. This page is written for lawful, authorized security education.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "sqlmap",
       "keywords": [
         "access",
@@ -32934,9 +33868,11 @@
     {
       "aliases": [],
       "category": "Reconnaissance",
+      "definition": "",
       "description": "Passive subdomain discovery. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "subfinder",
       "keywords": [
         "attack",
@@ -33175,9 +34111,11 @@
     {
       "aliases": [],
       "category": "Network Security",
+      "definition": "",
       "description": "Network threat detection. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "suricata",
       "keywords": [
         "analysis",
@@ -33409,9 +34347,11 @@
     {
       "aliases": [],
       "category": "Container Security",
+      "definition": "",
       "description": "SBOM generation. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "syft",
       "keywords": [
         "analysis",
@@ -33647,9 +34587,11 @@
     {
       "aliases": [],
       "category": "Network Security",
+      "definition": "",
       "description": "Command-line packet capture. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "tcpdump",
       "keywords": [
         "analysis",
@@ -33879,9 +34821,11 @@
         "testssl sh"
       ],
       "category": "Web Security",
+      "definition": "",
       "description": "A command-line tool for examining TLS configuration in approved environments.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "testssl-sh",
       "keywords": [
         "assessment",
@@ -33948,6 +34892,10 @@
         {
           "relationship": "related-to-lab",
           "target": "lab:packet-capture-fundamentals"
+        },
+        {
+          "relationship": "tool-of",
+          "target": "lab:tls-certificate-review"
         },
         {
           "relationship": "implements-technique",
@@ -34064,9 +35012,11 @@
     {
       "aliases": [],
       "category": "Defensive Security",
+      "definition": "",
       "description": "An eBPF-based observability and runtime-enforcement tool for authorized workloads.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "tetragon",
       "keywords": [
         "command",
@@ -34233,9 +35183,11 @@
     {
       "aliases": [],
       "category": "Reconnaissance",
+      "definition": "",
       "description": "Public-source reconnaissance. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "theharvester",
       "keywords": [
         "attack",
@@ -34462,9 +35414,11 @@
     {
       "aliases": [],
       "category": "Vulnerability Management",
+      "definition": "",
       "description": "Vulnerability and misconfiguration scanning. This page is written for lawful, authorized security education.",
       "difficulty": "Beginner",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "trivy",
       "keywords": [
         "analysis",
@@ -34531,6 +35485,10 @@
         {
           "relationship": "mitigated-by",
           "target": "defensive-control:vulnerability-management"
+        },
+        {
+          "relationship": "tool-of",
+          "target": "lab:kubernetes-posture-review"
         },
         {
           "relationship": "related-to-lab",
@@ -34726,9 +35684,11 @@
     {
       "aliases": [],
       "category": "Secure Development",
+      "definition": "",
       "description": "A secrets-scanning tool for authorized repositories and data sources.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "trufflehog",
       "keywords": [
         "analysis",
@@ -34892,9 +35852,11 @@
     {
       "aliases": [],
       "category": "Defensive Security",
+      "definition": "",
       "description": "A digital-forensics and endpoint-visibility platform for authorized investigations.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "velociraptor",
       "keywords": [
         "data",
@@ -35067,9 +36029,11 @@
         "volatility3"
       ],
       "category": "Digital Forensics",
+      "definition": "",
       "description": "Memory-image analysis. This page is written for lawful, authorized security education.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "volatility3",
       "keywords": [
         "3",
@@ -35251,9 +36215,11 @@
     {
       "aliases": [],
       "category": "Defensive Security",
+      "definition": "",
       "description": "Endpoint and security monitoring. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "wazuh",
       "keywords": [
         "analysis",
@@ -35502,9 +36468,11 @@
     {
       "aliases": [],
       "category": "Network Security",
+      "definition": "",
       "description": "Interactive packet analysis. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "wireshark",
       "keywords": [
         "analysis",
@@ -35768,9 +36736,11 @@
     {
       "aliases": [],
       "category": "Malware Analysis",
+      "definition": "",
       "description": "Malware and artifact classification. This page is written for lawful, authorized security education.",
       "difficulty": "Intermediate",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "yara",
       "keywords": [
         "analysis",
@@ -35991,9 +36961,11 @@
     {
       "aliases": [],
       "category": "Network Security",
+      "definition": "",
       "description": "Network telemetry and analysis. This page is written for lawful, authorized security education.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "zeek",
       "keywords": [
         "analysis",
@@ -36233,9 +37205,11 @@
     {
       "aliases": [],
       "category": "Reconnaissance",
+      "definition": "",
       "description": "A high-speed measurement framework that requires strict scope and rate governance.",
       "difficulty": "Advanced",
       "dual_use": "true",
+      "execution_mode": "",
       "id": "zmap",
       "keywords": [
         "assessment",
@@ -36388,9 +37362,11 @@
         "api rate limit weakness"
       ],
       "category": "api",
+      "definition": "",
       "description": "Defensive knowledge page for an api lacks effective resource or action-rate controls for its risk profile.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "api-rate-limit-weakness",
       "keywords": [
         "api",
@@ -36489,9 +37465,11 @@
         "api security"
       ],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating api security weaknesses.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "api-security",
       "keywords": [
         "api",
@@ -36665,9 +37643,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating authentication weaknesses.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "authentication-weaknesses",
       "keywords": [
         "authentication",
@@ -36839,9 +37819,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating broken access control.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "broken-access-control",
       "keywords": [
         "access",
@@ -37007,9 +37989,11 @@
     {
       "aliases": [],
       "category": "api",
+      "definition": "",
       "description": "Defensive knowledge page for an api fails to enforce permissions for sensitive functions or actions.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "broken-function-level-authorization",
       "keywords": [
         "api",
@@ -37042,6 +38026,10 @@
         },
         {
           "relationship": "related-to-lab",
+          "target": "lab:api-discovery-local-app"
+        },
+        {
+          "relationship": "vulnerability-demonstrated-by",
           "target": "lab:api-discovery-local-app"
         },
         {
@@ -37107,9 +38095,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating cloud misconfiguration.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "cloud-misconfiguration",
       "keywords": [
         "cloud",
@@ -37132,6 +38122,10 @@
         {
           "relationship": "related-from-vulnerability",
           "target": "defensive-control:secure-configuration"
+        },
+        {
+          "relationship": "vulnerability-demonstrated-by",
+          "target": "lab:iac-security-review"
         },
         {
           "relationship": "related-from-vulnerability",
@@ -37301,9 +38295,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating command injection.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "command-injection",
       "keywords": [
         "command",
@@ -37481,9 +38477,11 @@
         "container security"
       ],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating container security issues.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "container-security",
       "keywords": [
         "container",
@@ -37511,6 +38509,10 @@
         {
           "relationship": "related-from-vulnerability",
           "target": "defensive-control:secure-configuration"
+        },
+        {
+          "relationship": "vulnerability-demonstrated-by",
+          "target": "lab:kubernetes-posture-review"
         },
         {
           "relationship": "related-from-vulnerability",
@@ -37708,9 +38710,11 @@
         "xss"
       ],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating cross-site scripting.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "cross-site-scripting",
       "keywords": [
         "cross",
@@ -37813,9 +38817,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating cryptographic failures.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "cryptographic-failures",
       "keywords": [
         "cryptographic",
@@ -37918,9 +38924,11 @@
         "csrf"
       ],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating cross-site request forgery.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "csrf",
       "keywords": [
         "cross",
@@ -38005,9 +39013,11 @@
     {
       "aliases": [],
       "category": "api",
+      "definition": "",
       "description": "Defensive knowledge page for an api returns more data than the client or principal requires.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "excessive-data-exposure",
       "keywords": [
         "api",
@@ -38107,9 +39117,11 @@
     {
       "aliases": [],
       "category": "web",
+      "definition": "",
       "description": "Defensive knowledge page for untrusted input influences the location of a file that the application includes or interprets.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "file-inclusion",
       "keywords": [
         "file",
@@ -38210,9 +39222,11 @@
     {
       "aliases": [],
       "category": "web",
+      "definition": "",
       "description": "Defensive knowledge page for an application trusts an attacker-influenced host header for security-sensitive behavior.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "host-header-injection",
       "keywords": [
         "header",
@@ -38315,9 +39329,11 @@
     {
       "aliases": [],
       "category": "web",
+      "definition": "",
       "description": "Defensive knowledge page for inconsistent parsing of http message boundaries can cause intermediaries to disagree about requests.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "http-request-smuggling",
       "keywords": [
         "http",
@@ -38426,9 +39442,11 @@
         "idor"
       ],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating insecure direct object reference.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "idor",
       "keywords": [
         "direct",
@@ -38513,9 +39531,11 @@
     {
       "aliases": [],
       "category": "api",
+      "definition": "",
       "description": "Defensive knowledge page for an organization cannot reliably identify, own, or retire api versions and endpoints.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "improper-api-inventory",
       "keywords": [
         "api",
@@ -38615,9 +39635,11 @@
     {
       "aliases": [],
       "category": "cryptography",
+      "definition": "",
       "description": "Defensive knowledge page for a client does not correctly validate a certificate\u2019s identity, chain, or validity.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "improper-certificate-validation",
       "keywords": [
         "certificate",
@@ -38654,6 +39676,10 @@
         {
           "relationship": "related-to-lab",
           "target": "lab:http-request-analysis"
+        },
+        {
+          "relationship": "vulnerability-demonstrated-by",
+          "target": "lab:tls-certificate-review"
         },
         {
           "relationship": "related-to-technique",
@@ -38719,9 +39745,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating insecure deserialization.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "insecure-deserialization",
       "keywords": [
         "deserialization",
@@ -38797,9 +39825,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating insecure file upload.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "insecure-file-upload",
       "keywords": [
         "file",
@@ -38877,9 +39907,11 @@
     {
       "aliases": [],
       "category": "api",
+      "definition": "",
       "description": "Defensive knowledge page for client-controlled fields are bound to sensitive server-side attributes without an explicit allowlist.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "mass-assignment",
       "keywords": [
         "api",
@@ -38978,9 +40010,11 @@
     {
       "aliases": [],
       "category": "authentication",
+      "definition": "",
       "description": "Defensive knowledge page for an mfa design or recovery flow does not provide the intended assurance.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "mfa-weaknesses",
       "keywords": [
         "authentication",
@@ -39080,9 +40114,11 @@
     {
       "aliases": [],
       "category": "web",
+      "definition": "",
       "description": "Defensive knowledge page for an application redirects a user to a destination controlled without adequate validation.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "open-redirect",
       "keywords": [
         "open",
@@ -39182,9 +40218,11 @@
     {
       "aliases": [],
       "category": "authentication",
+      "definition": "",
       "description": "Defensive knowledge page for password recovery can be abused because identity, tokens, or expiry are insufficiently protected.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "password-reset-flaws",
       "keywords": [
         "authentication",
@@ -39287,9 +40325,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating path traversal.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "path-traversal",
       "keywords": [
         "path",
@@ -39385,9 +40425,11 @@
     {
       "aliases": [],
       "category": "cryptography",
+      "definition": "",
       "description": "Defensive knowledge page for security-sensitive values rely on a predictable or unsuitable source of randomness.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "predictable-randomness",
       "keywords": [
         "cryptography",
@@ -39478,9 +40520,11 @@
     {
       "aliases": [],
       "category": "web",
+      "definition": "",
       "description": "Defensive knowledge page for untrusted input changes object prototypes in a way that affects application behavior.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "prototype-pollution",
       "keywords": [
         "pollution",
@@ -39577,9 +40621,11 @@
     {
       "aliases": [],
       "category": "cloud",
+      "definition": "",
       "description": "Defensive knowledge page for cloud storage is reachable or readable more broadly than the data owner intended.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "public-cloud-storage-exposure",
       "keywords": [
         "cloud",
@@ -39689,9 +40735,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating security misconfiguration.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "security-misconfiguration",
       "keywords": [
         "misconfiguration",
@@ -39915,9 +40963,11 @@
     {
       "aliases": [],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating sensitive data exposure.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "sensitive-data-exposure",
       "keywords": [
         "data",
@@ -40131,9 +41181,11 @@
     {
       "aliases": [],
       "category": "authentication",
+      "definition": "",
       "description": "Defensive knowledge page for an application fails to rotate a session identifier when authentication state changes.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "session-fixation",
       "keywords": [
         "authentication",
@@ -40232,9 +41284,11 @@
     {
       "aliases": [],
       "category": "authentication",
+      "definition": "",
       "description": "Defensive knowledge page for an unauthorized party uses a valid session token or state.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "session-hijacking",
       "keywords": [
         "authentication",
@@ -40338,9 +41392,11 @@
         "session management"
       ],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating session management weaknesses.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "session-management",
       "keywords": [
         "management",
@@ -40440,9 +41496,11 @@
         "sqli"
       ],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating sql injection.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "sql-injection",
       "keywords": [
         "injection",
@@ -40546,9 +41604,11 @@
         "ssrf"
       ],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating server-side request forgery.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "ssrf",
       "keywords": [
         "forgery",
@@ -40635,9 +41695,11 @@
         "supply chain vulnerabilities"
       ],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating supply-chain vulnerabilities.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "supply-chain-vulnerabilities",
       "keywords": [
         "chain",
@@ -40771,9 +41833,11 @@
     {
       "aliases": [],
       "category": "cryptography",
+      "definition": "",
       "description": "Defensive knowledge page for cryptographic keys are generated, stored, used, or retired without adequate lifecycle controls.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "weak-key-management",
       "keywords": [
         "cryptography",
@@ -40876,9 +41940,11 @@
     {
       "aliases": [],
       "category": "authentication",
+      "definition": "",
       "description": "Defensive knowledge page for password policy or storage decisions provide insufficient resistance to guessing or reuse.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "weak-password-policy",
       "keywords": [
         "authentication",
@@ -40978,9 +42044,11 @@
     {
       "aliases": [],
       "category": "web",
+      "definition": "",
       "description": "Defensive knowledge page for a cache stores a response influenced by input that should not affect shared content.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "web-cache-poisoning",
       "keywords": [
         "cache",
@@ -41087,9 +42155,11 @@
         "xxe"
       ],
       "category": "",
+      "definition": "",
       "description": "Defensive knowledge page for understanding, detecting, and mitigating xml external entity.",
       "difficulty": "",
       "dual_use": "",
+      "execution_mode": "",
       "id": "xxe",
       "keywords": [
         "entity",

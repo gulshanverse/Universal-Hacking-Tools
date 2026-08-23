@@ -29,6 +29,8 @@ def validate():
     schemas = {p.stem.replace(".schema", ""): load(p) for p in schema_dir.glob("*.schema.json")}
     claim_schema = load(ROOT / "schemas" / "claim.schema.json")
     schemas["claim"] = claim_schema
+    lab_schema = load(ROOT / "labs" / "schemas" / "lab.schema.json")
+    schemas["lab"] = lab_schema
     for name, schema in schemas.items():
         required_object(schema, ["$schema", "title", "type", "required", "properties"], f"schema {name}")
     artifacts = {
@@ -48,6 +50,9 @@ def validate():
     required_object(graph, ["schema_version", "nodes", "relationships"], "generated graph")
     claims = load(ROOT / "generated" / "claim-report.json")
     required_object(claims, ["schema_version", "total_claims", "claims", "findings"], "generated claim report")
+    for filename in ["lab-report.json", "lab-health.json", "lab-catalog.json"]:
+        lab_artifact = load(ROOT / "generated" / filename)
+        required_object(lab_artifact, ["schema_version", "as_of"], f"generated {filename}")
     for index, claim in enumerate(claims.get("claims", [])):
         required_object(claim, ["entity", "id", "statement", "evidence", "status", "confidence"], f"claim {index}")
 

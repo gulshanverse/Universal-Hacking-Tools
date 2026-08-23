@@ -363,29 +363,6 @@
     {
       "confidence": "low",
       "current_status": "needs-review",
-      "entity": "defensive-control:network-monitoring",
-      "id": "network-monitoring",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sources": [],
-      "name": "Network Monitoring",
-      "path": "knowledge/defensive-controls/network-monitoring.md",
-      "priority": 10,
-      "priority_level": "medium",
-      "reasons": [
-        "add justified typed relationships"
-      ],
-      "recommended_reviewer_type": "source-verification",
-      "type": "defensive-control",
-      "verification_action": [
-        "add justified typed relationships"
-      ]
-    },
-    {
-      "confidence": "low",
-      "current_status": "needs-review",
       "entity": "defensive-control:patch-management",
       "id": "patch-management",
       "missing_metadata": [],
@@ -395,29 +372,6 @@
       "missing_sources": [],
       "name": "Patch Management",
       "path": "knowledge/defensive-controls/patch-management.md",
-      "priority": 10,
-      "priority_level": "medium",
-      "reasons": [
-        "add justified typed relationships"
-      ],
-      "recommended_reviewer_type": "source-verification",
-      "type": "defensive-control",
-      "verification_action": [
-        "add justified typed relationships"
-      ]
-    },
-    {
-      "confidence": "low",
-      "current_status": "needs-review",
-      "entity": "defensive-control:siem",
-      "id": "siem",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sources": [],
-      "name": "SIEM",
-      "path": "knowledge/defensive-controls/siem.md",
       "priority": 10,
       "priority_level": "medium",
       "reasons": [
@@ -543,75 +497,6 @@
     {
       "confidence": "low",
       "current_status": "needs-review",
-      "entity": "learning-path:api-security",
-      "id": "api-security",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sources": [],
-      "name": "API Security",
-      "path": "learning-paths/api-security/README.md",
-      "priority": 10,
-      "priority_level": "medium",
-      "reasons": [
-        "add justified typed relationships"
-      ],
-      "recommended_reviewer_type": "source-verification",
-      "type": "learning-path",
-      "verification_action": [
-        "add justified typed relationships"
-      ]
-    },
-    {
-      "confidence": "low",
-      "current_status": "needs-review",
-      "entity": "learning-path:devsecops",
-      "id": "devsecops",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sources": [],
-      "name": "DevSecOps",
-      "path": "learning-paths/devsecops/README.md",
-      "priority": 10,
-      "priority_level": "medium",
-      "reasons": [
-        "add justified typed relationships"
-      ],
-      "recommended_reviewer_type": "source-verification",
-      "type": "learning-path",
-      "verification_action": [
-        "add justified typed relationships"
-      ]
-    },
-    {
-      "confidence": "low",
-      "current_status": "needs-review",
-      "entity": "learning-path:network-security",
-      "id": "network-security",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sources": [],
-      "name": "Network Security",
-      "path": "learning-paths/network-security/README.md",
-      "priority": 10,
-      "priority_level": "medium",
-      "reasons": [
-        "add justified typed relationships"
-      ],
-      "recommended_reviewer_type": "source-verification",
-      "type": "learning-path",
-      "verification_action": [
-        "add justified typed relationships"
-      ]
-    },
-    {
-      "confidence": "low",
-      "current_status": "needs-review",
       "entity": "learning-path:threat-hunting",
       "id": "threat-hunting",
       "missing_metadata": [],
@@ -683,31 +568,6 @@
     {
       "confidence": "unknown",
       "current_status": "unverified",
-      "entity": "learning-path:blue-team",
-      "id": "blue-team",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sources": [],
-      "name": "Blue Team",
-      "path": "learning-paths/blue-team/README.md",
-      "priority": 9,
-      "priority_level": "medium",
-      "reasons": [
-        "write missing documentation sections",
-        "add justified typed relationships"
-      ],
-      "recommended_reviewer_type": "source-verification",
-      "type": "learning-path",
-      "verification_action": [
-        "write missing documentation sections",
-        "add justified typed relationships"
-      ]
-    },
-    {
-      "confidence": "unknown",
-      "current_status": "unverified",
       "entity": "learning-path:bug-bounty",
       "id": "bug-bounty",
       "missing_metadata": [],
@@ -717,31 +577,6 @@
       "missing_sources": [],
       "name": "Bug Bounty Learning",
       "path": "learning-paths/bug-bounty/README.md",
-      "priority": 9,
-      "priority_level": "medium",
-      "reasons": [
-        "write missing documentation sections",
-        "add justified typed relationships"
-      ],
-      "recommended_reviewer_type": "source-verification",
-      "type": "learning-path",
-      "verification_action": [
-        "write missing documentation sections",
-        "add justified typed relationships"
-      ]
-    },
-    {
-      "confidence": "unknown",
-      "current_status": "unverified",
-      "entity": "learning-path:cloud-security",
-      "id": "cloud-security",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sources": [],
-      "name": "Cloud Security",
-      "path": "learning-paths/cloud-security/README.md",
       "priority": 9,
       "priority_level": "medium",
       "reasons": [
@@ -842,31 +677,6 @@
       "missing_sources": [],
       "name": "Security Engineering",
       "path": "learning-paths/security-engineering/README.md",
-      "priority": 9,
-      "priority_level": "medium",
-      "reasons": [
-        "write missing documentation sections",
-        "add justified typed relationships"
-      ],
-      "recommended_reviewer_type": "source-verification",
-      "type": "learning-path",
-      "verification_action": [
-        "write missing documentation sections",
-        "add justified typed relationships"
-      ]
-    },
-    {
-      "confidence": "unknown",
-      "current_status": "unverified",
-      "entity": "learning-path:soc-analyst",
-      "id": "soc-analyst",
-      "missing_metadata": [],
-      "missing_relationships": [
-        "relationships"
-      ],
-      "missing_sources": [],
-      "name": "SOC Analyst",
-      "path": "learning-paths/soc-analyst/README.md",
       "priority": 9,
       "priority_level": "medium",
       "reasons": [
@@ -2056,6 +1866,23 @@
     {
       "confidence": "low",
       "current_status": "needs-review",
+      "entity": "defensive-control:network-monitoring",
+      "id": "network-monitoring",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sources": [],
+      "name": "Network Monitoring",
+      "path": "knowledge/defensive-controls/network-monitoring.md",
+      "priority": 8,
+      "priority_level": "medium",
+      "reasons": [],
+      "recommended_reviewer_type": "source-verification",
+      "type": "defensive-control",
+      "verification_action": []
+    },
+    {
+      "confidence": "low",
+      "current_status": "needs-review",
       "entity": "defensive-control:network-segmentation",
       "id": "network-segmentation",
       "missing_metadata": [],
@@ -2209,6 +2036,23 @@
     {
       "confidence": "low",
       "current_status": "needs-review",
+      "entity": "defensive-control:siem",
+      "id": "siem",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sources": [],
+      "name": "SIEM",
+      "path": "knowledge/defensive-controls/siem.md",
+      "priority": 8,
+      "priority_level": "medium",
+      "reasons": [],
+      "recommended_reviewer_type": "source-verification",
+      "type": "defensive-control",
+      "verification_action": []
+    },
+    {
+      "confidence": "low",
+      "current_status": "needs-review",
       "entity": "defensive-control:supply-chain-controls",
       "id": "supply-chain-controls",
       "missing_metadata": [],
@@ -2238,6 +2082,57 @@
       "reasons": [],
       "recommended_reviewer_type": "source-verification",
       "type": "defensive-control",
+      "verification_action": []
+    },
+    {
+      "confidence": "low",
+      "current_status": "needs-review",
+      "entity": "learning-path:api-security",
+      "id": "api-security",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sources": [],
+      "name": "API Security",
+      "path": "learning-paths/api-security/README.md",
+      "priority": 8,
+      "priority_level": "medium",
+      "reasons": [],
+      "recommended_reviewer_type": "source-verification",
+      "type": "learning-path",
+      "verification_action": []
+    },
+    {
+      "confidence": "low",
+      "current_status": "needs-review",
+      "entity": "learning-path:devsecops",
+      "id": "devsecops",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sources": [],
+      "name": "DevSecOps",
+      "path": "learning-paths/devsecops/README.md",
+      "priority": 8,
+      "priority_level": "medium",
+      "reasons": [],
+      "recommended_reviewer_type": "source-verification",
+      "type": "learning-path",
+      "verification_action": []
+    },
+    {
+      "confidence": "low",
+      "current_status": "needs-review",
+      "entity": "learning-path:network-security",
+      "id": "network-security",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sources": [],
+      "name": "Network Security",
+      "path": "learning-paths/network-security/README.md",
+      "priority": 8,
+      "priority_level": "medium",
+      "reasons": [],
+      "recommended_reviewer_type": "source-verification",
+      "type": "learning-path",
       "verification_action": []
     },
     {
@@ -3463,6 +3358,48 @@
     {
       "confidence": "unknown",
       "current_status": "unverified",
+      "entity": "learning-path:blue-team",
+      "id": "blue-team",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sources": [],
+      "name": "Blue Team",
+      "path": "learning-paths/blue-team/README.md",
+      "priority": 7,
+      "priority_level": "medium",
+      "reasons": [
+        "write missing documentation sections"
+      ],
+      "recommended_reviewer_type": "source-verification",
+      "type": "learning-path",
+      "verification_action": [
+        "write missing documentation sections"
+      ]
+    },
+    {
+      "confidence": "unknown",
+      "current_status": "unverified",
+      "entity": "learning-path:cloud-security",
+      "id": "cloud-security",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sources": [],
+      "name": "Cloud Security",
+      "path": "learning-paths/cloud-security/README.md",
+      "priority": 7,
+      "priority_level": "medium",
+      "reasons": [
+        "write missing documentation sections"
+      ],
+      "recommended_reviewer_type": "source-verification",
+      "type": "learning-path",
+      "verification_action": [
+        "write missing documentation sections"
+      ]
+    },
+    {
+      "confidence": "unknown",
+      "current_status": "unverified",
       "entity": "learning-path:digital-forensics",
       "id": "digital-forensics",
       "missing_metadata": [],
@@ -3470,6 +3407,27 @@
       "missing_sources": [],
       "name": "Digital Forensics",
       "path": "learning-paths/digital-forensics/README.md",
+      "priority": 7,
+      "priority_level": "medium",
+      "reasons": [
+        "write missing documentation sections"
+      ],
+      "recommended_reviewer_type": "source-verification",
+      "type": "learning-path",
+      "verification_action": [
+        "write missing documentation sections"
+      ]
+    },
+    {
+      "confidence": "unknown",
+      "current_status": "unverified",
+      "entity": "learning-path:soc-analyst",
+      "id": "soc-analyst",
+      "missing_metadata": [],
+      "missing_relationships": [],
+      "missing_sources": [],
+      "name": "SOC Analyst",
+      "path": "learning-paths/soc-analyst/README.md",
       "priority": 7,
       "priority_level": "medium",
       "reasons": [

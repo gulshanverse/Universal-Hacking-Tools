@@ -1,6 +1,8 @@
 [
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "api-security",
     "name": "API Security",
     "path": "learning-paths/api-security/README.md",
@@ -8,6 +10,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "beginner",
     "name": "Beginner Cybersecurity",
     "path": "learning-paths/beginner/README.md",
@@ -15,6 +19,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "blue-team",
     "name": "Blue Team",
     "path": "learning-paths/blue-team/README.md",
@@ -22,6 +28,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "bug-bounty",
     "name": "Bug Bounty Learning",
     "path": "learning-paths/bug-bounty/README.md",
@@ -29,6 +37,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "cloud-security",
     "name": "Cloud Security",
     "path": "learning-paths/cloud-security/README.md",
@@ -36,6 +46,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "devsecops",
     "name": "DevSecOps",
     "path": "learning-paths/devsecops/README.md",
@@ -43,6 +55,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "digital-forensics",
     "name": "Digital Forensics",
     "path": "learning-paths/digital-forensics/README.md",
@@ -50,6 +64,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "ethical-hacking",
     "name": "Ethical Hacking",
     "path": "learning-paths/ethical-hacking/README.md",
@@ -57,6 +73,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "malware-analysis",
     "name": "Malware Analysis",
     "path": "learning-paths/malware-analysis/README.md",
@@ -64,6 +82,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "network-security",
     "name": "Network Security",
     "path": "learning-paths/network-security/README.md",
@@ -71,6 +91,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "penetration-testing",
     "name": "Penetration Testing",
     "path": "learning-paths/penetration-testing/README.md",
@@ -78,6 +100,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "security-engineering",
     "name": "Security Engineering",
     "path": "learning-paths/security-engineering/README.md",
@@ -85,6 +109,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "soc-analyst",
     "name": "SOC Analyst",
     "path": "learning-paths/soc-analyst/README.md",
@@ -92,6 +118,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "threat-hunting",
     "name": "Threat Hunting",
     "path": "learning-paths/threat-hunting/README.md",
@@ -99,6 +127,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "web-security",
     "name": "Web Security",
     "path": "learning-paths/web-security/README.md",

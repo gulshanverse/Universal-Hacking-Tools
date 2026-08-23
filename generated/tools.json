@@ -1,6 +1,8 @@
 [
   {
     "category": "Wireless Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "aircrack-ng",
     "name": "Aircrack-ng",
     "path": "tools/wireless/aircrack-ng.md",
@@ -8,6 +10,8 @@
   },
   {
     "category": "Reconnaissance",
+    "definition": "",
+    "execution_mode": "",
     "id": "amass",
     "name": "Amass",
     "path": "tools/reconnaissance/amass.md",
@@ -15,6 +19,8 @@
   },
   {
     "category": "Network Analysis",
+    "definition": "",
+    "execution_mode": "",
     "id": "arkime",
     "name": "Arkime",
     "path": "tools/network-analysis/arkime.md",
@@ -22,6 +28,8 @@
   },
   {
     "category": "Digital Forensics",
+    "definition": "",
+    "execution_mode": "",
     "id": "autopsy",
     "name": "Autopsy",
     "path": "tools/digital-forensics/autopsy.md",
@@ -29,6 +37,8 @@
   },
   {
     "category": "Secure Development",
+    "definition": "",
+    "execution_mode": "",
     "id": "bandit",
     "name": "Bandit",
     "path": "tools/secure-development/bandit.md",
@@ -36,6 +46,8 @@
   },
   {
     "category": "Web Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "burp-suite",
     "name": "Burp Suite",
     "path": "tools/web-security/burp-suite.md",
@@ -43,6 +55,8 @@
   },
   {
     "category": "Malware Analysis",
+    "definition": "",
+    "execution_mode": "",
     "id": "capa",
     "name": "capa",
     "path": "tools/malware-analysis/capa.md",
@@ -50,6 +64,8 @@
   },
   {
     "category": "Secure Development",
+    "definition": "",
+    "execution_mode": "",
     "id": "checkov",
     "name": "Checkov",
     "path": "tools/secure-development/checkov.md",
@@ -57,6 +73,8 @@
   },
   {
     "category": "Malware Analysis",
+    "definition": "",
+    "execution_mode": "",
     "id": "clamav",
     "name": "ClamAV",
     "path": "tools/malware-analysis/clamav.md",
@@ -64,6 +82,8 @@
   },
   {
     "category": "Reverse Engineering",
+    "definition": "",
+    "execution_mode": "",
     "id": "cutter",
     "name": "Cutter",
     "path": "tools/reverse-engineering/cutter.md",
@@ -71,6 +91,8 @@
   },
   {
     "category": "Reconnaissance",
+    "definition": "",
+    "execution_mode": "",
     "id": "dnsx",
     "name": "dnsx",
     "path": "tools/reconnaissance/dnsx.md",
@@ -78,6 +100,8 @@
   },
   {
     "category": "OSINT",
+    "definition": "",
+    "execution_mode": "",
     "id": "exiftool",
     "name": "ExifTool",
     "path": "tools/osint/exiftool.md",
@@ -85,6 +109,8 @@
   },
   {
     "category": "Web Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "feroxbuster",
     "name": "Feroxbuster",
     "path": "tools/web-security/feroxbuster.md",
@@ -92,6 +118,8 @@
   },
   {
     "category": "Web Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "ffuf",
     "name": "ffuf",
     "path": "tools/web-security/ffuf.md",
@@ -99,6 +127,8 @@
   },
   {
     "category": "Malware Analysis",
+    "definition": "",
+    "execution_mode": "",
     "id": "floss",
     "name": "FLOSS",
     "path": "tools/malware-analysis/floss.md",
@@ -106,6 +136,8 @@
   },
   {
     "category": "Reverse Engineering",
+    "definition": "",
+    "execution_mode": "",
     "id": "ghidra",
     "name": "Ghidra",
     "path": "tools/reverse-engineering/ghidra.md",
@@ -113,6 +145,8 @@
   },
   {
     "category": "Secure Development",
+    "definition": "",
+    "execution_mode": "",
     "id": "gitleaks",
     "name": "Gitleaks",
     "path": "tools/secure-development/gitleaks.md",
@@ -120,6 +154,8 @@
   },
   {
     "category": "Web Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "gobuster",
     "name": "Gobuster",
     "path": "tools/web-security/gobuster.md",
@@ -127,6 +163,8 @@
   },
   {
     "category": "Vulnerability Management",
+    "definition": "",
+    "execution_mode": "",
     "id": "greenbone-openvas",
     "name": "Greenbone Vulnerability Management",
     "path": "tools/vulnerability-management/greenbone-openvas.md",
@@ -134,6 +172,8 @@
   },
   {
     "category": "Container Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "grype",
     "name": "Grype",
     "path": "tools/container-security/grype.md",
@@ -141,6 +181,8 @@
   },
   {
     "category": "Password Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "hashcat",
     "name": "Hashcat",
     "path": "tools/password-security/hashcat.md",
@@ -148,6 +190,8 @@
   },
   {
     "category": "Web Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "httpie",
     "name": "HTTPie",
     "path": "tools/web-security/httpie.md",
@@ -155,6 +199,8 @@
   },
   {
     "category": "Reconnaissance",
+    "definition": "",
+    "execution_mode": "",
     "id": "httpx",
     "name": "httpx",
     "path": "tools/reconnaissance/httpx.md",
@@ -162,6 +208,8 @@
   },
   {
     "category": "Password Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "hydra",
     "name": "THC Hydra",
     "path": "tools/password-security/hydra.md",
@@ -169,6 +217,8 @@
   },
   {
     "category": "Password Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "john-the-ripper",
     "name": "John the Ripper",
     "path": "tools/password-security/john-the-ripper.md",
@@ -176,6 +226,8 @@
   },
   {
     "category": "Secure Development",
+    "definition": "",
+    "execution_mode": "",
     "id": "kics",
     "name": "KICS",
     "path": "tools/secure-development/kics.md",
@@ -183,6 +235,8 @@
   },
   {
     "category": "Wireless Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "kismet",
     "name": "Kismet",
     "path": "tools/wireless/kismet.md",
@@ -190,6 +244,8 @@
   },
   {
     "category": "Container Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "kube-bench",
     "name": "kube-bench",
     "path": "tools/container-security/kube-bench.md",
@@ -197,6 +253,8 @@
   },
   {
     "category": "Container Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "kube-hunter",
     "name": "kube-hunter",
     "path": "tools/container-security/kube-hunter.md",
@@ -204,6 +262,8 @@
   },
   {
     "category": "Container Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "kubescape",
     "name": "Kubescape",
     "path": "tools/container-security/kubescape.md",
@@ -211,6 +271,8 @@
   },
   {
     "category": "Vulnerability Management",
+    "definition": "",
+    "execution_mode": "",
     "id": "lynis",
     "name": "Lynis",
     "path": "tools/vulnerability-management/lynis.md",
@@ -218,6 +280,8 @@
   },
   {
     "category": "Reconnaissance",
+    "definition": "",
+    "execution_mode": "",
     "id": "masscan",
     "name": "Masscan",
     "path": "tools/reconnaissance/masscan.md",
@@ -225,6 +289,8 @@
   },
   {
     "category": "Defensive Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "misp",
     "name": "MISP",
     "path": "tools/defensive-security/misp.md",
@@ -232,6 +298,8 @@
   },
   {
     "category": "Web Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "mitmproxy",
     "name": "mitmproxy",
     "path": "tools/web-security/mitmproxy.md",
@@ -239,6 +307,8 @@
   },
   {
     "category": "Reconnaissance",
+    "definition": "",
+    "execution_mode": "",
     "id": "naabu",
     "name": "Naabu",
     "path": "tools/reconnaissance/naabu.md",
@@ -246,6 +316,8 @@
   },
   {
     "category": "Web Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "nikto",
     "name": "Nikto",
     "path": "tools/web-security/nikto.md",
@@ -253,6 +325,8 @@
   },
   {
     "category": "Reconnaissance",
+    "definition": "",
+    "execution_mode": "",
     "id": "nmap",
     "name": "Nmap",
     "path": "tools/reconnaissance/nmap.md",
@@ -260,6 +334,8 @@
   },
   {
     "category": "Web Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "nuclei",
     "name": "Nuclei",
     "path": "tools/web-security/nuclei.md",
@@ -267,6 +343,8 @@
   },
   {
     "category": "Defensive Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "opencti",
     "name": "OpenCTI",
     "path": "tools/defensive-security/opencti.md",
@@ -274,6 +352,8 @@
   },
   {
     "category": "Vulnerability Management",
+    "definition": "",
+    "execution_mode": "",
     "id": "openscap",
     "name": "OpenSCAP",
     "path": "tools/vulnerability-management/openscap.md",
@@ -281,6 +361,8 @@
   },
   {
     "category": "Defensive Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "osquery",
     "name": "osquery",
     "path": "tools/defensive-security/osquery.md",
@@ -288,6 +370,8 @@
   },
   {
     "category": "Secure Development",
+    "definition": "",
+    "execution_mode": "",
     "id": "osv-scanner",
     "name": "OSV-Scanner",
     "path": "tools/secure-development/osv-scanner.md",
@@ -295,6 +379,8 @@
   },
   {
     "category": "Web Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "owasp-zap",
     "name": "OWASP ZAP",
     "path": "tools/web-security/owasp-zap.md",
@@ -302,6 +388,8 @@
   },
   {
     "category": "Cloud Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "prowler",
     "name": "Prowler",
     "path": "tools/cloud-security/prowler.md",
@@ -309,6 +397,8 @@
   },
   {
     "category": "Reverse Engineering",
+    "definition": "",
+    "execution_mode": "",
     "id": "radare2",
     "name": "Radare2",
     "path": "tools/reverse-engineering/radare2.md",
@@ -316,6 +406,8 @@
   },
   {
     "category": "OSINT",
+    "definition": "",
+    "execution_mode": "",
     "id": "recon-ng",
     "name": "Recon-ng",
     "path": "tools/osint/recon-ng.md",
@@ -323,6 +415,8 @@
   },
   {
     "category": "Reconnaissance",
+    "definition": "",
+    "execution_mode": "",
     "id": "rustscan",
     "name": "RustScan",
     "path": "tools/reconnaissance/rustscan.md",
@@ -330,6 +424,8 @@
   },
   {
     "category": "Defensive Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "security-onion",
     "name": "Security Onion",
     "path": "tools/defensive-security/security-onion.md",
@@ -337,6 +433,8 @@
   },
   {
     "category": "Secure Development",
+    "definition": "",
+    "execution_mode": "",
     "id": "semgrep",
     "name": "Semgrep",
     "path": "tools/secure-development/semgrep.md",
@@ -344,6 +442,8 @@
   },
   {
     "category": "OSINT",
+    "definition": "",
+    "execution_mode": "",
     "id": "sherlock",
     "name": "Sherlock",
     "path": "tools/osint/sherlock.md",
@@ -351,6 +451,8 @@
   },
   {
     "category": "Defensive Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "sigma",
     "name": "Sigma",
     "path": "tools/defensive-security/sigma.md",
@@ -358,6 +460,8 @@
   },
   {
     "category": "Network Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "snort",
     "name": "Snort",
     "path": "tools/network-analysis/snort.md",
@@ -365,6 +469,8 @@
   },
   {
     "category": "OSINT",
+    "definition": "",
+    "execution_mode": "",
     "id": "spiderfoot",
     "name": "SpiderFoot",
     "path": "tools/osint/spiderfoot.md",
@@ -372,6 +478,8 @@
   },
   {
     "category": "Web Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "sqlmap",
     "name": "sqlmap",
     "path": "tools/web-security/sqlmap.md",
@@ -379,6 +487,8 @@
   },
   {
     "category": "Reconnaissance",
+    "definition": "",
+    "execution_mode": "",
     "id": "subfinder",
     "name": "Subfinder",
     "path": "tools/reconnaissance/subfinder.md",
@@ -386,6 +496,8 @@
   },
   {
     "category": "Network Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "suricata",
     "name": "Suricata",
     "path": "tools/network-analysis/suricata.md",
@@ -393,6 +505,8 @@
   },
   {
     "category": "Container Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "syft",
     "name": "Syft",
     "path": "tools/container-security/syft.md",
@@ -400,6 +514,8 @@
   },
   {
     "category": "Network Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "tcpdump",
     "name": "tcpdump",
     "path": "tools/network-analysis/tcpdump.md",
@@ -407,6 +523,8 @@
   },
   {
     "category": "Web Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "testssl-sh",
     "name": "testssl.sh",
     "path": "tools/web-security/testssl-sh.md",
@@ -414,6 +532,8 @@
   },
   {
     "category": "Defensive Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "tetragon",
     "name": "Tetragon",
     "path": "tools/defensive-security/tetragon.md",
@@ -421,6 +541,8 @@
   },
   {
     "category": "Reconnaissance",
+    "definition": "",
+    "execution_mode": "",
     "id": "theharvester",
     "name": "theHarvester",
     "path": "tools/reconnaissance/theharvester.md",
@@ -428,6 +550,8 @@
   },
   {
     "category": "Vulnerability Management",
+    "definition": "",
+    "execution_mode": "",
     "id": "trivy",
     "name": "Trivy",
     "path": "tools/vulnerability-management/trivy.md",
@@ -435,6 +559,8 @@
   },
   {
     "category": "Secure Development",
+    "definition": "",
+    "execution_mode": "",
     "id": "trufflehog",
     "name": "TruffleHog",
     "path": "tools/secure-development/trufflehog.md",
@@ -442,6 +568,8 @@
   },
   {
     "category": "Defensive Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "velociraptor",
     "name": "Velociraptor",
     "path": "tools/defensive-security/velociraptor.md",
@@ -449,6 +577,8 @@
   },
   {
     "category": "Digital Forensics",
+    "definition": "",
+    "execution_mode": "",
     "id": "volatility3",
     "name": "Volatility 3",
     "path": "tools/digital-forensics/volatility3.md",
@@ -456,6 +586,8 @@
   },
   {
     "category": "Defensive Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "wazuh",
     "name": "Wazuh",
     "path": "tools/defensive-security/wazuh.md",
@@ -463,6 +595,8 @@
   },
   {
     "category": "Network Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "wireshark",
     "name": "Wireshark",
     "path": "tools/network-analysis/wireshark.md",
@@ -470,6 +604,8 @@
   },
   {
     "category": "Malware Analysis",
+    "definition": "",
+    "execution_mode": "",
     "id": "yara",
     "name": "YARA",
     "path": "tools/malware-analysis/yara.md",
@@ -477,6 +613,8 @@
   },
   {
     "category": "Network Security",
+    "definition": "",
+    "execution_mode": "",
     "id": "zeek",
     "name": "Zeek",
     "path": "tools/network-analysis/zeek.md",
@@ -484,6 +622,8 @@
   },
   {
     "category": "Reconnaissance",
+    "definition": "",
+    "execution_mode": "",
     "id": "zmap",
     "name": "ZMap",
     "path": "tools/reconnaissance/zmap.md",

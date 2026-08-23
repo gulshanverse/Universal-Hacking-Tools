@@ -15,7 +15,7 @@ def load(name):
 
 def main():
     search=load('search-index.json'); docs=search.get('documents',[])
-    trust=load('trust-report.json'); catalog=load('source-catalog.json'); claims=load('claim-report.json'); prereq=load('prerequisite-report.json')
+    trust=load('trust-report.json'); catalog=load('source-catalog.json'); claims=load('claim-report.json'); prereq=load('prerequisite-report.json'); lab_health=load('lab-health.json')
     expected={f"{d.get('type')}:{d.get('id')}" for d in docs}
     entities=trust.get('entity_trust',[])
     actual={e.get('entity') for e in entities}
@@ -42,6 +42,9 @@ def main():
     if not isinstance(overall,(int,float)) or not 0 <= overall <= 100: ERRORS.append('invalid overall trust score')
     if prereq.get('cycles'): ERRORS.append(f"prerequisite cycles detected: {len(prereq['cycles'])}")
     if prereq.get('invalid',0): ERRORS.append(f"invalid prerequisites detected: {prereq['invalid']}")
+    lab_execution=trust.get('lab_execution', {})
+    if lab_execution.get('content_and_execution_are_separate') is not True: ERRORS.append('trust report must separate content and execution correctness')
+    if lab_health.get('unsafe_executable_labs', 0): ERRORS.append(f"unsafe executable labs detected: {lab_health['unsafe_executable_labs']}")
     if ERRORS:
         print('Trust validation failed:\n'+'\n'.join('- '+e for e in ERRORS)); return 1
     print(f"Validated verification metadata for {len(docs)} entities, {len(catalog.get('sources',[]))} normalized sources, {len(claims.get('claims',[]))} claims, and trust score {overall}%.")

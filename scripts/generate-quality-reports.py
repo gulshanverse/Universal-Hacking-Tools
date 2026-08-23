@@ -25,7 +25,7 @@ REQUIRED_METADATA = {
     "technique": ["id", "type", "name", "status"],
     "technology": ["id", "type", "name", "status"],
     "defensive-control": ["id", "type", "name", "status"],
-    "lab": ["id", "type", "name", "status"],
+    "lab": ["id", "type", "name", "status", "execution_mode"],
     "learning-path": ["id", "type", "name", "status"],
 }
 TYPE_IMPORTANCE = {"tool": 4, "vulnerability": 5, "concept": 5, "technique": 4, "technology": 3, "defensive-control": 5, "lab": 4, "learning-path": 5}
@@ -55,6 +55,7 @@ def report(as_of=AS_OF, stale_days=180):
         meta = parse_frontmatter(text)
         missing_sections = [s for s in REQUIRED_SECTIONS.get(doc["type"], []) if f"## {s}" not in text and f"# {s}" not in text]
         missing_metadata = [m for m in REQUIRED_METADATA.get(doc["type"], []) if not meta.get(m)]
+        if doc["type"] == "lab" and doc.get("execution_mode") == "executable" and not meta.get("definition"): missing_metadata.append("definition")
         missing_relationships = [] if doc.get("relationships") else ["relationships"]
         missing_sources = [] if doc.get("sources") else ["sources"]
         verification_meta = doc.get("verification", {})
@@ -72,7 +73,7 @@ def report(as_of=AS_OF, stale_days=180):
         if missing_sections: actions.append("write missing documentation sections")
         if missing_relationships: actions.append("add justified typed relationships")
         if stale: actions.append("re-verify current upstream facts")
-        complete.append({"id": doc["id"], "type": doc["type"], "name": doc["name"], "path": doc["path"], "completeness_score": score, "missing_sections": missing_sections, "missing_metadata": missing_metadata, "missing_relationships": missing_relationships, "missing_sources": missing_sources, "verification_status": status, "confidence": confidence, "stale_verification": stale, "recommended_actions": actions})
+        complete.append({"id": doc["id"], "type": doc["type"], "name": doc["name"], "path": doc["path"], "completeness_score": score, "missing_sections": missing_sections, "missing_metadata": missing_metadata, "missing_relationships": missing_relationships, "missing_sources": missing_sources, "verification_status": status, "confidence": confidence, "execution_mode": doc.get("execution_mode", ""), "definition": doc.get("definition", ""), "stale_verification": stale, "recommended_actions": actions})
         verification_by_type.setdefault(doc["type"], {"total": 0, "verified": 0, "partially_verified": 0, "needs_review": 0, "unverified": 0, "deprecated": 0, "stale": 0, "missing_authoritative_source": 0})
         bucket = verification_by_type[doc["type"]]
         bucket["total"] += 1

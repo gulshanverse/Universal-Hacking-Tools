@@ -51,7 +51,7 @@ def collect():
     nodes = {}
     def add(kind, path, meta):
         node_id = meta.get("id") or path_for_type(kind, path)
-        nodes[(kind, node_id)] = {"id": node_id, "type": kind, "name": meta.get("name", node_id.replace("-", " ").title()), "path": path.relative_to(ROOT).as_posix(), "category": meta.get("category", "")}
+        nodes[(kind, node_id)] = {"id": node_id, "type": kind, "name": meta.get("name", node_id.replace("-", " ").title()), "path": path.relative_to(ROOT).as_posix(), "category": meta.get("category", ""), "execution_mode": meta.get("execution_mode", "") if kind == "lab" else "", "definition": meta.get("definition", "") if kind == "lab" else ""}
     for p in (ROOT / "tools").glob("**/*.md"):
         if p.name not in {"README.md", "INDEX.md"}: add("tool", p, parse_meta(p.read_text(encoding="utf-8")))
     for p in (ROOT / "vulnerabilities").glob("**/*.md"):
@@ -110,8 +110,18 @@ def generate():
                 if candidates and prerequisite_type in {"required", "recommended", "helpful"}:
                     target_kind, target_id = candidates[0]
                     relationships.add((source[0], source[1], target_kind, target_id, f"requires-prerequisite-{prerequisite_type}"))
+    learning_edges = {"concepts": ("concept", "teaches-concept"), "techniques": ("technique", "practices-technique"), "tools": ("tool", "uses-tool"), "vulnerabilities": ("vulnerability", "demonstrates-vulnerability"), "defensive_controls": ("defensive-control", "reinforces-control"), "learning_paths": ("learning-path", "belongs-to-learning-path")}
+    for definition_path in sorted((ROOT / "labs" / "definitions").glob("*.yaml")):
+        try: definition = json.loads(definition_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError): continue
+        source = ("lab", definition.get("id", ""))
+        if source not in nodes: continue
+        for field, (target_kind, label) in learning_edges.items():
+            for target_id in definition.get("learning", {}).get(field, []):
+                target = (target_kind, target_id)
+                if target in nodes: relationships.add((source[0], source[1], target_kind, target_id, label))
     # Add reverse edges for navigability without changing source metadata.
-    reverse = {"uses-concept": "concept-of", "related-to-concept": "concept-related-from", "implements-technique": "technique-of", "related-to-technique": "technique-related-from", "uses-technology": "technology-of", "affects-technology": "technology-affected-by", "related-to-vulnerability": "related-from-vulnerability", "uses-tool": "tool-of", "related-to-tool": "related-from-tool", "related-to-lab": "related-from-lab", "part-of-learning-path": "contains-learning-path", "mitigated-by": "control-for", "requires-prerequisite-required": "prerequisite-for-required", "requires-prerequisite-recommended": "prerequisite-for-recommended", "requires-prerequisite-helpful": "prerequisite-for-helpful", "requires-prerequisite": "prerequisite-for"}
+    reverse = {"uses-concept": "concept-of", "related-to-concept": "concept-related-from", "implements-technique": "technique-of", "related-to-technique": "technique-related-from", "uses-technology": "technology-of", "affects-technology": "technology-affected-by", "related-to-vulnerability": "related-from-vulnerability", "uses-tool": "tool-of", "related-to-tool": "related-from-tool", "related-to-lab": "related-from-lab", "part-of-learning-path": "contains-learning-path", "mitigated-by": "control-for", "teaches-concept": "concept-taught-by", "practices-technique": "technique-practiced-by", "demonstrates-vulnerability": "vulnerability-demonstrated-by", "reinforces-control": "control-reinforced-by", "belongs-to-learning-path": "contains-lab", "requires-prerequisite-required": "prerequisite-for-required", "requires-prerequisite-recommended": "prerequisite-for-recommended", "requires-prerequisite-helpful": "prerequisite-for-helpful", "requires-prerequisite": "prerequisite-for"}
     all_relationships = set(relationships)
     for src_kind, src_id, dst_kind, dst_id, label in relationships:
         all_relationships.add((dst_kind, dst_id, src_kind, src_id, reverse.get(label, "related-from")))

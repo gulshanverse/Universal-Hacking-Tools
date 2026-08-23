@@ -1,6 +1,8 @@
 [
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "access-control",
     "name": "Access Control",
     "path": "knowledge/concepts/access-control.md",
@@ -8,6 +10,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "apis",
     "name": "APIs",
     "path": "knowledge/concepts/apis.md",
@@ -15,6 +19,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "arp",
     "name": "ARP",
     "path": "knowledge/concepts/arp.md",
@@ -22,6 +28,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "attack-surface",
     "name": "Attack Surface",
     "path": "knowledge/concepts/attack-surface.md",
@@ -29,6 +37,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "authentication",
     "name": "Authentication",
     "path": "knowledge/concepts/authentication.md",
@@ -36,6 +46,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "authorization",
     "name": "Authorization",
     "path": "knowledge/concepts/authorization.md",
@@ -43,6 +55,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "certificates",
     "name": "Certificates",
     "path": "knowledge/concepts/certificates.md",
@@ -50,6 +64,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "containers",
     "name": "Containers",
     "path": "knowledge/concepts/containers.md",
@@ -57,6 +73,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "cookies",
     "name": "Cookies",
     "path": "knowledge/concepts/cookies.md",
@@ -64,6 +82,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "cors",
     "name": "CORS",
     "path": "knowledge/concepts/cors.md",
@@ -71,6 +91,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "cryptography",
     "name": "Cryptography",
     "path": "knowledge/concepts/cryptography.md",
@@ -78,6 +100,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "data-classification",
     "name": "Data Classification",
     "path": "knowledge/concepts/data-classification.md",
@@ -85,6 +109,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "defense-in-depth",
     "name": "Defense in Depth",
     "path": "knowledge/concepts/defense-in-depth.md",
@@ -92,6 +118,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "dhcp",
     "name": "DHCP",
     "path": "knowledge/concepts/dhcp.md",
@@ -99,6 +127,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "digital-signatures",
     "name": "Digital Signatures",
     "path": "knowledge/concepts/digital-signatures.md",
@@ -106,6 +136,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "dns",
     "name": "DNS",
     "path": "knowledge/concepts/dns.md",
@@ -113,6 +145,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "encryption",
     "name": "Encryption",
     "path": "knowledge/concepts/encryption.md",
@@ -120,6 +154,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "file-systems",
     "name": "File Systems",
     "path": "knowledge/concepts/file-systems.md",
@@ -127,6 +163,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "firewalls",
     "name": "Firewalls",
     "path": "knowledge/concepts/firewalls.md",
@@ -134,6 +172,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "graphql",
     "name": "GraphQL",
     "path": "knowledge/concepts/graphql.md",
@@ -141,6 +181,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "hashing",
     "name": "Hashing",
     "path": "knowledge/concepts/hashing.md",
@@ -148,6 +190,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "http",
     "name": "HTTP",
     "path": "knowledge/concepts/http.md",
@@ -155,6 +199,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "http-requests",
     "name": "HTTP Requests",
     "path": "knowledge/concepts/http-requests.md",
@@ -162,6 +208,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "http-responses",
     "name": "HTTP Responses",
     "path": "knowledge/concepts/http-responses.md",
@@ -169,6 +217,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "https",
     "name": "HTTPS",
     "path": "knowledge/concepts/https.md",
@@ -176,6 +226,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "icmp",
     "name": "ICMP",
     "path": "knowledge/concepts/icmp.md",
@@ -183,6 +235,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "input-validation",
     "name": "Input Validation",
     "path": "knowledge/concepts/input-validation.md",
@@ -190,6 +244,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "key-management",
     "name": "Key Management",
     "path": "knowledge/concepts/key-management.md",
@@ -197,6 +253,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "least-privilege",
     "name": "Least Privilege",
     "path": "knowledge/concepts/least-privilege.md",
@@ -204,6 +262,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "memory",
     "name": "Memory",
     "path": "knowledge/concepts/memory.md",
@@ -211,6 +271,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "nat",
     "name": "NAT",
     "path": "knowledge/concepts/nat.md",
@@ -218,6 +280,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "networking",
     "name": "Networking",
     "path": "knowledge/concepts/networking.md",
@@ -225,6 +289,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "osi-model",
     "name": "OSI Model",
     "path": "knowledge/concepts/osi-model.md",
@@ -232,6 +298,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "permissions",
     "name": "Permissions",
     "path": "knowledge/concepts/permissions.md",
@@ -239,6 +307,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "pki",
     "name": "PKI",
     "path": "knowledge/concepts/pki.md",
@@ -246,6 +316,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "ports",
     "name": "Ports",
     "path": "knowledge/concepts/ports.md",
@@ -253,6 +325,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "privacy",
     "name": "Privacy",
     "path": "knowledge/concepts/privacy.md",
@@ -260,6 +334,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "processes",
     "name": "Processes",
     "path": "knowledge/concepts/processes.md",
@@ -267,6 +343,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "proxies",
     "name": "Proxies",
     "path": "knowledge/concepts/proxies.md",
@@ -274,6 +352,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "randomness",
     "name": "Randomness",
     "path": "knowledge/concepts/randomness.md",
@@ -281,6 +361,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "rest",
     "name": "REST",
     "path": "knowledge/concepts/rest.md",
@@ -288,6 +370,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "risk-management",
     "name": "Risk Management",
     "path": "knowledge/concepts/risk-management.md",
@@ -295,6 +379,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "routing",
     "name": "Routing",
     "path": "knowledge/concepts/routing.md",
@@ -302,6 +388,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "same-origin-policy",
     "name": "Same-Origin Policy",
     "path": "knowledge/concepts/same-origin-policy.md",
@@ -309,6 +397,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "sbom",
     "name": "SBOM",
     "path": "knowledge/concepts/sbom.md",
@@ -316,6 +406,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "secure-sdlc",
     "name": "Secure SDLC",
     "path": "knowledge/concepts/secure-sdlc.md",
@@ -323,6 +415,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "security-monitoring",
     "name": "Security Monitoring",
     "path": "knowledge/concepts/security-monitoring.md",
@@ -330,6 +424,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "services",
     "name": "Services",
     "path": "knowledge/concepts/services.md",
@@ -337,6 +433,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "sessions",
     "name": "Sessions",
     "path": "knowledge/concepts/sessions.md",
@@ -344,6 +442,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "supply-chain-security",
     "name": "Supply-Chain Security",
     "path": "knowledge/concepts/supply-chain-security.md",
@@ -351,6 +451,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "switching",
     "name": "Switching",
     "path": "knowledge/concepts/switching.md",
@@ -358,6 +460,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "system-calls",
     "name": "System Calls",
     "path": "knowledge/concepts/system-calls.md",
@@ -365,6 +469,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "tcp",
     "name": "TCP",
     "path": "knowledge/concepts/tcp.md",
@@ -372,6 +478,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "tcp-ip",
     "name": "TCP/IP",
     "path": "knowledge/concepts/tcp-ip.md",
@@ -379,6 +487,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "threat-modeling",
     "name": "Threat Modeling",
     "path": "knowledge/concepts/threat-modeling.md",
@@ -386,6 +496,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "tls",
     "name": "TLS",
     "path": "knowledge/concepts/tls.md",
@@ -393,6 +505,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "udp",
     "name": "UDP",
     "path": "knowledge/concepts/udp.md",
@@ -400,6 +514,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "users-and-groups",
     "name": "Users and Groups",
     "path": "knowledge/concepts/users-and-groups.md",
@@ -407,6 +523,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "vulnerability-management",
     "name": "Vulnerability Management",
     "path": "knowledge/concepts/vulnerability-management.md",
@@ -414,6 +532,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "websockets",
     "name": "WebSockets",
     "path": "knowledge/concepts/websockets.md",
@@ -421,6 +541,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "zero-trust",
     "name": "Zero Trust",
     "path": "knowledge/concepts/zero-trust.md",

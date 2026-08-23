@@ -162,6 +162,8 @@ def generate(as_of=AS_OF, stale_days=STALE_DAYS):
             "sources": meta.get("sources", {}),
             "license": meta.get("license", ""),
             "dual_use": meta.get("dual_use", ""),
+            "execution_mode": meta.get("execution_mode", "") if kind == "lab" else "",
+            "definition": meta.get("definition", "") if kind == "lab" else "",
             "keywords": sorted(set(tokens(keyword_values))),
         }
         doc["aliases"] = aliases_for(doc)

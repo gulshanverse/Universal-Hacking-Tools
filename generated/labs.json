@@ -1,6 +1,8 @@
 [
   {
     "category": "",
+    "definition": "definitions/api-discovery-local-app.yaml",
+    "execution_mode": "executable",
     "id": "api-discovery-local-app",
     "name": "API Discovery in a Local App",
     "path": "labs/web/api-discovery-local-app.md",
@@ -8,6 +10,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "authentication-session-review",
     "name": "Authentication and Session Review",
     "path": "labs/authentication/authentication-session-review.md",
@@ -15,6 +19,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "authorization-matrix-testing",
     "name": "Authorization Matrix Testing",
     "path": "labs/api/authorization-matrix-testing.md",
@@ -22,6 +28,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "cloud-least-privilege-review",
     "name": "Cloud Least-Privilege Review",
     "path": "labs/cloud/cloud-least-privilege-review.md",
@@ -29,6 +37,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "container-sbom-and-scan",
     "name": "Container Image SBOM and Scan",
     "path": "labs/defensive/container-sbom-and-scan.md",
@@ -36,6 +46,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "detection-rule-engineering",
     "name": "Detection Rule Engineering",
     "path": "labs/defensive/detection-rule-engineering.md",
@@ -43,6 +55,8 @@
   },
   {
     "category": "",
+    "definition": "definitions/detection-rule-regression.yaml",
+    "execution_mode": "executable",
     "id": "detection-rule-regression",
     "name": "Detection Rule Regression",
     "path": "labs/defensive/detection-rule-regression.md",
@@ -50,6 +64,8 @@
   },
   {
     "category": "",
+    "definition": "definitions/dns-resolution-inventory.yaml",
+    "execution_mode": "executable",
     "id": "dns-resolution-inventory",
     "name": "DNS Resolution and Inventory",
     "path": "labs/networking/dns-resolution-inventory.md",
@@ -57,6 +73,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "evidence-first-analysis",
     "name": "Evidence-First Analysis Workflow",
     "path": "labs/forensics/evidence-first-analysis.md",
@@ -64,6 +82,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "graphql-schema-safety",
     "name": "GraphQL Schema Safety Review",
     "path": "labs/web/graphql-schema-safety.md",
@@ -71,6 +91,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "http-request-analysis",
     "name": "HTTP Request Analysis",
     "path": "labs/web/http-request-analysis.md",
@@ -78,6 +100,8 @@
   },
   {
     "category": "",
+    "definition": "definitions/iac-security-review.yaml",
+    "execution_mode": "executable",
     "id": "iac-security-review",
     "name": "IaC Security Review",
     "path": "labs/networking/iac-security-review.md",
@@ -85,6 +109,8 @@
   },
   {
     "category": "",
+    "definition": "definitions/kubernetes-posture-review.yaml",
+    "execution_mode": "executable",
     "id": "kubernetes-posture-review",
     "name": "Kubernetes Posture Review",
     "path": "labs/defensive/kubernetes-posture-review.md",
@@ -92,6 +118,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "localhost-service-inventory",
     "name": "Localhost Service Inventory",
     "path": "labs/networking/localhost-service-inventory.md",
@@ -99,6 +127,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "memory-analysis-fundamentals",
     "name": "Memory Analysis Fundamentals",
     "path": "labs/forensics/memory-analysis-fundamentals.md",
@@ -106,6 +136,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "memory-image-triage",
     "name": "Memory Image Triage",
     "path": "labs/forensics/memory-image-triage.md",
@@ -113,6 +145,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "packet-capture-fundamentals",
     "name": "Packet Capture Fundamentals",
     "path": "labs/networking/packet-capture-fundamentals.md",
@@ -120,6 +154,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "secrets-rotation-exercise",
     "name": "Secrets Rotation Exercise",
     "path": "labs/defensive/secrets-rotation-exercise.md",
@@ -127,6 +163,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "documentation-only",
     "id": "sql-injection-concepts",
     "name": "SQL Injection Concepts in a Lab",
     "path": "labs/web/sql-injection-concepts.md",
@@ -134,6 +172,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "documentation-only",
     "id": "static-malware-triage",
     "name": "Static Malware Triage",
     "path": "labs/defensive/static-malware-triage.md",
@@ -141,6 +181,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "guided",
     "id": "timeline-analysis-synthetic",
     "name": "Timeline Analysis with Synthetic Artifacts",
     "path": "labs/forensics/timeline-analysis-synthetic.md",
@@ -148,6 +190,8 @@
   },
   {
     "category": "",
+    "definition": "definitions/tls-certificate-review.yaml",
+    "execution_mode": "executable",
     "id": "tls-certificate-review",
     "name": "TLS Certificate Review",
     "path": "labs/networking/tls-certificate-review.md",

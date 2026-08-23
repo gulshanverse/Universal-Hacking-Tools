@@ -1,6 +1,8 @@
 [
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "api-discovery",
     "name": "API Discovery",
     "path": "knowledge/techniques/api-discovery.md",
@@ -8,6 +10,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "certificate-review",
     "name": "Certificate Review",
     "path": "knowledge/techniques/certificate-review.md",
@@ -15,6 +19,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "certificate-transparency",
     "name": "Certificate Transparency Review",
     "path": "knowledge/techniques/certificate-transparency.md",
@@ -22,6 +28,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "cloud-configuration-assessment",
     "name": "Cloud Configuration Assessment",
     "path": "knowledge/techniques/cloud-configuration-assessment.md",
@@ -29,6 +37,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "container-security-scanning",
     "name": "Container Security Scanning",
     "path": "knowledge/techniques/container-security-scanning.md",
@@ -36,6 +46,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "content-discovery",
     "name": "Content Discovery",
     "path": "knowledge/techniques/content-discovery.md",
@@ -43,6 +55,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "dependency-analysis",
     "name": "Dependency Analysis",
     "path": "knowledge/techniques/dependency-analysis.md",
@@ -50,6 +64,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "detection-engineering",
     "name": "Detection Engineering",
     "path": "knowledge/techniques/detection-engineering.md",
@@ -57,6 +73,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "digital-forensics",
     "name": "Digital Forensics",
     "path": "knowledge/techniques/digital-forensics.md",
@@ -64,6 +82,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "dns-enumeration",
     "name": "DNS Enumeration",
     "path": "knowledge/techniques/dns-enumeration.md",
@@ -71,6 +91,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "dynamic-analysis",
     "name": "Dynamic Analysis",
     "path": "knowledge/techniques/dynamic-analysis.md",
@@ -78,6 +100,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "host-discovery",
     "name": "Host Discovery",
     "path": "knowledge/techniques/host-discovery.md",
@@ -85,6 +109,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "iac-scanning",
     "name": "Infrastructure-as-Code Scanning",
     "path": "knowledge/techniques/iac-scanning.md",
@@ -92,6 +118,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "incident-triage",
     "name": "Incident Triage",
     "path": "knowledge/techniques/incident-triage.md",
@@ -99,6 +127,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "log-analysis",
     "name": "Log Analysis",
     "path": "knowledge/techniques/log-analysis.md",
@@ -106,6 +136,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "malware-analysis",
     "name": "Malware Analysis",
     "path": "knowledge/techniques/malware-analysis.md",
@@ -113,6 +145,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "memory-analysis",
     "name": "Memory Analysis",
     "path": "knowledge/techniques/memory-analysis.md",
@@ -120,6 +154,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "network-scanning",
     "name": "Network Scanning",
     "path": "knowledge/techniques/network-scanning.md",
@@ -127,6 +163,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "packet-analysis",
     "name": "Packet Analysis",
     "path": "knowledge/techniques/packet-analysis.md",
@@ -134,6 +172,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "phishing-resistant-authentication",
     "name": "Phishing-Resistant Authentication",
     "path": "knowledge/techniques/phishing-resistant-authentication.md",
@@ -141,6 +181,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "reverse-engineering",
     "name": "Reverse Engineering",
     "path": "knowledge/techniques/reverse-engineering.md",
@@ -148,6 +190,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "secrets-detection",
     "name": "Secrets Detection",
     "path": "knowledge/techniques/secrets-detection.md",
@@ -155,6 +199,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "secure-code-review",
     "name": "Secure Code Review",
     "path": "knowledge/techniques/secure-code-review.md",
@@ -162,6 +208,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "security-testing",
     "name": "Security Testing",
     "path": "knowledge/techniques/security-testing.md",
@@ -169,6 +217,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "service-enumeration",
     "name": "Service Enumeration",
     "path": "knowledge/techniques/service-enumeration.md",
@@ -176,6 +226,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "static-analysis",
     "name": "Static Analysis",
     "path": "knowledge/techniques/static-analysis.md",
@@ -183,6 +235,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "subdomain-discovery",
     "name": "Subdomain Discovery",
     "path": "knowledge/techniques/subdomain-discovery.md",
@@ -190,6 +244,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "threat-hunting",
     "name": "Threat Hunting",
     "path": "knowledge/techniques/threat-hunting.md",
@@ -197,6 +253,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "threat-intelligence-analysis",
     "name": "Threat Intelligence Analysis",
     "path": "knowledge/techniques/threat-intelligence-analysis.md",
@@ -204,6 +262,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "timeline-analysis",
     "name": "Timeline Analysis",
     "path": "knowledge/techniques/timeline-analysis.md",
@@ -211,6 +271,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "traffic-analysis",
     "name": "Traffic Analysis",
     "path": "knowledge/techniques/traffic-analysis.md",
@@ -218,6 +280,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "vulnerability-assessment",
     "name": "Vulnerability Assessment",
     "path": "knowledge/techniques/vulnerability-assessment.md",
@@ -225,6 +289,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "vulnerability-prioritization",
     "name": "Vulnerability Prioritization",
     "path": "knowledge/techniques/vulnerability-prioritization.md",
@@ -232,6 +298,8 @@
   },
   {
     "category": "",
+    "definition": "",
+    "execution_mode": "",
     "id": "web-enumeration",
     "name": "Web Enumeration",
     "path": "knowledge/techniques/web-enumeration.md",

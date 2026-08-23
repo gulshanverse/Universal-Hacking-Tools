@@ -2,6 +2,8 @@
   "nodes": [
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "access-control",
       "name": "Access Control",
       "path": "knowledge/concepts/access-control.md",
@@ -9,6 +11,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "apis",
       "name": "APIs",
       "path": "knowledge/concepts/apis.md",
@@ -16,6 +20,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "arp",
       "name": "ARP",
       "path": "knowledge/concepts/arp.md",
@@ -23,6 +29,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "attack-surface",
       "name": "Attack Surface",
       "path": "knowledge/concepts/attack-surface.md",
@@ -30,6 +38,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "authentication",
       "name": "Authentication",
       "path": "knowledge/concepts/authentication.md",
@@ -37,6 +47,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "authorization",
       "name": "Authorization",
       "path": "knowledge/concepts/authorization.md",
@@ -44,6 +56,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "certificates",
       "name": "Certificates",
       "path": "knowledge/concepts/certificates.md",
@@ -51,6 +65,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "containers",
       "name": "Containers",
       "path": "knowledge/concepts/containers.md",
@@ -58,6 +74,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "cookies",
       "name": "Cookies",
       "path": "knowledge/concepts/cookies.md",
@@ -65,6 +83,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "cors",
       "name": "CORS",
       "path": "knowledge/concepts/cors.md",
@@ -72,6 +92,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "cryptography",
       "name": "Cryptography",
       "path": "knowledge/concepts/cryptography.md",
@@ -79,6 +101,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "data-classification",
       "name": "Data Classification",
       "path": "knowledge/concepts/data-classification.md",
@@ -86,6 +110,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "defense-in-depth",
       "name": "Defense in Depth",
       "path": "knowledge/concepts/defense-in-depth.md",
@@ -93,6 +119,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "dhcp",
       "name": "DHCP",
       "path": "knowledge/concepts/dhcp.md",
@@ -100,6 +128,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "digital-signatures",
       "name": "Digital Signatures",
       "path": "knowledge/concepts/digital-signatures.md",
@@ -107,6 +137,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "dns",
       "name": "DNS",
       "path": "knowledge/concepts/dns.md",
@@ -114,6 +146,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "encryption",
       "name": "Encryption",
       "path": "knowledge/concepts/encryption.md",
@@ -121,6 +155,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "file-systems",
       "name": "File Systems",
       "path": "knowledge/concepts/file-systems.md",
@@ -128,6 +164,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "firewalls",
       "name": "Firewalls",
       "path": "knowledge/concepts/firewalls.md",
@@ -135,6 +173,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "graphql",
       "name": "GraphQL",
       "path": "knowledge/concepts/graphql.md",
@@ -142,6 +182,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "hashing",
       "name": "Hashing",
       "path": "knowledge/concepts/hashing.md",
@@ -149,6 +191,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "http",
       "name": "HTTP",
       "path": "knowledge/concepts/http.md",
@@ -156,6 +200,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "http-requests",
       "name": "HTTP Requests",
       "path": "knowledge/concepts/http-requests.md",
@@ -163,6 +209,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "http-responses",
       "name": "HTTP Responses",
       "path": "knowledge/concepts/http-responses.md",
@@ -170,6 +218,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "https",
       "name": "HTTPS",
       "path": "knowledge/concepts/https.md",
@@ -177,6 +227,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "icmp",
       "name": "ICMP",
       "path": "knowledge/concepts/icmp.md",
@@ -184,6 +236,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "input-validation",
       "name": "Input Validation",
       "path": "knowledge/concepts/input-validation.md",
@@ -191,6 +245,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "key-management",
       "name": "Key Management",
       "path": "knowledge/concepts/key-management.md",
@@ -198,6 +254,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "least-privilege",
       "name": "Least Privilege",
       "path": "knowledge/concepts/least-privilege.md",
@@ -205,6 +263,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "memory",
       "name": "Memory",
       "path": "knowledge/concepts/memory.md",
@@ -212,6 +272,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "nat",
       "name": "NAT",
       "path": "knowledge/concepts/nat.md",
@@ -219,6 +281,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "networking",
       "name": "Networking",
       "path": "knowledge/concepts/networking.md",
@@ -226,6 +290,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "osi-model",
       "name": "OSI Model",
       "path": "knowledge/concepts/osi-model.md",
@@ -233,6 +299,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "permissions",
       "name": "Permissions",
       "path": "knowledge/concepts/permissions.md",
@@ -240,6 +308,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "pki",
       "name": "PKI",
       "path": "knowledge/concepts/pki.md",
@@ -247,6 +317,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "ports",
       "name": "Ports",
       "path": "knowledge/concepts/ports.md",
@@ -254,6 +326,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "privacy",
       "name": "Privacy",
       "path": "knowledge/concepts/privacy.md",
@@ -261,6 +335,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "processes",
       "name": "Processes",
       "path": "knowledge/concepts/processes.md",
@@ -268,6 +344,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "proxies",
       "name": "Proxies",
       "path": "knowledge/concepts/proxies.md",
@@ -275,6 +353,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "randomness",
       "name": "Randomness",
       "path": "knowledge/concepts/randomness.md",
@@ -282,6 +362,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "rest",
       "name": "REST",
       "path": "knowledge/concepts/rest.md",
@@ -289,6 +371,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "risk-management",
       "name": "Risk Management",
       "path": "knowledge/concepts/risk-management.md",
@@ -296,6 +380,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "routing",
       "name": "Routing",
       "path": "knowledge/concepts/routing.md",
@@ -303,6 +389,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "same-origin-policy",
       "name": "Same-Origin Policy",
       "path": "knowledge/concepts/same-origin-policy.md",
@@ -310,6 +398,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "sbom",
       "name": "SBOM",
       "path": "knowledge/concepts/sbom.md",
@@ -317,6 +407,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "secure-sdlc",
       "name": "Secure SDLC",
       "path": "knowledge/concepts/secure-sdlc.md",
@@ -324,6 +416,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "security-monitoring",
       "name": "Security Monitoring",
       "path": "knowledge/concepts/security-monitoring.md",
@@ -331,6 +425,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "services",
       "name": "Services",
       "path": "knowledge/concepts/services.md",
@@ -338,6 +434,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "sessions",
       "name": "Sessions",
       "path": "knowledge/concepts/sessions.md",
@@ -345,6 +443,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "supply-chain-security",
       "name": "Supply-Chain Security",
       "path": "knowledge/concepts/supply-chain-security.md",
@@ -352,6 +452,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "switching",
       "name": "Switching",
       "path": "knowledge/concepts/switching.md",
@@ -359,6 +461,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "system-calls",
       "name": "System Calls",
       "path": "knowledge/concepts/system-calls.md",
@@ -366,6 +470,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "tcp",
       "name": "TCP",
       "path": "knowledge/concepts/tcp.md",
@@ -373,6 +479,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "tcp-ip",
       "name": "TCP/IP",
       "path": "knowledge/concepts/tcp-ip.md",
@@ -380,6 +488,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "threat-modeling",
       "name": "Threat Modeling",
       "path": "knowledge/concepts/threat-modeling.md",
@@ -387,6 +497,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "tls",
       "name": "TLS",
       "path": "knowledge/concepts/tls.md",
@@ -394,6 +506,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "udp",
       "name": "UDP",
       "path": "knowledge/concepts/udp.md",
@@ -401,6 +515,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "users-and-groups",
       "name": "Users and Groups",
       "path": "knowledge/concepts/users-and-groups.md",
@@ -408,6 +524,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "vulnerability-management",
       "name": "Vulnerability Management",
       "path": "knowledge/concepts/vulnerability-management.md",
@@ -415,6 +533,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "websockets",
       "name": "WebSockets",
       "path": "knowledge/concepts/websockets.md",
@@ -422,6 +542,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "zero-trust",
       "name": "Zero Trust",
       "path": "knowledge/concepts/zero-trust.md",
@@ -429,6 +551,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "application-allowlisting",
       "name": "Application Allowlisting",
       "path": "knowledge/defensive-controls/application-allowlisting.md",
@@ -436,6 +560,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "asset-inventory",
       "name": "Asset Inventory",
       "path": "knowledge/defensive-controls/asset-inventory.md",
@@ -443,6 +569,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "backup",
       "name": "Backup and Recovery",
       "path": "knowledge/defensive-controls/backup.md",
@@ -450,6 +578,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "csp",
       "name": "Content Security Policy",
       "path": "knowledge/defensive-controls/csp.md",
@@ -457,6 +587,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "data-loss-prevention",
       "name": "Data Loss Prevention",
       "path": "knowledge/defensive-controls/data-loss-prevention.md",
@@ -464,6 +596,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "dependency-management",
       "name": "Dependency Management",
       "path": "knowledge/defensive-controls/dependency-management.md",
@@ -471,6 +605,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "edr",
       "name": "EDR",
       "path": "knowledge/defensive-controls/edr.md",
@@ -478,6 +614,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "encryption",
       "name": "Encryption",
       "path": "knowledge/defensive-controls/encryption.md",
@@ -485,6 +623,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "endpoint-detection",
       "name": "Endpoint Detection",
       "path": "knowledge/defensive-controls/endpoint-detection.md",
@@ -492,6 +632,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "endpoint-hardening",
       "name": "Endpoint Hardening",
       "path": "knowledge/defensive-controls/endpoint-hardening.md",
@@ -499,6 +641,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "firewall",
       "name": "Firewall",
       "path": "knowledge/defensive-controls/firewall.md",
@@ -506,6 +650,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "ids-ips",
       "name": "IDS/IPS",
       "path": "knowledge/defensive-controls/ids-ips.md",
@@ -513,6 +659,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "input-validation",
       "name": "Input Validation",
       "path": "knowledge/defensive-controls/input-validation.md",
@@ -520,6 +668,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "least-privilege",
       "name": "Least Privilege",
       "path": "knowledge/defensive-controls/least-privilege.md",
@@ -527,6 +677,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "mfa",
       "name": "MFA",
       "path": "knowledge/defensive-controls/mfa.md",
@@ -534,6 +686,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "network-monitoring",
       "name": "Network Monitoring",
       "path": "knowledge/defensive-controls/network-monitoring.md",
@@ -541,6 +695,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "network-segmentation",
       "name": "Network Segmentation",
       "path": "knowledge/defensive-controls/network-segmentation.md",
@@ -548,6 +704,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "parameterized-queries",
       "name": "Parameterized Queries",
       "path": "knowledge/defensive-controls/parameterized-queries.md",
@@ -555,6 +713,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "patch-management",
       "name": "Patch Management",
       "path": "knowledge/defensive-controls/patch-management.md",
@@ -562,6 +722,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "rate-limiting",
       "name": "Rate Limiting",
       "path": "knowledge/defensive-controls/rate-limiting.md",
@@ -569,6 +731,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "secrets-management",
       "name": "Secrets Management",
       "path": "knowledge/defensive-controls/secrets-management.md",
@@ -576,6 +740,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "secure-configuration",
       "name": "Secure Configuration",
       "path": "knowledge/defensive-controls/secure-configuration.md",
@@ -583,6 +749,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "secure-cookies",
       "name": "Secure Cookies",
       "path": "knowledge/defensive-controls/secure-cookies.md",
@@ -590,6 +758,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "secure-logging",
       "name": "Secure Logging",
       "path": "knowledge/defensive-controls/secure-logging.md",
@@ -597,6 +767,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "secure-sdlc",
       "name": "Secure SDLC",
       "path": "knowledge/defensive-controls/secure-sdlc.md",
@@ -604,6 +776,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "security-headers",
       "name": "Security Headers",
       "path": "knowledge/defensive-controls/security-headers.md",
@@ -611,6 +785,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "siem",
       "name": "SIEM",
       "path": "knowledge/defensive-controls/siem.md",
@@ -618,6 +794,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "supply-chain-controls",
       "name": "Supply-Chain Controls",
       "path": "knowledge/defensive-controls/supply-chain-controls.md",
@@ -625,6 +803,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "vulnerability-management",
       "name": "Vulnerability Management",
       "path": "knowledge/defensive-controls/vulnerability-management.md",
@@ -632,6 +812,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "zero-trust",
       "name": "Zero Trust",
       "path": "knowledge/defensive-controls/zero-trust.md",
@@ -639,6 +821,8 @@
     },
     {
       "category": "",
+      "definition": "definitions/api-discovery-local-app.yaml",
+      "execution_mode": "executable",
       "id": "api-discovery-local-app",
       "name": "API Discovery in a Local App",
       "path": "labs/web/api-discovery-local-app.md",
@@ -646,6 +830,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "authentication-session-review",
       "name": "Authentication and Session Review",
       "path": "labs/authentication/authentication-session-review.md",
@@ -653,6 +839,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "authorization-matrix-testing",
       "name": "Authorization Matrix Testing",
       "path": "labs/api/authorization-matrix-testing.md",
@@ -660,6 +848,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "cloud-least-privilege-review",
       "name": "Cloud Least-Privilege Review",
       "path": "labs/cloud/cloud-least-privilege-review.md",
@@ -667,6 +857,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "container-sbom-and-scan",
       "name": "Container Image SBOM and Scan",
       "path": "labs/defensive/container-sbom-and-scan.md",
@@ -674,6 +866,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "detection-rule-engineering",
       "name": "Detection Rule Engineering",
       "path": "labs/defensive/detection-rule-engineering.md",
@@ -681,6 +875,8 @@
     },
     {
       "category": "",
+      "definition": "definitions/detection-rule-regression.yaml",
+      "execution_mode": "executable",
       "id": "detection-rule-regression",
       "name": "Detection Rule Regression",
       "path": "labs/defensive/detection-rule-regression.md",
@@ -688,6 +884,8 @@
     },
     {
       "category": "",
+      "definition": "definitions/dns-resolution-inventory.yaml",
+      "execution_mode": "executable",
       "id": "dns-resolution-inventory",
       "name": "DNS Resolution and Inventory",
       "path": "labs/networking/dns-resolution-inventory.md",
@@ -695,6 +893,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "evidence-first-analysis",
       "name": "Evidence-First Analysis Workflow",
       "path": "labs/forensics/evidence-first-analysis.md",
@@ -702,6 +902,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "graphql-schema-safety",
       "name": "GraphQL Schema Safety Review",
       "path": "labs/web/graphql-schema-safety.md",
@@ -709,6 +911,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "http-request-analysis",
       "name": "HTTP Request Analysis",
       "path": "labs/web/http-request-analysis.md",
@@ -716,6 +920,8 @@
     },
     {
       "category": "",
+      "definition": "definitions/iac-security-review.yaml",
+      "execution_mode": "executable",
       "id": "iac-security-review",
       "name": "IaC Security Review",
       "path": "labs/networking/iac-security-review.md",
@@ -723,6 +929,8 @@
     },
     {
       "category": "",
+      "definition": "definitions/kubernetes-posture-review.yaml",
+      "execution_mode": "executable",
       "id": "kubernetes-posture-review",
       "name": "Kubernetes Posture Review",
       "path": "labs/defensive/kubernetes-posture-review.md",
@@ -730,6 +938,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "localhost-service-inventory",
       "name": "Localhost Service Inventory",
       "path": "labs/networking/localhost-service-inventory.md",
@@ -737,6 +947,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "memory-analysis-fundamentals",
       "name": "Memory Analysis Fundamentals",
       "path": "labs/forensics/memory-analysis-fundamentals.md",
@@ -744,6 +956,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "memory-image-triage",
       "name": "Memory Image Triage",
       "path": "labs/forensics/memory-image-triage.md",
@@ -751,6 +965,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "packet-capture-fundamentals",
       "name": "Packet Capture Fundamentals",
       "path": "labs/networking/packet-capture-fundamentals.md",
@@ -758,6 +974,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "secrets-rotation-exercise",
       "name": "Secrets Rotation Exercise",
       "path": "labs/defensive/secrets-rotation-exercise.md",
@@ -765,6 +983,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "documentation-only",
       "id": "sql-injection-concepts",
       "name": "SQL Injection Concepts in a Lab",
       "path": "labs/web/sql-injection-concepts.md",
@@ -772,6 +992,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "documentation-only",
       "id": "static-malware-triage",
       "name": "Static Malware Triage",
       "path": "labs/defensive/static-malware-triage.md",
@@ -779,6 +1001,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "guided",
       "id": "timeline-analysis-synthetic",
       "name": "Timeline Analysis with Synthetic Artifacts",
       "path": "labs/forensics/timeline-analysis-synthetic.md",
@@ -786,6 +1010,8 @@
     },
     {
       "category": "",
+      "definition": "definitions/tls-certificate-review.yaml",
+      "execution_mode": "executable",
       "id": "tls-certificate-review",
       "name": "TLS Certificate Review",
       "path": "labs/networking/tls-certificate-review.md",
@@ -793,6 +1019,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "api-security",
       "name": "API Security",
       "path": "learning-paths/api-security/README.md",
@@ -800,6 +1028,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "beginner",
       "name": "Beginner Cybersecurity",
       "path": "learning-paths/beginner/README.md",
@@ -807,6 +1037,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "blue-team",
       "name": "Blue Team",
       "path": "learning-paths/blue-team/README.md",
@@ -814,6 +1046,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "bug-bounty",
       "name": "Bug Bounty Learning",
       "path": "learning-paths/bug-bounty/README.md",
@@ -821,6 +1055,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "cloud-security",
       "name": "Cloud Security",
       "path": "learning-paths/cloud-security/README.md",
@@ -828,6 +1064,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "devsecops",
       "name": "DevSecOps",
       "path": "learning-paths/devsecops/README.md",
@@ -835,6 +1073,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "digital-forensics",
       "name": "Digital Forensics",
       "path": "learning-paths/digital-forensics/README.md",
@@ -842,6 +1082,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "ethical-hacking",
       "name": "Ethical Hacking",
       "path": "learning-paths/ethical-hacking/README.md",
@@ -849,6 +1091,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "malware-analysis",
       "name": "Malware Analysis",
       "path": "learning-paths/malware-analysis/README.md",
@@ -856,6 +1100,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "network-security",
       "name": "Network Security",
       "path": "learning-paths/network-security/README.md",
@@ -863,6 +1109,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "penetration-testing",
       "name": "Penetration Testing",
       "path": "learning-paths/penetration-testing/README.md",
@@ -870,6 +1118,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "security-engineering",
       "name": "Security Engineering",
       "path": "learning-paths/security-engineering/README.md",
@@ -877,6 +1127,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "soc-analyst",
       "name": "SOC Analyst",
       "path": "learning-paths/soc-analyst/README.md",
@@ -884,6 +1136,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "threat-hunting",
       "name": "Threat Hunting",
       "path": "learning-paths/threat-hunting/README.md",
@@ -891,6 +1145,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "web-security",
       "name": "Web Security",
       "path": "learning-paths/web-security/README.md",
@@ -898,6 +1154,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "api-discovery",
       "name": "API Discovery",
       "path": "knowledge/techniques/api-discovery.md",
@@ -905,6 +1163,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "certificate-review",
       "name": "Certificate Review",
       "path": "knowledge/techniques/certificate-review.md",
@@ -912,6 +1172,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "certificate-transparency",
       "name": "Certificate Transparency Review",
       "path": "knowledge/techniques/certificate-transparency.md",
@@ -919,6 +1181,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "cloud-configuration-assessment",
       "name": "Cloud Configuration Assessment",
       "path": "knowledge/techniques/cloud-configuration-assessment.md",
@@ -926,6 +1190,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "container-security-scanning",
       "name": "Container Security Scanning",
       "path": "knowledge/techniques/container-security-scanning.md",
@@ -933,6 +1199,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "content-discovery",
       "name": "Content Discovery",
       "path": "knowledge/techniques/content-discovery.md",
@@ -940,6 +1208,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "dependency-analysis",
       "name": "Dependency Analysis",
       "path": "knowledge/techniques/dependency-analysis.md",
@@ -947,6 +1217,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "detection-engineering",
       "name": "Detection Engineering",
       "path": "knowledge/techniques/detection-engineering.md",
@@ -954,6 +1226,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "digital-forensics",
       "name": "Digital Forensics",
       "path": "knowledge/techniques/digital-forensics.md",
@@ -961,6 +1235,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "dns-enumeration",
       "name": "DNS Enumeration",
       "path": "knowledge/techniques/dns-enumeration.md",
@@ -968,6 +1244,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "dynamic-analysis",
       "name": "Dynamic Analysis",
       "path": "knowledge/techniques/dynamic-analysis.md",
@@ -975,6 +1253,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "host-discovery",
       "name": "Host Discovery",
       "path": "knowledge/techniques/host-discovery.md",
@@ -982,6 +1262,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "iac-scanning",
       "name": "Infrastructure-as-Code Scanning",
       "path": "knowledge/techniques/iac-scanning.md",
@@ -989,6 +1271,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "incident-triage",
       "name": "Incident Triage",
       "path": "knowledge/techniques/incident-triage.md",
@@ -996,6 +1280,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "log-analysis",
       "name": "Log Analysis",
       "path": "knowledge/techniques/log-analysis.md",
@@ -1003,6 +1289,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "malware-analysis",
       "name": "Malware Analysis",
       "path": "knowledge/techniques/malware-analysis.md",
@@ -1010,6 +1298,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "memory-analysis",
       "name": "Memory Analysis",
       "path": "knowledge/techniques/memory-analysis.md",
@@ -1017,6 +1307,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "network-scanning",
       "name": "Network Scanning",
       "path": "knowledge/techniques/network-scanning.md",
@@ -1024,6 +1316,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "packet-analysis",
       "name": "Packet Analysis",
       "path": "knowledge/techniques/packet-analysis.md",
@@ -1031,6 +1325,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "phishing-resistant-authentication",
       "name": "Phishing-Resistant Authentication",
       "path": "knowledge/techniques/phishing-resistant-authentication.md",
@@ -1038,6 +1334,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "reverse-engineering",
       "name": "Reverse Engineering",
       "path": "knowledge/techniques/reverse-engineering.md",
@@ -1045,6 +1343,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "secrets-detection",
       "name": "Secrets Detection",
       "path": "knowledge/techniques/secrets-detection.md",
@@ -1052,6 +1352,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "secure-code-review",
       "name": "Secure Code Review",
       "path": "knowledge/techniques/secure-code-review.md",
@@ -1059,6 +1361,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "security-testing",
       "name": "Security Testing",
       "path": "knowledge/techniques/security-testing.md",
@@ -1066,6 +1370,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "service-enumeration",
       "name": "Service Enumeration",
       "path": "knowledge/techniques/service-enumeration.md",
@@ -1073,6 +1379,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "static-analysis",
       "name": "Static Analysis",
       "path": "knowledge/techniques/static-analysis.md",
@@ -1080,6 +1388,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "subdomain-discovery",
       "name": "Subdomain Discovery",
       "path": "knowledge/techniques/subdomain-discovery.md",
@@ -1087,6 +1397,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "threat-hunting",
       "name": "Threat Hunting",
       "path": "knowledge/techniques/threat-hunting.md",
@@ -1094,6 +1406,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "threat-intelligence-analysis",
       "name": "Threat Intelligence Analysis",
       "path": "knowledge/techniques/threat-intelligence-analysis.md",
@@ -1101,6 +1415,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "timeline-analysis",
       "name": "Timeline Analysis",
       "path": "knowledge/techniques/timeline-analysis.md",
@@ -1108,6 +1424,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "traffic-analysis",
       "name": "Traffic Analysis",
       "path": "knowledge/techniques/traffic-analysis.md",
@@ -1115,6 +1433,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "vulnerability-assessment",
       "name": "Vulnerability Assessment",
       "path": "knowledge/techniques/vulnerability-assessment.md",
@@ -1122,6 +1442,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "vulnerability-prioritization",
       "name": "Vulnerability Prioritization",
       "path": "knowledge/techniques/vulnerability-prioritization.md",
@@ -1129,6 +1451,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "web-enumeration",
       "name": "Web Enumeration",
       "path": "knowledge/techniques/web-enumeration.md",
@@ -1136,6 +1460,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "android",
       "name": "Android",
       "path": "knowledge/technologies/android.md",
@@ -1143,6 +1469,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "ansible",
       "name": "Ansible",
       "path": "knowledge/technologies/ansible.md",
@@ -1150,6 +1478,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "apache",
       "name": "Apache HTTP Server",
       "path": "knowledge/technologies/apache.md",
@@ -1157,6 +1487,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "aws",
       "name": "AWS",
       "path": "knowledge/technologies/aws.md",
@@ -1164,6 +1496,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "azure",
       "name": "Azure",
       "path": "knowledge/technologies/azure.md",
@@ -1171,6 +1505,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "c",
       "name": "C",
       "path": "knowledge/technologies/c.md",
@@ -1178,6 +1514,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "dns",
       "name": "DNS",
       "path": "knowledge/technologies/dns.md",
@@ -1185,6 +1523,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "docker",
       "name": "Docker",
       "path": "knowledge/technologies/docker.md",
@@ -1192,6 +1532,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "dotnet",
       "name": ".NET",
       "path": "knowledge/technologies/dotnet.md",
@@ -1199,6 +1541,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "elasticsearch",
       "name": "Elasticsearch",
       "path": "knowledge/technologies/elasticsearch.md",
@@ -1206,6 +1550,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "gcp",
       "name": "GCP",
       "path": "knowledge/technologies/gcp.md",
@@ -1213,6 +1559,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "git",
       "name": "Git",
       "path": "knowledge/technologies/git.md",
@@ -1220,6 +1568,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "github-actions",
       "name": "GitHub Actions",
       "path": "knowledge/technologies/github-actions.md",
@@ -1227,6 +1577,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "grpc",
       "name": "gRPC",
       "path": "knowledge/technologies/grpc.md",
@@ -1234,6 +1586,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "http",
       "name": "HTTP",
       "path": "knowledge/technologies/http.md",
@@ -1241,6 +1595,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "ios",
       "name": "iOS",
       "path": "knowledge/technologies/ios.md",
@@ -1248,6 +1604,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "java",
       "name": "Java",
       "path": "knowledge/technologies/java.md",
@@ -1255,6 +1613,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "kafka",
       "name": "Apache Kafka",
       "path": "knowledge/technologies/kafka.md",
@@ -1262,6 +1622,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "kubernetes",
       "name": "Kubernetes",
       "path": "knowledge/technologies/kubernetes.md",
@@ -1269,6 +1631,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "linux",
       "name": "Linux",
       "path": "knowledge/technologies/linux.md",
@@ -1276,6 +1640,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "macos",
       "name": "macOS",
       "path": "knowledge/technologies/macos.md",
@@ -1283,6 +1649,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "mongodb",
       "name": "MongoDB",
       "path": "knowledge/technologies/mongodb.md",
@@ -1290,6 +1658,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "mysql",
       "name": "MySQL",
       "path": "knowledge/technologies/mysql.md",
@@ -1297,6 +1667,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "nginx",
       "name": "Nginx",
       "path": "knowledge/technologies/nginx.md",
@@ -1304,6 +1676,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "nodejs",
       "name": "Node.js",
       "path": "knowledge/technologies/nodejs.md",
@@ -1311,6 +1685,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "php",
       "name": "PHP",
       "path": "knowledge/technologies/php.md",
@@ -1318,6 +1694,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "postgresql",
       "name": "PostgreSQL",
       "path": "knowledge/technologies/postgresql.md",
@@ -1325,6 +1703,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "powershell",
       "name": "PowerShell",
       "path": "knowledge/technologies/powershell.md",
@@ -1332,6 +1712,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "python",
       "name": "Python",
       "path": "knowledge/technologies/python.md",
@@ -1339,6 +1721,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "redis",
       "name": "Redis",
       "path": "knowledge/technologies/redis.md",
@@ -1346,6 +1730,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "rest-apis",
       "name": "REST APIs",
       "path": "knowledge/technologies/rest-apis.md",
@@ -1353,6 +1739,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "sbom",
       "name": "Software Bill of Materials",
       "path": "knowledge/technologies/sbom.md",
@@ -1360,6 +1748,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "terraform",
       "name": "Terraform",
       "path": "knowledge/technologies/terraform.md",
@@ -1367,6 +1757,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "tls",
       "name": "TLS",
       "path": "knowledge/technologies/tls.md",
@@ -1374,6 +1766,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "windows",
       "name": "Windows",
       "path": "knowledge/technologies/windows.md",
@@ -1381,6 +1775,8 @@
     },
     {
       "category": "Wireless Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "aircrack-ng",
       "name": "Aircrack-ng",
       "path": "tools/wireless/aircrack-ng.md",
@@ -1388,6 +1784,8 @@
     },
     {
       "category": "Reconnaissance",
+      "definition": "",
+      "execution_mode": "",
       "id": "amass",
       "name": "Amass",
       "path": "tools/reconnaissance/amass.md",
@@ -1395,6 +1793,8 @@
     },
     {
       "category": "Network Analysis",
+      "definition": "",
+      "execution_mode": "",
       "id": "arkime",
       "name": "Arkime",
       "path": "tools/network-analysis/arkime.md",
@@ -1402,6 +1802,8 @@
     },
     {
       "category": "Digital Forensics",
+      "definition": "",
+      "execution_mode": "",
       "id": "autopsy",
       "name": "Autopsy",
       "path": "tools/digital-forensics/autopsy.md",
@@ -1409,6 +1811,8 @@
     },
     {
       "category": "Secure Development",
+      "definition": "",
+      "execution_mode": "",
       "id": "bandit",
       "name": "Bandit",
       "path": "tools/secure-development/bandit.md",
@@ -1416,6 +1820,8 @@
     },
     {
       "category": "Web Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "burp-suite",
       "name": "Burp Suite",
       "path": "tools/web-security/burp-suite.md",
@@ -1423,6 +1829,8 @@
     },
     {
       "category": "Malware Analysis",
+      "definition": "",
+      "execution_mode": "",
       "id": "capa",
       "name": "capa",
       "path": "tools/malware-analysis/capa.md",
@@ -1430,6 +1838,8 @@
     },
     {
       "category": "Secure Development",
+      "definition": "",
+      "execution_mode": "",
       "id": "checkov",
       "name": "Checkov",
       "path": "tools/secure-development/checkov.md",
@@ -1437,6 +1847,8 @@
     },
     {
       "category": "Malware Analysis",
+      "definition": "",
+      "execution_mode": "",
       "id": "clamav",
       "name": "ClamAV",
       "path": "tools/malware-analysis/clamav.md",
@@ -1444,6 +1856,8 @@
     },
     {
       "category": "Reverse Engineering",
+      "definition": "",
+      "execution_mode": "",
       "id": "cutter",
       "name": "Cutter",
       "path": "tools/reverse-engineering/cutter.md",
@@ -1451,6 +1865,8 @@
     },
     {
       "category": "Reconnaissance",
+      "definition": "",
+      "execution_mode": "",
       "id": "dnsx",
       "name": "dnsx",
       "path": "tools/reconnaissance/dnsx.md",
@@ -1458,6 +1874,8 @@
     },
     {
       "category": "OSINT",
+      "definition": "",
+      "execution_mode": "",
       "id": "exiftool",
       "name": "ExifTool",
       "path": "tools/osint/exiftool.md",
@@ -1465,6 +1883,8 @@
     },
     {
       "category": "Web Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "feroxbuster",
       "name": "Feroxbuster",
       "path": "tools/web-security/feroxbuster.md",
@@ -1472,6 +1892,8 @@
     },
     {
       "category": "Web Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "ffuf",
       "name": "ffuf",
       "path": "tools/web-security/ffuf.md",
@@ -1479,6 +1901,8 @@
     },
     {
       "category": "Malware Analysis",
+      "definition": "",
+      "execution_mode": "",
       "id": "floss",
       "name": "FLOSS",
       "path": "tools/malware-analysis/floss.md",
@@ -1486,6 +1910,8 @@
     },
     {
       "category": "Reverse Engineering",
+      "definition": "",
+      "execution_mode": "",
       "id": "ghidra",
       "name": "Ghidra",
       "path": "tools/reverse-engineering/ghidra.md",
@@ -1493,6 +1919,8 @@
     },
     {
       "category": "Secure Development",
+      "definition": "",
+      "execution_mode": "",
       "id": "gitleaks",
       "name": "Gitleaks",
       "path": "tools/secure-development/gitleaks.md",
@@ -1500,6 +1928,8 @@
     },
     {
       "category": "Web Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "gobuster",
       "name": "Gobuster",
       "path": "tools/web-security/gobuster.md",
@@ -1507,6 +1937,8 @@
     },
     {
       "category": "Vulnerability Management",
+      "definition": "",
+      "execution_mode": "",
       "id": "greenbone-openvas",
       "name": "Greenbone Vulnerability Management",
       "path": "tools/vulnerability-management/greenbone-openvas.md",
@@ -1514,6 +1946,8 @@
     },
     {
       "category": "Container Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "grype",
       "name": "Grype",
       "path": "tools/container-security/grype.md",
@@ -1521,6 +1955,8 @@
     },
     {
       "category": "Password Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "hashcat",
       "name": "Hashcat",
       "path": "tools/password-security/hashcat.md",
@@ -1528,6 +1964,8 @@
     },
     {
       "category": "Web Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "httpie",
       "name": "HTTPie",
       "path": "tools/web-security/httpie.md",
@@ -1535,6 +1973,8 @@
     },
     {
       "category": "Reconnaissance",
+      "definition": "",
+      "execution_mode": "",
       "id": "httpx",
       "name": "httpx",
       "path": "tools/reconnaissance/httpx.md",
@@ -1542,6 +1982,8 @@
     },
     {
       "category": "Password Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "hydra",
       "name": "THC Hydra",
       "path": "tools/password-security/hydra.md",
@@ -1549,6 +1991,8 @@
     },
     {
       "category": "Password Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "john-the-ripper",
       "name": "John the Ripper",
       "path": "tools/password-security/john-the-ripper.md",
@@ -1556,6 +2000,8 @@
     },
     {
       "category": "Secure Development",
+      "definition": "",
+      "execution_mode": "",
       "id": "kics",
       "name": "KICS",
       "path": "tools/secure-development/kics.md",
@@ -1563,6 +2009,8 @@
     },
     {
       "category": "Wireless Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "kismet",
       "name": "Kismet",
       "path": "tools/wireless/kismet.md",
@@ -1570,6 +2018,8 @@
     },
     {
       "category": "Container Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "kube-bench",
       "name": "kube-bench",
       "path": "tools/container-security/kube-bench.md",
@@ -1577,6 +2027,8 @@
     },
     {
       "category": "Container Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "kube-hunter",
       "name": "kube-hunter",
       "path": "tools/container-security/kube-hunter.md",
@@ -1584,6 +2036,8 @@
     },
     {
       "category": "Container Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "kubescape",
       "name": "Kubescape",
       "path": "tools/container-security/kubescape.md",
@@ -1591,6 +2045,8 @@
     },
     {
       "category": "Vulnerability Management",
+      "definition": "",
+      "execution_mode": "",
       "id": "lynis",
       "name": "Lynis",
       "path": "tools/vulnerability-management/lynis.md",
@@ -1598,6 +2054,8 @@
     },
     {
       "category": "Reconnaissance",
+      "definition": "",
+      "execution_mode": "",
       "id": "masscan",
       "name": "Masscan",
       "path": "tools/reconnaissance/masscan.md",
@@ -1605,6 +2063,8 @@
     },
     {
       "category": "Defensive Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "misp",
       "name": "MISP",
       "path": "tools/defensive-security/misp.md",
@@ -1612,6 +2072,8 @@
     },
     {
       "category": "Web Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "mitmproxy",
       "name": "mitmproxy",
       "path": "tools/web-security/mitmproxy.md",
@@ -1619,6 +2081,8 @@
     },
     {
       "category": "Reconnaissance",
+      "definition": "",
+      "execution_mode": "",
       "id": "naabu",
       "name": "Naabu",
       "path": "tools/reconnaissance/naabu.md",
@@ -1626,6 +2090,8 @@
     },
     {
       "category": "Web Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "nikto",
       "name": "Nikto",
       "path": "tools/web-security/nikto.md",
@@ -1633,6 +2099,8 @@
     },
     {
       "category": "Reconnaissance",
+      "definition": "",
+      "execution_mode": "",
       "id": "nmap",
       "name": "Nmap",
       "path": "tools/reconnaissance/nmap.md",
@@ -1640,6 +2108,8 @@
     },
     {
       "category": "Web Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "nuclei",
       "name": "Nuclei",
       "path": "tools/web-security/nuclei.md",
@@ -1647,6 +2117,8 @@
     },
     {
       "category": "Defensive Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "opencti",
       "name": "OpenCTI",
       "path": "tools/defensive-security/opencti.md",
@@ -1654,6 +2126,8 @@
     },
     {
       "category": "Vulnerability Management",
+      "definition": "",
+      "execution_mode": "",
       "id": "openscap",
       "name": "OpenSCAP",
       "path": "tools/vulnerability-management/openscap.md",
@@ -1661,6 +2135,8 @@
     },
     {
       "category": "Defensive Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "osquery",
       "name": "osquery",
       "path": "tools/defensive-security/osquery.md",
@@ -1668,6 +2144,8 @@
     },
     {
       "category": "Secure Development",
+      "definition": "",
+      "execution_mode": "",
       "id": "osv-scanner",
       "name": "OSV-Scanner",
       "path": "tools/secure-development/osv-scanner.md",
@@ -1675,6 +2153,8 @@
     },
     {
       "category": "Web Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "owasp-zap",
       "name": "OWASP ZAP",
       "path": "tools/web-security/owasp-zap.md",
@@ -1682,6 +2162,8 @@
     },
     {
       "category": "Cloud Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "prowler",
       "name": "Prowler",
       "path": "tools/cloud-security/prowler.md",
@@ -1689,6 +2171,8 @@
     },
     {
       "category": "Reverse Engineering",
+      "definition": "",
+      "execution_mode": "",
       "id": "radare2",
       "name": "Radare2",
       "path": "tools/reverse-engineering/radare2.md",
@@ -1696,6 +2180,8 @@
     },
     {
       "category": "OSINT",
+      "definition": "",
+      "execution_mode": "",
       "id": "recon-ng",
       "name": "Recon-ng",
       "path": "tools/osint/recon-ng.md",
@@ -1703,6 +2189,8 @@
     },
     {
       "category": "Reconnaissance",
+      "definition": "",
+      "execution_mode": "",
       "id": "rustscan",
       "name": "RustScan",
       "path": "tools/reconnaissance/rustscan.md",
@@ -1710,6 +2198,8 @@
     },
     {
       "category": "Defensive Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "security-onion",
       "name": "Security Onion",
       "path": "tools/defensive-security/security-onion.md",
@@ -1717,6 +2207,8 @@
     },
     {
       "category": "Secure Development",
+      "definition": "",
+      "execution_mode": "",
       "id": "semgrep",
       "name": "Semgrep",
       "path": "tools/secure-development/semgrep.md",
@@ -1724,6 +2216,8 @@
     },
     {
       "category": "OSINT",
+      "definition": "",
+      "execution_mode": "",
       "id": "sherlock",
       "name": "Sherlock",
       "path": "tools/osint/sherlock.md",
@@ -1731,6 +2225,8 @@
     },
     {
       "category": "Defensive Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "sigma",
       "name": "Sigma",
       "path": "tools/defensive-security/sigma.md",
@@ -1738,6 +2234,8 @@
     },
     {
       "category": "Network Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "snort",
       "name": "Snort",
       "path": "tools/network-analysis/snort.md",
@@ -1745,6 +2243,8 @@
     },
     {
       "category": "OSINT",
+      "definition": "",
+      "execution_mode": "",
       "id": "spiderfoot",
       "name": "SpiderFoot",
       "path": "tools/osint/spiderfoot.md",
@@ -1752,6 +2252,8 @@
     },
     {
       "category": "Web Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "sqlmap",
       "name": "sqlmap",
       "path": "tools/web-security/sqlmap.md",
@@ -1759,6 +2261,8 @@
     },
     {
       "category": "Reconnaissance",
+      "definition": "",
+      "execution_mode": "",
       "id": "subfinder",
       "name": "Subfinder",
       "path": "tools/reconnaissance/subfinder.md",
@@ -1766,6 +2270,8 @@
     },
     {
       "category": "Network Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "suricata",
       "name": "Suricata",
       "path": "tools/network-analysis/suricata.md",
@@ -1773,6 +2279,8 @@
     },
     {
       "category": "Container Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "syft",
       "name": "Syft",
       "path": "tools/container-security/syft.md",
@@ -1780,6 +2288,8 @@
     },
     {
       "category": "Network Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "tcpdump",
       "name": "tcpdump",
       "path": "tools/network-analysis/tcpdump.md",
@@ -1787,6 +2297,8 @@
     },
     {
       "category": "Web Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "testssl-sh",
       "name": "testssl.sh",
       "path": "tools/web-security/testssl-sh.md",
@@ -1794,6 +2306,8 @@
     },
     {
       "category": "Defensive Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "tetragon",
       "name": "Tetragon",
       "path": "tools/defensive-security/tetragon.md",
@@ -1801,6 +2315,8 @@
     },
     {
       "category": "Reconnaissance",
+      "definition": "",
+      "execution_mode": "",
       "id": "theharvester",
       "name": "theHarvester",
       "path": "tools/reconnaissance/theharvester.md",
@@ -1808,6 +2324,8 @@
     },
     {
       "category": "Vulnerability Management",
+      "definition": "",
+      "execution_mode": "",
       "id": "trivy",
       "name": "Trivy",
       "path": "tools/vulnerability-management/trivy.md",
@@ -1815,6 +2333,8 @@
     },
     {
       "category": "Secure Development",
+      "definition": "",
+      "execution_mode": "",
       "id": "trufflehog",
       "name": "TruffleHog",
       "path": "tools/secure-development/trufflehog.md",
@@ -1822,6 +2342,8 @@
     },
     {
       "category": "Defensive Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "velociraptor",
       "name": "Velociraptor",
       "path": "tools/defensive-security/velociraptor.md",
@@ -1829,6 +2351,8 @@
     },
     {
       "category": "Digital Forensics",
+      "definition": "",
+      "execution_mode": "",
       "id": "volatility3",
       "name": "Volatility 3",
       "path": "tools/digital-forensics/volatility3.md",
@@ -1836,6 +2360,8 @@
     },
     {
       "category": "Defensive Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "wazuh",
       "name": "Wazuh",
       "path": "tools/defensive-security/wazuh.md",
@@ -1843,6 +2369,8 @@
     },
     {
       "category": "Network Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "wireshark",
       "name": "Wireshark",
       "path": "tools/network-analysis/wireshark.md",
@@ -1850,6 +2378,8 @@
     },
     {
       "category": "Malware Analysis",
+      "definition": "",
+      "execution_mode": "",
       "id": "yara",
       "name": "YARA",
       "path": "tools/malware-analysis/yara.md",
@@ -1857,6 +2387,8 @@
     },
     {
       "category": "Network Security",
+      "definition": "",
+      "execution_mode": "",
       "id": "zeek",
       "name": "Zeek",
       "path": "tools/network-analysis/zeek.md",
@@ -1864,6 +2396,8 @@
     },
     {
       "category": "Reconnaissance",
+      "definition": "",
+      "execution_mode": "",
       "id": "zmap",
       "name": "ZMap",
       "path": "tools/reconnaissance/zmap.md",
@@ -1871,6 +2405,8 @@
     },
     {
       "category": "api",
+      "definition": "",
+      "execution_mode": "",
       "id": "api-rate-limit-weakness",
       "name": "API Rate-Limit Weakness",
       "path": "vulnerabilities/api/api-rate-limit-weakness.md",
@@ -1878,6 +2414,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "api-security",
       "name": "API Security Weaknesses",
       "path": "vulnerabilities/api/api-security.md",
@@ -1885,6 +2423,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "authentication-weaknesses",
       "name": "Authentication Weaknesses",
       "path": "vulnerabilities/authentication/authentication-weaknesses.md",
@@ -1892,6 +2432,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "broken-access-control",
       "name": "Broken Access Control",
       "path": "vulnerabilities/authorization/broken-access-control.md",
@@ -1899,6 +2441,8 @@
     },
     {
       "category": "api",
+      "definition": "",
+      "execution_mode": "",
       "id": "broken-function-level-authorization",
       "name": "Broken Function Level Authorization",
       "path": "vulnerabilities/api/broken-function-level-authorization.md",
@@ -1906,6 +2450,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "cloud-misconfiguration",
       "name": "Cloud Misconfiguration",
       "path": "vulnerabilities/cloud/cloud-misconfiguration.md",
@@ -1913,6 +2459,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "command-injection",
       "name": "Command Injection",
       "path": "vulnerabilities/web/command-injection.md",
@@ -1920,6 +2468,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "container-security",
       "name": "Container Security Issues",
       "path": "vulnerabilities/cloud/container-security.md",
@@ -1927,6 +2477,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "cross-site-scripting",
       "name": "Cross-Site Scripting",
       "path": "vulnerabilities/web/cross-site-scripting.md",
@@ -1934,6 +2486,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "cryptographic-failures",
       "name": "Cryptographic Failures",
       "path": "vulnerabilities/cryptography/cryptographic-failures.md",
@@ -1941,6 +2495,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "csrf",
       "name": "Cross-Site Request Forgery",
       "path": "vulnerabilities/web/csrf.md",
@@ -1948,6 +2504,8 @@
     },
     {
       "category": "api",
+      "definition": "",
+      "execution_mode": "",
       "id": "excessive-data-exposure",
       "name": "Excessive Data Exposure",
       "path": "vulnerabilities/api/excessive-data-exposure.md",
@@ -1955,6 +2513,8 @@
     },
     {
       "category": "web",
+      "definition": "",
+      "execution_mode": "",
       "id": "file-inclusion",
       "name": "File Inclusion",
       "path": "vulnerabilities/web/file-inclusion.md",
@@ -1962,6 +2522,8 @@
     },
     {
       "category": "web",
+      "definition": "",
+      "execution_mode": "",
       "id": "host-header-injection",
       "name": "Host Header Injection",
       "path": "vulnerabilities/web/host-header-injection.md",
@@ -1969,6 +2531,8 @@
     },
     {
       "category": "web",
+      "definition": "",
+      "execution_mode": "",
       "id": "http-request-smuggling",
       "name": "HTTP Request Smuggling",
       "path": "vulnerabilities/web/http-request-smuggling.md",
@@ -1976,6 +2540,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "idor",
       "name": "Insecure Direct Object Reference",
       "path": "vulnerabilities/authorization/idor.md",
@@ -1983,6 +2549,8 @@
     },
     {
       "category": "api",
+      "definition": "",
+      "execution_mode": "",
       "id": "improper-api-inventory",
       "name": "Improper API Inventory",
       "path": "vulnerabilities/api/improper-api-inventory.md",
@@ -1990,6 +2558,8 @@
     },
     {
       "category": "cryptography",
+      "definition": "",
+      "execution_mode": "",
       "id": "improper-certificate-validation",
       "name": "Improper Certificate Validation",
       "path": "vulnerabilities/cryptography/improper-certificate-validation.md",
@@ -1997,6 +2567,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "insecure-deserialization",
       "name": "Insecure Deserialization",
       "path": "vulnerabilities/web/insecure-deserialization.md",
@@ -2004,6 +2576,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "insecure-file-upload",
       "name": "Insecure File Upload",
       "path": "vulnerabilities/web/insecure-file-upload.md",
@@ -2011,6 +2585,8 @@
     },
     {
       "category": "api",
+      "definition": "",
+      "execution_mode": "",
       "id": "mass-assignment",
       "name": "Mass Assignment",
       "path": "vulnerabilities/api/mass-assignment.md",
@@ -2018,6 +2594,8 @@
     },
     {
       "category": "authentication",
+      "definition": "",
+      "execution_mode": "",
       "id": "mfa-weaknesses",
       "name": "MFA Weaknesses",
       "path": "vulnerabilities/authentication/mfa-weaknesses.md",
@@ -2025,6 +2603,8 @@
     },
     {
       "category": "web",
+      "definition": "",
+      "execution_mode": "",
       "id": "open-redirect",
       "name": "Open Redirect",
       "path": "vulnerabilities/web/open-redirect.md",
@@ -2032,6 +2612,8 @@
     },
     {
       "category": "authentication",
+      "definition": "",
+      "execution_mode": "",
       "id": "password-reset-flaws",
       "name": "Password Reset Flaws",
       "path": "vulnerabilities/authentication/password-reset-flaws.md",
@@ -2039,6 +2621,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "path-traversal",
       "name": "Path Traversal",
       "path": "vulnerabilities/web/path-traversal.md",
@@ -2046,6 +2630,8 @@
     },
     {
       "category": "cryptography",
+      "definition": "",
+      "execution_mode": "",
       "id": "predictable-randomness",
       "name": "Predictable Randomness",
       "path": "vulnerabilities/cryptography/predictable-randomness.md",
@@ -2053,6 +2639,8 @@
     },
     {
       "category": "web",
+      "definition": "",
+      "execution_mode": "",
       "id": "prototype-pollution",
       "name": "Prototype Pollution",
       "path": "vulnerabilities/web/prototype-pollution.md",
@@ -2060,6 +2648,8 @@
     },
     {
       "category": "cloud",
+      "definition": "",
+      "execution_mode": "",
       "id": "public-cloud-storage-exposure",
       "name": "Public Cloud Storage Exposure",
       "path": "vulnerabilities/cloud/public-cloud-storage-exposure.md",
@@ -2067,6 +2657,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "security-misconfiguration",
       "name": "Security Misconfiguration",
       "path": "vulnerabilities/configuration/security-misconfiguration.md",
@@ -2074,6 +2666,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "sensitive-data-exposure",
       "name": "Sensitive Data Exposure",
       "path": "vulnerabilities/web/sensitive-data-exposure.md",
@@ -2081,6 +2675,8 @@
     },
     {
       "category": "authentication",
+      "definition": "",
+      "execution_mode": "",
       "id": "session-fixation",
       "name": "Session Fixation",
       "path": "vulnerabilities/authentication/session-fixation.md",
@@ -2088,6 +2684,8 @@
     },
     {
       "category": "authentication",
+      "definition": "",
+      "execution_mode": "",
       "id": "session-hijacking",
       "name": "Session Hijacking",
       "path": "vulnerabilities/authentication/session-hijacking.md",
@@ -2095,6 +2693,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "session-management",
       "name": "Session Management Weaknesses",
       "path": "vulnerabilities/authentication/session-management.md",
@@ -2102,6 +2702,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "sql-injection",
       "name": "SQL Injection",
       "path": "vulnerabilities/web/sql-injection.md",
@@ -2109,6 +2711,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "ssrf",
       "name": "Server-Side Request Forgery",
       "path": "vulnerabilities/web/ssrf.md",
@@ -2116,6 +2720,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "supply-chain-vulnerabilities",
       "name": "Supply-Chain Vulnerabilities",
       "path": "vulnerabilities/supply-chain/supply-chain-vulnerabilities.md",
@@ -2123,6 +2729,8 @@
     },
     {
       "category": "cryptography",
+      "definition": "",
+      "execution_mode": "",
       "id": "weak-key-management",
       "name": "Weak Key Management",
       "path": "vulnerabilities/cryptography/weak-key-management.md",
@@ -2130,6 +2738,8 @@
     },
     {
       "category": "authentication",
+      "definition": "",
+      "execution_mode": "",
       "id": "weak-password-policy",
       "name": "Weak Password Policy",
       "path": "vulnerabilities/authentication/weak-password-policy.md",
@@ -2137,6 +2747,8 @@
     },
     {
       "category": "web",
+      "definition": "",
+      "execution_mode": "",
       "id": "web-cache-poisoning",
       "name": "Web Cache Poisoning",
       "path": "vulnerabilities/web/web-cache-poisoning.md",
@@ -2144,6 +2756,8 @@
     },
     {
       "category": "",
+      "definition": "",
+      "execution_mode": "",
       "id": "xxe",
       "name": "XML External Entity",
       "path": "vulnerabilities/web/xxe.md",
@@ -2200,6 +2814,11 @@
       "relationship": "prerequisite-for-recommended",
       "source": "concept:apis",
       "target": "concept:rest"
+    },
+    {
+      "relationship": "concept-taught-by",
+      "source": "concept:apis",
+      "target": "lab:api-discovery-local-app"
     },
     {
       "relationship": "prerequisite-for-required",
@@ -2270,6 +2889,11 @@
       "relationship": "prerequisite-for-recommended",
       "source": "concept:attack-surface",
       "target": "concept:firewalls"
+    },
+    {
+      "relationship": "concept-taught-by",
+      "source": "concept:attack-surface",
+      "target": "lab:detection-rule-regression"
     },
     {
       "relationship": "prerequisite-for-recommended",
@@ -2717,6 +3341,11 @@
       "target": "concept:zero-trust"
     },
     {
+      "relationship": "concept-taught-by",
+      "source": "concept:authorization",
+      "target": "lab:api-discovery-local-app"
+    },
+    {
       "relationship": "prerequisite-for-required",
       "source": "concept:authorization",
       "target": "lab:api-discovery-local-app"
@@ -2912,6 +3541,11 @@
       "target": "concept:tls"
     },
     {
+      "relationship": "concept-taught-by",
+      "source": "concept:certificates",
+      "target": "lab:tls-certificate-review"
+    },
+    {
       "relationship": "prerequisite-for-required",
       "source": "concept:certificates",
       "target": "technique:certificate-review"
@@ -2930,6 +3564,11 @@
       "relationship": "requires-prerequisite-recommended",
       "source": "concept:containers",
       "target": "concept:processes"
+    },
+    {
+      "relationship": "concept-taught-by",
+      "source": "concept:containers",
+      "target": "lab:kubernetes-posture-review"
     },
     {
       "relationship": "requires-prerequisite-required",
@@ -3032,6 +3671,11 @@
       "target": "concept:randomness"
     },
     {
+      "relationship": "concept-taught-by",
+      "source": "concept:cryptography",
+      "target": "lab:tls-certificate-review"
+    },
+    {
       "relationship": "concept-of",
       "source": "concept:cryptography",
       "target": "tool:hashcat"
@@ -3075,6 +3719,11 @@
       "relationship": "requires-prerequisite-recommended",
       "source": "concept:digital-signatures",
       "target": "concept:encryption"
+    },
+    {
+      "relationship": "concept-taught-by",
+      "source": "concept:dns",
+      "target": "lab:dns-resolution-inventory"
     },
     {
       "relationship": "concept-of",
@@ -3265,6 +3914,11 @@
       "relationship": "concept-of",
       "source": "concept:http",
       "target": "tool:sqlmap"
+    },
+    {
+      "relationship": "concept-taught-by",
+      "source": "concept:http-requests",
+      "target": "lab:api-discovery-local-app"
     },
     {
       "relationship": "prerequisite-for-recommended",
@@ -3527,6 +4181,16 @@
       "target": "concept:authorization"
     },
     {
+      "relationship": "concept-taught-by",
+      "source": "concept:least-privilege",
+      "target": "lab:iac-security-review"
+    },
+    {
+      "relationship": "concept-taught-by",
+      "source": "concept:least-privilege",
+      "target": "lab:kubernetes-posture-review"
+    },
+    {
       "relationship": "requires-prerequisite-required",
       "source": "concept:memory",
       "target": "concept:processes"
@@ -3575,6 +4239,11 @@
       "relationship": "prerequisite-for-required",
       "source": "concept:networking",
       "target": "concept:switching"
+    },
+    {
+      "relationship": "concept-taught-by",
+      "source": "concept:networking",
+      "target": "lab:dns-resolution-inventory"
     },
     {
       "relationship": "prerequisite-for-required",
@@ -3907,6 +4576,11 @@
       "target": "concept:vulnerability-management"
     },
     {
+      "relationship": "concept-taught-by",
+      "source": "concept:secure-sdlc",
+      "target": "lab:iac-security-review"
+    },
+    {
       "relationship": "prerequisite-for-recommended",
       "source": "concept:secure-sdlc",
       "target": "technique:secrets-detection"
@@ -3930,6 +4604,11 @@
       "relationship": "prerequisite-for-recommended",
       "source": "concept:security-monitoring",
       "target": "concept:processes"
+    },
+    {
+      "relationship": "concept-taught-by",
+      "source": "concept:security-monitoring",
+      "target": "lab:detection-rule-regression"
     },
     {
       "relationship": "prerequisite-for-required",
@@ -4257,6 +4936,11 @@
       "target": "concept:vulnerability-management"
     },
     {
+      "relationship": "concept-taught-by",
+      "source": "concept:supply-chain-security",
+      "target": "lab:kubernetes-posture-review"
+    },
+    {
       "relationship": "prerequisite-for-required",
       "source": "concept:supply-chain-security",
       "target": "technique:dependency-analysis"
@@ -4395,6 +5079,11 @@
       "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "lab:graphql-schema-safety"
+    },
+    {
+      "relationship": "concept-taught-by",
+      "source": "concept:threat-modeling",
+      "target": "lab:iac-security-review"
     },
     {
       "relationship": "prerequisite-for-recommended",
@@ -4682,6 +5371,11 @@
       "target": "concept:websockets"
     },
     {
+      "relationship": "concept-taught-by",
+      "source": "concept:tls",
+      "target": "lab:tls-certificate-review"
+    },
+    {
       "relationship": "concept-of",
       "source": "concept:tls",
       "target": "tool:mitmproxy"
@@ -4960,6 +5654,11 @@
       "relationship": "control-for",
       "source": "defensive-control:application-allowlisting",
       "target": "tool:clamav"
+    },
+    {
+      "relationship": "control-reinforced-by",
+      "source": "defensive-control:asset-inventory",
+      "target": "lab:dns-resolution-inventory"
     },
     {
       "relationship": "control-for",
@@ -5642,6 +6341,21 @@
       "target": "vulnerability:sql-injection"
     },
     {
+      "relationship": "control-reinforced-by",
+      "source": "defensive-control:least-privilege",
+      "target": "lab:api-discovery-local-app"
+    },
+    {
+      "relationship": "control-reinforced-by",
+      "source": "defensive-control:least-privilege",
+      "target": "lab:iac-security-review"
+    },
+    {
+      "relationship": "control-reinforced-by",
+      "source": "defensive-control:least-privilege",
+      "target": "lab:kubernetes-posture-review"
+    },
+    {
       "relationship": "control-for",
       "source": "defensive-control:least-privilege",
       "target": "technique:cloud-configuration-assessment"
@@ -5902,6 +6616,21 @@
       "target": "vulnerability:weak-password-policy"
     },
     {
+      "relationship": "control-reinforced-by",
+      "source": "defensive-control:network-monitoring",
+      "target": "lab:detection-rule-regression"
+    },
+    {
+      "relationship": "control-reinforced-by",
+      "source": "defensive-control:network-monitoring",
+      "target": "lab:dns-resolution-inventory"
+    },
+    {
+      "relationship": "control-reinforced-by",
+      "source": "defensive-control:network-segmentation",
+      "target": "lab:kubernetes-posture-review"
+    },
+    {
       "relationship": "control-for",
       "source": "defensive-control:network-segmentation",
       "target": "technique:network-scanning"
@@ -6155,6 +6884,21 @@
       "relationship": "control-for",
       "source": "defensive-control:secrets-management",
       "target": "vulnerability:weak-key-management"
+    },
+    {
+      "relationship": "control-reinforced-by",
+      "source": "defensive-control:secure-configuration",
+      "target": "lab:iac-security-review"
+    },
+    {
+      "relationship": "control-reinforced-by",
+      "source": "defensive-control:secure-configuration",
+      "target": "lab:kubernetes-posture-review"
+    },
+    {
+      "relationship": "control-reinforced-by",
+      "source": "defensive-control:secure-configuration",
+      "target": "lab:tls-certificate-review"
     },
     {
       "relationship": "control-for",
@@ -6430,6 +7174,16 @@
       "relationship": "control-for",
       "source": "defensive-control:secure-cookies",
       "target": "vulnerability:session-hijacking"
+    },
+    {
+      "relationship": "control-reinforced-by",
+      "source": "defensive-control:secure-logging",
+      "target": "lab:api-discovery-local-app"
+    },
+    {
+      "relationship": "control-reinforced-by",
+      "source": "defensive-control:secure-logging",
+      "target": "lab:detection-rule-regression"
     },
     {
       "relationship": "control-for",
@@ -7002,6 +7756,11 @@
       "target": "vulnerability:web-cache-poisoning"
     },
     {
+      "relationship": "control-reinforced-by",
+      "source": "defensive-control:siem",
+      "target": "lab:detection-rule-regression"
+    },
+    {
       "relationship": "control-for",
       "source": "defensive-control:supply-chain-controls",
       "target": "tool:gitleaks"
@@ -7097,9 +7856,24 @@
       "target": "vulnerability:supply-chain-vulnerabilities"
     },
     {
+      "relationship": "teaches-concept",
+      "source": "lab:api-discovery-local-app",
+      "target": "concept:apis"
+    },
+    {
       "relationship": "requires-prerequisite-required",
       "source": "lab:api-discovery-local-app",
       "target": "concept:authorization"
+    },
+    {
+      "relationship": "teaches-concept",
+      "source": "lab:api-discovery-local-app",
+      "target": "concept:authorization"
+    },
+    {
+      "relationship": "teaches-concept",
+      "source": "lab:api-discovery-local-app",
+      "target": "concept:http-requests"
     },
     {
       "relationship": "requires-prerequisite-recommended",
@@ -7107,9 +7881,39 @@
       "target": "concept:threat-modeling"
     },
     {
+      "relationship": "reinforces-control",
+      "source": "lab:api-discovery-local-app",
+      "target": "defensive-control:least-privilege"
+    },
+    {
+      "relationship": "reinforces-control",
+      "source": "lab:api-discovery-local-app",
+      "target": "defensive-control:secure-logging"
+    },
+    {
+      "relationship": "belongs-to-learning-path",
+      "source": "lab:api-discovery-local-app",
+      "target": "learning-path:api-security"
+    },
+    {
+      "relationship": "practices-technique",
+      "source": "lab:api-discovery-local-app",
+      "target": "technique:api-discovery"
+    },
+    {
+      "relationship": "uses-tool",
+      "source": "lab:api-discovery-local-app",
+      "target": "tool:httpie"
+    },
+    {
       "relationship": "related-from-lab",
       "source": "lab:api-discovery-local-app",
       "target": "vulnerability:api-rate-limit-weakness"
+    },
+    {
+      "relationship": "demonstrates-vulnerability",
+      "source": "lab:api-discovery-local-app",
+      "target": "vulnerability:broken-function-level-authorization"
     },
     {
       "relationship": "related-from-lab",
@@ -7132,9 +7936,19 @@
       "target": "vulnerability:mass-assignment"
     },
     {
+      "relationship": "teaches-concept",
+      "source": "lab:detection-rule-regression",
+      "target": "concept:attack-surface"
+    },
+    {
       "relationship": "requires-prerequisite-required",
       "source": "lab:detection-rule-regression",
       "target": "concept:authorization"
+    },
+    {
+      "relationship": "teaches-concept",
+      "source": "lab:detection-rule-regression",
+      "target": "concept:security-monitoring"
     },
     {
       "relationship": "requires-prerequisite-recommended",
@@ -7142,14 +7956,89 @@
       "target": "concept:threat-modeling"
     },
     {
+      "relationship": "reinforces-control",
+      "source": "lab:detection-rule-regression",
+      "target": "defensive-control:network-monitoring"
+    },
+    {
+      "relationship": "reinforces-control",
+      "source": "lab:detection-rule-regression",
+      "target": "defensive-control:secure-logging"
+    },
+    {
+      "relationship": "reinforces-control",
+      "source": "lab:detection-rule-regression",
+      "target": "defensive-control:siem"
+    },
+    {
+      "relationship": "belongs-to-learning-path",
+      "source": "lab:detection-rule-regression",
+      "target": "learning-path:blue-team"
+    },
+    {
+      "relationship": "belongs-to-learning-path",
+      "source": "lab:detection-rule-regression",
+      "target": "learning-path:soc-analyst"
+    },
+    {
+      "relationship": "practices-technique",
+      "source": "lab:detection-rule-regression",
+      "target": "technique:detection-engineering"
+    },
+    {
+      "relationship": "practices-technique",
+      "source": "lab:detection-rule-regression",
+      "target": "technique:log-analysis"
+    },
+    {
+      "relationship": "uses-tool",
+      "source": "lab:detection-rule-regression",
+      "target": "tool:sigma"
+    },
+    {
       "relationship": "requires-prerequisite-required",
       "source": "lab:dns-resolution-inventory",
       "target": "concept:authorization"
     },
     {
+      "relationship": "teaches-concept",
+      "source": "lab:dns-resolution-inventory",
+      "target": "concept:dns"
+    },
+    {
+      "relationship": "teaches-concept",
+      "source": "lab:dns-resolution-inventory",
+      "target": "concept:networking"
+    },
+    {
       "relationship": "requires-prerequisite-recommended",
       "source": "lab:dns-resolution-inventory",
       "target": "concept:threat-modeling"
+    },
+    {
+      "relationship": "reinforces-control",
+      "source": "lab:dns-resolution-inventory",
+      "target": "defensive-control:asset-inventory"
+    },
+    {
+      "relationship": "reinforces-control",
+      "source": "lab:dns-resolution-inventory",
+      "target": "defensive-control:network-monitoring"
+    },
+    {
+      "relationship": "belongs-to-learning-path",
+      "source": "lab:dns-resolution-inventory",
+      "target": "learning-path:network-security"
+    },
+    {
+      "relationship": "practices-technique",
+      "source": "lab:dns-resolution-inventory",
+      "target": "technique:dns-enumeration"
+    },
+    {
+      "relationship": "uses-tool",
+      "source": "lab:dns-resolution-inventory",
+      "target": "tool:dnsx"
     },
     {
       "relationship": "requires-prerequisite-required",
@@ -7242,19 +8131,129 @@
       "target": "concept:authorization"
     },
     {
+      "relationship": "teaches-concept",
+      "source": "lab:iac-security-review",
+      "target": "concept:least-privilege"
+    },
+    {
+      "relationship": "teaches-concept",
+      "source": "lab:iac-security-review",
+      "target": "concept:secure-sdlc"
+    },
+    {
       "relationship": "requires-prerequisite-recommended",
       "source": "lab:iac-security-review",
       "target": "concept:threat-modeling"
     },
     {
+      "relationship": "teaches-concept",
+      "source": "lab:iac-security-review",
+      "target": "concept:threat-modeling"
+    },
+    {
+      "relationship": "reinforces-control",
+      "source": "lab:iac-security-review",
+      "target": "defensive-control:least-privilege"
+    },
+    {
+      "relationship": "reinforces-control",
+      "source": "lab:iac-security-review",
+      "target": "defensive-control:secure-configuration"
+    },
+    {
+      "relationship": "belongs-to-learning-path",
+      "source": "lab:iac-security-review",
+      "target": "learning-path:cloud-security"
+    },
+    {
+      "relationship": "belongs-to-learning-path",
+      "source": "lab:iac-security-review",
+      "target": "learning-path:devsecops"
+    },
+    {
+      "relationship": "practices-technique",
+      "source": "lab:iac-security-review",
+      "target": "technique:cloud-configuration-assessment"
+    },
+    {
+      "relationship": "practices-technique",
+      "source": "lab:iac-security-review",
+      "target": "technique:iac-scanning"
+    },
+    {
+      "relationship": "uses-tool",
+      "source": "lab:iac-security-review",
+      "target": "tool:checkov"
+    },
+    {
+      "relationship": "demonstrates-vulnerability",
+      "source": "lab:iac-security-review",
+      "target": "vulnerability:cloud-misconfiguration"
+    },
+    {
       "relationship": "requires-prerequisite-required",
       "source": "lab:kubernetes-posture-review",
       "target": "concept:authorization"
     },
     {
+      "relationship": "teaches-concept",
+      "source": "lab:kubernetes-posture-review",
+      "target": "concept:containers"
+    },
+    {
+      "relationship": "teaches-concept",
+      "source": "lab:kubernetes-posture-review",
+      "target": "concept:least-privilege"
+    },
+    {
+      "relationship": "teaches-concept",
+      "source": "lab:kubernetes-posture-review",
+      "target": "concept:supply-chain-security"
+    },
+    {
       "relationship": "requires-prerequisite-recommended",
       "source": "lab:kubernetes-posture-review",
       "target": "concept:threat-modeling"
+    },
+    {
+      "relationship": "reinforces-control",
+      "source": "lab:kubernetes-posture-review",
+      "target": "defensive-control:least-privilege"
+    },
+    {
+      "relationship": "reinforces-control",
+      "source": "lab:kubernetes-posture-review",
+      "target": "defensive-control:network-segmentation"
+    },
+    {
+      "relationship": "reinforces-control",
+      "source": "lab:kubernetes-posture-review",
+      "target": "defensive-control:secure-configuration"
+    },
+    {
+      "relationship": "belongs-to-learning-path",
+      "source": "lab:kubernetes-posture-review",
+      "target": "learning-path:cloud-security"
+    },
+    {
+      "relationship": "belongs-to-learning-path",
+      "source": "lab:kubernetes-posture-review",
+      "target": "learning-path:devsecops"
+    },
+    {
+      "relationship": "practices-technique",
+      "source": "lab:kubernetes-posture-review",
+      "target": "technique:container-security-scanning"
+    },
+    {
+      "relationship": "uses-tool",
+      "source": "lab:kubernetes-posture-review",
+      "target": "tool:trivy"
+    },
+    {
+      "relationship": "demonstrates-vulnerability",
+      "source": "lab:kubernetes-posture-review",
+      "target": "vulnerability:container-security"
     },
     {
       "relationship": "related-from-lab",
@@ -7992,9 +8991,79 @@
       "target": "concept:authorization"
     },
     {
+      "relationship": "teaches-concept",
+      "source": "lab:tls-certificate-review",
+      "target": "concept:certificates"
+    },
+    {
+      "relationship": "teaches-concept",
+      "source": "lab:tls-certificate-review",
+      "target": "concept:cryptography"
+    },
+    {
       "relationship": "requires-prerequisite-recommended",
       "source": "lab:tls-certificate-review",
       "target": "concept:threat-modeling"
+    },
+    {
+      "relationship": "teaches-concept",
+      "source": "lab:tls-certificate-review",
+      "target": "concept:tls"
+    },
+    {
+      "relationship": "reinforces-control",
+      "source": "lab:tls-certificate-review",
+      "target": "defensive-control:secure-configuration"
+    },
+    {
+      "relationship": "belongs-to-learning-path",
+      "source": "lab:tls-certificate-review",
+      "target": "learning-path:network-security"
+    },
+    {
+      "relationship": "practices-technique",
+      "source": "lab:tls-certificate-review",
+      "target": "technique:certificate-review"
+    },
+    {
+      "relationship": "uses-tool",
+      "source": "lab:tls-certificate-review",
+      "target": "tool:testssl-sh"
+    },
+    {
+      "relationship": "demonstrates-vulnerability",
+      "source": "lab:tls-certificate-review",
+      "target": "vulnerability:improper-certificate-validation"
+    },
+    {
+      "relationship": "contains-lab",
+      "source": "learning-path:api-security",
+      "target": "lab:api-discovery-local-app"
+    },
+    {
+      "relationship": "contains-lab",
+      "source": "learning-path:blue-team",
+      "target": "lab:detection-rule-regression"
+    },
+    {
+      "relationship": "contains-lab",
+      "source": "learning-path:cloud-security",
+      "target": "lab:iac-security-review"
+    },
+    {
+      "relationship": "contains-lab",
+      "source": "learning-path:cloud-security",
+      "target": "lab:kubernetes-posture-review"
+    },
+    {
+      "relationship": "contains-lab",
+      "source": "learning-path:devsecops",
+      "target": "lab:iac-security-review"
+    },
+    {
+      "relationship": "contains-lab",
+      "source": "learning-path:devsecops",
+      "target": "lab:kubernetes-posture-review"
     },
     {
       "relationship": "prerequisite-for-recommended",
@@ -8007,6 +9076,21 @@
       "target": "concept:memory"
     },
     {
+      "relationship": "contains-lab",
+      "source": "learning-path:network-security",
+      "target": "lab:dns-resolution-inventory"
+    },
+    {
+      "relationship": "contains-lab",
+      "source": "learning-path:network-security",
+      "target": "lab:tls-certificate-review"
+    },
+    {
+      "relationship": "contains-lab",
+      "source": "learning-path:soc-analyst",
+      "target": "lab:detection-rule-regression"
+    },
+    {
       "relationship": "requires-prerequisite-required",
       "source": "technique:api-discovery",
       "target": "concept:apis"
@@ -8015,6 +9099,11 @@
       "relationship": "requires-prerequisite-recommended",
       "source": "technique:api-discovery",
       "target": "concept:http-requests"
+    },
+    {
+      "relationship": "technique-practiced-by",
+      "source": "technique:api-discovery",
+      "target": "lab:api-discovery-local-app"
     },
     {
       "relationship": "technique-of",
@@ -8030,6 +9119,11 @@
       "relationship": "requires-prerequisite-recommended",
       "source": "technique:certificate-review",
       "target": "concept:pki"
+    },
+    {
+      "relationship": "technique-practiced-by",
+      "source": "technique:certificate-review",
+      "target": "lab:tls-certificate-review"
     },
     {
       "relationship": "requires-prerequisite-recommended",
@@ -8090,6 +9184,11 @@
       "relationship": "mitigated-by",
       "source": "technique:cloud-configuration-assessment",
       "target": "defensive-control:secure-logging"
+    },
+    {
+      "relationship": "technique-practiced-by",
+      "source": "technique:cloud-configuration-assessment",
+      "target": "lab:iac-security-review"
     },
     {
       "relationship": "uses-technology",
@@ -8230,6 +9329,11 @@
       "relationship": "mitigated-by",
       "source": "technique:container-security-scanning",
       "target": "defensive-control:vulnerability-management"
+    },
+    {
+      "relationship": "technique-practiced-by",
+      "source": "technique:container-security-scanning",
+      "target": "lab:kubernetes-posture-review"
     },
     {
       "relationship": "uses-technology",
@@ -8472,6 +9576,11 @@
       "target": "concept:threat-modeling"
     },
     {
+      "relationship": "technique-practiced-by",
+      "source": "technique:detection-engineering",
+      "target": "lab:detection-rule-regression"
+    },
+    {
       "relationship": "technique-of",
       "source": "technique:detection-engineering",
       "target": "tool:misp"
@@ -8660,6 +9769,11 @@
       "relationship": "mitigated-by",
       "source": "technique:dns-enumeration",
       "target": "defensive-control:secure-logging"
+    },
+    {
+      "relationship": "technique-practiced-by",
+      "source": "technique:dns-enumeration",
+      "target": "lab:dns-resolution-inventory"
     },
     {
       "relationship": "uses-technology",
@@ -8867,6 +9981,11 @@
       "target": "defensive-control:secure-configuration"
     },
     {
+      "relationship": "technique-practiced-by",
+      "source": "technique:iac-scanning",
+      "target": "lab:iac-security-review"
+    },
+    {
       "relationship": "technique-of",
       "source": "technique:iac-scanning",
       "target": "tool:kics"
@@ -8930,6 +10049,11 @@
       "relationship": "technique-of",
       "source": "technique:log-analysis",
       "target": "defensive-control:secure-logging"
+    },
+    {
+      "relationship": "technique-practiced-by",
+      "source": "technique:log-analysis",
+      "target": "lab:detection-rule-regression"
     },
     {
       "relationship": "uses-technology",
@@ -14062,6 +15186,11 @@
       "target": "defensive-control:vulnerability-management"
     },
     {
+      "relationship": "tool-of",
+      "source": "tool:checkov",
+      "target": "lab:iac-security-review"
+    },
+    {
       "relationship": "related-to-lab",
       "source": "tool:checkov",
       "target": "lab:localhost-service-inventory"
@@ -14420,6 +15549,11 @@
       "relationship": "mitigated-by",
       "source": "tool:dnsx",
       "target": "defensive-control:secure-logging"
+    },
+    {
+      "relationship": "tool-of",
+      "source": "tool:dnsx",
+      "target": "lab:dns-resolution-inventory"
     },
     {
       "relationship": "related-to-lab",
@@ -15965,6 +17099,11 @@
       "relationship": "mitigated-by",
       "source": "tool:httpie",
       "target": "defensive-control:secure-logging"
+    },
+    {
+      "relationship": "tool-of",
+      "source": "tool:httpie",
+      "target": "lab:api-discovery-local-app"
     },
     {
       "relationship": "related-to-lab",
@@ -19927,6 +21066,11 @@
       "target": "defensive-control:secure-logging"
     },
     {
+      "relationship": "tool-of",
+      "source": "tool:sigma",
+      "target": "lab:detection-rule-regression"
+    },
+    {
       "relationship": "related-to-lab",
       "source": "tool:sigma",
       "target": "lab:localhost-service-inventory"
@@ -21102,6 +22246,11 @@
       "target": "lab:packet-capture-fundamentals"
     },
     {
+      "relationship": "tool-of",
+      "source": "tool:testssl-sh",
+      "target": "lab:tls-certificate-review"
+    },
+    {
       "relationship": "implements-technique",
       "source": "tool:testssl-sh",
       "target": "technique:security-testing"
@@ -21420,6 +22569,11 @@
       "relationship": "mitigated-by",
       "source": "tool:trivy",
       "target": "defensive-control:vulnerability-management"
+    },
+    {
+      "relationship": "tool-of",
+      "source": "tool:trivy",
+      "target": "lab:kubernetes-posture-review"
     },
     {
       "relationship": "related-to-lab",
@@ -23062,6 +24216,11 @@
       "target": "lab:api-discovery-local-app"
     },
     {
+      "relationship": "vulnerability-demonstrated-by",
+      "source": "vulnerability:broken-function-level-authorization",
+      "target": "lab:api-discovery-local-app"
+    },
+    {
       "relationship": "related-to-technique",
       "source": "vulnerability:broken-function-level-authorization",
       "target": "technique:security-testing"
@@ -23100,6 +24259,11 @@
       "relationship": "related-from-vulnerability",
       "source": "vulnerability:cloud-misconfiguration",
       "target": "defensive-control:secure-configuration"
+    },
+    {
+      "relationship": "vulnerability-demonstrated-by",
+      "source": "vulnerability:cloud-misconfiguration",
+      "target": "lab:iac-security-review"
     },
     {
       "relationship": "related-from-vulnerability",
@@ -23445,6 +24609,11 @@
       "relationship": "related-from-vulnerability",
       "source": "vulnerability:container-security",
       "target": "defensive-control:secure-configuration"
+    },
+    {
+      "relationship": "vulnerability-demonstrated-by",
+      "source": "vulnerability:container-security",
+      "target": "lab:kubernetes-posture-review"
     },
     {
       "relationship": "related-from-vulnerability",
@@ -24165,6 +25334,11 @@
       "relationship": "related-to-lab",
       "source": "vulnerability:improper-certificate-validation",
       "target": "lab:http-request-analysis"
+    },
+    {
+      "relationship": "vulnerability-demonstrated-by",
+      "source": "vulnerability:improper-certificate-validation",
+      "target": "lab:tls-certificate-review"
     },
     {
       "relationship": "related-to-technique",
