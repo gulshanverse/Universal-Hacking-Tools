@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gulshanverse/Universal-Hacking-Tools/search/schema/health-report.schema.json",
+  "title": "Knowledge Health Report",
+  "type": "object",
+  "required": ["schema_version", "as_of", "total_entities", "status_counts", "scores", "overall_score"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "as_of": {"type": "string", "format": "date"},
+    "stale_after_days": {"type": "integer", "minimum": 1},
+    "total_entities": {"type": "integer", "minimum": 0},
+    "status_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "missing_sources": {"type": "array", "items": {"type": "string"}},
+    "missing_descriptions": {"type": "array", "items": {"type": "string"}},
+    "missing_relationships": {"type": "array", "items": {"type": "string"}},
+    "orphaned_entities": {"type": "array", "items": {"type": "string"}},
+    "broken_relationships": {"type": "array", "items": {"type": "string"}},
+    "stale_verification": {"type": "array", "items": {"type": "string"}},
+    "duplicate_aliases": {"type": "array", "items": {"type": "string"}},
+    "duplicate_names": {"type": "array", "items": {"type": "string"}},
+    "scores": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0, "maximum": 100}},
+    "overall_score": {"type": "number", "minimum": 0, "maximum": 100}
+  }
+}

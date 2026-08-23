@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gulshanverse/Universal-Hacking-Tools/search/schema/discovery-result.schema.json",
+  "title": "Discovery Result",
+  "type": "object",
+  "required": ["entity", "related", "paths"],
+  "properties": {
+    "entity": {"type": "object", "required": ["id", "type", "name", "path"]},
+    "related": {"type": "array", "items": {"type": "object", "required": ["id", "type", "distance", "path"]}},
+    "paths": {"type": "array", "items": {"type": "array", "items": {"type": "string"}}}
+  }
+}

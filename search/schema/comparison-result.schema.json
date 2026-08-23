@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gulshanverse/Universal-Hacking-Tools/search/schema/comparison-result.schema.json",
+  "title": "Tool Comparison Result",
+  "type": "object",
+  "required": ["tool_a", "tool_b", "comparison", "benchmarking"],
+  "properties": {
+    "tool_a": {"type": "object", "required": ["id", "type", "name"]},
+    "tool_b": {"type": "object", "required": ["id", "type", "name"]},
+    "comparison": {"type": "object"},
+    "benchmarking": {"type": "string"}
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gulshanverse/Universal-Hacking-Tools/search/schema/search-result.schema.json",
+  "title": "Search Result",
+  "type": "object",
+  "required": ["query", "filters", "total", "results"],
+  "properties": {
+    "query": {"type": "string"},
+    "filters": {"type": "object"},
+    "total": {"type": "integer", "minimum": 0},
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "name", "path", "score"],
+        "properties": {
+          "id": {"type": "string"},
+          "type": {"type": "string"},
+          "name": {"type": "string"},
+          "path": {"type": "string"},
+          "category": {"type": "string"},
+          "difficulty": {"type": "string"},
+          "score": {"type": "number"},
+          "reasons": {"type": "array", "items": {"type": "string"}},
+          "description": {"type": "string"}
+        }
+      }
+    }
+  }
+}
