@@ -1,0 +1,80 @@
+{
+  "aliases": {
+    "aircrack ng": [
+      "tool:aircrack-ng"
+    ],
+    "cross-site request forgery": [
+      "vulnerability:csrf"
+    ],
+    "greenbone": [
+      "tool:greenbone-openvas"
+    ],
+    "greenbone openvas": [
+      "tool:greenbone-openvas"
+    ],
+    "hydra": [
+      "tool:hydra"
+    ],
+    "ids": [
+      "defensive-control:ids-ips"
+    ],
+    "ids ips": [
+      "defensive-control:ids-ips"
+    ],
+    "intrusion detection system": [
+      "defensive-control:ids-ips"
+    ],
+    "intrusion prevention system": [
+      "defensive-control:ids-ips"
+    ],
+    "ips": [
+      "defensive-control:ids-ips"
+    ],
+    "john": [
+      "tool:john-the-ripper"
+    ],
+    "jtr": [
+      "tool:john-the-ripper"
+    ],
+    "kube bench": [
+      "tool:kube-bench"
+    ],
+    "multi-factor authentication": [
+      "defensive-control:mfa"
+    ],
+    "openvas": [
+      "tool:greenbone-openvas"
+    ],
+    "os query": [
+      "tool:osquery"
+    ],
+    "osv scanner": [
+      "tool:osv-scanner"
+    ],
+    "recon ng": [
+      "tool:recon-ng"
+    ],
+    "same origin policy": [
+      "concept:same-origin-policy"
+    ],
+    "sqli": [
+      "vulnerability:sql-injection"
+    ],
+    "tcp ip": [
+      "concept:tcp-ip"
+    ],
+    "volatility": [
+      "tool:volatility3"
+    ],
+    "volatility3": [
+      "tool:volatility3"
+    ],
+    "xss": [
+      "vulnerability:cross-site-scripting"
+    ],
+    "zap": [
+      "tool:owasp-zap"
+    ]
+  },
+  "schema_version": "1.0"
+}
