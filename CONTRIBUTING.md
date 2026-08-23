@@ -32,7 +32,18 @@ Use the controlled fields documented in [`schemas/verification-schema.md`](schem
 
 Automated validation detects malformed sources, duplicate normalized URLs, duplicate claim IDs, missing evidence, invalid claim statuses or confidence, broken traceability, prerequisite cycles, invalid relationship evidence, and stale generated artifacts. These checks support human review; they do not replace source verification, security review, or documentation review.
 
-Before opening a pull request, run `python3 scripts/validate_repository.py`, `python3 scripts/validate-knowledge.py`, `python3 scripts/validate-quality.py`, `python3 scripts/validate-trust.py`, `python3 scripts/validate-schemas.py`, `python3 scripts/check-links.py`, `python3 scripts/generate-index.py --check`, `python3 scripts/generate-knowledge.py --check`, `python3 scripts/generate-search.py --check`, `python3 scripts/generate-quality-reports.py --check`, `python3 scripts/generate-trust-reports.py --check`, and `python3 -m unittest discover -s tests -v`. Automated checks are gates for structural quality, not a substitute for human review of evidence, safety, scope, or relationships.
+Before opening a pull request, run `python3 scripts/validate_repository.py`, `python3 scripts/validate-knowledge.py`, `python3 scripts/validate-quality.py`, `python3 scripts/validate-trust.py`, `python3 scripts/validate-labs.py`, `python3 scripts/validate-schemas.py`, `python3 scripts/check-links.py`, `python3 scripts/generate-index.py --check`, `python3 scripts/generate-knowledge.py --check`, `python3 scripts/generate-search.py --check`, `python3 scripts/generate-trust-reports.py --check`, `python3 scripts/generate-quality-reports.py --check`, `python3 scripts/generate-lab-reports.py --check`, and `python3 -m unittest discover -s tests -v`.
+Automated checks are gates for structural quality, not a substitute for human review of evidence, safety, scope, or relationships.
+
+## Phase 6 Executable Labs
+
+Classify every existing lab as `documentation-only`, `guided`, or `executable`; do not convert all labs automatically. An executable lab must link its definition through flat Markdown front matter such as `execution_mode: executable` and `definition: definitions/example.yaml`. Keep the learner-facing explanation in Markdown and place machine-readable tasks, targets, evidence, assessment, cleanup, safety, and learning mappings in `labs/definitions/`.
+
+Use JSON-compatible YAML definitions so the standard library can validate them without adding a dependency. Fixtures must be committed synthetic JSON under `labs/fixtures/` and must not contain real credentials, personal data, malware, persistence, production secrets, arbitrary host paths, or real-world targets. Definitions must require local-fixture execution, dedicated ephemeral isolation, no internet, no host networking, no privileged execution, no host mounts, bounded resources, a finite timeout, and one active instance per lab.
+
+Tasks may invoke only the closed allowlist of fixture-inspection actions. Do not add shell strings, arbitrary subprocess execution, `eval`, `exec`, dynamic downloads, remote images, or unrestricted commands. Evidence is local and ephemeral, and deterministic assessment must use explicit rubric criteria; a successful fixture run never upgrades content verification status.
+
+Before proposing an executable lab, run `python3 scripts/validate-labs.py`, exercise `python3 scripts/lab.py --format json create <lab-id> --dry-run`, test create/start/run/evidence/assess/stop/reset/destroy and invalid transitions, regenerate `lab-catalog.json`, `lab-health.json`, and `lab-report.json`, and inspect the safety and threat-model documentation. Executable labs require technical, source, security, and documentation review; automated validation does not replace human review.
 
 ## Style and Review
 

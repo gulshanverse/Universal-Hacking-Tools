@@ -16,6 +16,10 @@ jobs:
         run: python3 scripts/validate_repository.py
       - name: Validate knowledge graph relationships
         run: python3 scripts/validate-knowledge.py
+      - name: Validate Phase 6 lab definitions and safety
+        run: python3 scripts/validate-labs.py
+      - name: Check generated lab reports
+        run: python3 scripts/generate-lab-reports.py --check
       - name: Check generated tool index
         run: python3 scripts/generate-index.py --check
       - name: Validate search and knowledge contracts
@@ -33,12 +37,12 @@ jobs:
       - name: Check relative Markdown links
         run: python3 scripts/check-links.py
       - name: Check Python syntax
-        run: python3 -m py_compile scripts/*.py search/**/*.py tests/*.py
+        run: python3 -m py_compile scripts/*.py search/**/*.py tests/*.py labs/engine/**/*.py labs/runners/*.py
       - name: Check unsafe execution and network primitives
-        run: '! grep -RInE "\\beval\\(|\\bexec\\(|shell=True|import (requests|urllib|socket)" search scripts/*.py'
+        run: '! grep -RInE "\\beval\\(|\\bexec\\(|shell=True|import (requests|urllib|socket)" search scripts/*.py labs/engine labs/runners'
       - name: Check obvious secret patterns
         run: '! grep -RInE "(BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{20,})" --exclude-dir=.git .'
-      - name: Run Phase 3, Phase 4, and Phase 5 tests
+      - name: Run Phase 3, Phase 4, Phase 5, and Phase 6 tests
         run: python3 -m unittest discover -s tests -v
       - name: Check generated knowledge artifacts
         run: python3 scripts/generate-knowledge.py --check

@@ -16,11 +16,11 @@ Universal Hacking Tools is designed to become a structured, searchable cybersecu
 | --- | --- |
 | Tools | [Tool encyclopedia](tools/README.md) |
 | Vulnerabilities | [Vulnerability encyclopedia](vulnerabilities/README.md) |
-| Labs | [Safe hands-on labs](labs/README.md) |
+| Labs | [Safe hands-on labs](labs/README.md) · [Architecture](docs/lab-architecture.md) · [Safety](docs/lab-safety.md) |
 | Learning | [Learning paths](learning-paths/README.md) |
 | Knowledge graph | [Connected taxonomy](knowledge/README.md) |
 | Generated data | [JSON graph and indexes](generated/knowledge-graph.json) |
-| Content health | [Completeness report](generated/content-completeness.json) · [Verification report](generated/verification-report.json) · [Review queue](generated/review-queue.json) |
+| Content health | [Completeness report](generated/content-completeness.json) · [Verification report](generated/verification-report.json) · [Review queue](generated/review-queue.json) · [Lab health](generated/lab-health.json) |
 | Trust and evidence | [Trust report](generated/trust-report.json) · [Source catalog](generated/source-catalog.json) · [Claim report](generated/claim-report.json) · [Verification history](verification-history/README.md) |
 | Getting started | [First steps](docs/getting-started/README.md) |
 | Contributing | [Contribution guide](CONTRIBUTING.md) |
@@ -32,16 +32,16 @@ Universal Hacking Tools is designed to become a structured, searchable cybersecu
 * **Tool pages:** source-backed, one-file-per-tool documentation covering purpose, metadata, safe usage, limitations, detection, mitigation, and references.
 * **Concept documentation:** foundations for networking, web security, cloud, privacy, forensics, malware analysis, and secure development.
 * **Vulnerability pages:** root cause, affected technology, impact, detection, mitigation, secure coding, safe labs, and taxonomy references.
-* **Labs:** controlled exercises with setup, expected observations, defensive interpretation, and cleanup.
+* **Labs:** controlled exercises with setup, expected observations, defensive interpretation, cleanup, and a Phase 6 classification as documentation-only, guided, or executable. Six safe local-fixture reference labs are executable through the CLI.
 * **Learning paths:** staged progression for beginners, ethical hacking, penetration testing, bug bounty learning, blue team, SOC analysis, forensics, malware analysis, cloud security, and security engineering.
 * **Knowledge graph:** typed concepts, techniques, technologies, defensive controls, and deterministic relationships to tools, vulnerabilities, labs, and learning paths.
-* **Automation:** metadata validation, required-section checks, duplicate detection, internal-link checks, generated tool indexes, graph indexes, prerequisite and relationship validation, deterministic search artifacts, content-completeness reports, verification reports, source normalization, claim traceability, trust reports, review queues, and artifact freshness checks.
+* **Automation:** metadata validation, required-section checks, duplicate detection, internal-link checks, generated tool indexes, graph indexes, prerequisite and relationship validation, deterministic search artifacts, content-completeness reports, verification reports, source normalization, claim traceability, trust reports, review queues, Phase 6 lab safety/catalog/health reports, and artifact freshness checks.
 
 ## Cybersecurity Knowledge Graph and Intelligence
 
-The repository now includes a deterministic [knowledge graph](knowledge/README.md), a local [Search and Discovery Engine](search/README.md), [knowledge health reporting](generated/knowledge-health.json), a per-entity [content-completeness report](generated/content-completeness.json), a [verification report](generated/verification-report.json), normalized [source records](generated/source-catalog.json), selective [evidence-backed claims](generated/claim-report.json), transparent [trust reporting](generated/trust-report.json), a prioritized [review queue](generated/review-queue.json), rule-based learning recommendations, and structured tool comparison. The engine supports search, aliases, metadata filters, bounded graph exploration, prerequisite discovery, path finding, trust summaries, and JSON output without a database, frontend, external API, telemetry, or LLM.
+The repository now includes a deterministic [knowledge graph](knowledge/README.md), a local [Search and Discovery Engine](search/README.md), [knowledge health reporting](generated/knowledge-health.json), a per-entity [content-completeness report](generated/content-completeness.json), a [verification report](generated/verification-report.json), normalized [source records](generated/source-catalog.json), selective [evidence-backed claims](generated/claim-report.json), transparent [trust reporting](generated/trust-report.json), a prioritized [review queue](generated/review-queue.json), and the Phase 6 [local lab framework](labs/README.md) with [lab catalog](generated/lab-catalog.json), [lab health](generated/lab-health.json), and a safe CLI. The engines support search, aliases, metadata filters, bounded graph exploration, prerequisite discovery, path finding, trust summaries, deterministic lab lifecycle and assessment, and JSON output without a database, frontend, external API, telemetry, or LLM.
 
-Try it locally with `python3 scripts/search.py nmap`, `python3 scripts/search.py --explore nmap --depth 2`, or `python3 scripts/search.py --health`.
+Try it locally with `python3 scripts/search.py nmap`, `python3 scripts/search.py --explore nmap --depth 2`, `python3 scripts/search.py --health`, `python3 scripts/lab.py list`, or `python3 scripts/lab.py --format json create dns-resolution-inventory --dry-run`.
 
 ## Tool Categories
 
@@ -53,7 +53,8 @@ Start with [Beginner Cybersecurity](learning-paths/beginner/README.md), then sel
 
 ## Repository Statistics
 
-The generated indexes report the current page counts. The current Phase 4 baseline is 71 tools, 40 vulnerabilities, 61 concepts, 34 techniques, 35 technologies, 30 defensive controls, 22 labs, 15 learning paths, and 308 total typed entities. The deterministic health score is reported in [`generated/knowledge-health.json`](generated/knowledge-health.json); it is not adjusted to improve appearance. Run `python3 scripts/generate-index.py` after a content change so navigation stays synchronized.
+The generated indexes report the current page counts. The current Phase 5 baseline is 70 tools, 40 vulnerabilities, 61 concepts, 34 techniques, 35 technologies, 30 defensive controls, 22 labs, 15 learning paths, and 307 total typed entities. Phase 6 adds six executable local-fixture definitions without expanding the knowledge-entity inventory.
+The deterministic health score is reported in [`generated/knowledge-health.json`](generated/knowledge-health.json); it is not adjusted to improve appearance. Run `python3 scripts/generate-index.py` after a content change so navigation stays synchronized.
 
 ## Automation
 
@@ -64,20 +65,26 @@ python3 scripts/validate_repository.py
 python3 scripts/generate-index.py
 python3 scripts/generate-index.py --check
 python3 scripts/generate-knowledge.py
+python3 scripts/generate-lab-reports.py
 python3 scripts/validate-knowledge.py
 python3 scripts/generate-knowledge.py --check
 python3 scripts/generate-search.py
-python3 scripts/generate-quality-reports.py
 python3 scripts/generate-trust-reports.py
+python3 scripts/generate-quality-reports.py
+python3 scripts/validate-labs.py
 python3 scripts/validate-schemas.py
 python3 scripts/validate-quality.py
 python3 scripts/validate-trust.py
 python3 scripts/generate-search.py --check
-python3 scripts/generate-quality-reports.py --check
 python3 scripts/generate-trust-reports.py --check
+python3 scripts/generate-quality-reports.py --check
+python3 scripts/generate-lab-reports.py --check
 python3 scripts/search.py nmap --format json
 python3 scripts/search.py --trust
 python3 scripts/search.py --review-queue
+python3 scripts/lab.py list
+python3 scripts/lab.py validate
+python3 scripts/lab.py --format json create dns-resolution-inventory --dry-run
 python3 -m unittest discover -s tests -v
 ```
 

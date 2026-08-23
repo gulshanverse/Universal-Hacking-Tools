@@ -35,6 +35,18 @@ Use this checklist for every new or materially revised tool, vulnerability, conc
 - [ ] Sensitive data collection is minimized and protected.
 - [ ] No secrets, personal data, debug output, or temporary artifacts are committed.
 
+## Phase 6 Executable Labs
+
+- [ ] Existing lab is intentionally classified as `documentation-only`, `guided`, or `executable`.
+- [ ] Executable definitions use a local synthetic fixture and a valid definition path.
+- [ ] Safety declares authorization, isolation, no internet, no host networking, no privileged mode, and no host mounts.
+- [ ] CPU, memory, PIDs, timeout, and maximum instances are bounded.
+- [ ] Tasks use only allowlisted fixture-inspection actions; no shell strings or arbitrary commands are accepted.
+- [ ] Evidence is minimal, secret-screened, linked to tasks, and ephemeral.
+- [ ] Assessment criteria are deterministic and execution success is not treated as content verification.
+- [ ] Reset and destroy behavior clears temporary evidence and state as documented.
+- [ ] Threat-model, safety, cleanup, detection, mitigation, and explicit authorization boundaries are documented.
+
 ## Technical Quality
 
 - [ ] Required documentation sections are present.
