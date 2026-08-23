@@ -9,7 +9,7 @@
   {
     "category": "",
     "id": "beginner",
-    "name": "Beginner",
+    "name": "Beginner Cybersecurity",
     "path": "learning-paths/beginner/README.md",
     "type": "learning-path"
   },
@@ -23,7 +23,7 @@
   {
     "category": "",
     "id": "bug-bounty",
-    "name": "Bug Bounty",
+    "name": "Bug Bounty Learning",
     "path": "learning-paths/bug-bounty/README.md",
     "type": "learning-path"
   },
@@ -86,7 +86,7 @@
   {
     "category": "",
     "id": "soc-analyst",
-    "name": "Soc Analyst",
+    "name": "SOC Analyst",
     "path": "learning-paths/soc-analyst/README.md",
     "type": "learning-path"
   },

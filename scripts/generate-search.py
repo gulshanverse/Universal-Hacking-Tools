@@ -25,31 +25,47 @@ def parse_meta(text):
     if not text.startswith("---\n") or "\n---" not in text[4:]:
         return {}
     end = text.find("\n---", 4)
-    data, list_key, map_key = {}, None, None
+    data, list_key, map_key, list_item = {}, None, None, None
     for line in text[4:end].splitlines():
         indent = len(line) - len(line.lstrip())
         stripped = line.strip()
         if not stripped:
             continue
-        if indent and stripped.startswith("- ") and list_key:
-            data.setdefault(list_key, []).append(stripped[2:].strip())
+        if indent and stripped.startswith("- "):
+            payload = stripped[2:].strip()
+            if map_key == "prerequisites" and isinstance(list_item, dict) and ":" in payload:
+                key, value = payload.split(":", 1)
+                list_item = {key.strip(): value.strip()}
+                data.setdefault("prerequisites", []).append(list_item)
+            elif list_key == "prerequisites" and ":" in payload:
+                key, value = payload.split(":", 1)
+                list_item = {key.strip(): value.strip()}
+                data.setdefault("prerequisites", []).append(list_item)
+                map_key, list_key = "prerequisites", None
+            elif list_key:
+                data.setdefault(list_key, []).append(payload)
+                list_item = None
+            elif map_key == "sources":
+                data["sources"] = [payload]
+                list_key, map_key, list_item = "sources", None, None
             continue
         if indent and map_key and ":" in stripped:
             key, value = stripped.split(":", 1)
-            data.setdefault(map_key, {})[key.strip()] = value.strip()
+            if isinstance(list_item, dict): list_item[key.strip()] = value.strip()
+            else: data.setdefault(map_key, {})[key.strip()] = value.strip()
             continue
         if ":" in line and indent == 0:
             key, value = line.split(":", 1)
             key, value = key.strip(), value.strip()
             if value:
                 data[key] = value
-                list_key = map_key = None
+                list_key = map_key = list_item = None
             elif key in {"verification", "sources"}:
                 data[key] = {}
-                map_key, list_key = key, None
+                map_key, list_key, list_item = key, None, None
             else:
                 data[key] = []
-                list_key, map_key = key, None
+                list_key, map_key, list_item = key, None, None
     return data
 
 def as_list(value):
@@ -58,6 +74,18 @@ def as_list(value):
     if not value:
         return []
     return [part.strip() for part in re.split(r"[;,]", str(value)) if part.strip()]
+
+def prerequisite_records(value):
+    records = value if isinstance(value, list) else [value] if value else []
+    result = []
+    for record in records:
+        if isinstance(record, dict):
+            target = str(record.get("target", "")).strip()
+            kind = str(record.get("type", "required")).strip() or "required"
+            if target: result.append({"target": target, "type": kind})
+        elif str(record).strip():
+            result.append({"target": str(record).strip(), "type": "required"})
+    return result
 
 def tokens(value):
     if isinstance(value, list):
@@ -114,6 +142,8 @@ def generate(as_of=AS_OF, stale_days=STALE_DAYS):
         verification = meta.get("verification", {}) if isinstance(meta.get("verification"), dict) else {}
         status = verification.get("status") or meta.get("status") or "unverified"
         rels = graph_rels.get(f"{kind}:{ident}", [])
+        prerequisites = prerequisite_records(meta.get("prerequisites", []))
+        keyword_values = [node["name"], meta.get("category", ""), meta.get("subcategory", ""), meta.get("security_domains", []), meta.get("concepts", []), meta.get("techniques", []), meta.get("technologies", []), meta.get("related_vulnerabilities", []), [item["target"] for item in prerequisites]]
         doc = {
             "id": ident,
             "type": kind,
@@ -127,12 +157,12 @@ def generate(as_of=AS_OF, stale_days=STALE_DAYS):
             "platforms": as_list(meta.get("platforms", [])),
             "security_domains": as_list(meta.get("security_domains", [])),
             "relationships": sorted(rels, key=lambda x: (x["target"], x["relationship"])),
-            "prerequisites": as_list(meta.get("prerequisites", [])),
-            "verification": {"status": status, "last_verified": verification.get("last_verified", "")},
+            "prerequisites": prerequisites,
+            "verification": {"status": status, "confidence": verification.get("confidence", "unknown"), "last_verified": verification.get("last_verified", ""), "verification_method": verification.get("verification_method", "manual-review"), "reviewer": verification.get("reviewer", ""), "review_notes": verification.get("review_notes", "")},
             "sources": meta.get("sources", {}),
             "license": meta.get("license", ""),
             "dual_use": meta.get("dual_use", ""),
-            "keywords": sorted(set(tokens([node["name"], doc if False else "", meta.get("category", ""), meta.get("subcategory", ""), meta.get("security_domains", []), meta.get("concepts", []), meta.get("techniques", []), meta.get("technologies", []), meta.get("related_vulnerabilities", []), meta.get("prerequisites", [])]))),
+            "keywords": sorted(set(tokens(keyword_values))),
         }
         doc["aliases"] = aliases_for(doc)
         doc["tokens"] = sorted(set(tokens([doc["name"], doc["description"], doc["category"], doc["subcategory"], doc["tags"], doc["keywords"], doc["aliases"]])))

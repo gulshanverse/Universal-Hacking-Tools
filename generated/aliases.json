@@ -12,23 +12,56 @@
     "api rate limit weakness": [
       "vulnerability:api-rate-limit-weakness"
     ],
+    "api security": [
+      "vulnerability:api-security"
+    ],
+    "authentication session review": [
+      "lab:authentication-session-review"
+    ],
     "backup": [
       "defensive-control:backup"
+    ],
+    "beginner": [
+      "learning-path:beginner"
+    ],
+    "bug bounty": [
+      "learning-path:bug-bounty"
     ],
     "certificate transparency": [
       "technique:certificate-transparency"
     ],
-    "cross-site request forgery": [
+    "cloud least privilege review": [
+      "lab:cloud-least-privilege-review"
+    ],
+    "container sbom and scan": [
+      "lab:container-sbom-and-scan"
+    ],
+    "container security": [
+      "vulnerability:container-security"
+    ],
+    "cross site request forgery": [
       "vulnerability:csrf"
+    ],
+    "cross site scripting": [
+      "vulnerability:cross-site-scripting"
     ],
     "csp": [
       "defensive-control:csp"
+    ],
+    "csrf": [
+      "vulnerability:csrf"
     ],
     "dns resolution inventory": [
       "lab:dns-resolution-inventory"
     ],
     "dotnet": [
       "technology:dotnet"
+    ],
+    "evidence first analysis": [
+      "lab:evidence-first-analysis"
+    ],
+    "evidence first analysis workflow": [
+      "lab:evidence-first-analysis"
     ],
     "graphql schema safety": [
       "lab:graphql-schema-safety"
@@ -44,6 +77,9 @@
     ],
     "iac scanning": [
       "technique:iac-scanning"
+    ],
+    "idor": [
+      "vulnerability:idor"
     ],
     "ids": [
       "defensive-control:ids-ips"
@@ -105,14 +141,29 @@
     "sbom": [
       "technology:sbom"
     ],
+    "server side request forgery": [
+      "vulnerability:ssrf"
+    ],
+    "session management": [
+      "vulnerability:session-management"
+    ],
+    "sql injection concepts": [
+      "lab:sql-injection-concepts"
+    ],
     "sqli": [
       "vulnerability:sql-injection"
+    ],
+    "ssrf": [
+      "vulnerability:ssrf"
     ],
     "supply chain controls": [
       "defensive-control:supply-chain-controls"
     ],
     "supply chain security": [
       "concept:supply-chain-security"
+    ],
+    "supply chain vulnerabilities": [
+      "vulnerability:supply-chain-vulnerabilities"
     ],
     "tcp ip": [
       "concept:tcp-ip"
@@ -131,6 +182,9 @@
     ],
     "xss": [
       "vulnerability:cross-site-scripting"
+    ],
+    "xxe": [
+      "vulnerability:xxe"
     ],
     "zap": [
       "tool:owasp-zap"

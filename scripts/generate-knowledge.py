@@ -10,20 +10,33 @@ def parse_meta(text):
     if not text.startswith("---\n") or "\n---" not in text[4:]:
         return {}
     end = text.find("\n---", 4)
-    result, current = {}, None
+    result, current, current_item = {}, None, None
     for line in text[4:end].splitlines():
         stripped = line.strip()
-        if stripped.startswith("- ") and current:
-            result.setdefault(current, []).append(stripped[2:].strip())
-        elif ":" in line:
+        indent = len(line) - len(line.lstrip())
+        if indent >= 2 and stripped.startswith("- ") and current:
+            payload = stripped[2:].strip()
+            if ":" in payload:
+                key, value = payload.split(":", 1)
+                current_item = {key.strip(): value.strip()}
+                result.setdefault(current, []).append(current_item)
+            else:
+                result.setdefault(current, []).append(payload)
+                current_item = None
+        elif indent >= 4 and current_item and ":" in stripped:
+            key, value = stripped.split(":", 1)
+            current_item[key.strip()] = value.strip()
+        elif indent == 0 and ":" in line:
             key, value = line.split(":", 1)
             key, value = key.strip(), value.strip()
             if value:
                 result[key] = value
                 current = None
+                current_item = None
             else:
                 result[key] = []
                 current = key
+                current_item = None
     return result
 
 def path_for_type(kind, path):
@@ -89,14 +102,16 @@ def generate():
             prerequisites = meta.get("prerequisites", [])
             if not isinstance(prerequisites, list): prerequisites = [prerequisites]
             # Resolve prerequisites conservatively, preferring concepts and then same-type entities.
-            for prerequisite_id in prerequisites:
+            for prerequisite in prerequisites:
+                prerequisite_id = prerequisite.get("target", "") if isinstance(prerequisite, dict) else prerequisite
+                prerequisite_type = prerequisite.get("type", "required") if isinstance(prerequisite, dict) else "required"
                 candidates = [key for key in nodes if key[1] == prerequisite_id and key != source]
                 candidates.sort(key=lambda key: (0 if key[0] == "concept" else 1 if key[0] == source[0] else 2, key[0], key[1]))
-                if candidates:
+                if candidates and prerequisite_type in {"required", "recommended", "helpful"}:
                     target_kind, target_id = candidates[0]
-                    relationships.add((source[0], source[1], target_kind, target_id, "requires-prerequisite"))
+                    relationships.add((source[0], source[1], target_kind, target_id, f"requires-prerequisite-{prerequisite_type}"))
     # Add reverse edges for navigability without changing source metadata.
-    reverse = {"uses-concept": "concept-of", "related-to-concept": "concept-related-from", "implements-technique": "technique-of", "related-to-technique": "technique-related-from", "uses-technology": "technology-of", "affects-technology": "technology-affected-by", "related-to-vulnerability": "related-from-vulnerability", "uses-tool": "tool-of", "related-to-tool": "related-from-tool", "related-to-lab": "related-from-lab", "part-of-learning-path": "contains-learning-path", "mitigated-by": "control-for", "requires-prerequisite": "prerequisite-for"}
+    reverse = {"uses-concept": "concept-of", "related-to-concept": "concept-related-from", "implements-technique": "technique-of", "related-to-technique": "technique-related-from", "uses-technology": "technology-of", "affects-technology": "technology-affected-by", "related-to-vulnerability": "related-from-vulnerability", "uses-tool": "tool-of", "related-to-tool": "related-from-tool", "related-to-lab": "related-from-lab", "part-of-learning-path": "contains-learning-path", "mitigated-by": "control-for", "requires-prerequisite-required": "prerequisite-for-required", "requires-prerequisite-recommended": "prerequisite-for-recommended", "requires-prerequisite-helpful": "prerequisite-for-helpful", "requires-prerequisite": "prerequisite-for"}
     all_relationships = set(relationships)
     for src_kind, src_id, dst_kind, dst_id, label in relationships:
         all_relationships.add((dst_kind, dst_id, src_kind, src_id, reverse.get(label, "related-from")))

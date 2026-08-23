@@ -30,12 +30,13 @@ class Phase4TestCase(unittest.TestCase):
 
     def test_prerequisite_relationships_are_typed_and_reversible(self):
         labels = {r["relationship"] for r in self.graph["relationships"]}
-        self.assertIn("requires-prerequisite", labels)
-        self.assertIn("prerequisite-for", labels)
+        self.assertTrue(any(label.startswith("requires-prerequisite-") for label in labels))
+        self.assertTrue(any(label.startswith("prerequisite-for-") for label in labels))
         edges = {(r["source"], r["target"], r["relationship"]) for r in self.graph["relationships"]}
         for source, target, label in list(edges):
-            if label == "requires-prerequisite":
-                self.assertIn((target, source, "prerequisite-for"), edges)
+            if label.startswith("requires-prerequisite-"):
+                reverse = "prerequisite-for-" + label.rsplit("-", 1)[-1]
+                self.assertIn((target, source, reverse), edges)
 
     def test_reports_are_complete_and_consistent(self):
         self.assertEqual(len(self.search["documents"]), len(self.complete["entities"]))

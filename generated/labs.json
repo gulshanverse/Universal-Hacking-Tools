@@ -9,7 +9,7 @@
   {
     "category": "",
     "id": "authentication-session-review",
-    "name": "Authentication Session Review",
+    "name": "Authentication and Session Review",
     "path": "labs/authentication/authentication-session-review.md",
     "type": "lab"
   },
@@ -23,14 +23,14 @@
   {
     "category": "",
     "id": "cloud-least-privilege-review",
-    "name": "Cloud Least Privilege Review",
+    "name": "Cloud Least-Privilege Review",
     "path": "labs/cloud/cloud-least-privilege-review.md",
     "type": "lab"
   },
   {
     "category": "",
     "id": "container-sbom-and-scan",
-    "name": "Container Sbom And Scan",
+    "name": "Container Image SBOM and Scan",
     "path": "labs/defensive/container-sbom-and-scan.md",
     "type": "lab"
   },
@@ -58,7 +58,7 @@
   {
     "category": "",
     "id": "evidence-first-analysis",
-    "name": "Evidence First Analysis",
+    "name": "Evidence-First Analysis Workflow",
     "path": "labs/forensics/evidence-first-analysis.md",
     "type": "lab"
   },
@@ -72,7 +72,7 @@
   {
     "category": "",
     "id": "http-request-analysis",
-    "name": "Http Request Analysis",
+    "name": "HTTP Request Analysis",
     "path": "labs/web/http-request-analysis.md",
     "type": "lab"
   },
@@ -128,7 +128,7 @@
   {
     "category": "",
     "id": "sql-injection-concepts",
-    "name": "Sql Injection Concepts",
+    "name": "SQL Injection Concepts in a Lab",
     "path": "labs/web/sql-injection-concepts.md",
     "type": "lab"
   },

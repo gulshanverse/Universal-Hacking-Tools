@@ -6,26 +6,41 @@ import json, re, sys
 ROOT = Path(__file__).resolve().parents[1]
 ERRORS = []
 ALLOWED_VERIFICATION = {"verified", "partially-verified", "needs-review", "deprecated", "unverified"}
+ALLOWED_CONFIDENCE = {"high", "medium", "low", "unknown"}
+ALLOWED_METHODS = {"official-documentation", "official-repository", "official-website", "maintainer-documentation", "security-standard", "vendor-documentation", "primary-research", "secondary-research", "manual-review", "cross-source-review"}
 
 
 def parse_meta(text):
     if not text.startswith("---\n") or "\n---" not in text[4:]:
         return {}
     end = text.find("\n---", 4)
-    result, current = {}, None
+    result, current, current_item = {}, None, None
     for line in text[4:end].splitlines():
         stripped = line.strip()
-        if stripped.startswith("- ") and current:
-            result.setdefault(current, []).append(stripped[2:].strip())
-        elif ":" in line:
+        indent = len(line) - len(line.lstrip())
+        if indent >= 2 and stripped.startswith("- ") and current:
+            payload = stripped[2:].strip()
+            if current == "prerequisites" and ":" in payload:
+                key, value = payload.split(":", 1)
+                current_item = {key.strip(): value.strip()}
+                result.setdefault(current, []).append(current_item)
+            else:
+                result.setdefault(current, []).append(payload)
+                current_item = None
+        elif indent >= 4 and current == "prerequisites" and current_item and ":" in stripped:
+            key, value = stripped.split(":", 1)
+            current_item[key.strip()] = value.strip()
+        elif indent == 0 and ":" in line:
             key, value = line.split(":", 1)
             key, value = key.strip(), value.strip()
             if value:
                 result[key] = value
                 current = None
+                current_item = None
             else:
                 result[key] = []
                 current = key
+                current_item = None
     return result
 
 
@@ -56,7 +71,7 @@ FIELD_TYPES = {
     "related_tools": "tool", "tools": "tool", "related_vulnerabilities": "vulnerability", "vulnerabilities": "vulnerability",
     "related_labs": "lab", "labs": "lab", "learning_paths": "learning-path", "defensive_controls": "defensive-control",
 }
-ALLOWED_RELATIONSHIPS = {"uses-concept", "concept-of", "related-to-concept", "concept-related-from", "implements-technique", "technique-of", "related-to-technique", "technique-related-from", "uses-technology", "technology-of", "affects-technology", "technology-affected-by", "related-to-vulnerability", "related-from-vulnerability", "uses-tool", "tool-of", "related-to-tool", "related-from-tool", "related-to-lab", "related-from-lab", "part-of-learning-path", "contains-learning-path", "mitigated-by", "control-for", "requires-prerequisite", "prerequisite-for", "related-from"}
+ALLOWED_RELATIONSHIPS = {"uses-concept", "concept-of", "related-to-concept", "concept-related-from", "implements-technique", "technique-of", "related-to-technique", "technique-related-from", "uses-technology", "technology-of", "affects-technology", "technology-affected-by", "related-to-vulnerability", "related-from-vulnerability", "uses-tool", "tool-of", "related-to-tool", "related-from-tool", "related-to-lab", "related-from-lab", "part-of-learning-path", "contains-learning-path", "mitigated-by", "control-for", "requires-prerequisite", "prerequisite-for", "requires-prerequisite-required", "prerequisite-for-required", "requires-prerequisite-recommended", "prerequisite-for-recommended", "requires-prerequisite-helpful", "prerequisite-for-helpful", "related-from"}
 
 
 def validate_refs(entities, pages):
@@ -70,15 +85,24 @@ def validate_refs(entities, pages):
         prerequisite_values = meta.get("prerequisites", [])
         if not isinstance(prerequisite_values, list): prerequisite_values = [prerequisite_values]
         all_ids = set().union(*entities.values())
+        seen_prerequisites = set()
         for value in prerequisite_values:
-            if value not in all_ids: ERRORS.append(f"{path}: unknown prerequisite reference '{value}'")
+            target = value.get("target", "") if isinstance(value, dict) else value
+            prerequisite_type = value.get("type", "required") if isinstance(value, dict) else "required"
+            if target not in all_ids: ERRORS.append(f"{path}: unknown prerequisite reference '{target}'")
+            if prerequisite_type not in {"required", "recommended", "helpful"}: ERRORS.append(f"{path}: invalid prerequisite type '{prerequisite_type}'")
+            if target in seen_prerequisites: ERRORS.append(f"{path}: duplicate prerequisite '{target}'")
+            seen_prerequisites.add(target)
         text = path.read_text(encoding="utf-8")
+        front = text[:text.find("\n---", 4)]
+        match = re.search(r"verification:\s*\n\s+status:\s*([^\n]+)", front)
+        confidence = re.search(r"verification:\s*\n(?:.*\n)*?\s+confidence:\s*([^\n]*)", front)
+        method = re.search(r"verification:\s*\n(?:.*\n)*?\s+verification_method:\s*([^\n]+)", front)
+        if not match: ERRORS.append(f"{path}: missing verification.status")
+        elif match.group(1).strip() not in ALLOWED_VERIFICATION: ERRORS.append(f"{path}: invalid verification.status {match.group(1).strip()}")
+        if not confidence or confidence.group(1).strip() not in ALLOWED_CONFIDENCE: ERRORS.append(f"{path}: invalid or missing verification.confidence")
+        if not method or method.group(1).strip() not in ALLOWED_METHODS: ERRORS.append(f"{path}: invalid or missing verification.verification_method")
         if kind == "tool":
-            match = re.search(r"verification:\s*\n\s+status:\s*([^\n]+)", text[:text.find("\n---", 4)])
-            if not match:
-                ERRORS.append(f"{path}: missing verification.status")
-            elif match.group(1).strip() not in ALLOWED_VERIFICATION:
-                ERRORS.append(f"{path}: invalid verification.status {match.group(1).strip()}")
             if "sources:" not in text[:text.find("\n---", 4)]: ERRORS.append(f"{path}: missing sources metadata")
 
 

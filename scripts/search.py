@@ -27,11 +27,17 @@ def parser():
     p.add_argument("--recommend")
     p.add_argument("--goals", nargs="*", default=[])
     p.add_argument("--health", action="store_true")
+    p.add_argument("--trust", action="store_true", help="show the deterministic trust report")
+    p.add_argument("--review-queue", action="store_true", help="show the deterministic verification review queue")
     p.add_argument("--format", choices=["text", "json"], default="text")
     return p
 
 
 def execute(args):
+    if args.trust:
+        return json.loads((ROOT / "generated/trust-report.json").read_text(encoding="utf-8"))
+    if args.review_queue:
+        return json.loads((ROOT / "generated/review-queue.json").read_text(encoding="utf-8"))
     if args.health:
         return HealthEngine().report()
     if args.explore:
@@ -64,6 +70,13 @@ def text_output(result):
     elif "comparison" in result:
         print(f"{result['tool_a']['name']} vs {result['tool_b']['name']}")
         for key, value in result["comparison"].items(): print(f"{key}: {value}")
+    elif "overall" in result and "source_trust" in result:
+        overall = result["overall"]
+        print(f"Trust score: {overall['trust_score']}% ({overall['entity_count']} entities)")
+        print(f"source={result['source_trust']['score']}% claim={result['claim_trust']['score']}% relationship={result['relationship_trust']['score']}% prerequisite={result['prerequisite_trust']['score']}%")
+    elif "items" in result and "total_items" in result:
+        print(f"Review queue: {result['total_items']} item(s)")
+        for item in result["items"][:20]: print(f"{item['priority_level']:<8} {item['priority']:>2}  {item['entity']}  {item['recommended_reviewer_type']}")
     elif "overall_score" in result:
         print(f"Knowledge health: {result['overall_score']}% ({result['total_entities']} entities)")
         for key in ["missing_sources", "missing_relationships", "orphaned_entities", "stale_verification", "duplicate_aliases"]:

@@ -647,7 +647,7 @@
     {
       "category": "",
       "id": "authentication-session-review",
-      "name": "Authentication Session Review",
+      "name": "Authentication and Session Review",
       "path": "labs/authentication/authentication-session-review.md",
       "type": "lab"
     },
@@ -661,14 +661,14 @@
     {
       "category": "",
       "id": "cloud-least-privilege-review",
-      "name": "Cloud Least Privilege Review",
+      "name": "Cloud Least-Privilege Review",
       "path": "labs/cloud/cloud-least-privilege-review.md",
       "type": "lab"
     },
     {
       "category": "",
       "id": "container-sbom-and-scan",
-      "name": "Container Sbom And Scan",
+      "name": "Container Image SBOM and Scan",
       "path": "labs/defensive/container-sbom-and-scan.md",
       "type": "lab"
     },
@@ -696,7 +696,7 @@
     {
       "category": "",
       "id": "evidence-first-analysis",
-      "name": "Evidence First Analysis",
+      "name": "Evidence-First Analysis Workflow",
       "path": "labs/forensics/evidence-first-analysis.md",
       "type": "lab"
     },
@@ -710,7 +710,7 @@
     {
       "category": "",
       "id": "http-request-analysis",
-      "name": "Http Request Analysis",
+      "name": "HTTP Request Analysis",
       "path": "labs/web/http-request-analysis.md",
       "type": "lab"
     },
@@ -766,7 +766,7 @@
     {
       "category": "",
       "id": "sql-injection-concepts",
-      "name": "Sql Injection Concepts",
+      "name": "SQL Injection Concepts in a Lab",
       "path": "labs/web/sql-injection-concepts.md",
       "type": "lab"
     },
@@ -801,7 +801,7 @@
     {
       "category": "",
       "id": "beginner",
-      "name": "Beginner",
+      "name": "Beginner Cybersecurity",
       "path": "learning-paths/beginner/README.md",
       "type": "learning-path"
     },
@@ -815,7 +815,7 @@
     {
       "category": "",
       "id": "bug-bounty",
-      "name": "Bug Bounty",
+      "name": "Bug Bounty Learning",
       "path": "learning-paths/bug-bounty/README.md",
       "type": "learning-path"
     },
@@ -878,7 +878,7 @@
     {
       "category": "",
       "id": "soc-analyst",
-      "name": "Soc Analyst",
+      "name": "SOC Analyst",
       "path": "learning-paths/soc-analyst/README.md",
       "type": "learning-path"
     },
@@ -1879,7 +1879,7 @@
     {
       "category": "",
       "id": "api-security",
-      "name": "Api Security",
+      "name": "API Security Weaknesses",
       "path": "vulnerabilities/api/api-security.md",
       "type": "vulnerability"
     },
@@ -1921,14 +1921,14 @@
     {
       "category": "",
       "id": "container-security",
-      "name": "Container Security",
+      "name": "Container Security Issues",
       "path": "vulnerabilities/cloud/container-security.md",
       "type": "vulnerability"
     },
     {
       "category": "",
       "id": "cross-site-scripting",
-      "name": "Cross Site Scripting",
+      "name": "Cross-Site Scripting",
       "path": "vulnerabilities/web/cross-site-scripting.md",
       "type": "vulnerability"
     },
@@ -1942,7 +1942,7 @@
     {
       "category": "",
       "id": "csrf",
-      "name": "Csrf",
+      "name": "Cross-Site Request Forgery",
       "path": "vulnerabilities/web/csrf.md",
       "type": "vulnerability"
     },
@@ -1977,7 +1977,7 @@
     {
       "category": "",
       "id": "idor",
-      "name": "Idor",
+      "name": "Insecure Direct Object Reference",
       "path": "vulnerabilities/authorization/idor.md",
       "type": "vulnerability"
     },
@@ -2096,28 +2096,28 @@
     {
       "category": "",
       "id": "session-management",
-      "name": "Session Management",
+      "name": "Session Management Weaknesses",
       "path": "vulnerabilities/authentication/session-management.md",
       "type": "vulnerability"
     },
     {
       "category": "",
       "id": "sql-injection",
-      "name": "Sql Injection",
+      "name": "SQL Injection",
       "path": "vulnerabilities/web/sql-injection.md",
       "type": "vulnerability"
     },
     {
       "category": "",
       "id": "ssrf",
-      "name": "Ssrf",
+      "name": "Server-Side Request Forgery",
       "path": "vulnerabilities/web/ssrf.md",
       "type": "vulnerability"
     },
     {
       "category": "",
       "id": "supply-chain-vulnerabilities",
-      "name": "Supply Chain Vulnerabilities",
+      "name": "Supply-Chain Vulnerabilities",
       "path": "vulnerabilities/supply-chain/supply-chain-vulnerabilities.md",
       "type": "vulnerability"
     },
@@ -2145,24 +2145,24 @@
     {
       "category": "",
       "id": "xxe",
-      "name": "Xxe",
+      "name": "XML External Entity",
       "path": "vulnerabilities/web/xxe.md",
       "type": "vulnerability"
     }
   ],
   "relationships": [
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:access-control",
       "target": "concept:least-privilege"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:access-control",
       "target": "concept:permissions"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-helpful",
       "source": "concept:access-control",
       "target": "concept:zero-trust"
     },
@@ -2192,17 +2192,17 @@
       "target": "tool:prowler"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:apis",
       "target": "concept:graphql"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:apis",
       "target": "concept:rest"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:apis",
       "target": "technique:api-discovery"
     },
@@ -2267,12 +2267,12 @@
       "target": "tool:sqlmap"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:attack-surface",
       "target": "concept:firewalls"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:attack-surface",
       "target": "technique:certificate-transparency"
     },
@@ -2307,7 +2307,7 @@
       "target": "technique:dynamic-analysis"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:attack-surface",
       "target": "technique:host-discovery"
     },
@@ -2537,12 +2537,12 @@
       "target": "tool:zmap"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authentication",
       "target": "concept:users-and-groups"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authentication",
       "target": "concept:zero-trust"
     },
@@ -2552,7 +2552,7 @@
       "target": "technique:log-analysis"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authentication",
       "target": "technique:phishing-resistant-authentication"
     },
@@ -2697,72 +2697,72 @@
       "target": "tool:zeek"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authorization",
       "target": "concept:least-privilege"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authorization",
       "target": "concept:permissions"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:authorization",
       "target": "concept:users-and-groups"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:authorization",
       "target": "concept:zero-trust"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authorization",
       "target": "lab:api-discovery-local-app"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authorization",
       "target": "lab:detection-rule-regression"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authorization",
       "target": "lab:dns-resolution-inventory"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authorization",
       "target": "lab:graphql-schema-safety"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authorization",
       "target": "lab:iac-security-review"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authorization",
       "target": "lab:kubernetes-posture-review"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authorization",
       "target": "lab:memory-image-triage"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authorization",
       "target": "lab:secrets-rotation-exercise"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authorization",
       "target": "lab:timeline-analysis-synthetic"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:authorization",
       "target": "lab:tls-certificate-review"
     },
@@ -2902,22 +2902,22 @@
       "target": "tool:zeek"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:certificates",
       "target": "concept:pki"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:certificates",
       "target": "concept:tls"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:certificates",
       "target": "technique:certificate-review"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:certificates",
       "target": "technique:certificate-transparency"
     },
@@ -2927,12 +2927,12 @@
       "target": "tool:testssl-sh"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:containers",
       "target": "concept:processes"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:containers",
       "target": "technology:linux"
     },
@@ -3012,22 +3012,22 @@
       "target": "tool:sqlmap"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:cryptography",
       "target": "concept:digital-signatures"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:cryptography",
       "target": "concept:key-management"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:cryptography",
       "target": "concept:pki"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:cryptography",
       "target": "concept:randomness"
     },
@@ -3052,27 +3052,27 @@
       "target": "tool:testssl-sh"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:data-classification",
       "target": "concept:privacy"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:data-classification",
       "target": "concept:threat-modeling"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:defense-in-depth",
       "target": "concept:threat-modeling"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:digital-signatures",
       "target": "concept:cryptography"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:digital-signatures",
       "target": "concept:encryption"
     },
@@ -3117,27 +3117,27 @@
       "target": "tool:theharvester"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:encryption",
       "target": "concept:digital-signatures"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:encryption",
       "target": "concept:key-management"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:file-systems",
       "target": "learning-path:digital-forensics"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:file-systems",
       "target": "technique:timeline-analysis"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:file-systems",
       "target": "technology:linux"
     },
@@ -3147,22 +3147,22 @@
       "target": "tool:clamav"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:firewalls",
       "target": "concept:attack-surface"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:firewalls",
       "target": "concept:networking"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:graphql",
       "target": "concept:apis"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:graphql",
       "target": "concept:http"
     },
@@ -3182,22 +3182,22 @@
       "target": "tool:john-the-ripper"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:http",
       "target": "concept:graphql"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:http",
       "target": "concept:proxies"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:http",
       "target": "concept:rest"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:http",
       "target": "concept:websockets"
     },
@@ -3267,7 +3267,7 @@
       "target": "tool:sqlmap"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:http-requests",
       "target": "technique:api-discovery"
     },
@@ -3437,12 +3437,12 @@
       "target": "tool:testssl-sh"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:icmp",
       "target": "concept:tcp-ip"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:input-validation",
       "target": "technique:secure-code-review"
     },
@@ -3507,77 +3507,77 @@
       "target": "tool:sqlmap"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:key-management",
       "target": "concept:cryptography"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:key-management",
       "target": "concept:encryption"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:least-privilege",
       "target": "concept:access-control"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:least-privilege",
       "target": "concept:authorization"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:memory",
       "target": "concept:processes"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:memory",
       "target": "learning-path:digital-forensics"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:memory",
       "target": "technique:memory-analysis"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:nat",
       "target": "concept:routing"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:nat",
       "target": "concept:tcp-ip"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:networking",
       "target": "concept:firewalls"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:networking",
       "target": "concept:osi-model"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:networking",
       "target": "concept:proxies"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:networking",
       "target": "concept:routing"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:networking",
       "target": "concept:switching"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:networking",
       "target": "technique:host-discovery"
     },
@@ -3632,37 +3632,37 @@
       "target": "tool:theharvester"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:osi-model",
       "target": "concept:networking"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:permissions",
       "target": "concept:access-control"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:permissions",
       "target": "concept:authorization"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:pki",
       "target": "concept:certificates"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:pki",
       "target": "concept:cryptography"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:pki",
       "target": "concept:tls"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:pki",
       "target": "technique:certificate-review"
     },
@@ -3717,12 +3717,12 @@
       "target": "tool:zmap"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:privacy",
       "target": "concept:data-classification"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:privacy",
       "target": "technique:threat-intelligence-analysis"
     },
@@ -3752,32 +3752,32 @@
       "target": "tool:spiderfoot"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:processes",
       "target": "concept:containers"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:processes",
       "target": "concept:memory"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:processes",
       "target": "concept:security-monitoring"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:processes",
       "target": "concept:system-calls"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:processes",
       "target": "technique:memory-analysis"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:processes",
       "target": "technology:linux"
     },
@@ -3792,62 +3792,62 @@
       "target": "tool:velociraptor"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:proxies",
       "target": "concept:http"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:proxies",
       "target": "concept:networking"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:randomness",
       "target": "concept:cryptography"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:rest",
       "target": "concept:apis"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:rest",
       "target": "concept:http"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:risk-management",
       "target": "concept:threat-modeling"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:risk-management",
       "target": "concept:vulnerability-management"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:risk-management",
       "target": "technique:incident-triage"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:risk-management",
       "target": "technique:vulnerability-prioritization"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:routing",
       "target": "concept:nat"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:routing",
       "target": "concept:networking"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:routing",
       "target": "concept:tcp-ip"
     },
@@ -3887,32 +3887,32 @@
       "target": "tool:sqlmap"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:sbom",
       "target": "concept:supply-chain-security"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:sbom",
       "target": "concept:vulnerability-management"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:secure-sdlc",
       "target": "concept:threat-modeling"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:secure-sdlc",
       "target": "concept:vulnerability-management"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:secure-sdlc",
       "target": "technique:secrets-detection"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:secure-sdlc",
       "target": "technique:secure-code-review"
     },
@@ -3927,12 +3927,12 @@
       "target": "tool:trufflehog"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:security-monitoring",
       "target": "concept:processes"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:security-monitoring",
       "target": "technique:detection-engineering"
     },
@@ -3947,7 +3947,7 @@
       "target": "technique:dynamic-analysis"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:security-monitoring",
       "target": "technique:incident-triage"
     },
@@ -3977,7 +3977,7 @@
       "target": "technique:threat-hunting"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:security-monitoring",
       "target": "technique:timeline-analysis"
     },
@@ -4242,22 +4242,22 @@
       "target": "tool:sqlmap"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:supply-chain-security",
       "target": "concept:sbom"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:supply-chain-security",
       "target": "concept:threat-modeling"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:supply-chain-security",
       "target": "concept:vulnerability-management"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:supply-chain-security",
       "target": "technique:dependency-analysis"
     },
@@ -4267,17 +4267,17 @@
       "target": "tool:gitleaks"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:switching",
       "target": "concept:networking"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:system-calls",
       "target": "concept:processes"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:system-calls",
       "target": "technology:linux"
     },
@@ -4287,17 +4287,17 @@
       "target": "technique:packet-analysis"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:tcp-ip",
       "target": "concept:icmp"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:tcp-ip",
       "target": "concept:nat"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:tcp-ip",
       "target": "concept:routing"
     },
@@ -4352,77 +4352,77 @@
       "target": "tool:zmap"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "concept:data-classification"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:threat-modeling",
       "target": "concept:defense-in-depth"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:threat-modeling",
       "target": "concept:risk-management"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:threat-modeling",
       "target": "concept:secure-sdlc"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "concept:supply-chain-security"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "lab:api-discovery-local-app"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "lab:detection-rule-regression"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "lab:dns-resolution-inventory"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "lab:graphql-schema-safety"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "lab:iac-security-review"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "lab:kubernetes-posture-review"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "lab:memory-image-triage"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "lab:secrets-rotation-exercise"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "lab:timeline-analysis-synthetic"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "lab:tls-certificate-review"
     },
@@ -4432,7 +4432,7 @@
       "target": "technique:container-security-scanning"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:threat-modeling",
       "target": "technique:detection-engineering"
     },
@@ -4457,7 +4457,7 @@
       "target": "technique:static-analysis"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:threat-modeling",
       "target": "technique:threat-intelligence-analysis"
     },
@@ -4667,17 +4667,17 @@
       "target": "vulnerability:web-cache-poisoning"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:tls",
       "target": "concept:certificates"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:tls",
       "target": "concept:pki"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:tls",
       "target": "concept:websockets"
     },
@@ -4697,32 +4697,32 @@
       "target": "technique:packet-analysis"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:users-and-groups",
       "target": "concept:authentication"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:users-and-groups",
       "target": "concept:authorization"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:vulnerability-management",
       "target": "concept:risk-management"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:vulnerability-management",
       "target": "concept:sbom"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:vulnerability-management",
       "target": "concept:secure-sdlc"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:vulnerability-management",
       "target": "concept:supply-chain-security"
     },
@@ -4737,7 +4737,7 @@
       "target": "technique:container-security-scanning"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "concept:vulnerability-management",
       "target": "technique:dependency-analysis"
     },
@@ -4757,7 +4757,7 @@
       "target": "technique:vulnerability-assessment"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "concept:vulnerability-management",
       "target": "technique:vulnerability-prioritization"
     },
@@ -4932,27 +4932,27 @@
       "target": "vulnerability:web-cache-poisoning"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:websockets",
       "target": "concept:http"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:websockets",
       "target": "concept:tls"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-helpful",
       "source": "concept:zero-trust",
       "target": "concept:access-control"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "concept:zero-trust",
       "target": "concept:authentication"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "concept:zero-trust",
       "target": "concept:authorization"
     },
@@ -5812,7 +5812,7 @@
       "target": "technique:log-analysis"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "defensive-control:mfa",
       "target": "technique:phishing-resistant-authentication"
     },
@@ -6087,7 +6087,7 @@
       "target": "technique:cloud-configuration-assessment"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "defensive-control:secrets-management",
       "target": "technique:secrets-detection"
     },
@@ -6182,7 +6182,7 @@
       "target": "technique:dns-enumeration"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "defensive-control:secure-configuration",
       "target": "technique:iac-scanning"
     },
@@ -7097,12 +7097,12 @@
       "target": "vulnerability:supply-chain-vulnerabilities"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "lab:api-discovery-local-app",
       "target": "concept:authorization"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "lab:api-discovery-local-app",
       "target": "concept:threat-modeling"
     },
@@ -7132,32 +7132,32 @@
       "target": "vulnerability:mass-assignment"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "lab:detection-rule-regression",
       "target": "concept:authorization"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "lab:detection-rule-regression",
       "target": "concept:threat-modeling"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "lab:dns-resolution-inventory",
       "target": "concept:authorization"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "lab:dns-resolution-inventory",
       "target": "concept:threat-modeling"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "lab:graphql-schema-safety",
       "target": "concept:authorization"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "lab:graphql-schema-safety",
       "target": "concept:threat-modeling"
     },
@@ -7237,22 +7237,22 @@
       "target": "vulnerability:web-cache-poisoning"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "lab:iac-security-review",
       "target": "concept:authorization"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "lab:iac-security-review",
       "target": "concept:threat-modeling"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "lab:kubernetes-posture-review",
       "target": "concept:authorization"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "lab:kubernetes-posture-review",
       "target": "concept:threat-modeling"
     },
@@ -7607,12 +7607,12 @@
       "target": "tool:zmap"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "lab:memory-image-triage",
       "target": "concept:authorization"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "lab:memory-image-triage",
       "target": "concept:threat-modeling"
     },
@@ -7967,52 +7967,52 @@
       "target": "tool:zmap"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "lab:secrets-rotation-exercise",
       "target": "concept:authorization"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "lab:secrets-rotation-exercise",
       "target": "concept:threat-modeling"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "lab:timeline-analysis-synthetic",
       "target": "concept:authorization"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "lab:timeline-analysis-synthetic",
       "target": "concept:threat-modeling"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "lab:tls-certificate-review",
       "target": "concept:authorization"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "lab:tls-certificate-review",
       "target": "concept:threat-modeling"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "learning-path:digital-forensics",
       "target": "concept:file-systems"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "learning-path:digital-forensics",
       "target": "concept:memory"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:api-discovery",
       "target": "concept:apis"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:api-discovery",
       "target": "concept:http-requests"
     },
@@ -8022,22 +8022,22 @@
       "target": "tool:httpie"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:certificate-review",
       "target": "concept:certificates"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:certificate-review",
       "target": "concept:pki"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:certificate-transparency",
       "target": "concept:attack-surface"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:certificate-transparency",
       "target": "concept:certificates"
     },
@@ -8447,12 +8447,12 @@
       "target": "vulnerability:container-security"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:dependency-analysis",
       "target": "concept:supply-chain-security"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:dependency-analysis",
       "target": "concept:vulnerability-management"
     },
@@ -8462,12 +8462,12 @@
       "target": "tool:trufflehog"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:detection-engineering",
       "target": "concept:security-monitoring"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:detection-engineering",
       "target": "concept:threat-modeling"
     },
@@ -8847,12 +8847,12 @@
       "target": "vulnerability:container-security"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:host-discovery",
       "target": "concept:attack-surface"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:host-discovery",
       "target": "concept:networking"
     },
@@ -8862,7 +8862,7 @@
       "target": "tool:httpx"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:iac-scanning",
       "target": "defensive-control:secure-configuration"
     },
@@ -8872,17 +8872,17 @@
       "target": "tool:kics"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:iac-scanning",
       "target": "vulnerability:cloud-misconfiguration"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:incident-triage",
       "target": "concept:risk-management"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:incident-triage",
       "target": "concept:security-monitoring"
     },
@@ -9177,12 +9177,12 @@
       "target": "vulnerability:container-security"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:memory-analysis",
       "target": "concept:memory"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:memory-analysis",
       "target": "concept:processes"
     },
@@ -9472,12 +9472,12 @@
       "target": "vulnerability:container-security"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:phishing-resistant-authentication",
       "target": "concept:authentication"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:phishing-resistant-authentication",
       "target": "defensive-control:mfa"
     },
@@ -9582,12 +9582,12 @@
       "target": "vulnerability:container-security"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:secrets-detection",
       "target": "concept:secure-sdlc"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:secrets-detection",
       "target": "defensive-control:secrets-management"
     },
@@ -9602,12 +9602,12 @@
       "target": "tool:trufflehog"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:secure-code-review",
       "target": "concept:input-validation"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:secure-code-review",
       "target": "concept:secure-sdlc"
     },
@@ -10562,12 +10562,12 @@
       "target": "vulnerability:container-security"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:threat-intelligence-analysis",
       "target": "concept:privacy"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:threat-intelligence-analysis",
       "target": "concept:threat-modeling"
     },
@@ -10582,12 +10582,12 @@
       "target": "tool:opencti"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:timeline-analysis",
       "target": "concept:file-systems"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:timeline-analysis",
       "target": "concept:security-monitoring"
     },
@@ -10992,12 +10992,12 @@
       "target": "vulnerability:web-cache-poisoning"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-recommended",
       "source": "technique:vulnerability-prioritization",
       "target": "concept:risk-management"
     },
     {
-      "relationship": "requires-prerequisite",
+      "relationship": "requires-prerequisite-required",
       "source": "technique:vulnerability-prioritization",
       "target": "concept:vulnerability-management"
     },
@@ -11662,22 +11662,22 @@
       "target": "tool:trivy"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "technology:linux",
       "target": "concept:containers"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "technology:linux",
       "target": "concept:file-systems"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-required",
       "source": "technology:linux",
       "target": "concept:processes"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "technology:linux",
       "target": "concept:system-calls"
     },
@@ -23132,7 +23132,7 @@
       "target": "technique:dynamic-analysis"
     },
     {
-      "relationship": "prerequisite-for",
+      "relationship": "prerequisite-for-recommended",
       "source": "vulnerability:cloud-misconfiguration",
       "target": "technique:iac-scanning"
     },

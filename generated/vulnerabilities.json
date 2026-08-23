@@ -9,7 +9,7 @@
   {
     "category": "",
     "id": "api-security",
-    "name": "Api Security",
+    "name": "API Security Weaknesses",
     "path": "vulnerabilities/api/api-security.md",
     "type": "vulnerability"
   },
@@ -51,14 +51,14 @@
   {
     "category": "",
     "id": "container-security",
-    "name": "Container Security",
+    "name": "Container Security Issues",
     "path": "vulnerabilities/cloud/container-security.md",
     "type": "vulnerability"
   },
   {
     "category": "",
     "id": "cross-site-scripting",
-    "name": "Cross Site Scripting",
+    "name": "Cross-Site Scripting",
     "path": "vulnerabilities/web/cross-site-scripting.md",
     "type": "vulnerability"
   },
@@ -72,7 +72,7 @@
   {
     "category": "",
     "id": "csrf",
-    "name": "Csrf",
+    "name": "Cross-Site Request Forgery",
     "path": "vulnerabilities/web/csrf.md",
     "type": "vulnerability"
   },
@@ -107,7 +107,7 @@
   {
     "category": "",
     "id": "idor",
-    "name": "Idor",
+    "name": "Insecure Direct Object Reference",
     "path": "vulnerabilities/authorization/idor.md",
     "type": "vulnerability"
   },
@@ -226,28 +226,28 @@
   {
     "category": "",
     "id": "session-management",
-    "name": "Session Management",
+    "name": "Session Management Weaknesses",
     "path": "vulnerabilities/authentication/session-management.md",
     "type": "vulnerability"
   },
   {
     "category": "",
     "id": "sql-injection",
-    "name": "Sql Injection",
+    "name": "SQL Injection",
     "path": "vulnerabilities/web/sql-injection.md",
     "type": "vulnerability"
   },
   {
     "category": "",
     "id": "ssrf",
-    "name": "Ssrf",
+    "name": "Server-Side Request Forgery",
     "path": "vulnerabilities/web/ssrf.md",
     "type": "vulnerability"
   },
   {
     "category": "",
     "id": "supply-chain-vulnerabilities",
-    "name": "Supply Chain Vulnerabilities",
+    "name": "Supply-Chain Vulnerabilities",
     "path": "vulnerabilities/supply-chain/supply-chain-vulnerabilities.md",
     "type": "vulnerability"
   },
@@ -275,7 +275,7 @@
   {
     "category": "",
     "id": "xxe",
-    "name": "Xxe",
+    "name": "XML External Entity",
     "path": "vulnerabilities/web/xxe.md",
     "type": "vulnerability"
   }
