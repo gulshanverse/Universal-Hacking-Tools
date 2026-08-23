@@ -35,6 +35,12 @@ Universal Hacking Tools is designed to become a structured, searchable cybersecu
 * **Knowledge graph:** typed concepts, techniques, technologies, defensive controls, and deterministic relationships to tools, vulnerabilities, labs, and learning paths.
 * **Automation:** metadata validation, required-section checks, duplicate detection, internal-link checks, generated tool indexes, graph indexes, relationship validation, and artifact freshness checks.
 
+## Cybersecurity Knowledge Graph and Intelligence
+
+The repository now includes a deterministic [knowledge graph](knowledge/README.md), a local [Search and Discovery Engine](search/README.md), [knowledge health reporting](generated/knowledge-health.json), rule-based learning recommendations, and structured tool comparison. The engine supports search, aliases, metadata filters, bounded graph exploration, path finding, and JSON output without a database, frontend, external API, telemetry, or LLM.
+
+Try it locally with `python3 scripts/search.py nmap`, `python3 scripts/search.py --explore nmap --depth 2`, or `python3 scripts/search.py --health`.
+
 ## Tool Categories
 
 Reconnaissance, OSINT, web security, network analysis, password security, wireless security, vulnerability management, reverse engineering, digital forensics, malware analysis, defensive security, secure development, cloud security, and container security.
@@ -58,9 +64,14 @@ python3 scripts/generate-index.py --check
 python3 scripts/generate-knowledge.py
 python3 scripts/validate-knowledge.py
 python3 scripts/generate-knowledge.py --check
+python3 scripts/generate-search.py
+python3 scripts/validate-schemas.py
+python3 scripts/generate-search.py --check
+python3 scripts/search.py nmap --format json
+python3 -m unittest discover -s tests -v
 ```
 
-The GitHub Actions workflow runs the same consistency and relationship checks on pull requests and pushes.
+The GitHub Actions workflow runs the same consistency, relationship, search-artifact, contract, and test checks on pull requests and pushes.
 
 ## Contributing
 

@@ -4,7 +4,7 @@ Thank you for improving this educational cybersecurity knowledge base. Contribut
 
 ## Adding a Tool
 
-Copy [`templates/tool-template.md`](templates/tool-template.md) into the appropriate category, use a lowercase hyphenated filename, complete every front-matter field, and cite the official repository, website, and documentation. Do not invent versions, capabilities, commands, licenses, or benchmarks. Run `python3 scripts/validate_repository.py`, `python3 scripts/validate-knowledge.py`, `python3 scripts/generate-index.py`, and `python3 scripts/generate-knowledge.py --check` before opening a pull request.
+Copy [`templates/tool-template.md`](templates/tool-template.md) into the appropriate category, use a lowercase hyphenated filename, complete every front-matter field, and cite the official repository, website, and documentation. Do not invent versions, capabilities, commands, licenses, or benchmarks. Run `python3 scripts/validate_repository.py`, `python3 scripts/validate-knowledge.py`, `python3 scripts/generate-index.py`, `python3 scripts/generate-knowledge.py`, `python3 scripts/generate-search.py`, `python3 scripts/validate-schemas.py`, `python3 scripts/generate-search.py --check`, and `python3 -m unittest discover -s tests -v` before opening a pull request.
 
 ## Adding a Vulnerability
 
@@ -18,7 +18,7 @@ Copy [`templates/lab-template.md`](templates/lab-template.md). State the objecti
 
 Phase 2 uses Markdown and YAML as the source of truth for a future knowledge graph. Tools should declare `concepts`, `techniques`, `technologies`, `related_tools`, `related_vulnerabilities`, `related_labs`, `defensive_controls`, `verification`, and `sources`. Vulnerability, lab, and learning-path pages should declare their corresponding typed relationships. Use repository slugs, not display names, and mark uncertain mappings `needs-review` rather than guessing.
 
-After editing relationship metadata, run `python3 scripts/validate-knowledge.py`, `python3 scripts/generate-knowledge.py`, and `python3 scripts/generate-knowledge.py --check`. Generated JSON under `generated/` is deterministic and must not be manually edited. The graph validator rejects unknown entity references and duplicate IDs within an entity type.
+After editing relationship metadata, run the graph and search generators, then their `--check` modes. Generated JSON under `generated/` is deterministic and must not be manually edited. The graph validator rejects unknown entity references and duplicate IDs within an entity type. Search results are offline and deterministic; the CLI never executes commands, makes network requests, or evaluates content as code.
 
 ## Style and Review
 
