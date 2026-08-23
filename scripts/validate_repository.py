@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REQUIRED_TOOL_FIELDS = ["name", "slug", "category", "subcategory", "difficulty", "license", "platforms", "language", "repository", "official_website", "documentation", "security_domains", "dual_use", "status"]
 REQUIRED_TOOL_SECTIONS = ["Overview", "Tool Metadata", "Purpose", "Key Features", "How It Works", "Installation", "Basic Usage in a Safe Lab", "Intermediate Usage", "Advanced Concepts", "Defensive Perspective", "Detection", "Mitigation", "Alternatives", "Limitations", "References"]
 ERRORS = []
+IGNORED_DOC_DIRECTORIES = {".git", "node_modules", ".next", "dist", "coverage"}
 
 def parse_frontmatter(text):
     if not text.startswith("---\n"):
@@ -56,7 +57,7 @@ def check_vulnerabilities():
 def check_internal_links():
     pattern = re.compile(r"\]\(([^)#]+)(?:#[^)]+)?\)")
     for path in ROOT.rglob("*.md"):
-        if ".git" in path.parts:
+        if IGNORED_DOC_DIRECTORIES.intersection(path.parts):
             continue
         for target in pattern.findall(path.read_text(encoding="utf-8")):
             if target.startswith(("http://", "https://", "mailto:")):

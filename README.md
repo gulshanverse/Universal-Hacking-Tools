@@ -22,6 +22,7 @@ Universal Hacking Tools is designed to become a structured, searchable cybersecu
 | Generated data | [JSON graph and indexes](generated/knowledge-graph.json) |
 | Content health | [Completeness report](generated/content-completeness.json) · [Verification report](generated/verification-report.json) · [Review queue](generated/review-queue.json) · [Lab health](generated/lab-health.json) |
 | Trust and evidence | [Trust report](generated/trust-report.json) · [Source catalog](generated/source-catalog.json) · [Claim report](generated/claim-report.json) · [Verification history](verification-history/README.md) |
+| Phase 7 platform | [API contract](docs/api.md) · [Web platform](docs/web-platform.md) · [Deployment notes](docs/deployment.md) |
 | Getting started | [First steps](docs/getting-started/README.md) |
 | Contributing | [Contribution guide](CONTRIBUTING.md) |
 | Safety | [Security policy](SECURITY.md) |
@@ -35,13 +36,14 @@ Universal Hacking Tools is designed to become a structured, searchable cybersecu
 * **Labs:** controlled exercises with setup, expected observations, defensive interpretation, cleanup, and a Phase 6 classification as documentation-only, guided, or executable. Six safe local-fixture reference labs are executable through the CLI.
 * **Learning paths:** staged progression for beginners, ethical hacking, penetration testing, bug bounty learning, blue team, SOC analysis, forensics, malware analysis, cloud security, and security engineering.
 * **Knowledge graph:** typed concepts, techniques, technologies, defensive controls, and deterministic relationships to tools, vulnerabilities, labs, and learning paths.
-* **Automation:** metadata validation, required-section checks, duplicate detection, internal-link checks, generated tool indexes, graph indexes, prerequisite and relationship validation, deterministic search artifacts, content-completeness reports, verification reports, source normalization, claim traceability, trust reports, review queues, Phase 6 lab safety/catalog/health reports, and artifact freshness checks.
+* **Phase 7 API and web client:** a versioned read-only FastAPI adapter over generated contracts, a responsive API-backed Next.js knowledge archive, OpenAPI contract checks, and browser validation. The public layer introduces no database, accounts, telemetry, external API dependency, or alternate content source.
+* **Automation:** metadata validation, required-section checks, duplicate detection, internal-link checks, generated tool indexes, graph indexes, prerequisite and relationship validation, deterministic search artifacts, content-completeness reports, verification reports, source normalization, claim traceability, trust reports, review queues, Phase 6 lab safety/catalog/health reports, Phase 7 API/web checks, and artifact freshness checks.
 
 ## Cybersecurity Knowledge Graph and Intelligence
 
-The repository now includes a deterministic [knowledge graph](knowledge/README.md), a local [Search and Discovery Engine](search/README.md), [knowledge health reporting](generated/knowledge-health.json), a per-entity [content-completeness report](generated/content-completeness.json), a [verification report](generated/verification-report.json), normalized [source records](generated/source-catalog.json), selective [evidence-backed claims](generated/claim-report.json), transparent [trust reporting](generated/trust-report.json), a prioritized [review queue](generated/review-queue.json), and the Phase 6 [local lab framework](labs/README.md) with [lab catalog](generated/lab-catalog.json), [lab health](generated/lab-health.json), and a safe CLI. The engines support search, aliases, metadata filters, bounded graph exploration, prerequisite discovery, path finding, trust summaries, deterministic lab lifecycle and assessment, and JSON output without a database, frontend, external API, telemetry, or LLM.
+The repository now includes a deterministic [knowledge graph](knowledge/README.md), a local [Search and Discovery Engine](search/README.md), [knowledge health reporting](generated/knowledge-health.json), a per-entity [content-completeness report](generated/content-completeness.json), a [verification report](generated/verification-report.json), normalized [source records](generated/source-catalog.json), selective [evidence-backed claims](generated/claim-report.json), transparent [trust reporting](generated/trust-report.json), a prioritized [review queue](generated/review-queue.json), the Phase 6 [local lab framework](labs/README.md), and a Phase 7 [versioned API and web platform](docs/api.md). The API and web client consume generated contracts and existing deterministic engines without replacing Markdown/YAML as the source of truth.
 
-Try it locally with `python3 scripts/search.py nmap`, `python3 scripts/search.py --explore nmap --depth 2`, `python3 scripts/search.py --health`, `python3 scripts/lab.py list`, or `python3 scripts/lab.py --format json create dns-resolution-inventory --dry-run`.
+Try it locally with `python3 scripts/search.py nmap`, `python3 scripts/search.py --explore nmap --depth 2`, `python3 scripts/search.py --health`, `python3 scripts/lab.py list`, `python3 scripts/lab.py --format json create dns-resolution-inventory --dry-run`, `make api`, and `cd apps/web && pnpm dev`.
 
 ## Tool Categories
 
@@ -53,7 +55,7 @@ Start with [Beginner Cybersecurity](learning-paths/beginner/README.md), then sel
 
 ## Repository Statistics
 
-The generated indexes report the current page counts. The current Phase 5 baseline is 70 tools, 40 vulnerabilities, 61 concepts, 34 techniques, 35 technologies, 30 defensive controls, 22 labs, 15 learning paths, and 307 total typed entities. Phase 6 adds six executable local-fixture definitions without expanding the knowledge-entity inventory.
+The generated indexes report the current page counts. The current Phase 5 baseline is 70 tools, 40 vulnerabilities, 61 concepts, 34 techniques, 35 technologies, 30 defensive controls, 22 labs, 15 learning paths, and 307 total typed entities. Phase 6 adds six executable local-fixture definitions without expanding the knowledge-entity inventory; Phase 7 adds contract consumers rather than mass content expansion.
 The deterministic health score is reported in [`generated/knowledge-health.json`](generated/knowledge-health.json); it is not adjusted to improve appearance. Run `python3 scripts/generate-index.py` after a content change so navigation stays synchronized.
 
 ## Automation
@@ -86,6 +88,10 @@ python3 scripts/lab.py list
 python3 scripts/lab.py validate
 python3 scripts/lab.py --format json create dns-resolution-inventory --dry-run
 python3 -m unittest discover -s tests -v
+PYTHONPATH=apps/api:. python3 -m unittest discover -s apps/api/tests -v
+python3 apps/api/scripts/export_openapi.py
+PYTHONPATH=apps/api:. python3 apps/api/scripts/check_openapi.py
+cd apps/web && pnpm test && pnpm typecheck && NODE_ENV=production pnpm build
 ```
 
 The GitHub Actions workflow runs the same consistency, relationship, prerequisite, search-artifact, content-quality, contract, and test checks on pull requests and pushes.

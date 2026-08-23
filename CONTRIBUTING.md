@@ -35,6 +35,14 @@ Automated validation detects malformed sources, duplicate normalized URLs, dupli
 Before opening a pull request, run `python3 scripts/validate_repository.py`, `python3 scripts/validate-knowledge.py`, `python3 scripts/validate-quality.py`, `python3 scripts/validate-trust.py`, `python3 scripts/validate-labs.py`, `python3 scripts/validate-schemas.py`, `python3 scripts/check-links.py`, `python3 scripts/generate-index.py --check`, `python3 scripts/generate-knowledge.py --check`, `python3 scripts/generate-search.py --check`, `python3 scripts/generate-trust-reports.py --check`, `python3 scripts/generate-quality-reports.py --check`, `python3 scripts/generate-lab-reports.py --check`, and `python3 -m unittest discover -s tests -v`.
 Automated checks are gates for structural quality, not a substitute for human review of evidence, safety, scope, or relationships.
 
+## Phase 7 API and Web Platform
+
+The API and web client consume generated contracts; they do not create a second source of truth or authorize browser-side content editing. Keep API changes additive within `/api/v1`, update the committed `apps/api/openapi.json` through `python3 apps/api/scripts/export_openapi.py`, and run its freshness check. Do not add remote data fetches, database writes, telemetry, accounts, generic command execution, shell endpoints, target-selection fields, uploads, or browser access to repository files.
+
+Web changes must preserve the Signal Archive accessibility and safety model: semantic landmarks, skip-link focus, explicit text verification status, keyboard-reachable search, bounded relationship rendering with a list alternative, responsive layouts, and reduced-motion support. The lab workspace may call only published lifecycle and declared task/evidence endpoints for already validated local fixtures. A browser-local random lab session is not an account or progress record.
+
+Before opening a Phase 7 pull request, run `PYTHONPATH=apps/api:. python3 -m unittest discover -s apps/api/tests -v`, `python3 apps/api/scripts/export_openapi.py`, `PYTHONPATH=apps/api:. python3 apps/api/scripts/check_openapi.py`, `cd apps/web && pnpm test`, `pnpm typecheck`, and `NODE_ENV=production pnpm build`. Run the browser suite only with a locally running API and web server plus a disposable lab-state directory. Automated API, web, and browser checks are still not a substitute for human security, privacy, accessibility, and source review.
+
 ## Phase 6 Executable Labs
 
 Classify every existing lab as `documentation-only`, `guided`, or `executable`; do not convert all labs automatically. An executable lab must link its definition through flat Markdown front matter such as `execution_mode: executable` and `definition: definitions/example.yaml`. Keep the learner-facing explanation in Markdown and place machine-readable tasks, targets, evidence, assessment, cleanup, safety, and learning mappings in `labs/definitions/`.

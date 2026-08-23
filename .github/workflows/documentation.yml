@@ -12,6 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Phase 7 API dependencies
+        run: python3 -m pip install -r apps/api/requirements.txt
       - name: Validate repository content
         run: python3 scripts/validate_repository.py
       - name: Validate knowledge graph relationships
@@ -37,12 +43,36 @@ jobs:
       - name: Check relative Markdown links
         run: python3 scripts/check-links.py
       - name: Check Python syntax
-        run: python3 -m py_compile scripts/*.py search/**/*.py tests/*.py labs/engine/**/*.py labs/runners/*.py
+        run: python3 -m py_compile scripts/*.py search/**/*.py tests/*.py labs/engine/**/*.py labs/runners/*.py && find apps/api -name '*.py' -print0 | xargs -0 python3 -m py_compile
       - name: Check unsafe execution and network primitives
         run: '! grep -RInE "\\beval\\(|\\bexec\\(|shell=True|import (requests|urllib|socket)" search scripts/*.py labs/engine labs/runners'
       - name: Check obvious secret patterns
         run: '! grep -RInE "(BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{20,})" --exclude-dir=.git .'
       - name: Run Phase 3, Phase 4, Phase 5, and Phase 6 tests
         run: python3 -m unittest discover -s tests -v
+      - name: Run Phase 7 API contract tests
+        run: PYTHONPATH=apps/api:. python3 -m unittest discover -s apps/api/tests -v
+      - name: Check Phase 7 OpenAPI contract freshness
+        run: PYTHONPATH=apps/api:. python3 apps/api/scripts/check_openapi.py
       - name: Check generated knowledge artifacts
         run: python3 scripts/generate-knowledge.py --check
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: "11.21.0"
+      - name: Install Phase 7 web dependencies
+        working-directory: apps/web
+        run: pnpm install --frozen-lockfile
+      - name: Run Phase 7 web route tests
+        working-directory: apps/web
+        run: pnpm test
+      - name: Type-check Phase 7 web client
+        working-directory: apps/web
+        run: pnpm typecheck
+      - name: Build Phase 7 web client
+        working-directory: apps/web
+        run: NODE_ENV=production pnpm build
