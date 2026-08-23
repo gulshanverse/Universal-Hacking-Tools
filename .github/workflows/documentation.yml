@@ -22,6 +22,10 @@ jobs:
         run: python3 scripts/validate-schemas.py
       - name: Validate Phase 4 quality reports
         run: python3 scripts/validate-quality.py
+      - name: Validate Phase 5 trust and evidence reports
+        run: python3 scripts/validate-trust.py
+      - name: Check generated trust artifacts
+        run: python3 scripts/generate-trust-reports.py --check
       - name: Check generated quality reports
         run: python3 scripts/generate-quality-reports.py --check
       - name: Check generated search artifacts
@@ -30,9 +34,11 @@ jobs:
         run: python3 scripts/check-links.py
       - name: Check Python syntax
         run: python3 -m py_compile scripts/*.py search/**/*.py tests/*.py
+      - name: Check unsafe execution and network primitives
+        run: '! grep -RInE "\\beval\\(|\\bexec\\(|shell=True|import (requests|urllib|socket)" search scripts/*.py'
       - name: Check obvious secret patterns
         run: '! grep -RInE "(BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{20,})" --exclude-dir=.git .'
-      - name: Run Phase 3 and Phase 4 tests
+      - name: Run Phase 3, Phase 4, and Phase 5 tests
         run: python3 -m unittest discover -s tests -v
       - name: Check generated knowledge artifacts
         run: python3 scripts/generate-knowledge.py --check

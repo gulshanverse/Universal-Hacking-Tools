@@ -9,7 +9,10 @@ Use this checklist for every new or materially revised tool, vulnerability, conc
 - [ ] Official repository, website, documentation, or authoritative standard was checked.
 - [ ] License and platform claims are verified where applicable.
 - [ ] References are real, relevant, and not fabricated.
-- [ ] Verification status and date are honest.
+- [ ] Verification status, confidence, method, reviewer role, and date are honest.
+- [ ] Verification history records the review scope and unresolved follow-up without sensitive personal information.
+- [ ] Source records include stable IDs, titles, URLs, access dates where known, authority, and notes.
+- [ ] Duplicate or suspicious sources are reported rather than silently deleted.
 
 ## Metadata and Relationships
 
@@ -19,6 +22,9 @@ Use this checklist for every new or materially revised tool, vulnerability, conc
 - [ ] Related labs are safe, disposable, synthetic, local, CTF-based, or explicitly authorized.
 - [ ] No unnecessary relationship was added only to increase graph density.
 - [ ] Reverse relationships and search metadata regenerate correctly.
+- [ ] Important claims have evidence records that resolve to source records.
+- [ ] Claim status and confidence are justified; disputed claims are retained and surfaced.
+- [ ] Prerequisites are classified as required, recommended, or helpful rather than all being marked required.
 
 ## Safety and Scope
 
@@ -36,7 +42,7 @@ Use this checklist for every new or materially revised tool, vulnerability, conc
 - [ ] Limitations, false positives, false negatives, and assumptions are documented.
 - [ ] Detection, mitigation, cleanup, and remediation verification are addressed where applicable.
 - [ ] Internal links resolve.
-- [ ] Generated indexes and reports are current.
+- [ ] Generated indexes, health, verification, source, claim, prerequisite, trust, and review reports are current.
 
 ## Review Lifecycle
 

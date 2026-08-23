@@ -64,13 +64,15 @@ python3 scripts/search.py --path nmap firewall
 python3 scripts/search.py --compare nmap masscan
 python3 scripts/search.py --recommend nmap --difficulty beginner --goals network-security
 python3 scripts/search.py --health
+python3 scripts/search.py --trust --format json
+python3 scripts/search.py --review-queue --format json
 ```
 
 Pass `--format json` for stable machine-readable output. The CLI treats repository content as data and never executes commands, performs scans, makes external requests, or evaluates user input as code.
 
 ## Regeneration
 
-Run `python3 scripts/generate-knowledge.py`, then `python3 scripts/generate-search.py`. Validation commands are documented in [`CONTRIBUTING.md`](../CONTRIBUTING.md). Generated artifacts must be current before a pull request is merged.
+Run `python3 scripts/generate-knowledge.py`, `python3 scripts/generate-index.py`, `python3 scripts/generate-search.py`, `python3 scripts/generate-trust-reports.py`, and then `python3 scripts/generate-quality-reports.py`. Use `--trust` and `--review-queue` for deterministic audit views. Validation commands are documented in [`CONTRIBUTING.md`](../CONTRIBUTING.md). Generated artifacts must be current before a pull request is merged.
 
 ## Future API Integration
 

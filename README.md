@@ -21,6 +21,7 @@ Universal Hacking Tools is designed to become a structured, searchable cybersecu
 | Knowledge graph | [Connected taxonomy](knowledge/README.md) |
 | Generated data | [JSON graph and indexes](generated/knowledge-graph.json) |
 | Content health | [Completeness report](generated/content-completeness.json) · [Verification report](generated/verification-report.json) · [Review queue](generated/review-queue.json) |
+| Trust and evidence | [Trust report](generated/trust-report.json) · [Source catalog](generated/source-catalog.json) · [Claim report](generated/claim-report.json) · [Verification history](verification-history/README.md) |
 | Getting started | [First steps](docs/getting-started/README.md) |
 | Contributing | [Contribution guide](CONTRIBUTING.md) |
 | Safety | [Security policy](SECURITY.md) |
@@ -34,11 +35,11 @@ Universal Hacking Tools is designed to become a structured, searchable cybersecu
 * **Labs:** controlled exercises with setup, expected observations, defensive interpretation, and cleanup.
 * **Learning paths:** staged progression for beginners, ethical hacking, penetration testing, bug bounty learning, blue team, SOC analysis, forensics, malware analysis, cloud security, and security engineering.
 * **Knowledge graph:** typed concepts, techniques, technologies, defensive controls, and deterministic relationships to tools, vulnerabilities, labs, and learning paths.
-* **Automation:** metadata validation, required-section checks, duplicate detection, internal-link checks, generated tool indexes, graph indexes, prerequisite and relationship validation, deterministic search artifacts, content-completeness reports, verification reports, review queues, and artifact freshness checks.
+* **Automation:** metadata validation, required-section checks, duplicate detection, internal-link checks, generated tool indexes, graph indexes, prerequisite and relationship validation, deterministic search artifacts, content-completeness reports, verification reports, source normalization, claim traceability, trust reports, review queues, and artifact freshness checks.
 
 ## Cybersecurity Knowledge Graph and Intelligence
 
-The repository now includes a deterministic [knowledge graph](knowledge/README.md), a local [Search and Discovery Engine](search/README.md), [knowledge health reporting](generated/knowledge-health.json), a per-entity [content-completeness report](generated/content-completeness.json), a [verification report](generated/verification-report.json), a prioritized [review queue](generated/review-queue.json), rule-based learning recommendations, and structured tool comparison. The engine supports search, aliases, metadata filters, bounded graph exploration, prerequisite discovery, path finding, and JSON output without a database, frontend, external API, telemetry, or LLM.
+The repository now includes a deterministic [knowledge graph](knowledge/README.md), a local [Search and Discovery Engine](search/README.md), [knowledge health reporting](generated/knowledge-health.json), a per-entity [content-completeness report](generated/content-completeness.json), a [verification report](generated/verification-report.json), normalized [source records](generated/source-catalog.json), selective [evidence-backed claims](generated/claim-report.json), transparent [trust reporting](generated/trust-report.json), a prioritized [review queue](generated/review-queue.json), rule-based learning recommendations, and structured tool comparison. The engine supports search, aliases, metadata filters, bounded graph exploration, prerequisite discovery, path finding, trust summaries, and JSON output without a database, frontend, external API, telemetry, or LLM.
 
 Try it locally with `python3 scripts/search.py nmap`, `python3 scripts/search.py --explore nmap --depth 2`, or `python3 scripts/search.py --health`.
 
@@ -67,11 +68,16 @@ python3 scripts/validate-knowledge.py
 python3 scripts/generate-knowledge.py --check
 python3 scripts/generate-search.py
 python3 scripts/generate-quality-reports.py
+python3 scripts/generate-trust-reports.py
 python3 scripts/validate-schemas.py
 python3 scripts/validate-quality.py
+python3 scripts/validate-trust.py
 python3 scripts/generate-search.py --check
 python3 scripts/generate-quality-reports.py --check
+python3 scripts/generate-trust-reports.py --check
 python3 scripts/search.py nmap --format json
+python3 scripts/search.py --trust
+python3 scripts/search.py --review-queue
 python3 -m unittest discover -s tests -v
 ```
 
