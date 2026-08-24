@@ -1,4 +1,4 @@
-name: Repository and Phase 8 validation
+name: Repository and Phase 9 validation
 
 on:
   push:
@@ -59,6 +59,8 @@ jobs:
         run: python3 scripts/generate-quality-reports.py --check
       - name: Check generated search artifacts
         run: python3 scripts/generate-search.py --check
+      - name: Check Phase 9 graph health artifact
+        run: python3 scripts/generate-graph-intelligence.py --check
       - name: Check relative Markdown links
         run: python3 scripts/check-links.py
       - name: Check Python syntax
@@ -67,13 +69,13 @@ jobs:
         run: '! grep -RInE "\\beval\\(|\\bexec\\(|shell=True|import (requests|urllib|socket)" search scripts/*.py labs/engine labs/runners'
       - name: Check obvious secret patterns
         run: '! grep -RInE "(BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{20,})" --exclude-dir=.git .'
-      - name: Run Phase 3, Phase 4, Phase 5, and Phase 6 tests
+      - name: Run Phase 3 through Phase 9 deterministic engine tests
         run: python3 -m unittest discover -s tests -v
       - name: Exercise PostgreSQL Phase 8 migration lifecycle
         run: cd apps/api && PYTHONPATH=. alembic upgrade head && PYTHONPATH=. alembic downgrade base && PYTHONPATH=. alembic upgrade head
-      - name: Run Phase 7–8 API contract and private-state tests
+      - name: Run Phase 7–9 API contract and private-state tests
         run: PYTHONPATH=apps/api:. python3 -m unittest discover -s apps/api/tests -v
-      - name: Check Phase 8 OpenAPI contract freshness
+      - name: Check Phase 9 OpenAPI contract freshness
         run: PYTHONPATH=apps/api:. python3 apps/api/scripts/check_openapi.py
       - name: Check generated knowledge artifacts
         run: python3 scripts/generate-knowledge.py --check
@@ -85,15 +87,15 @@ jobs:
         uses: pnpm/action-setup@v4
         with:
           version: "11.21.0"
-      - name: Install Phase 8 web dependencies
+      - name: Install Phase 9 web dependencies
         working-directory: apps/web
         run: pnpm install --frozen-lockfile
-      - name: Run Phase 7–8 web route tests
+      - name: Run Phase 7–9 web route tests
         working-directory: apps/web
         run: pnpm test
-      - name: Type-check Phase 8 web client
+      - name: Type-check Phase 9 web client
         working-directory: apps/web
         run: pnpm typecheck
-      - name: Build Phase 8 web client
+      - name: Build Phase 9 web client
         working-directory: apps/web
         run: NODE_ENV=production pnpm build

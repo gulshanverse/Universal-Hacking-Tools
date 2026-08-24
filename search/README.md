@@ -1,6 +1,6 @@
 # Search, Discovery, and Knowledge Intelligence
 
-Phase 3 adds an **offline deterministic intelligence layer** over the repository’s Markdown + YAML source and generated JSON artifacts. It does not add a database, web server, frontend, external search API, telemetry, LLM, embeddings, or network dependency.
+Phases 3 and 9 provide an **offline deterministic intelligence layer** over the repository’s Markdown + YAML source and generated JSON artifacts. It does not add canonical knowledge storage in a database, external search APIs, telemetry, LLMs, embeddings, or network dependency.
 
 ## Architecture
 
@@ -13,9 +13,9 @@ Normalized generated JSON
       ↓
 Search index, aliases, and health report
       ↓
-SearchEngine / DiscoveryEngine / RecommendationEngine / ComparisonEngine / HealthEngine
+SearchEngine / DiscoveryEngine / RecommendationEngine / ComparisonEngine / HealthEngine / GraphIntelligence
       ↓
-CLI now; future API or website later
+CLI, FastAPI, and accessible web explorer
 ```
 
 The [`IndexLoader`](indexes/index_loader.py) reads only committed local JSON. Engines are separated from the CLI so a future API can reuse the same interfaces without parsing Markdown.
@@ -52,6 +52,10 @@ The search engine supports `type`, `category`, `subcategory`, `difficulty`, `pla
 
 [`generated/knowledge-health.json`](../generated/knowledge-health.json) records entity counts, verification statuses, missing sources or descriptions, missing relationships, orphaned entities, broken relationships, stale verification dates, duplicate aliases, duplicate names, and transparent component and overall scores. The report uses a fixed documented `as_of` date and configurable stale threshold in the generator so committed output remains deterministic.
 
+## Graph Intelligence
+
+[`graph/`](graph/) uses the same `IndexLoader` and `knowledge-graph.json`; it never reparses Markdown or mutates graph knowledge. `GraphIntelligence` bounds neighborhoods to depth 4, 100 nodes, and 200 edges, bounds paths to 25 relationships, and orders traversal by controlled relationship class, verification state, and typed ID. It provides graph-aware search with direct matches first, prerequisite and learning routes, impact grouping, supported attack/defense mappings, controlled relationship explanations, and human-review-only orphan suggestions. [`generated/graph-health.json`](../generated/graph-health.json) records version metadata and graph-specific health metrics.
+
 ## CLI
 
 Examples:
@@ -72,8 +76,8 @@ Pass `--format json` for stable machine-readable output. The CLI treats reposito
 
 ## Regeneration
 
-Run `python3 scripts/generate-knowledge.py`, `python3 scripts/generate-index.py`, `python3 scripts/generate-search.py`, `python3 scripts/generate-trust-reports.py`, and then `python3 scripts/generate-quality-reports.py`. Use `--trust` and `--review-queue` for deterministic audit views. Validation commands are documented in [`CONTRIBUTING.md`](../CONTRIBUTING.md). Generated artifacts must be current before a pull request is merged.
+Run `python3 scripts/generate-knowledge.py`, `python3 scripts/generate-index.py`, `python3 scripts/generate-search.py`, `python3 scripts/generate-trust-reports.py`, `python3 scripts/generate-quality-reports.py`, and `python3 scripts/generate-graph-intelligence.py`. Use `--trust` and `--review-queue` for deterministic audit views. Validation commands are documented in [`CONTRIBUTING.md`](../CONTRIBUTING.md). Generated artifacts must be current before a pull request is merged.
 
-## Future API Integration
+## API and Web Integration
 
-A future API or website can load the generated JSON through the same engine interfaces. It should not parse raw Markdown at request time. Database-backed indexing, full-text services, graph databases, frontend frameworks, and semantic or AI ranking are intentionally deferred until this deterministic baseline has been proven.
+The Phase 7–9 API and web client load generated JSON through the same engine interfaces and do not parse raw Markdown at request time. The public explorer uses bounded SVG as a visual enhancement and exposes a complete accessible relationship table. Database-backed indexing, graph databases, semantic or AI ranking, and community knowledge mutation remain intentionally deferred.

@@ -22,7 +22,7 @@ Universal Hacking Tools is designed to become a structured, searchable cybersecu
 | Generated data | [JSON graph and indexes](generated/knowledge-graph.json) |
 | Content health | [Completeness report](generated/content-completeness.json) · [Verification report](generated/verification-report.json) · [Review queue](generated/review-queue.json) · [Lab health](generated/lab-health.json) |
 | Trust and evidence | [Trust report](generated/trust-report.json) · [Source catalog](generated/source-catalog.json) · [Claim report](generated/claim-report.json) · [Verification history](verification-history/README.md) |
-| Phase 7–8 platform | [API contract](docs/api.md) · [Web platform](docs/web-platform.md) · [Private state](docs/database.md) · [Authentication](docs/authentication.md) · [Privacy](docs/privacy.md) · [Deployment notes](docs/deployment.md) |
+| Phase 7–9 platform | [API contract](docs/api.md) · [Web platform](docs/web-platform.md) · [Graph intelligence](docs/graph-intelligence.md) · [Graph API](docs/graph-api.md) · [Graph accessibility](docs/graph-accessibility.md) · [Graph governance](docs/knowledge-graph.md) · [Private state](docs/database.md) |
 | Getting started | [First steps](docs/getting-started/README.md) |
 | Contributing | [Contribution guide](CONTRIBUTING.md) |
 | Safety | [Security policy](SECURITY.md) |
@@ -36,12 +36,12 @@ Universal Hacking Tools is designed to become a structured, searchable cybersecu
 * **Labs:** controlled exercises with setup, expected observations, defensive interpretation, cleanup, and a Phase 6 classification as documentation-only, guided, or executable. Six safe local-fixture reference labs are executable through the CLI.
 * **Learning paths:** staged progression for beginners, ethical hacking, penetration testing, bug bounty learning, blue team, SOC analysis, forensics, malware analysis, cloud security, and security engineering.
 * **Knowledge graph:** typed concepts, techniques, technologies, defensive controls, and deterministic relationships to tools, vulnerabilities, labs, and learning paths.
-* **Phase 7–8 API and web client:** a versioned public FastAPI adapter over generated contracts, a responsive API-backed Next.js knowledge archive, and private account state for opt-in learning goals, progress, bookmarks, plain-text notes, safe-lab summaries, achievements, and deterministic recommendations. PostgreSQL stores references and private application state only; Markdown/YAML plus generated JSON remain the sole cybersecurity knowledge authority.
-* **Automation:** metadata validation, required-section checks, duplicate detection, internal-link checks, generated tool indexes, graph indexes, prerequisite and relationship validation, deterministic search artifacts, content-completeness reports, verification reports, source normalization, claim traceability, trust reports, review queues, Phase 6 lab safety/catalog/health reports, Phase 7 API/web checks, and artifact freshness checks.
+* **Phase 7–9 API and web client:** a versioned public FastAPI adapter over generated contracts, a responsive API-backed Next.js knowledge archive, a bounded accessible graph explorer, and private account state for opt-in learning goals, progress, bookmarks, plain-text notes, safe-lab summaries, achievements, and deterministic recommendations. PostgreSQL stores references and private application state only; Markdown/YAML plus generated JSON remain the sole cybersecurity knowledge authority.
+* **Automation:** metadata validation, required-section checks, duplicate detection, internal-link checks, generated tool indexes, graph indexes and health, prerequisite and relationship validation, deterministic search artifacts, content-completeness reports, verification reports, source normalization, claim traceability, trust reports, review queues, Phase 6 lab safety/catalog/health reports, API/web checks, and artifact freshness checks.
 
 ## Cybersecurity Knowledge Graph and Intelligence
 
-The repository includes a deterministic [knowledge graph](knowledge/README.md), a local [Search and Discovery Engine](search/README.md), [knowledge health reporting](generated/knowledge-health.json), a per-entity [content-completeness report](generated/content-completeness.json), a [verification report](generated/verification-report.json), normalized [source records](generated/source-catalog.json), selective [evidence-backed claims](generated/claim-report.json), transparent [trust reporting](generated/trust-report.json), a prioritized [review queue](generated/review-queue.json), the Phase 6 [local lab framework](labs/README.md), and the Phase 7–8 [versioned API, web, and private learning-state platform](docs/api.md). The public API and web client consume generated contracts and deterministic engines without replacing Markdown/YAML as the source of truth; the optional private database stores only owner-scoped application state.
+The repository includes a deterministic [knowledge graph](knowledge/README.md), a local [Search and Discovery Engine](search/README.md), [graph health reporting](generated/graph-health.json), [knowledge health reporting](generated/knowledge-health.json), a per-entity [content-completeness report](generated/content-completeness.json), a [verification report](generated/verification-report.json), normalized [source records](generated/source-catalog.json), selective [evidence-backed claims](generated/claim-report.json), transparent [trust reporting](generated/trust-report.json), a prioritized [review queue](generated/review-queue.json), the Phase 6 [local lab framework](labs/README.md), and the Phase 7–9 [versioned API, web, graph explorer, and private learning-state platform](docs/api.md). The public API and web client consume generated contracts and deterministic engines without replacing Markdown/YAML as the source of truth; the optional private database stores only owner-scoped application state.
 
 Try it locally with `python3 scripts/search.py nmap`, `python3 scripts/search.py --explore nmap --depth 2`, `python3 scripts/search.py --health`, `python3 scripts/lab.py list`, `python3 scripts/lab.py --format json create dns-resolution-inventory --dry-run`, `make db-up`, `make db-migrate`, `make api`, and `cd apps/web && pnpm dev`. The PostgreSQL values in `docker-compose.yml` are deliberately development-only; see [Phase 8 operations](docs/phase8-operations.md) before seeding or resetting local state.
 
@@ -68,6 +68,7 @@ python3 scripts/generate-index.py
 python3 scripts/generate-index.py --check
 python3 scripts/generate-knowledge.py
 python3 scripts/generate-lab-reports.py
+python3 scripts/generate-graph-intelligence.py
 python3 scripts/validate-knowledge.py
 python3 scripts/generate-knowledge.py --check
 python3 scripts/generate-search.py
@@ -81,6 +82,7 @@ python3 scripts/generate-search.py --check
 python3 scripts/generate-trust-reports.py --check
 python3 scripts/generate-quality-reports.py --check
 python3 scripts/generate-lab-reports.py --check
+python3 scripts/generate-graph-intelligence.py --check
 python3 scripts/search.py nmap --format json
 python3 scripts/search.py --trust
 python3 scripts/search.py --review-queue
