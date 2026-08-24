@@ -1,0 +1,49 @@
+"""phase 8 private application-state schema
+
+Revision ID: 20260823_01
+Revises:
+Create Date: 2026-08-23
+"""
+from alembic import op
+import sqlalchemy as sa
+
+revision = "20260823_01"
+down_revision = None
+branch_labels = None
+depends_on = None
+
+
+def upgrade() -> None:
+    op.create_table("users", sa.Column("id", sa.String(36), primary_key=True), sa.Column("email", sa.String(320), nullable=False, unique=True), sa.Column("password_hash", sa.String(512), nullable=False), sa.Column("status", sa.String(32), nullable=False), sa.Column("email_verified_at", sa.DateTime(timezone=True)), sa.Column("created_at", sa.DateTime(timezone=True), nullable=False), sa.Column("updated_at", sa.DateTime(timezone=True), nullable=False), sa.Column("last_login_at", sa.DateTime(timezone=True)), sa.CheckConstraint("status IN ('active','suspended','pending-verification','deleted')", name="ck_users_status"))
+    op.create_index("ix_users_email", "users", ["email"])
+    op.create_table("sessions", sa.Column("id", sa.String(36), primary_key=True), sa.Column("user_id", sa.String(36), sa.ForeignKey("users.id", ondelete="CASCADE"), nullable=False), sa.Column("token_hash", sa.String(128), nullable=False, unique=True), sa.Column("csrf_hash", sa.String(128), nullable=False), sa.Column("created_at", sa.DateTime(timezone=True), nullable=False), sa.Column("expires_at", sa.DateTime(timezone=True), nullable=False), sa.Column("last_seen_at", sa.DateTime(timezone=True), nullable=False), sa.Column("revoked_at", sa.DateTime(timezone=True)))
+    op.create_index("ix_sessions_user_id", "sessions", ["user_id"]); op.create_index("ix_sessions_expires_at", "sessions", ["expires_at"])
+    for name in ("email_verification_tokens", "password_reset_tokens"):
+        op.create_table(name, sa.Column("id", sa.String(36), primary_key=True), sa.Column("user_id", sa.String(36), sa.ForeignKey("users.id", ondelete="CASCADE"), nullable=False), sa.Column("token_hash", sa.String(128), nullable=False, unique=True), sa.Column("expires_at", sa.DateTime(timezone=True), nullable=False), sa.Column("used_at", sa.DateTime(timezone=True)), sa.Column("created_at", sa.DateTime(timezone=True), nullable=False))
+        op.create_index(f"ix_{name}_user_id", name, ["user_id"]); op.create_index(f"ix_{name}_expires_at", name, ["expires_at"])
+    op.create_table("user_profiles", sa.Column("user_id", sa.String(36), sa.ForeignKey("users.id", ondelete="CASCADE"), primary_key=True), sa.Column("target_difficulty", sa.String(32), nullable=False), sa.Column("learning_pace", sa.String(32), nullable=False), sa.Column("experience_level", sa.String(32), nullable=False), sa.Column("updated_at", sa.DateTime(timezone=True), nullable=False))
+    op.create_table("learning_goals", sa.Column("id", sa.String(64), primary_key=True), sa.Column("name", sa.String(128), nullable=False, unique=True), sa.Column("learning_path_id", sa.String(128), nullable=False), sa.Column("description", sa.String(512), nullable=False))
+    op.create_table("user_learning_goals", sa.Column("id", sa.String(36), primary_key=True), sa.Column("user_id", sa.String(36), sa.ForeignKey("users.id", ondelete="CASCADE"), nullable=False), sa.Column("goal_id", sa.String(64), sa.ForeignKey("learning_goals.id", ondelete="RESTRICT"), nullable=False), sa.Column("is_primary", sa.Boolean(), nullable=False), sa.Column("created_at", sa.DateTime(timezone=True), nullable=False), sa.UniqueConstraint("user_id", "goal_id", name="uq_user_goal"))
+    op.create_index("ix_user_goals_user", "user_learning_goals", ["user_id"])
+    op.create_table("entity_progress", sa.Column("id", sa.String(36), primary_key=True), sa.Column("user_id", sa.String(36), sa.ForeignKey("users.id", ondelete="CASCADE"), nullable=False), sa.Column("entity_id", sa.String(160), nullable=False), sa.Column("entity_type", sa.String(64), nullable=False), sa.Column("knowledge_version", sa.String(128), nullable=False), sa.Column("status", sa.String(32), nullable=False), sa.Column("confidence", sa.String(32), nullable=False), sa.Column("started_at", sa.DateTime(timezone=True)), sa.Column("completed_at", sa.DateTime(timezone=True)), sa.Column("last_activity_at", sa.DateTime(timezone=True), nullable=False), sa.UniqueConstraint("user_id", "entity_id", name="uq_entity_progress"), sa.CheckConstraint("status IN ('not-started','in-progress','completed','mastered')", name="ck_progress_status"))
+    op.create_index("ix_entity_progress_user_entity", "entity_progress", ["user_id", "entity_id"])
+    op.create_table("learning_path_progress", sa.Column("id", sa.String(36), primary_key=True), sa.Column("user_id", sa.String(36), sa.ForeignKey("users.id", ondelete="CASCADE"), nullable=False), sa.Column("learning_path_id", sa.String(128), nullable=False), sa.Column("knowledge_version", sa.String(128), nullable=False), sa.Column("status", sa.String(32), nullable=False), sa.Column("started_at", sa.DateTime(timezone=True)), sa.Column("completed_at", sa.DateTime(timezone=True)), sa.UniqueConstraint("user_id", "learning_path_id", name="uq_learning_path_progress"))
+    op.create_table("lab_attempts", sa.Column("id", sa.String(36), primary_key=True), sa.Column("user_id", sa.String(36), sa.ForeignKey("users.id", ondelete="CASCADE"), nullable=False), sa.Column("lab_id", sa.String(128), nullable=False), sa.Column("knowledge_version", sa.String(128), nullable=False), sa.Column("status", sa.String(32), nullable=False), sa.Column("score", sa.Float()), sa.Column("attempt_number", sa.Integer(), nullable=False), sa.Column("started_at", sa.DateTime(timezone=True), nullable=False), sa.Column("completed_at", sa.DateTime(timezone=True)), sa.UniqueConstraint("user_id", "lab_id", "attempt_number", name="uq_lab_attempt_number"), sa.CheckConstraint("status IN ('started','completed','failed','abandoned')", name="ck_lab_attempt_status"))
+    op.create_index("ix_lab_attempt_user_lab", "lab_attempts", ["user_id", "lab_id"])
+    op.create_table("lab_task_progress", sa.Column("id", sa.String(36), primary_key=True), sa.Column("attempt_id", sa.String(36), sa.ForeignKey("lab_attempts.id", ondelete="CASCADE"), nullable=False), sa.Column("task_id", sa.String(128), nullable=False), sa.Column("status", sa.String(32), nullable=False), sa.Column("completed_at", sa.DateTime(timezone=True)), sa.UniqueConstraint("attempt_id", "task_id", name="uq_lab_task_progress"))
+    op.create_table("bookmarks", sa.Column("id", sa.String(36), primary_key=True), sa.Column("user_id", sa.String(36), sa.ForeignKey("users.id", ondelete="CASCADE"), nullable=False), sa.Column("entity_id", sa.String(160), nullable=False), sa.Column("entity_type", sa.String(64), nullable=False), sa.Column("created_at", sa.DateTime(timezone=True), nullable=False), sa.UniqueConstraint("user_id", "entity_id", name="uq_bookmark"))
+    op.create_index("ix_bookmark_user", "bookmarks", ["user_id"])
+    op.create_table("private_notes", sa.Column("id", sa.String(36), primary_key=True), sa.Column("user_id", sa.String(36), sa.ForeignKey("users.id", ondelete="CASCADE"), nullable=False), sa.Column("entity_id", sa.String(160)), sa.Column("body", sa.Text(), nullable=False), sa.Column("created_at", sa.DateTime(timezone=True), nullable=False), sa.Column("updated_at", sa.DateTime(timezone=True), nullable=False), sa.CheckConstraint("length(body) <= 20000", name="ck_note_size"))
+    op.create_index("ix_private_note_user", "private_notes", ["user_id"])
+    op.create_table("achievements", sa.Column("id", sa.String(64), primary_key=True), sa.Column("name", sa.String(128), nullable=False, unique=True), sa.Column("description", sa.String(512), nullable=False), sa.Column("criteria", sa.JSON(), nullable=False))
+    op.create_table("user_achievements", sa.Column("id", sa.String(36), primary_key=True), sa.Column("user_id", sa.String(36), sa.ForeignKey("users.id", ondelete="CASCADE"), nullable=False), sa.Column("achievement_id", sa.String(64), sa.ForeignKey("achievements.id", ondelete="RESTRICT"), nullable=False), sa.Column("awarded_at", sa.DateTime(timezone=True), nullable=False), sa.UniqueConstraint("user_id", "achievement_id", name="uq_user_achievement"))
+    op.create_index("ix_user_achievement_user", "user_achievements", ["user_id"])
+    op.create_table("recommendation_snapshots", sa.Column("id", sa.String(36), primary_key=True), sa.Column("user_id", sa.String(36), sa.ForeignKey("users.id", ondelete="CASCADE"), nullable=False), sa.Column("knowledge_version", sa.String(128), nullable=False), sa.Column("recommendations", sa.JSON(), nullable=False), sa.Column("created_at", sa.DateTime(timezone=True), nullable=False))
+    op.create_index("ix_recommendation_snapshot_user", "recommendation_snapshots", ["user_id"])
+
+
+def downgrade() -> None:
+    for index, table in (("ix_recommendation_snapshot_user", "recommendation_snapshots"), ("ix_user_achievement_user", "user_achievements"), ("ix_private_note_user", "private_notes"), ("ix_bookmark_user", "bookmarks"), ("ix_lab_attempt_user_lab", "lab_attempts"), ("ix_entity_progress_user_entity", "entity_progress"), ("ix_user_goals_user", "user_learning_goals"), ("ix_password_reset_tokens_expires_at", "password_reset_tokens"), ("ix_password_reset_tokens_user_id", "password_reset_tokens"), ("ix_email_verification_tokens_expires_at", "email_verification_tokens"), ("ix_email_verification_tokens_user_id", "email_verification_tokens"), ("ix_sessions_expires_at", "sessions"), ("ix_sessions_user_id", "sessions"), ("ix_users_email", "users")):
+        op.drop_index(index, table_name=table)
+    for table in ("recommendation_snapshots", "user_achievements", "achievements", "private_notes", "bookmarks", "lab_task_progress", "lab_attempts", "learning_path_progress", "entity_progress", "user_learning_goals", "learning_goals", "user_profiles", "password_reset_tokens", "email_verification_tokens", "sessions", "users"):
+        op.drop_table(table)
