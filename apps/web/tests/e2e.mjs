@@ -22,6 +22,14 @@ try {
   await page.getByRole("link", { name: "Nmap" }).first().click();
   await page.waitForURL(/\/tool\/nmap/);
   await assertVisible("Related knowledge");
+  await page.goto(`${base}/explore/nmap`, { waitUntil: "networkidle" });
+  await assertVisible("Bounded graph explorer");
+  await page.getByLabel("Depth").selectOption("2");
+  await assertVisible("ACCESSIBLE RELATIONSHIP EXPLORER");
+  await page.getByRole("button", { name: "Select" }).first().click();
+  await page.getByLabel("Path target").fill("firewall");
+  await page.getByRole("button", { name: "Find path" }).click();
+  await assertVisible("Shortest generated relationship path");
   await page.goto(`${base}/learning-paths/network-security`, { waitUntil: "networkidle" });
   await assertVisible("BEGINNER");
   await page.goto(`${base}/labs/dns-resolution-inventory`, { waitUntil: "networkidle" });
@@ -41,12 +49,14 @@ try {
   const mobile = await browser.newPage({ viewport: { width: 375, height: 812 } });
   await mobile.goto(base, { waitUntil: "networkidle" });
   assert.equal(await mobile.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), true, "mobile home page has no horizontal overflow");
+  await mobile.goto(`${base}/explore/nmap`, { waitUntil: "networkidle" });
+  assert.equal(await mobile.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), true, "mobile graph has no horizontal overflow");
   await mobile.close();
   if (process.env.UHT_E2E_EMAIL && process.env.UHT_E2E_PASSWORD) {
     await runPrivateJourney();
   }
   assert.deepEqual(issues, [], `browser console errors: ${issues.join(" | ")}`);
-  console.log("Phase 7 browser E2E checks passed." + (process.env.UHT_E2E_EMAIL ? " Phase 8 private journey passed." : ""));
+  console.log("Phase 7–9 browser E2E checks passed." + (process.env.UHT_E2E_EMAIL ? " Phase 8–9 private journey passed." : ""));
 } finally {
   await browser.close();
 }
@@ -73,6 +83,9 @@ async function runPrivateJourney() {
   await assertVisible("Private note saved");
   await page.goto(`${base}/dashboard/bookmarks`, { waitUntil: "networkidle" });
   await assertVisible("Nmap");
+  await page.goto(`${base}/dashboard/knowledge-map`, { waitUntil: "networkidle" });
+  await assertVisible("Knowledge map");
+  await assertVisible("ACCESSIBLE RELATIONSHIP EXPLORER");
   await page.goto(`${base}/labs/dns-resolution-inventory`, { waitUntil: "networkidle" });
   await page.getByRole("button", { name: "Create lab" }).click();
   await page.getByRole("button", { name: "Start" }).click();
@@ -86,7 +99,7 @@ async function runPrivateJourney() {
   await assertVisible("dns-resolution-inventory");
   await page.getByRole("button", { name: "Sign out" }).first().click();
   expectingSignedOutDashboard = true;
-  await page.goto(`${base}/dashboard`, { waitUntil: "networkidle" });
+  await page.goto(`${base}/dashboard`, { waitUntil: "networkidle" }).catch(() => {});
   await page.waitForURL(/\/login/);
   expectingSignedOutDashboard = false;
 }

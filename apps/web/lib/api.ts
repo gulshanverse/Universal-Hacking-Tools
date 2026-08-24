@@ -7,6 +7,7 @@ export type Entity = {
   execution_mode?: string; prerequisites?: { target: string; type: string }[];
 };
 export type SearchResult = Pick<Entity, "id" | "type" | "name" | "description" | "category" | "difficulty" | "path"> & { score: number; reasons: string[] };
+export type GraphSearchResult = SearchResult & { match_type?: "direct" | "related"; graph_reason?: string };
 export type ListResponse<T> = { total: number; items: T[]; limit: number; offset: number };
 export type Lab = Entity & {
   execution_mode: "documentation-only" | "guided" | "executable"; safety_valid?: boolean;
@@ -19,6 +20,10 @@ export type AuthSession = { authenticated: boolean; csrf_required?: boolean; use
 export type Goal = { id: string; name: string; learning_path_id: string; description: string; is_primary: boolean };
 export type Skill = { skill: string; level: "novice" | "beginner" | "intermediate" | "advanced"; completion: number; evidence: Record<string, number> };
 export type PrivateNote = { id: string; entity_id?: string | null; body: string; created_at: string; updated_at: string };
+export type GraphNode = Entity & { key: string; distance?: number; learning_state?: string };
+export type GraphRelationship = { source: string; target: string; relationship: string; explanation?: { why: string; confidence: string; evidence: string } };
+export type GraphNeighborhood = { knowledge_version: string; graph_version: string; generated_at: string; center: GraphNode; nodes: GraphNode[]; relationships: GraphRelationship[]; depth: number; limit: number; edge_limit: number; truncated: boolean; personalization?: { progress_overlay: boolean } };
+export type GraphPath = { found: boolean; path: GraphNode[]; relationships: { source: string; target: string; relationship_type: string; why: string; confidence: string }[] };
 
 const base = process.env.NEXT_PUBLIC_API_URL || process.env.UHT_API_URL || "http://127.0.0.1:8000/api/v1";
 
@@ -67,4 +72,8 @@ export function entityHref(entity: Pick<Entity, "id" | "type">) {
   if (entity.type === "lab") return `/labs/${entity.id}`;
   if (entity.type === "learning-path") return `/learning-paths/${entity.id}`;
   return `/${entity.type}/${entity.id}`;
+}
+
+export function graphHref(entity: Pick<Entity, "id">, depth = 1) {
+  return `/explore/${entity.id}?depth=${depth}`;
 }

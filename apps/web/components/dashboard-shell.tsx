@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { useAuth } from "./auth-provider";
 
-const links = [["Overview", "/dashboard"], ["Skills", "/dashboard/skills"], ["Learning", "/dashboard/learning"], ["Lab history", "/dashboard/labs"], ["Bookmarks", "/dashboard/bookmarks"], ["Private notes", "/dashboard/notes"], ["Settings", "/dashboard/settings"]];
+const links = [["Overview", "/dashboard"], ["Skills", "/dashboard/skills"], ["Learning", "/dashboard/learning"], ["Knowledge map", "/dashboard/knowledge-map"], ["Lab history", "/dashboard/labs"], ["Bookmarks", "/dashboard/bookmarks"], ["Private notes", "/dashboard/notes"], ["Settings", "/dashboard/settings"]];
 
 export function DashboardShell({ title, children }: { title: string; children: React.ReactNode }) {
   const { state } = useAuth();
