@@ -7,4 +7,4 @@
 - [x] Implement user profile, goals, progress, bookmarks, private notes, lab attempts, achievements, and deterministic recommendations.
 - [x] Add authenticated dashboard and personalized web flows with explicit privacy and safety boundaries.
 - [x] Add API, migration, authorization, web, browser, regression, and safety validation.
-- [ ] Regenerate contracts as required, update documentation and CI, commit logically, push, and verify remote CI.
+- [x] Regenerate contracts as required, update documentation and CI, commit logically, push, and verify remote CI.
