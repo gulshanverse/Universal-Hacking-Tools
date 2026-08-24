@@ -29,4 +29,4 @@
 - [x] Add owner-scoped, public-safe, reviewer, and maintainer collaboration APIs without direct canonical knowledge mutation.
 - [x] Build accessible public profiles, discovery, proposals, reviews, reports, moderation, and contributor dashboard flows.
 - [x] Add lifecycle, authorization, privacy, anti-abuse, API, accessibility, browser, regression, migration, and safety validation.
-- [ ] Update OpenAPI, documentation, roadmap, CI, commit logically, push, and verify remote CI.
+- [x] Update OpenAPI, documentation, roadmap, CI, commit logically, push, and verify remote CI.
