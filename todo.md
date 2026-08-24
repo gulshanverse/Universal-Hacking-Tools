@@ -30,3 +30,14 @@
 - [x] Build accessible public profiles, discovery, proposals, reviews, reports, moderation, and contributor dashboard flows.
 - [x] Add lifecycle, authorization, privacy, anti-abuse, API, accessibility, browser, regression, migration, and safety validation.
 - [x] Update OpenAPI, documentation, roadmap, CI, commit logically, push, and verify remote CI.
+
+# Phase 11 Implementation Checklist
+
+- [x] Read the complete Phase 11 specification; map production requirements to the Phase 10 architecture without inventing providers, domains, credentials, backups, or deployment state.
+- [x] Document the production threat model, architecture status, environment model, secrets, database hardening, backup/recovery, incident response, and go-live evidence model.
+- [x] Harden server configuration, startup secret validation, production-safe defaults, trusted origins/hosts, security headers, error behavior, health/readiness semantics, and log hygiene.
+- [x] Add controlled deployment, migration, backup, restore-verification, rollback, and operational scripts that require explicit configuration and never target production implicitly.
+- [x] Harden web production configuration, public environment-variable handling, headers, dependency/supply-chain checks, and production build verification.
+- [x] Update API/web contracts, CI gates, governance, and deployment/runbook documentation with explicit not-configured/configured/validated/verified/blocked statuses.
+- [x] Run local production-readiness, migration, restore, regression, safety, security, artifact, web, browser, and documentation validation without claiming unperformed external operations.
+- [ ] Commit logically, push, fetch/compare the final remote SHA, verify remote CI, and record the exact evidence.

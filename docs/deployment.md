@@ -1,4 +1,4 @@
-# Phase 8 Deployment Notes
+# Phase 11 Deployment Notes
 
 The platform consists of a FastAPI adapter in `apps/api`, a Next.js client in `apps/web`, and a PostgreSQL application-state database. The API and web client require the repository’s generated JSON artifacts to be present and current. Deploying stale or partially generated artifacts is unsupported; run the existing generator and freshness checks first.
 
@@ -6,16 +6,16 @@ The platform consists of a FastAPI adapter in `apps/api`, a Next.js client in `a
 
 | Service | Setting | Purpose |
 | --- | --- | --- |
-| API | `UHT_ALLOWED_ORIGINS` | Explicit comma-separated public web origins |
+| API | `UHT_ALLOWED_ORIGINS` and `UHT_TRUSTED_HOSTS` | Explicit production HTTPS origins and host names; never wildcard credentialed origins |
 | API | `UHT_LAB_STATE_DIR` | Ephemeral local fixture state root, never a production-data mount |
 | API | `DATABASE_URL` | PostgreSQL connection for private application state only; never a knowledge-content source |
 | API | `SESSION_SECRET` | Long random secret used to hash opaque server-side sessions |
 | API | `CSRF_SECRET` | Long random secret used to bind double-submit CSRF tokens |
-| API | `UHT_ENVIRONMENT` | Set to `production` only with non-default secrets and secure cookies |
+| API | `UHT_ENVIRONMENT`, secure-cookie, request/pool/timeout controls | Set to `production` only with explicit PostgreSQL, absolute local-lab path, non-placeholder secrets, HTTPS origins, trusted hosts, and secure cookies |
 | Web | `NEXT_PUBLIC_API_URL` | Public versioned API base ending in `/api/v1` |
 | Web | `NEXT_PUBLIC_SITE_URL` | Canonical public web origin |
 
-Terminate TLS at a trusted platform or reverse proxy. The API must not be exposed with wildcard CORS, debug mode, stack-trace errors, a writable content mount, privileged containers, host networking, or durable lab evidence. Enforce HTTPS and secure cookie mode outside development. The API refuses production startup with development secrets. PostgreSQL holds only private accounts, sessions, preferences, progress, bookmarks, plain-text notes, safe-lab summaries, achievements, and recommendation snapshots; no Markdown/YAML or generated cybersecurity knowledge is copied into database tables.
+Terminate TLS at a trusted platform or reverse proxy. The API must not be exposed with wildcard CORS, debug mode, stack-trace errors, a writable content mount, privileged containers, host networking, or durable lab evidence. Enforce HTTPS and secure cookie mode outside development. The API refuses production startup with development defaults, non-HTTPS origins, missing trusted hosts, missing PostgreSQL configuration, non-absolute explicit lab state path, or unsafe session/CSRF secrets. PostgreSQL holds only private application and collaboration state; no Markdown/YAML or generated cybersecurity knowledge is copied into database tables. See the [production architecture](production-architecture.md), [secrets](production-secrets.md), [deployment checklist](production-deployment-checklist.md), and [readiness report](production-readiness.md).
 
 ## Deployment order
 

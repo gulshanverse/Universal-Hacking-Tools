@@ -1,0 +1,108 @@
+{
+  "decision": "BLOCKED",
+  "external_blockers": [
+    "domain and DNS",
+    "TLS certificate and redirect verification",
+    "production PostgreSQL",
+    "deployment provider",
+    "production email delivery",
+    "backup and restore evidence",
+    "hosted monitoring and alerting"
+  ],
+  "items": [
+    {
+      "blocking": false,
+      "category": "application",
+      "evidence": "Phase 11 configuration, health, request-bound, and regression controls are versioned in the repository.",
+      "name": "repository application controls",
+      "owner": "maintainers",
+      "status": "configured",
+      "timestamp": "not-recorded"
+    },
+    {
+      "blocking": true,
+      "category": "database",
+      "evidence": "No production PostgreSQL provider, private connection, least-privilege roles, or TLS evidence is configured in this repository.",
+      "name": "production PostgreSQL",
+      "owner": "deployment operator",
+      "status": "blocked",
+      "timestamp": "not-recorded"
+    },
+    {
+      "blocking": false,
+      "category": "security",
+      "evidence": "Explicit production secret/origin validation, request boundaries, secure-cookie requirements, and CI gates are versioned; target-environment verification remains required.",
+      "name": "repository security controls",
+      "owner": "maintainers",
+      "status": "configured",
+      "timestamp": "not-recorded"
+    },
+    {
+      "blocking": true,
+      "category": "deployment",
+      "evidence": "No deployment provider, canonical host, or verified smoke target is configured.",
+      "name": "public deployment",
+      "owner": "deployment operator",
+      "status": "blocked",
+      "timestamp": "not-recorded"
+    },
+    {
+      "blocking": true,
+      "category": "observability",
+      "evidence": "Privacy-safe structured application logs are configured in code; no external sink, dashboard, or alert route is configured.",
+      "name": "hosted logs and alerts",
+      "owner": "deployment operator",
+      "status": "blocked",
+      "timestamp": "not-recorded"
+    },
+    {
+      "blocking": true,
+      "category": "backup",
+      "evidence": "No production database provider, encrypted backup policy, retention setting, or restore evidence is configured.",
+      "name": "database backup",
+      "owner": "deployment operator",
+      "status": "blocked",
+      "timestamp": "not-recorded"
+    },
+    {
+      "blocking": true,
+      "category": "recovery",
+      "evidence": "An isolated restore procedure is documented, but no production backup source exists to test.",
+      "name": "production restore drill",
+      "owner": "deployment operator",
+      "status": "blocked",
+      "timestamp": "not-recorded"
+    },
+    {
+      "blocking": false,
+      "category": "privacy",
+      "evidence": "Private-state and account-deletion boundaries are versioned; production retention and backup evidence depend on the selected provider.",
+      "name": "application data minimization",
+      "owner": "maintainers",
+      "status": "configured",
+      "timestamp": "not-recorded"
+    },
+    {
+      "blocking": true,
+      "category": "performance",
+      "evidence": "No staging or production target is configured for safe measurement.",
+      "name": "production performance baseline",
+      "owner": "deployment operator",
+      "status": "blocked",
+      "timestamp": "not-recorded"
+    },
+    {
+      "blocking": false,
+      "category": "documentation",
+      "evidence": "Versioned threat, architecture, deployment, recovery, incident, privacy, and readiness documentation is present.",
+      "name": "production runbooks",
+      "owner": "maintainers",
+      "status": "configured",
+      "timestamp": "not-recorded"
+    }
+  ],
+  "overall_status": "BLOCKED",
+  "schema_version": "1.0",
+  "scope": "repository readiness only; not a public deployment assertion",
+  "score_policy": "No readiness score is emitted because critical external blockers cannot be overridden by repository controls."
+}

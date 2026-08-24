@@ -1,4 +1,4 @@
-# Phase 7–10 API Contract and Operations
+# Phase 7–11 API Contract and Operations
 
 The API is a local-first compatibility layer for repository-generated contracts plus tightly bounded private learning application state. It is versioned under `/api/v1` so future changes can preserve the stable public surface while the Markdown/YAML source model continues to evolve.
 
@@ -20,7 +20,7 @@ The adapter watches contract content fingerprints and refreshes cached derived s
 
 | Group | Selected endpoints | Behavior |
 | --- | --- | --- |
-| Health | `GET /health`, `/ready`, `/health/knowledge`, `/health/graph`, `/health/labs`, `/health/database` | Public readiness, generated graph metrics, and separate database health |
+| Health | `GET /live`, `/health`, `/ready`, `/health/knowledge`, `/health/graph`, `/health/labs`, `/health/database` | Minimal process liveness, build metadata, generated-contract readiness, and separate private database health |
 | Entities | `GET /knowledge`, `/{type}/{id}`, `/tools`, `/vulnerabilities` | Pagination, filters, and typed detail |
 | Discovery | `GET /search`, `/discover`, `/knowledge/{id}/related`, `/knowledge/path`, `/recommendations` | Existing deterministic engines; `graph_context=true` adds labeled related matches after direct matches |
 | Graph intelligence | `GET /graph/neighborhood`, `/graph/path`, `/graph/impact`, `/graph/prerequisites`, `/graph/attack-defense`, `/graph/export`, `/graph/orphans` | Generated-contract-only graph traversal with depth ≤4, nodes ≤100, edges ≤200, path length ≤25, and reviewer-only suggestions |
@@ -41,8 +41,14 @@ Every handler returns a stable error envelope and deliberate status code for inv
 
 ## Operational safety
 
-Run behind HTTPS in deployment, set explicit CORS origins, and terminate only with a reverse proxy that does not rewrite the documented error envelope. The public generated-contract layer remains readable when PostgreSQL is unavailable; private routes fail closed with a service-unavailable response. Sessions use secure, HttpOnly, SameSite cookies outside development, and unsafe authenticated methods require Origin checks plus a double-submit CSRF header. Lab lifecycle state is local and disposable; only authenticated completion summaries may be persisted, never raw evidence, fixture paths, or session identifiers.
+Run behind HTTPS in deployment, set explicit CORS origins and trusted hosts, and terminate only with a reverse proxy that does not rewrite the documented error envelope. Production startup rejects unsafe defaults, non-HTTPS origins, missing hosts, insecure cookies, non-PostgreSQL database configuration, unconfigured local lab state, and weak/missing session or CSRF secrets. The public generated-contract layer remains readable when PostgreSQL is unavailable; private routes fail closed with a service-unavailable response. Sessions use secure, HttpOnly, SameSite cookies outside development, and unsafe authenticated methods require Origin checks plus a double-submit CSRF header. Lab lifecycle state is local and disposable; only authenticated completion summaries may be persisted, never raw evidence, fixture paths, or session identifiers.
+
+API responses include a correlation identifier and restrictive security headers. Private/session-bearing responses use `Cache-Control: private, no-store`; logs record structured operational metadata without request payloads, credentials, private notes, report content, or database URLs. `/live` is process-only, `/ready` validates generated contracts while disclosing only minimal database degradation, and `/health/database` remains a separate private-state availability signal.
 
 Community input rejects markup and NUL characters, restricts proposal fields to controlled templates, validates safe HTTPS links, bounds pagination, and makes security reports private. Author ownership, reviewer self-review prohibition, role checks, and audit logging are enforced by the server rather than route visibility. Reputation is deterministic recognition only and cannot grant a role.
 
 The default Git-provider adapter is unavailable by design. A maintainer may request a handoff only for an approved proposal; a missing, queued, failed, or unconfigured provider must not be described as a pull request. The web client receives no provider credential or repository write capability. Use the manual pull-request workflow in [the contribution workflow](contribution-workflow.md) until a separately configured server-side provider is available.
+
+## Phase 11 operations
+
+Run `make production-check` only with an explicitly configured production environment; it never prints secret values or provisions resources. Run `make migration-preflight` after a reviewed backup to compare the reachable database revision with Alembic head. Run `make restore-verify` only against an operator-restored isolated test/staging database. The generated [route-security matrix](../generated/api-route-security-matrix.json) enumerates registered API operations with access, role, mutation, CSRF, input, rate-limit, and response-sensitivity classifications. These commands and artifacts are repository controls; public deployment verification remains documented in [production readiness](production-readiness.md).

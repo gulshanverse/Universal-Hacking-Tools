@@ -22,7 +22,7 @@ Universal Hacking Tools is designed to become a structured, searchable cybersecu
 | Generated data | [JSON graph and indexes](generated/knowledge-graph.json) |
 | Content health | [Completeness report](generated/content-completeness.json) · [Verification report](generated/verification-report.json) · [Review queue](generated/review-queue.json) · [Lab health](generated/lab-health.json) |
 | Trust and evidence | [Trust report](generated/trust-report.json) · [Source catalog](generated/source-catalog.json) · [Claim report](generated/claim-report.json) · [Verification history](verification-history/README.md) |
-| Phase 7–10 platform | [API contract](docs/api.md) · [Web platform](docs/web-platform.md) · [Community collaboration](docs/community.md) · [Contribution workflow](docs/contribution-workflow.md) · [Community security](docs/community-security.md) · [Moderation](docs/moderation.md) · [Graph intelligence](docs/graph-intelligence.md) · [Private state](docs/database.md) |
+| Phase 7–11 platform | [API contract](docs/api.md) · [Web platform](docs/web-platform.md) · [Community collaboration](docs/community.md) · [Production architecture](docs/production-architecture.md) · [Production readiness](docs/production-readiness.md) · [Deployment checklist](docs/production-deployment-checklist.md) · [Private state](docs/database.md) |
 | Getting started | [First steps](docs/getting-started/README.md) |
 | Contributing | [Contribution guide](CONTRIBUTING.md) |
 | Safety | [Security policy](SECURITY.md) |
@@ -38,6 +38,10 @@ Universal Hacking Tools is designed to become a structured, searchable cybersecu
 * **Knowledge graph:** typed concepts, techniques, technologies, defensive controls, and deterministic relationships to tools, vulnerabilities, labs, and learning paths.
 * **Phase 7–10 API and web client:** a versioned public FastAPI adapter over generated contracts, a responsive API-backed Next.js knowledge archive, a bounded accessible graph explorer, private learning state, and a controlled community proposal/review layer. Community profiles, proposal versions, reviews, reports, moderation, reputation, and audit records are application state only. PostgreSQL never becomes a cybersecurity knowledge authority; Markdown/YAML plus generated JSON remain the sole source of that knowledge.
 * **Automation:** metadata validation, required-section checks, duplicate detection, internal-link checks, generated tool indexes, graph indexes and health, prerequisite and relationship validation, deterministic search artifacts, content-completeness reports, verification reports, source normalization, claim traceability, trust reports, review queues, Phase 6 lab safety/catalog/health reports, API/web checks, and artifact freshness checks.
+
+## Production Readiness Boundary
+
+Phase 11 adds production-safe configuration validation, request/response hardening, privacy-aware structured application logs, liveness/readiness/health semantics, migration preflight, isolated-restore verification, route/database security matrices, production build checks, and operational runbooks. These are **repository controls**, not evidence of a public launch. Domain/DNS, TLS, deployment provider, production PostgreSQL, email delivery, backups, monitoring, and a real Git provider remain external prerequisites and are explicitly reported as blocked where no evidence exists. See [production readiness](docs/production-readiness.md) for the current decision.
 
 ## Cybersecurity Knowledge Graph and Intelligence
 

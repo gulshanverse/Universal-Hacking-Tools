@@ -1,4 +1,4 @@
-name: Repository and Phase 10 validation
+name: Repository and Phase 11 validation
 
 on:
   push:
@@ -30,12 +30,12 @@ jobs:
       CSRF_SECRET: ci-csrf-secret-not-for-production
       UHT_ENVIRONMENT: test
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: "3.12"
-      - name: Install Phase 10 API dependencies
+      - name: Install Phase 11 API dependencies
         run: python3 -m pip install -r apps/api/requirements.txt
       - name: Validate repository content
         run: python3 scripts/validate_repository.py
@@ -69,33 +69,44 @@ jobs:
         run: '! grep -RInE "\\beval\\(|\\bexec\\(|shell=True|import (requests|urllib|socket)" search scripts/*.py labs/engine labs/runners'
       - name: Check obvious secret patterns
         run: '! grep -RInE "(BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{20,})" --exclude-dir=.git .'
-      - name: Run Phase 3 through Phase 10 deterministic engine tests
+      - name: Run Phase 3 through Phase 11 deterministic engine tests
         run: python3 -m unittest discover -s tests -v
-      - name: Exercise PostgreSQL Phase 8–10 migration lifecycle
+      - name: Exercise PostgreSQL Phase 8–11 migration lifecycle
         run: cd apps/api && PYTHONPATH=. alembic upgrade head && PYTHONPATH=. alembic downgrade base && PYTHONPATH=. alembic upgrade head
-      - name: Run Phase 7–10 API, private-state, and community RBAC tests
+      - name: Run Phase 7–11 API, private-state, community RBAC, and production-hardening tests
         run: PYTHONPATH=apps/api:. python3 -m unittest discover -s apps/api/tests -v
-      - name: Check Phase 10 OpenAPI contract freshness
+      - name: Check Phase 11 OpenAPI contract freshness
         run: PYTHONPATH=apps/api:. python3 apps/api/scripts/check_openapi.py
+      - name: Check Phase 11 API route-security matrix freshness
+        run: PYTHONPATH=apps/api:. python3 apps/api/scripts/generate_route_security_matrix.py --check
+      - name: Check Phase 11 migration preflight against CI PostgreSQL
+        run: PYTHONPATH=apps/api:. python3 apps/api/scripts/migration_preflight.py
+      - name: Confirm production check does not falsely pass outside production configuration
+        run: '! PYTHONPATH=apps/api:. python3 apps/api/scripts/production_check.py'
+      - name: Check Phase 11 production-readiness report freshness
+        run: python3 scripts/generate-production-readiness.py --check
       - name: Check generated knowledge artifacts
         run: python3 scripts/generate-knowledge.py --check
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: "22"
       - name: Set up pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
         with:
           version: "11.21.0"
-      - name: Install Phase 10 web dependencies
+      - name: Install Phase 11 web dependencies
         working-directory: apps/web
         run: pnpm install --frozen-lockfile
-      - name: Run Phase 7–10 web route and boundary tests
+      - name: Run Phase 7–11 web route and boundary tests
         working-directory: apps/web
         run: pnpm test
-      - name: Type-check Phase 10 web client
+      - name: Check Phase 11 explicit production browser configuration
+        working-directory: apps/web
+        run: UHT_ENVIRONMENT=production NEXT_PUBLIC_API_URL=https://api.example.test/api/v1 NEXT_PUBLIC_SITE_URL=https://app.example.test pnpm production-check
+      - name: Type-check Phase 11 web client
         working-directory: apps/web
         run: pnpm typecheck
-      - name: Build Phase 10 web client
+      - name: Build Phase 11 web client
         working-directory: apps/web
-        run: NODE_ENV=production pnpm build
+        run: UHT_ENVIRONMENT=development NODE_ENV=production pnpm build
