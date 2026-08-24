@@ -49,4 +49,4 @@
 - [x] Research and compare free/low-cost provider strategies without opening accounts, creating resources, or fabricating availability, pricing, domain, certificate, or database claims.
 - [x] Write `docs/phase-12-infrastructure-readiness.md` with explicit status matrices, external prerequisites, provider-selection criteria, and Phase 12B preconditions.
 - [x] Run all preserved Phase 1–11 validation suites and confirm the readiness document introduces no application behavior changes.
-- [ ] Create the focused documentation commit, push, compare the final remote SHA, and verify remote CI.
+- [x] Create the focused documentation commit, push, compare the final remote SHA, and verify remote CI.
