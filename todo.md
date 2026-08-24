@@ -40,4 +40,4 @@
 - [x] Harden web production configuration, public environment-variable handling, headers, dependency/supply-chain checks, and production build verification.
 - [x] Update API/web contracts, CI gates, governance, and deployment/runbook documentation with explicit not-configured/configured/validated/verified/blocked statuses.
 - [x] Run local production-readiness, migration, restore, regression, safety, security, artifact, web, browser, and documentation validation without claiming unperformed external operations.
-- [ ] Commit logically, push, fetch/compare the final remote SHA, verify remote CI, and record the exact evidence.
+- [x] Commit logically, push, fetch/compare the final remote SHA, verify remote CI, and record the exact evidence.
