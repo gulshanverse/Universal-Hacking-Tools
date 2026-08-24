@@ -23,11 +23,25 @@ _url: str | None = None
 
 def _build(url: str) -> tuple[Engine, sessionmaker[Session]]:
     connect_args = {"check_same_thread": False} if url.startswith("sqlite") else {}
-    engine = create_engine(url, future=True, pool_pre_ping=True, connect_args=connect_args)
+    options = {"future": True, "pool_pre_ping": True, "connect_args": connect_args}
+    if not url.startswith("sqlite"):
+        config = settings()
+        options.update({"pool_size": config.database_pool_size, "max_overflow": config.database_max_overflow, "pool_timeout": config.database_pool_timeout_seconds})
+    engine = create_engine(url, **options)
     if url.startswith("sqlite"):
         @event.listens_for(engine, "connect")
         def enable_sqlite_foreign_keys(connection, _record) -> None:
             connection.execute("PRAGMA foreign_keys=ON")
+    elif url.startswith("postgresql"):
+        statement_timeout = settings().database_statement_timeout_ms
+
+        @event.listens_for(engine, "connect")
+        def set_postgresql_statement_timeout(connection, _record) -> None:
+            cursor = connection.cursor()
+            try:
+                cursor.execute(f"SET statement_timeout = {statement_timeout}")
+            finally:
+                cursor.close()
     return engine, sessionmaker(bind=engine, autoflush=False, autocommit=False, future=True)
 
 

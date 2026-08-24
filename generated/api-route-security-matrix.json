@@ -1,0 +1,1566 @@
+{
+  "routes": [
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/auth/login",
+      "rate_limit": "security-sensitive local limiter",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/auth/logout",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/auth/logout-all",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/auth/register",
+      "rate_limit": "security-sensitive local limiter",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/auth/request-password-reset",
+      "rate_limit": "security-sensitive local limiter",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/auth/reset-password",
+      "rate_limit": "security-sensitive local limiter",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/auth/session",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/auth/verify-email",
+      "rate_limit": "security-sensitive local limiter",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "administrator",
+      "mutation": false,
+      "path": "/api/v1/community/admin/reports",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "administrator",
+      "mutation": true,
+      "path": "/api/v1/community/admin/reports/{report_id}/resolve",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "administrator",
+      "mutation": true,
+      "path": "/api/v1/community/admin/users/{user_id}/moderation",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "administrator",
+      "mutation": true,
+      "path": "/api/v1/community/admin/users/{user_id}/role",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/community/contributions",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/community/contributions/{contribution_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/community/contributors",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "maintainer",
+      "mutation": true,
+      "path": "/api/v1/community/maintain/contributions/{contribution_id}/actions",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "maintainer",
+      "mutation": true,
+      "path": "/api/v1/community/maintain/contributions/{contribution_id}/assign",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "maintainer",
+      "mutation": true,
+      "path": "/api/v1/community/maintain/contributions/{contribution_id}/github-handoff",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/community/metrics",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/community/opportunities",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/community/profile/{username}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/community/reputation/{username}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "reviewer",
+      "mutation": false,
+      "path": "/api/v1/community/review/contributions",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "reviewer",
+      "mutation": false,
+      "path": "/api/v1/community/review/contributions/{contribution_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "reviewer",
+      "mutation": true,
+      "path": "/api/v1/community/review/contributions/{contribution_id}/actions",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "reviewer",
+      "mutation": true,
+      "path": "/api/v1/community/review/contributions/{contribution_id}/comments",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/compare",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/concepts",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/concepts/{entity_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/defensive-controls",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/defensive-controls/{entity_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/discover",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/graph/attack-defense",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/graph/export",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/graph/impact",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/graph/neighborhood",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/graph/orphans",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/graph/path",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/graph/prerequisites",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/health",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "minimal operational metadata"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/health/database",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "minimal operational metadata"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/health/graph",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/health/knowledge",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/health/labs",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/knowledge",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/knowledge/path",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/knowledge/{entity_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/knowledge/{entity_id}/attack-defense",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/knowledge/{entity_id}/impact",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/knowledge/{entity_id}/learning-route",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/knowledge/{entity_id}/prerequisites",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/knowledge/{entity_id}/recommendations",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/knowledge/{entity_id}/related",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "DELETE"
+      ],
+      "minimum_role": "public",
+      "mutation": true,
+      "path": "/api/v1/lab-instances/{instance_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/lab-instances/{instance_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/lab-instances/{instance_id}/assessment",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "public",
+      "mutation": true,
+      "path": "/api/v1/lab-instances/{instance_id}/assessment/record",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/lab-instances/{instance_id}/evidence",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "public",
+      "mutation": true,
+      "path": "/api/v1/lab-instances/{instance_id}/evidence",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "public",
+      "mutation": true,
+      "path": "/api/v1/lab-instances/{instance_id}/reset",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "public",
+      "mutation": true,
+      "path": "/api/v1/lab-instances/{instance_id}/start",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "public",
+      "mutation": true,
+      "path": "/api/v1/lab-instances/{instance_id}/stop",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "public",
+      "mutation": true,
+      "path": "/api/v1/lab-instances/{instance_id}/tasks/{task_id}/run",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/labs",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/labs/{lab_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "public",
+      "mutation": true,
+      "path": "/api/v1/labs/{lab_id}/instances",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/learning-paths",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/learning-paths/{entity_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/live",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "minimal operational metadata"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "DELETE"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "PATCH"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/achievements",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/bookmarks",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/bookmarks",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "DELETE"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/bookmarks/{entity_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/change-password",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/community/profile",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "PATCH"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/community/profile",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/community/profile",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/community/reputation",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/contributions",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/contributions",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/contributions/{contribution_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "PATCH"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/contributions/{contribution_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/contributions/{contribution_id}/submit",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/contributions/{contribution_id}/withdraw",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/dashboard",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/goals",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/goals",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "DELETE"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/goals/{goal_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/knowledge-gaps",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/labs",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/learning",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/notes",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/notes",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "DELETE"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/notes/{note_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/notes/{note_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "PATCH"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/notes/{note_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/progress",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "PUT"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/progress",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/recommendations",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/reports",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": true,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "POST"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": true,
+      "path": "/api/v1/me/reports",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/skills",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "authenticated",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "authenticated owner/session",
+      "mutation": false,
+      "path": "/api/v1/me/skills/{skill}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "private application state"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/ready",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "minimal operational metadata"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/review/queue",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/review/{entity_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/search",
+      "rate_limit": "bounded local limiter",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/techniques",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/techniques/{entity_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/technologies",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/technologies/{entity_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/tools",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/tools/{entity_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/trust",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/trust/{entity_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/vulnerabilities",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    },
+    {
+      "access": "public",
+      "csrf_required": false,
+      "input_validation": "FastAPI/Pydantic route contracts and bounded query constraints",
+      "methods": [
+        "GET"
+      ],
+      "minimum_role": "public",
+      "mutation": false,
+      "path": "/api/v1/vulnerabilities/{entity_id}",
+      "rate_limit": "route-specific or deployment edge policy required",
+      "response_sensitivity": "public generated knowledge"
+    }
+  ],
+  "schema_version": "1.0",
+  "scope": "registered API route security classification; deployment-edge limits remain an external prerequisite"
+}

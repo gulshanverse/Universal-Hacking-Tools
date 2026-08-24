@@ -1,4 +1,4 @@
-.PHONY: api web api-test web-test web-build openapi dev db-up db-down db-migrate db-downgrade db-seed db-reset
+.PHONY: api web api-test web-test web-build openapi dev db-up db-down db-migrate db-downgrade db-seed db-reset migration-preflight production-check production-readiness restore-verify
 
 api:
 	PYTHONPATH=apps/api:. python3 -m uvicorn app.main:app --host 127.0.0.1 --port 8000
@@ -13,7 +13,7 @@ web-test:
 	cd apps/web && pnpm test
 
 web-build:
-	cd apps/web && pnpm build
+	cd apps/web && NODE_ENV=production pnpm build
 
 openapi:
 	python3 apps/api/scripts/export_openapi.py && PYTHONPATH=apps/api:. python3 apps/api/scripts/check_openapi.py
@@ -35,10 +35,25 @@ db-seed:
 
 db-reset:
 	@echo "WARNING: this deletes the local development PostgreSQL volume and all private application state."
+	@test "$$UHT_ENVIRONMENT" != "production" || (echo "db-reset is disabled in production" && exit 2)
 	docker compose down -v
 	docker compose up -d db
 	$(MAKE) db-migrate
 	$(MAKE) db-seed
+
+migration-preflight:
+	PYTHONPATH=apps/api:. python3 apps/api/scripts/migration_preflight.py
+
+production-check:
+	@echo "This non-mutating check requires explicit UHT_ENVIRONMENT=production configuration and never prints secret values."
+	PYTHONPATH=apps/api:. python3 apps/api/scripts/production_check.py
+
+production-readiness:
+	python3 scripts/generate-production-readiness.py --check
+
+restore-verify:
+	@echo "This read-only command requires an operator-restored isolated test or staging database. It never restores or migrates data."
+	PYTHONPATH=apps/api:. python3 apps/api/scripts/verify_restore.py
 
 dev:
 	@echo "Run 'make db-up', then 'make db-migrate', then start 'make api' and 'make web' in separate terminals. Docker is optional outside local PostgreSQL development."

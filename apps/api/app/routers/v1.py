@@ -14,6 +14,7 @@ from ..services.attempts import begin_attempt, record_assessment
 from ..services.rate_limit import LocalRateLimiter
 from ..state.database import database_ready, sessions
 from ..state.auth import _principal, optional_mutation_user_id
+from ..state.config import settings
 from ..state.models import EntityProgress
 
 
@@ -25,7 +26,7 @@ def local_session(response: Response, session: str | None = Cookie(default=None,
     import uuid
     value = header_session or session or uuid.uuid4().hex
     if not header_session and not session:
-        response.set_cookie("uht_lab_session", value, httponly=True, samesite="strict", secure=False, max_age=3600)
+        response.set_cookie("uht_lab_session", value, httponly=True, samesite="strict", secure=settings().secure_cookies, max_age=3600, path="/")
     return value
 
 
@@ -73,7 +74,14 @@ def with_graph_progress(payload: dict, progress: dict[str, str]) -> dict:
 @router.get("/health", summary="API health")
 def health():
     artifacts.ensure_ready()
-    return {"status": "ok", "version": "9.0.0", "knowledge_version": artifacts.version(), "graph_version": artifacts.graph_metadata()["graph_version"], "generated_at": artifacts.generated_at(), "entities": len(artifacts.documents()), "database": "ok" if database_ready() else "degraded"}
+    config = settings()
+    return {"status": "ok", "version": config.build_version, "commit": config.build_commit, "knowledge_version": artifacts.version(), "graph_version": artifacts.graph_metadata()["graph_version"], "generated_at": artifacts.generated_at(), "entities": len(artifacts.documents()), "database": "ok" if database_ready() else "degraded"}
+
+
+@router.get("/live", summary="Process liveness without dependency checks")
+def live():
+    config = settings()
+    return {"status": "ok", "version": config.build_version, "commit": config.build_commit}
 
 
 @router.get("/ready", summary="Generated-contract readiness")

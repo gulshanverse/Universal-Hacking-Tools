@@ -5,6 +5,7 @@ import os
 
 from labs.engine.lifecycle.manager import LabManager
 from .artifacts import artifacts
+from ..state.config import settings
 
 
 class LabNotExecutable(ValueError):
@@ -18,7 +19,7 @@ class LabService:
 
     @property
     def manager(self) -> LabManager:
-        root = Path(os.getenv("UHT_LAB_STATE_DIR", "/tmp/uht-api-labs"))
+        root = Path(settings().lab_state_dir)
         if self._manager is None or self._manager.state_root != root.resolve():
             self._manager = LabManager(root)
             self._sessions = {}
