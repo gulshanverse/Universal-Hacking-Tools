@@ -18,4 +18,4 @@
 - [x] Add bounded public and optional authenticated graph-intelligence APIs with explicit explanations and safe error handling.
 - [x] Build accessible graph explorer, graph-aware search, relationship context, prerequisite, and learning-route web views without introducing alternate knowledge content.
 - [x] Add unit, contract, API, ownership, accessibility, browser, regression, safety, and generated-artifact validation.
-- [ ] Update OpenAPI, documentation, roadmap, contributor guidance, CI, commit logically, push, and verify remote CI.
+- [x] Update OpenAPI, documentation, roadmap, contributor guidance, CI, commit logically, push, and verify remote CI.
