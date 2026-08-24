@@ -29,7 +29,12 @@ export type GraphRelationship = { source: string; target: string; relationship: 
 export type GraphNeighborhood = { knowledge_version: string; graph_version: string; generated_at: string; center: GraphNode; nodes: GraphNode[]; relationships: GraphRelationship[]; depth: number; limit: number; edge_limit: number; truncated: boolean; personalization?: { progress_overlay: boolean } };
 export type GraphPath = { found: boolean; path: GraphNode[]; relationships: { source: string; target: string; relationship_type: string; why: string; confidence: string }[] };
 
-const base = process.env.NEXT_PUBLIC_API_URL || process.env.UHT_API_URL || "http://127.0.0.1:8000/api/v1";
+const production = process.env.UHT_ENVIRONMENT === "production";
+const base = process.env.NEXT_PUBLIC_API_URL || (production ? undefined : "http://127.0.0.1:8000/api/v1");
+
+if (!base) throw new Error("NEXT_PUBLIC_API_URL must be configured for a production browser build");
+const baseUrl = new URL(base);
+if (baseUrl.username || baseUrl.password || (production && baseUrl.protocol !== "https:")) throw new Error("NEXT_PUBLIC_API_URL must be a credential-free public HTTPS URL in production");
 
 export function apiUrl(path: string, params?: Record<string, string | number | undefined>) {
   const url = new URL(`${base}${path}`);

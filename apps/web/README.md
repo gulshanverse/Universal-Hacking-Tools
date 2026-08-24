@@ -1,4 +1,4 @@
-# Phase 7–10 Knowledge Web Client
+# Phase 7–11 Knowledge Web Client
 
 This Next.js web client is a responsive public and private view of the versioned API. It does not embed copies of knowledge entities or parse repository Markdown in the browser. The **Signal Archive** design makes relationships, verification state, provenance, local lab safety, and owner-only learning state visible without representing the project as an unrestricted security console.
 
@@ -42,12 +42,19 @@ The Phase 9 graph explorer remains a knowledge-navigation interface, not a secur
 
 Private account state uses opaque HttpOnly cookies rather than browser-stored bearer tokens. The client reads only a non-sensitive CSRF cookie to set `X-CSRF-Token` on unsafe authenticated requests. Passwords, session values, verification/reset tokens, and note bodies are not placed in local storage. Notes render as plain text. Public knowledge pages stay usable when the private database is unavailable; protected state pages show a clear unavailable state.
 
+## Production boundary
+
+When `UHT_ENVIRONMENT=production`, the browser build requires an explicit credential-free HTTPS `NEXT_PUBLIC_API_URL`; it must not fall back to localhost. `NEXT_PUBLIC_SITE_URL` and the API URL are public build values only—never place database, session, CSRF, Git-provider, or deployment credentials in a browser environment variable. Run `pnpm production-check` with explicit HTTPS example/target URLs to validate the public configuration shape without exposing values.
+
+The production configuration emits a CSP compatible with the existing client, frame/no-sniff/referrer/permissions restrictions, and HSTS only in explicitly selected production mode. Dashboard, review, and administration routes receive private no-store/noindex headers. Production-safe not-found, access-limited, rate-limit, generic-error, and maintenance pages intentionally expose no diagnostics. A canonical host, TLS certificate, provider redirect behavior, CDN/WAF, and live header verification are **blocked — external prerequisites unavailable** until a hosting platform is selected and tested.
+
 ## Validation
 
 ```bash
 pnpm test
 pnpm typecheck
-NODE_ENV=production pnpm build
+UHT_ENVIRONMENT=development NODE_ENV=production pnpm build
+UHT_ENVIRONMENT=production NEXT_PUBLIC_API_URL=https://api.example.test/api/v1 NEXT_PUBLIC_SITE_URL=https://app.example.test pnpm production-check
 UHT_WEB_URL=http://127.0.0.1:3001 pnpm test:e2e
 ```
 

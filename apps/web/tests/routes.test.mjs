@@ -28,6 +28,25 @@ test("private transport uses cookie credentials and CSRF headers without browser
   assert.match(api,/X-CSRF-Token/);
   assert.doesNotMatch(auth,/localStorage|sessionStorage/);
 });
+test("production browser configuration has no implicit public API fallback and protects private routes", () => {
+  const api = readFileSync(join(root,"lib/api.ts"),"utf8");
+  const config = readFileSync(join(root,"next.config.mjs"),"utf8");
+  assert.match(api,/NEXT_PUBLIC_API_URL must be configured for a production browser build/);
+  assert.match(api,/credential-free public HTTPS URL in production/);
+  assert.doesNotMatch(api,/process\.env\.UHT_API_URL/);
+  assert.match(config,/Content-Security-Policy/);
+  assert.match(config,/frame-ancestors 'none'/);
+  assert.match(config,/Cache-Control.*private, no-store/);
+  assert.match(config,/X-Robots-Tag.*noindex, nofollow/);
+});
+test("production-safe error and maintenance routes avoid diagnostics", () => {
+  const files = ["app/not-found.tsx", "app/error.tsx", "app/global-error.tsx", "app/access-denied/page.tsx", "app/rate-limited/page.tsx", "app/maintenance/page.tsx"];
+  files.forEach(file => assert.equal(existsSync(join(root, file)), true, file));
+  const errorPage = readFileSync(join(root, "app/error.tsx"), "utf8");
+  const globalError = readFileSync(join(root, "app/global-error.tsx"), "utf8");
+  assert.doesNotMatch(errorPage,/error\.message|console\.|<pre/);
+  assert.doesNotMatch(globalError,/error\.message|console\.|<pre/);
+});
 test("graph explorer has strict visual bounds and a nonvisual keyboard alternative", () => {
   const explorer = readFileSync(join(root,"components/graph-explorer.tsx"),"utf8");
   assert.match(explorer,/\[1, 2, 3, 4\]/);
