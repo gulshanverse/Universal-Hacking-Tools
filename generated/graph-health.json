@@ -1,0 +1,21 @@
+{
+  "bidirectional_consistency": 100.0,
+  "broken_edges": [],
+  "duplicate_relationships": 0,
+  "edge_count": 4824,
+  "generated_at": "2026-08-23",
+  "graph_version": "3fa85f1250e99efd",
+  "knowledge_version": "063b388cec80ea87",
+  "limits": {
+    "max_depth": 4,
+    "max_edges": 200,
+    "max_nodes": 100,
+    "max_path_length": 25
+  },
+  "node_count": 307,
+  "orphan_count": 35,
+  "prerequisite_edge_count": 212,
+  "relationship_coverage": 88.6,
+  "schema_version": "1.0",
+  "unknown_relationship_types": []
+}
