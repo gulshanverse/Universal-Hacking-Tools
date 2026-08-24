@@ -6,7 +6,10 @@ from fastapi import APIRouter, Cookie, Depends, Header, HTTPException, Query, Re
 from ..models.contracts import EvidenceSubmission
 from ..services.artifacts import artifacts, ENTITY_TYPES
 from ..services.labs import labs, LabNotExecutable
+from ..services.attempts import begin_attempt, record_assessment
 from ..services.rate_limit import LocalRateLimiter
+from ..state.database import database_ready
+from ..state.auth import optional_mutation_user_id
 
 
 router = APIRouter(tags=["v1"])
@@ -39,15 +42,22 @@ def entity_or_404(entity_id: str, entity_type: str | None = None) -> dict:
 @router.get("/health", summary="API health")
 def health():
     artifacts.ensure_ready()
-    return {"status": "ok", "version": "7.0.0", "knowledge_version": artifacts.version(), "generated_at": artifacts.generated_at(), "entities": len(artifacts.documents())}
+    return {"status": "ok", "version": "8.0.0", "knowledge_version": artifacts.version(), "generated_at": artifacts.generated_at(), "entities": len(artifacts.documents()), "database": "ok" if database_ready() else "degraded"}
 
 
 @router.get("/ready", summary="Generated-contract readiness")
 def ready():
     ok, missing = artifacts.ready()
     if not ok:
-        return {"ready": False, "missing": missing}
-    return {"ready": True, "knowledge_version": artifacts.version(), "required_contracts": list(artifacts.required)}
+        return {"ready": False, "missing": missing, "database": "ok" if database_ready() else "degraded"}
+    return {"ready": True, "knowledge_version": artifacts.version(), "required_contracts": list(artifacts.required), "database": "ok" if database_ready() else "degraded", "private_state_available": database_ready()}
+
+
+@router.get("/health/database", summary="Read private application-state database health without internals")
+def database_health():
+    if database_ready():
+        return {"status": "ok"}
+    raise HTTPException(status_code=503, detail="private application state is temporarily unavailable")
 
 
 @router.get("/knowledge", summary="List normalized knowledge entities")
@@ -182,8 +192,12 @@ def lab_detail(lab_id: str):
 
 
 @router.post("/labs/{lab_id}/instances", summary="Create an approved local-fixture lab instance")
-def create_instance(lab_id: str, response: Response, dry_run: bool = False, session_id: str = Depends(local_session), _: None = Depends(expensive)):
-    return labs.create(lab_id, session_id, dry_run=dry_run)
+def create_instance(lab_id: str, response: Response, dry_run: bool = False, session_id: str = Depends(local_session), authenticated_session: str | None = Cookie(default=None, alias="uht_session"), csrf_cookie: str | None = Cookie(default=None, alias="uht_csrf"), csrf_header: str | None = Header(default=None, alias="X-CSRF-Token"), _: None = Depends(expensive)):
+    user_id = optional_mutation_user_id(authenticated_session, csrf_cookie, csrf_header)
+    result = labs.create(lab_id, session_id, dry_run=dry_run)
+    if not dry_run:
+        begin_attempt(user_id, lab_id)
+    return result
 
 
 @router.get("/lab-instances/{instance_id}", summary="Read a local lab instance status")
@@ -229,3 +243,13 @@ def submit_evidence(instance_id: str, payload: EvidenceSubmission, response: Res
 @router.get("/lab-instances/{instance_id}/assessment", summary="Read deterministic lab assessment")
 def assessment(instance_id: str, response: Response, session_id: str = Depends(local_session), _: None = Depends(expensive)):
     return labs.assess(instance_id, session_id)
+
+
+@router.post("/lab-instances/{instance_id}/assessment/record", summary="Persist only a minimal authenticated safe-lab assessment summary")
+def record_assessment_result(instance_id: str, response: Response, session_id: str = Depends(local_session), authenticated_session: str | None = Cookie(default=None, alias="uht_session"), csrf_cookie: str | None = Cookie(default=None, alias="uht_csrf"), csrf_header: str | None = Header(default=None, alias="X-CSRF-Token"), _: None = Depends(expensive)):
+    user_id = optional_mutation_user_id(authenticated_session, csrf_cookie, csrf_header)
+    if not user_id:
+        raise HTTPException(status_code=401, detail="authentication is required to save lab history")
+    result = labs.assess(instance_id, session_id)
+    result["new_achievements"] = record_assessment(user_id, result)
+    return result
