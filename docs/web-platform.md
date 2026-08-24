@@ -1,6 +1,6 @@
-# Phase 7 Web Platform
+# Phase 7–8 Web Platform
 
-The web platform is a responsive knowledge archive powered by the versioned API. It adds no alternate content model: the browser receives API responses, and the API receives deterministic generated contracts. Search is global and keyboard reachable, relationship views have accessible list alternatives, and every page preserves the repository’s safety and uncertainty language.
+The web platform is a responsive knowledge archive powered by the versioned API. It adds no alternate content model: the browser receives API responses, and the API receives deterministic generated contracts. Search is global and keyboard reachable, relationship views have accessible list alternatives, and every page preserves the repository’s safety and uncertainty language. Private dashboard views reference generated entities rather than copying knowledge content into browser state.
 
 ## Experience model
 
@@ -16,4 +16,4 @@ Route-specific titles, canonical URLs, Open Graph metadata, `robots.txt`, and `s
 
 ## Browser data boundary
 
-The browser does not access repository files, GitHub tokens, CI configuration, or local fixture paths. It uses the API’s public contract only. The only browser-local state is a random ephemeral lab-session ID in `sessionStorage`; this lets the API keep local lab instance ownership bounded without accounts or persistent learner tracking.
+The browser does not access repository files, GitHub tokens, CI configuration, or local fixture paths. Public pages use the versioned public contract. Private account pages use credentialed requests with opaque HttpOnly session cookies; the JavaScript client does not store account tokens, passwords, verification/reset tokens, or notes in local storage. A readable CSRF cookie is echoed only in the `X-CSRF-Token` header for unsafe authenticated requests. The existing random local-lab session ID remains ephemeral in `sessionStorage` for fixture ownership, while any signed-in retained lab record contains only a minimal completion summary. Notes are displayed as plain text and no public profile, community, telemetry, or analytics feature is introduced.

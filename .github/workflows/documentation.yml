@@ -1,4 +1,4 @@
-name: Documentation validation
+name: Repository and Phase 8 validation
 
 on:
   push:
@@ -10,13 +10,32 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: uht_ci
+          POSTGRES_USER: uht_ci
+          POSTGRES_PASSWORD: uht-ci-development-only
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U uht_ci -d uht_ci"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 20
+    env:
+      DATABASE_URL: postgresql+psycopg://uht_ci:uht-ci-development-only@127.0.0.1:5432/uht_ci
+      SESSION_SECRET: ci-session-secret-not-for-production
+      CSRF_SECRET: ci-csrf-secret-not-for-production
+      UHT_ENVIRONMENT: test
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install Phase 7 API dependencies
+      - name: Install Phase 8 API dependencies
         run: python3 -m pip install -r apps/api/requirements.txt
       - name: Validate repository content
         run: python3 scripts/validate_repository.py
@@ -50,9 +69,11 @@ jobs:
         run: '! grep -RInE "(BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{20,})" --exclude-dir=.git .'
       - name: Run Phase 3, Phase 4, Phase 5, and Phase 6 tests
         run: python3 -m unittest discover -s tests -v
-      - name: Run Phase 7 API contract tests
+      - name: Exercise PostgreSQL Phase 8 migration lifecycle
+        run: cd apps/api && PYTHONPATH=. alembic upgrade head && PYTHONPATH=. alembic downgrade base && PYTHONPATH=. alembic upgrade head
+      - name: Run Phase 7–8 API contract and private-state tests
         run: PYTHONPATH=apps/api:. python3 -m unittest discover -s apps/api/tests -v
-      - name: Check Phase 7 OpenAPI contract freshness
+      - name: Check Phase 8 OpenAPI contract freshness
         run: PYTHONPATH=apps/api:. python3 apps/api/scripts/check_openapi.py
       - name: Check generated knowledge artifacts
         run: python3 scripts/generate-knowledge.py --check
@@ -64,15 +85,15 @@ jobs:
         uses: pnpm/action-setup@v4
         with:
           version: "11.21.0"
-      - name: Install Phase 7 web dependencies
+      - name: Install Phase 8 web dependencies
         working-directory: apps/web
         run: pnpm install --frozen-lockfile
-      - name: Run Phase 7 web route tests
+      - name: Run Phase 7–8 web route tests
         working-directory: apps/web
         run: pnpm test
-      - name: Type-check Phase 7 web client
+      - name: Type-check Phase 8 web client
         working-directory: apps/web
         run: pnpm typecheck
-      - name: Build Phase 7 web client
+      - name: Build Phase 8 web client
         working-directory: apps/web
         run: NODE_ENV=production pnpm build
