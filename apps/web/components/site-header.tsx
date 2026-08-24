@@ -8,7 +8,7 @@ import { useAuth } from "./auth-provider";
 const groups = [
   ["Explore", "/explore"], ["Tools", "/tools"], ["Vulnerabilities", "/vulnerabilities"], ["Concepts", "/concepts"],
   ["Techniques", "/techniques"], ["Technologies", "/technologies"], ["Defensive Controls", "/defensive-controls"],
-  ["Labs", "/labs"], ["Learning Paths", "/learning-paths"], ["About", "/about"]
+  ["Labs", "/labs"], ["Learning Paths", "/learning-paths"], ["Community", "/community"], ["About", "/about"]
 ];
 
 export function SiteHeader() {

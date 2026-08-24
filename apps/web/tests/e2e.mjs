@@ -6,6 +6,7 @@ const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PAT
 const page = await browser.newPage({ viewport: { width: 1280, height: 820 } });
 const issues = [];
 let expectingSignedOutDashboard = false;
+let submittedProposalTitle = "";
 page.on("pageerror", error => issues.push(error.message));
 page.on("response", response => {
   const url = response.url();
@@ -55,8 +56,11 @@ try {
   if (process.env.UHT_E2E_EMAIL && process.env.UHT_E2E_PASSWORD) {
     await runPrivateJourney();
   }
+  if (process.env.UHT_E2E_REVIEWER_EMAIL && process.env.UHT_E2E_MAINTAINER_EMAIL && process.env.UHT_E2E_PASSWORD) {
+    await runPrivilegedCommunityJourney();
+  }
   assert.deepEqual(issues, [], `browser console errors: ${issues.join(" | ")}`);
-  console.log("Phase 7–9 browser E2E checks passed." + (process.env.UHT_E2E_EMAIL ? " Phase 8–9 private journey passed." : ""));
+  console.log("Phase 7–10 browser E2E checks passed." + (process.env.UHT_E2E_EMAIL ? " Phase 8–10 private journey passed." : "") + (process.env.UHT_E2E_REVIEWER_EMAIL ? " Phase 10 reviewer and maintainer journey passed." : ""));
 } finally {
   await browser.close();
 }
@@ -86,6 +90,34 @@ async function runPrivateJourney() {
   await page.goto(`${base}/dashboard/knowledge-map`, { waitUntil: "networkidle" });
   await assertVisible("Knowledge map");
   await assertVisible("ACCESSIBLE RELATIONSHIP EXPLORER");
+  await page.goto(`${base}/dashboard/contributions`, { waitUntil: "networkidle" });
+  if (await page.getByText("Choose a careful public identity.", { exact: false }).count()) {
+    await page.getByLabel("Username").fill("browser_e2e_contributor");
+    await page.getByLabel("Make this profile public.").check();
+    await page.getByRole("button", { name: "Create contributor profile" }).click();
+    await assertVisible("Contributor profile created");
+  }
+  submittedProposalTitle = `Browser relationship proposal ${Date.now()}`;
+  await page.getByLabel("Proposal title").fill(submittedProposalTitle);
+  await page.getByLabel("Summary for reviewers").fill("Synthetic browser proposal for a bounded generated relationship.");
+  await page.getByLabel("Source generated entity ID").fill("nmap");
+  await page.getByLabel("Relationship type").selectOption("uses-tool");
+  await page.getByLabel("Target generated entity ID").fill("firewall");
+  await page.getByLabel("Relationship reason").fill("Synthetic browser E2E rationale for a reviewable relationship proposal.");
+  await page.getByRole("button", { name: "Save private proposal draft" }).click();
+  await assertVisible("Private draft saved");
+  await page.getByRole("button", { name: "Validate and submit" }).first().click();
+  await assertVisible("Proposal validated and submitted");
+  await page.goto(`${base}/dashboard/reports`, { waitUntil: "networkidle" });
+  await page.getByLabel("Report type").selectOption("security-concern");
+  await page.getByLabel("Generated entity ID").fill("nmap");
+  await page.getByLabel("Description").fill("Synthetic private browser security report.");
+  await page.getByRole("button", { name: "Submit private report" }).click();
+  await assertVisible("Security reports remain private");
+  await page.goto(`${base}/community/developer`, { waitUntil: "networkidle" });
+  await assertVisible("PUBLIC CONTRIBUTOR PROFILE");
+  await page.goto(`${base}/community`, { waitUntil: "networkidle" });
+  await assertVisible("Improve the archive through proposals and review");
   await page.goto(`${base}/labs/dns-resolution-inventory`, { waitUntil: "networkidle" });
   await page.getByRole("button", { name: "Create lab" }).click();
   await page.getByRole("button", { name: "Start" }).click();
@@ -102,4 +134,37 @@ async function runPrivateJourney() {
   await page.goto(`${base}/dashboard`, { waitUntil: "networkidle" }).catch(() => {});
   await page.waitForURL(/\/login/);
   expectingSignedOutDashboard = false;
+}
+
+async function signIn(email) {
+  await page.goto(`${base}/login`, { waitUntil: "networkidle" });
+  await page.getByLabel("Email address").fill(email);
+  await page.getByLabel("Password").fill(process.env.UHT_E2E_PASSWORD);
+  await page.getByRole("button", { name: "Sign in" }).click();
+  await page.waitForURL(/\/dashboard/);
+}
+
+async function approvePrompt(button, reason) {
+  page.once("dialog", dialog => dialog.accept(reason));
+  await button.click();
+}
+
+async function runPrivilegedCommunityJourney() {
+  assert.ok(submittedProposalTitle, "contributor journey must submit a proposal before privileged review");
+  await signIn(process.env.UHT_E2E_REVIEWER_EMAIL);
+  await page.goto(`${base}/review`, { waitUntil: "networkidle" });
+  await assertVisible("Restricted review queue");
+  const reviewerProposal = page.locator("li").filter({ hasText: submittedProposalTitle }).first();
+  await approvePrompt(reviewerProposal.getByRole("button", { name: "Recommend approval" }), "Synthetic reviewer browser E2E rationale.");
+  await assertVisible("Review action recorded in the audit trail");
+  await page.getByRole("button", { name: "Sign out" }).first().click();
+
+  await signIn(process.env.UHT_E2E_MAINTAINER_EMAIL);
+  await page.goto(`${base}/review`, { waitUntil: "networkidle" });
+  const maintainerProposal = page.locator("li").filter({ hasText: submittedProposalTitle }).first();
+  await approvePrompt(maintainerProposal.getByRole("button", { name: "Approve for handoff" }), "Synthetic maintainer browser E2E approval rationale.");
+  await assertVisible("Maintainer decision recorded in the audit trail");
+  await approvePrompt(maintainerProposal.getByRole("button", { name: "Request controlled Git handoff" }), "Synthetic maintainer browser E2E handoff rationale.");
+  await assertVisible("Git handoff result: failed");
+  await page.getByRole("button", { name: "Sign out" }).first().click();
 }
