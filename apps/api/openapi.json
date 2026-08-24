@@ -355,9 +355,9 @@
     }
   },
   "info": {
-    "description": "Versioned, local-first API over deterministic generated knowledge contracts. Lab routes accept only predefined safe local-fixture actions; arbitrary commands and target scanning are not supported.",
+    "description": "Versioned, local-first API over deterministic generated knowledge contracts, including strictly bounded graph intelligence. Lab routes accept only predefined safe local-fixture actions; arbitrary commands and target scanning are not supported.",
     "title": "Universal Hacking Tools Knowledge API",
-    "version": "8.0.0"
+    "version": "9.0.0"
   },
   "openapi": "3.1.0",
   "paths": {
@@ -1000,6 +1000,548 @@
         ]
       }
     },
+    "/api/v1/discover": {
+      "get": {
+        "operationId": "discover_api_v1_discover_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "entity",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "title": "Entity",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "depth",
+            "required": false,
+            "schema": {
+              "default": 1,
+              "maximum": 2,
+              "minimum": 1,
+              "title": "Depth",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Run explicit deterministic graph discovery for one entity",
+        "tags": [
+          "v1"
+        ]
+      }
+    },
+    "/api/v1/graph/attack-defense": {
+      "get": {
+        "operationId": "graph_attack_defense_api_v1_graph_attack_defense_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "entity",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "title": "Entity",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Read authored attack and defensive graph relationships",
+        "tags": [
+          "v1"
+        ]
+      }
+    },
+    "/api/v1/graph/export": {
+      "get": {
+        "operationId": "graph_export_api_v1_graph_export_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "entity",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "title": "Entity",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "default": "json",
+              "pattern": "^(json|csv)$",
+              "title": "Format",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "depth",
+            "required": false,
+            "schema": {
+              "default": 1,
+              "maximum": 4,
+              "minimum": 1,
+              "title": "Depth",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "default": 100,
+              "maximum": 100,
+              "minimum": 1,
+              "title": "Limit",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "edge_limit",
+            "required": false,
+            "schema": {
+              "default": 200,
+              "maximum": 200,
+              "minimum": 1,
+              "title": "Edge Limit",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Export one bounded public graph neighborhood as JSON or CSV",
+        "tags": [
+          "v1"
+        ]
+      }
+    },
+    "/api/v1/graph/impact": {
+      "get": {
+        "operationId": "graph_impact_api_v1_graph_impact_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "entity",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "title": "Entity",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "depth",
+            "required": false,
+            "schema": {
+              "default": 1,
+              "maximum": 4,
+              "minimum": 1,
+              "title": "Depth",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "default": 100,
+              "maximum": 100,
+              "minimum": 1,
+              "title": "Limit",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Read bounded repository-knowledge graph impact",
+        "tags": [
+          "v1"
+        ]
+      }
+    },
+    "/api/v1/graph/neighborhood": {
+      "get": {
+        "operationId": "graph_neighborhood_api_v1_graph_neighborhood_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "entity",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "title": "Entity",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "depth",
+            "required": false,
+            "schema": {
+              "default": 1,
+              "maximum": 4,
+              "minimum": 1,
+              "title": "Depth",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "default": 100,
+              "maximum": 100,
+              "minimum": 1,
+              "title": "Limit",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "edge_limit",
+            "required": false,
+            "schema": {
+              "default": 200,
+              "maximum": 200,
+              "minimum": 1,
+              "title": "Edge Limit",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "entity_type",
+            "required": false,
+            "schema": {
+              "default": [],
+              "items": {
+                "type": "string"
+              },
+              "title": "Entity Type",
+              "type": "array"
+            }
+          },
+          {
+            "in": "query",
+            "name": "relationship_type",
+            "required": false,
+            "schema": {
+              "default": [],
+              "items": {
+                "type": "string"
+              },
+              "title": "Relationship Type",
+              "type": "array"
+            }
+          },
+          {
+            "in": "query",
+            "name": "trust_status",
+            "required": false,
+            "schema": {
+              "default": [],
+              "items": {
+                "type": "string"
+              },
+              "title": "Trust Status",
+              "type": "array"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "uht_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Uht Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Explore a strictly bounded deterministic graph neighborhood",
+        "tags": [
+          "v1"
+        ]
+      }
+    },
+    "/api/v1/graph/orphans": {
+      "get": {
+        "operationId": "graph_orphans_api_v1_graph_orphans_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "default": 100,
+              "maximum": 100,
+              "minimum": 1,
+              "title": "Limit",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Read deterministic orphan relationship suggestions requiring human review",
+        "tags": [
+          "v1"
+        ]
+      }
+    },
+    "/api/v1/graph/path": {
+      "get": {
+        "operationId": "graph_path_api_v1_graph_path_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "from",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "title": "From",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "to",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "title": "To",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "max_length",
+            "required": false,
+            "schema": {
+              "default": 25,
+              "maximum": 25,
+              "minimum": 1,
+              "title": "Max Length",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Find a bounded deterministic shortest graph path",
+        "tags": [
+          "v1"
+        ]
+      }
+    },
+    "/api/v1/graph/prerequisites": {
+      "get": {
+        "operationId": "graph_prerequisites_api_v1_graph_prerequisites_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "entity",
+            "required": true,
+            "schema": {
+              "minLength": 1,
+              "title": "Entity",
+              "type": "string"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "uht_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Uht Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Read generated prerequisites with an optional owner-only progress overlay",
+        "tags": [
+          "v1"
+        ]
+      }
+    },
     "/api/v1/health": {
       "get": {
         "operationId": "health_api_v1_health_get",
@@ -1033,6 +1575,25 @@
           }
         },
         "summary": "Read private application-state database health without internals",
+        "tags": [
+          "v1"
+        ]
+      }
+    },
+    "/api/v1/health/graph": {
+      "get": {
+        "operationId": "graph_health_api_v1_health_graph_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Read deterministic generated graph health and traversal limits",
         "tags": [
           "v1"
         ]
@@ -1340,6 +1901,220 @@
           }
         },
         "summary": "Get one normalized knowledge entity",
+        "tags": [
+          "v1"
+        ]
+      }
+    },
+    "/api/v1/knowledge/{entity_id}/attack-defense": {
+      "get": {
+        "operationId": "knowledge_attack_defense_api_v1_knowledge__entity_id__attack_defense_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entity_id",
+            "required": true,
+            "schema": {
+              "title": "Entity Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Read authored attack and defense relationships for one entity",
+        "tags": [
+          "v1"
+        ]
+      }
+    },
+    "/api/v1/knowledge/{entity_id}/impact": {
+      "get": {
+        "operationId": "knowledge_impact_api_v1_knowledge__entity_id__impact_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entity_id",
+            "required": true,
+            "schema": {
+              "title": "Entity Id",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "depth",
+            "required": false,
+            "schema": {
+              "default": 1,
+              "maximum": 4,
+              "minimum": 1,
+              "title": "Depth",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Read bounded repository-knowledge impact for one entity",
+        "tags": [
+          "v1"
+        ]
+      }
+    },
+    "/api/v1/knowledge/{entity_id}/learning-route": {
+      "get": {
+        "operationId": "knowledge_learning_route_api_v1_knowledge__entity_id__learning_route_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entity_id",
+            "required": true,
+            "schema": {
+              "title": "Entity Id",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "include_completed",
+            "required": false,
+            "schema": {
+              "default": false,
+              "title": "Include Completed",
+              "type": "boolean"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "uht_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Uht Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Read a deterministic generated learning route",
+        "tags": [
+          "v1"
+        ]
+      }
+    },
+    "/api/v1/knowledge/{entity_id}/prerequisites": {
+      "get": {
+        "operationId": "knowledge_prerequisites_api_v1_knowledge__entity_id__prerequisites_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entity_id",
+            "required": true,
+            "schema": {
+              "title": "Entity Id",
+              "type": "string"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "uht_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Uht Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Read generated prerequisite groups for one entity",
         "tags": [
           "v1"
         ]
@@ -3482,6 +4257,54 @@
         ]
       }
     },
+    "/api/v1/me/knowledge-gaps": {
+      "get": {
+        "operationId": "knowledge_gaps_api_v1_me_knowledge_gaps_get",
+        "parameters": [
+          {
+            "in": "cookie",
+            "name": "uht_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Uht Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Read deterministic owner-scoped gaps for selected generated learning paths",
+        "tags": [
+          "authenticated",
+          "private"
+        ]
+      }
+    },
     "/api/v1/me/labs": {
       "get": {
         "operationId": "get_labs_api_v1_me_labs_get",
@@ -4601,6 +5424,16 @@
                 }
               ],
               "title": "Confidence"
+            }
+          },
+          {
+            "in": "query",
+            "name": "graph_context",
+            "required": false,
+            "schema": {
+              "default": false,
+              "title": "Graph Context",
+              "type": "boolean"
             }
           },
           {

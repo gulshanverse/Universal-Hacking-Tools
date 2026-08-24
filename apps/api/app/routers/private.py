@@ -7,11 +7,12 @@ from sqlalchemy.orm import Session
 
 from ..models.contracts import BookmarkCreate, ChangePasswordRequest, GoalSelection, NoteCreate, NotePatch, ProfilePatch, ProgressUpdate
 from ..services.personalization import achievement_rows, add_bookmark, bookmark_rows, delete_goal, evaluate_achievements, goal_rows, note_dict, notes, path_progress, progress_for, recommendations, safe_entity, set_goal, skills, update_progress
+from search.graph import GraphIntelligence
 from ..services.rate_limit import LocalRateLimiter
 from ..services.attempts import user_attempts
 from ..state.auth import Principal, clear_session_cookies, csrf_protected, current_principal, issue_session, password_hash, revoke_all, validate_password, verify_password
 from ..state.database import get_db
-from ..state.models import Bookmark, PrivateNote, UserProfile, utcnow
+from ..state.models import Bookmark, EntityProgress, LearningGoal, PrivateNote, UserLearningGoal, UserProfile, utcnow
 
 router = APIRouter(tags=["authenticated", "private"])
 recommendation_limiter = LocalRateLimiter(limit=30, window_seconds=60)
@@ -224,3 +225,24 @@ def dashboard(principal: Principal = Depends(current_principal), db: Session = D
 @router.get("/me/labs", summary="Read minimal private safe-lab attempt history")
 def get_labs(principal: Principal = Depends(current_principal)):
     return {"items": user_attempts(principal.user.id)}
+
+
+@router.get("/me/knowledge-gaps", summary="Read deterministic owner-scoped gaps for selected generated learning paths")
+def knowledge_gaps(principal: Principal = Depends(current_principal), db: Session = Depends(get_db)):
+    graph = GraphIntelligence()
+    progress_rows = db.scalars(select(EntityProgress).where(EntityProgress.user_id == principal.user.id, EntityProgress.status.in_(("completed", "mastered")))).all()
+    completed = {f"{row.entity_type}:{row.entity_id}" for row in progress_rows}
+    goals = db.execute(select(UserLearningGoal, LearningGoal).join(LearningGoal, UserLearningGoal.goal_id == LearningGoal.id).where(UserLearningGoal.user_id == principal.user.id)).all()
+    items = []
+    for user_goal, goal in sorted(goals, key=lambda row: (not row[0].is_primary, row[1].id)):
+        path_key = f"learning-path:{goal.learning_path_id}"
+        required = [edge["target"] for edge in graph.adjacency.get(path_key, []) if edge["relationship"] == "contains-learning-path"]
+        missing: dict[str, dict] = {}
+        for key in required:
+            route = graph.learning_route(key, completed=completed)
+            for step in route["steps"]:
+                if step["key"] not in completed:
+                    missing[step["key"]] = step
+        ranked = sorted(missing.values(), key=lambda item: (item["difficulty"] != "beginner", item["name"].lower(), item["key"]))
+        items.append({"goal_id": goal.id, "goal": goal.name, "learning_path_id": goal.learning_path_id, "missing": [{**item, "priority": "high" if item["difficulty"] == "beginner" else "medium", "reason": "Required by the selected generated learning path or its published prerequisite route."} for item in ranked[:25]]})
+    return {"items": items, **graph.metadata()}

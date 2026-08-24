@@ -22,14 +22,14 @@ from .routers import auth, private, v1
 from .state.config import validate_production_secrets
 
 
-API_VERSION = "8.0.0"
+API_VERSION = "9.0.0"
 MAX_REQUEST_BYTES = int(os.getenv("UHT_MAX_REQUEST_BYTES", "65536"))
 allowed_origins = [item.strip() for item in os.getenv("UHT_ALLOWED_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000").split(",") if item.strip()]
 
 app = FastAPI(
     title="Universal Hacking Tools Knowledge API",
     version=API_VERSION,
-    description="Versioned, local-first API over deterministic generated knowledge contracts. Lab routes accept only predefined safe local-fixture actions; arbitrary commands and target scanning are not supported.",
+    description="Versioned, local-first API over deterministic generated knowledge contracts, including strictly bounded graph intelligence. Lab routes accept only predefined safe local-fixture actions; arbitrary commands and target scanning are not supported.",
     openapi_url="/openapi.json",
     docs_url="/docs",
 )
@@ -38,7 +38,7 @@ app.add_middleware(CORSMiddleware, allow_origins=allowed_origins, allow_credenti
 
 
 @app.on_event("startup")
-async def validate_phase8_configuration() -> None:
+async def validate_runtime_configuration() -> None:
     validate_production_secrets()
 
 

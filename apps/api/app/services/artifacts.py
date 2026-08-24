@@ -14,6 +14,7 @@ from search.engine.discovery_engine import DiscoveryEngine
 from search.engine.recommendation_engine import RecommendationEngine
 from search.engine.comparison_engine import ComparisonEngine
 from search.engine.health_engine import HealthEngine
+from search.graph import GraphIntelligence
 from labs.engine.definition import load_definition
 
 
@@ -29,7 +30,7 @@ class ArtifactNotReady(RuntimeError):
 class ArtifactService:
     required = (
         "search-index.json", "knowledge-graph.json", "knowledge-health.json", "trust-report.json",
-        "review-queue.json", "lab-catalog.json", "lab-health.json", "lab-report.json",
+        "review-queue.json", "lab-catalog.json", "lab-health.json", "lab-report.json", "graph-health.json",
     )
 
     def __init__(self, root: Path | None = None):
@@ -94,6 +95,7 @@ class ArtifactService:
                 "recommendation": RecommendationEngine,
                 "comparison": ComparisonEngine,
                 "health": HealthEngine,
+                "graph": GraphIntelligence,
             }
             self._engines[name] = factories[name](self.loader)
         return self._engines[name]
@@ -174,6 +176,13 @@ class ArtifactService:
             item["relationship"] = relation
             filtered.append(item)
         return {"entity": result["entity"], "related": filtered[:limit], "paths": result["paths"][:limit]}
+
+    def graph_metadata(self) -> dict[str, Any]:
+        return self.engine("graph").metadata()
+
+    def graph_export(self, entity_id: str, depth: int, node_limit: int, edge_limit: int) -> dict[str, Any]:
+        result = self.engine("graph").neighborhood(entity_id, depth=depth, node_limit=node_limit, edge_limit=edge_limit)
+        return {key: result[key] for key in ("knowledge_version", "graph_version", "generated_at", "nodes", "relationships", "truncated", "limit", "edge_limit")}
 
     def labs(self) -> list[dict[str, Any]]:
         return self.json("lab-catalog.json").get("labs", [])
