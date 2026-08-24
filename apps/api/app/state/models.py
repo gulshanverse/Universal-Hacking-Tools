@@ -1,4 +1,4 @@
-"""Phase 8 private application-state schema; no cybersecurity knowledge is stored here."""
+"""Private application-state schema; canonical cybersecurity knowledge remains Git-generated."""
 from __future__ import annotations
 
 from datetime import datetime, timezone
@@ -30,7 +30,12 @@ class User(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False)
     last_login_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-    __table_args__ = (CheckConstraint("status IN ('active','suspended','pending-verification','deleted')", name="ck_users_status"),)
+    role: Mapped[str] = mapped_column(String(32), default="contributor", nullable=False)
+    suspended_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    __table_args__ = (
+        CheckConstraint("status IN ('active','suspended','pending-verification','deleted')", name="ck_users_status"),
+        CheckConstraint("role IN ('contributor','reviewer','maintainer','administrator')", name="ck_users_role"),
+    )
 
 
 class SessionRecord(Base):
@@ -189,3 +194,143 @@ class RecommendationSnapshot(Base):
     recommendations: Mapped[list] = mapped_column(JSON, nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
     __table_args__ = (Index("ix_recommendation_snapshot_user", "user_id"),)
+
+
+class CommunityProfile(Base):
+    """Opt-in public contributor metadata; never a second knowledge profile."""
+    __tablename__ = "community_profiles"
+    user_id: Mapped[str] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), primary_key=True)
+    username: Mapped[str] = mapped_column(String(40), unique=True, nullable=False)
+    display_name: Mapped[str | None] = mapped_column(String(80))
+    bio: Mapped[str | None] = mapped_column(String(1000))
+    avatar_url: Mapped[str | None] = mapped_column(String(512))
+    website_url: Mapped[str | None] = mapped_column(String(512))
+    github_username: Mapped[str | None] = mapped_column(String(39))
+    is_public: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
+    is_hidden: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False)
+    __table_args__ = (
+        CheckConstraint("length(username) >= 3 AND length(username) <= 40", name="ck_community_username_length"),
+        CheckConstraint("username = lower(username)", name="ck_community_username_normalized"),
+    )
+
+
+class Contribution(Base):
+    """Untrusted proposal state only. proposed_data never becomes canonical knowledge directly."""
+    __tablename__ = "contributions"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=uid)
+    user_id: Mapped[str | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), index=True)
+    contribution_type: Mapped[str] = mapped_column(String(48), nullable=False)
+    title: Mapped[str] = mapped_column(String(180), nullable=False)
+    description: Mapped[str] = mapped_column(Text, nullable=False)
+    proposed_data: Mapped[dict] = mapped_column(JSON, nullable=False)
+    status: Mapped[str] = mapped_column(String(32), default="draft", nullable=False)
+    validation: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    duplicate_candidates: Mapped[list] = mapped_column(JSON, default=list, nullable=False)
+    impact: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    assigned_reviewer_id: Mapped[str | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), nullable=True)
+    reviewer_recommendations: Mapped[list] = mapped_column(JSON, default=list, nullable=False)
+    github_issue_url: Mapped[str | None] = mapped_column(String(512))
+    github_pr_url: Mapped[str | None] = mapped_column(String(512))
+    github_commit_sha: Mapped[str | None] = mapped_column(String(64))
+    github_handoff_status: Mapped[str | None] = mapped_column(String(24))
+    knowledge_version_before: Mapped[str | None] = mapped_column(String(128))
+    knowledge_version_after: Mapped[str | None] = mapped_column(String(128))
+    submitted_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    reviewed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    merged_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    published_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False)
+    __table_args__ = (
+        CheckConstraint("contribution_type IN ('tool','vulnerability','concept','technique','technology','defensive-control','lab','learning-path','relationship','source','verification-correction','content-correction','broken-link')", name="ck_contribution_type"),
+        CheckConstraint("status IN ('draft','submitted','validation-failed','queued','under-review','changes-requested','approved','rejected','withdrawn','merged','published')", name="ck_contribution_status"),
+        CheckConstraint("github_handoff_status IS NULL OR github_handoff_status IN ('queued','failed','created')", name="ck_contribution_handoff_status"),
+        Index("ix_contribution_status_created", "status", "created_at"),
+        Index("ix_contribution_type_created", "contribution_type", "created_at"),
+        Index("ix_contribution_assigned_reviewer", "assigned_reviewer_id", "status"),
+    )
+
+
+class ContributionVersion(Base):
+    __tablename__ = "contribution_versions"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=uid)
+    contribution_id: Mapped[str] = mapped_column(ForeignKey("contributions.id", ondelete="CASCADE"), nullable=False)
+    version: Mapped[int] = mapped_column(Integer, nullable=False)
+    summary: Mapped[str] = mapped_column(String(500), nullable=False)
+    proposed_data: Mapped[dict] = mapped_column(JSON, nullable=False)
+    description: Mapped[str] = mapped_column(Text, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    __table_args__ = (UniqueConstraint("contribution_id", "version", name="uq_contribution_version"), Index("ix_contribution_version_contribution", "contribution_id"))
+
+
+class ContributionReview(Base):
+    __tablename__ = "contribution_reviews"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=uid)
+    contribution_id: Mapped[str] = mapped_column(ForeignKey("contributions.id", ondelete="CASCADE"), nullable=False)
+    reviewer_id: Mapped[str | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), nullable=True)
+    action: Mapped[str] = mapped_column(String(32), nullable=False)
+    reason: Mapped[str] = mapped_column(String(2000), nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    __table_args__ = (
+        CheckConstraint("action IN ('changes-requested','reviewer-approved','rejected','duplicate','maintainer-approved','github-handoff','merged','published')", name="ck_contribution_review_action"),
+        Index("ix_contribution_review_contribution", "contribution_id", "created_at"),
+    )
+
+
+class ReviewComment(Base):
+    __tablename__ = "review_comments"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=uid)
+    contribution_id: Mapped[str] = mapped_column(ForeignKey("contributions.id", ondelete="CASCADE"), nullable=False)
+    author_id: Mapped[str | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"))
+    body: Mapped[str] = mapped_column(String(4000), nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    __table_args__ = (Index("ix_review_comment_contribution", "contribution_id", "created_at"),)
+
+
+class CommunityReport(Base):
+    __tablename__ = "community_reports"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=uid)
+    reporter_id: Mapped[str | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), index=True)
+    entity_id: Mapped[str | None] = mapped_column(String(160), index=True)
+    report_type: Mapped[str] = mapped_column(String(32), nullable=False)
+    description: Mapped[str] = mapped_column(String(4000), nullable=False)
+    status: Mapped[str] = mapped_column(String(32), default="open", nullable=False)
+    is_security_report: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
+    resolver_id: Mapped[str | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"))
+    resolution: Mapped[str | None] = mapped_column(String(2000))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    resolved_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    __table_args__ = (
+        CheckConstraint("report_type IN ('incorrect-information','unsafe-content','broken-link','wrong-relationship','duplicate','outdated','copyright-concern','security-concern','other')", name="ck_community_report_type"),
+        CheckConstraint("status IN ('open','triaged','investigating','resolved','dismissed','duplicate')", name="ck_community_report_status"),
+        Index("ix_community_report_status_created", "status", "created_at"),
+    )
+
+
+class ReputationEvent(Base):
+    __tablename__ = "reputation_events"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=uid)
+    user_id: Mapped[str | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), nullable=True)
+    event_key: Mapped[str] = mapped_column(String(160), unique=True, nullable=False)
+    reason: Mapped[str] = mapped_column(String(256), nullable=False)
+    points: Mapped[int] = mapped_column(Integer, nullable=False)
+    source_type: Mapped[str] = mapped_column(String(32), nullable=False)
+    source_id: Mapped[str] = mapped_column(String(64), nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    __table_args__ = (Index("ix_reputation_event_user_created", "user_id", "created_at"),)
+
+
+class AuditEvent(Base):
+    __tablename__ = "audit_events"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=uid)
+    actor_id: Mapped[str | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), nullable=True)
+    target_user_id: Mapped[str | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), nullable=True)
+    target_type: Mapped[str] = mapped_column(String(48), nullable=False)
+    target_id: Mapped[str] = mapped_column(String(64), nullable=False)
+    action: Mapped[str] = mapped_column(String(64), nullable=False)
+    reason: Mapped[str | None] = mapped_column(String(2000))
+    metadata_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    __table_args__ = (Index("ix_audit_event_target_created", "target_type", "target_id", "created_at"), Index("ix_audit_event_actor_created", "actor_id", "created_at"))

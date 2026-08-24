@@ -12,7 +12,7 @@ from ..services.rate_limit import LocalRateLimiter
 from ..services.attempts import user_attempts
 from ..state.auth import Principal, clear_session_cookies, csrf_protected, current_principal, issue_session, password_hash, revoke_all, validate_password, verify_password
 from ..state.database import get_db
-from ..state.models import Bookmark, EntityProgress, LearningGoal, PrivateNote, UserLearningGoal, UserProfile, utcnow
+from ..state.models import Bookmark, Contribution, EntityProgress, LearningGoal, PrivateNote, UserLearningGoal, UserProfile, utcnow
 
 router = APIRouter(tags=["authenticated", "private"])
 recommendation_limiter = LocalRateLimiter(limit=30, window_seconds=60)
@@ -25,6 +25,7 @@ def profile_response(principal: Principal, profile: UserProfile) -> dict:
             "email": principal.user.email,
             "email_verified": bool(principal.user.email_verified_at),
             "status": principal.user.status,
+            "role": principal.user.role,
             "created_at": principal.user.created_at,
         },
         "preferences": {
@@ -74,8 +75,11 @@ def change_password(payload: ChangePasswordRequest, response: Response, principa
 
 @router.delete("/me", summary="Delete the authenticated account and all private application state")
 def delete_account(response: Response, principal: Principal = Depends(csrf_protected), db: Session = Depends(get_db)):
+    unpublished = db.scalars(select(Contribution).where(Contribution.user_id == principal.user.id, Contribution.status.not_in(("merged", "published")))).all()
+    for contribution in unpublished:
+        db.delete(contribution)
     db.delete(principal.user); db.commit(); clear_session_cookies(response)
-    return {"message": "account and private application state deleted"}
+    return {"message": "account and private application state deleted; published contribution history remains anonymized"}
 
 
 @router.get("/me/goals", summary="List private learning goals")

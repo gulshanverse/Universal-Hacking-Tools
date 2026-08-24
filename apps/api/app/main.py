@@ -18,18 +18,18 @@ from .models.contracts import ErrorResponse
 from .services.artifacts import ArtifactNotReady
 from .services.labs import LabNotExecutable
 from .services.rate_limit import RateLimitExceeded
-from .routers import auth, private, v1
+from .routers import auth, community, private, v1
 from .state.config import validate_production_secrets
 
 
-API_VERSION = "9.0.0"
+API_VERSION = "10.0.0"
 MAX_REQUEST_BYTES = int(os.getenv("UHT_MAX_REQUEST_BYTES", "65536"))
 allowed_origins = [item.strip() for item in os.getenv("UHT_ALLOWED_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000").split(",") if item.strip()]
 
 app = FastAPI(
     title="Universal Hacking Tools Knowledge API",
     version=API_VERSION,
-    description="Versioned, local-first API over deterministic generated knowledge contracts, including strictly bounded graph intelligence. Lab routes accept only predefined safe local-fixture actions; arbitrary commands and target scanning are not supported.",
+    description="Versioned, local-first API over deterministic generated knowledge contracts, strictly bounded graph intelligence, and proposal-only community collaboration. Community routes never mutate canonical knowledge; Git and maintainer review remain the publication boundary. Lab routes accept only predefined safe local-fixture actions; arbitrary commands and target scanning are not supported.",
     openapi_url="/openapi.json",
     docs_url="/docs",
 )
@@ -106,3 +106,4 @@ async def unexpected_error(_: Request, exc: Exception):
 app.include_router(v1.router, prefix="/api/v1")
 app.include_router(auth.router, prefix="/api/v1")
 app.include_router(private.router, prefix="/api/v1")
+app.include_router(community.router, prefix="/api/v1")

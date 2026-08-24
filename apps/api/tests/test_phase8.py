@@ -27,7 +27,9 @@ from app.routers.auth import auth_limiter
 from app.services import personalization
 from app.services.email_service import email_service
 from app.state.database import configure_database, sessions
-from app.state.models import Bookmark, EntityProgress, PrivateNote, SessionRecord, User, UserLearningGoal, UserProfile
+from app.state.models import AuditEvent, Bookmark, CommunityProfile, CommunityReport, Contribution, EntityProgress, PrivateNote, SessionRecord, User, UserLearningGoal, UserProfile
+from app.services.community import handoff_to_git
+from app.services.git_provider import MockGitProvider
 
 
 class Phase8TestCase(unittest.TestCase):
@@ -222,3 +224,88 @@ class Phase8TestCase(unittest.TestCase):
         self.assertEqual(self.client.post("/api/v1/me/goals", json={"goal_id": "web-security", "is_primary": True}, headers=self.csrf()).status_code, 200)
         gaps = self.client.get("/api/v1/me/knowledge-gaps")
         self.assertEqual(gaps.status_code, 200); self.assertIn("items", gaps.json())
+
+    def test_phase10_contribution_lifecycle_rbac_privacy_and_moderation(self):
+        password_a = self.create_and_verify("community-a@example.test")
+        self.login("community-a@example.test", password_a)
+        profile = self.client.post("/api/v1/me/community/profile", json={"username": "synthetic_contributor", "display_name": "Synthetic Contributor", "bio": "Security documentation contributor", "is_public": True}, headers=self.csrf())
+        self.assertEqual(profile.status_code, 200)
+        self.assertEqual(self.client.patch("/api/v1/me/community/profile", json={"role": "maintainer"}, headers=self.csrf()).status_code, 422)
+        draft = self.client.post("/api/v1/me/contributions", json={"contribution_type": "relationship", "title": "Connect Nmap to Firewall", "description": "A bounded generated-entity relationship proposal.", "proposed_data": {"source_entity": "nmap", "target_entity": "firewall", "relationship": "uses-tool", "reason": "Synthetic test proposal with a reviewer-visible rationale."}}, headers=self.csrf())
+        self.assertEqual(draft.status_code, 200)
+        contribution_id = draft.json()["id"]
+        self.assertEqual(draft.json()["proposed_content_label"], "PROPOSED CONTENT — NOT CANONICAL KNOWLEDGE")
+        revised = self.client.patch(f"/api/v1/me/contributions/{contribution_id}", json={"summary": "Clarify synthetic evidence.", "description": "A revised bounded generated-entity relationship proposal."}, headers=self.csrf())
+        self.assertEqual(revised.status_code, 200); self.assertEqual(len(revised.json()["versions"]), 2)
+        self.assertEqual(self.client.post(f"/api/v1/me/contributions/{contribution_id}/submit", json={"confirmation": True}, headers=self.csrf()).status_code, 200)
+
+        other = TestClient(app)
+        reviewer = TestClient(app)
+        maintainer = TestClient(app)
+        administrator = TestClient(app)
+        try:
+            for browser, email, password in ((other, "community-b@example.test", "Synthetic community password B 123!"), (reviewer, "community-c@example.test", "Synthetic community password C 123!"), (maintainer, "community-d@example.test", "Synthetic community password D 123!"), (administrator, "community-e@example.test", "Synthetic community password E 123!")):
+                self.assertEqual(browser.post("/api/v1/auth/register", json={"email": email, "password": password}).status_code, 202)
+                self.assertEqual(browser.post("/api/v1/auth/verify-email", json={"token": email_service.latest(email, "verify-email").token}).status_code, 200)
+                self.assertEqual(browser.post("/api/v1/auth/login", json={"email": email, "password": password}).status_code, 200)
+            for browser, username in ((other, "synthetic_other"), (reviewer, "synthetic_reviewer"), (maintainer, "synthetic_maintainer"), (administrator, "synthetic_admin")):
+                self.assertEqual(browser.post("/api/v1/me/community/profile", json={"username": username, "is_public": True}, headers=self.csrf(browser)).status_code, 200)
+            with sessions()() as db:
+                for email, role in (("community-c@example.test", "reviewer"), ("community-d@example.test", "maintainer"), ("community-e@example.test", "administrator")):
+                    db.scalar(select(User).where(User.email == email)).role = role
+                reviewer_user = db.scalar(select(User).where(User.email == "community-c@example.test"))
+                db.add(Contribution(user_id=reviewer_user.id, contribution_type="relationship", title="Prior published reviewer work", description="Synthetic published contribution used only to verify deterministic reviewer expertise scoring.", proposed_data={}, status="published", validation={}, duplicate_candidates=[], impact={}, knowledge_version_before="test", knowledge_version_after="test"))
+                db.commit()
+            self.assertEqual(other.get(f"/api/v1/me/contributions/{contribution_id}").status_code, 404)
+            other_update = other.patch(f"/api/v1/me/contributions/{contribution_id}", json={"summary": "attempt", "title": "Other user edit"}, headers=self.csrf(other))
+            self.assertEqual(other_update.status_code, 404, other_update.text)
+            self.assertEqual(self.client.get("/api/v1/community/review/contributions").status_code, 403)
+            reviewer_id = reviewer.get("/api/v1/me").json()["user"]["id"]
+            assigned = maintainer.post(f"/api/v1/community/maintain/contributions/{contribution_id}/assign", json={"reviewer_id": reviewer_id, "reason": "Assign the deterministic eligible reviewer."}, headers=self.csrf(maintainer))
+            self.assertEqual(assigned.status_code, 200); self.assertEqual(assigned.json()["assigned_reviewer_id"], reviewer_id)
+            recommendation = next(item for item in assigned.json()["reviewer_recommendations"] if item["reviewer_id"] == reviewer_id)
+            self.assertEqual(recommendation["expertise_matches"], 1)
+            self.assertEqual(reviewer.post(f"/api/v1/community/review/contributions/{contribution_id}/actions", json={"action": "reviewer-approved", "reason": "Specific source and relationship context is sufficient for maintainer review."}, headers=self.csrf(reviewer)).status_code, 200)
+            self.assertEqual(reviewer.post(f"/api/v1/community/review/contributions/{contribution_id}/comments", json={"body": "<script>unsafe</script>"}, headers=self.csrf(reviewer)).status_code, 422)
+            self.assertEqual(reviewer.post(f"/api/v1/community/maintain/contributions/{contribution_id}/actions", json={"action": "maintainer-approved", "reason": "Reviewer cannot finalize."}, headers=self.csrf(reviewer)).status_code, 403)
+            approved = maintainer.post(f"/api/v1/community/maintain/contributions/{contribution_id}/actions", json={"action": "maintainer-approved", "reason": "Maintainer accepts the reviewed synthetic proposal."}, headers=self.csrf(maintainer))
+            self.assertEqual(approved.status_code, 200); self.assertEqual(approved.json()["status"], "approved")
+            failed_handoff = maintainer.post(f"/api/v1/community/maintain/contributions/{contribution_id}/github-handoff", json={"confirmation": True, "reason": "Test unavailable provider behavior."}, headers=self.csrf(maintainer))
+            self.assertEqual(failed_handoff.status_code, 200); self.assertEqual(failed_handoff.json()["status"], "failed")
+            self.assertEqual(maintainer.post(f"/api/v1/community/maintain/contributions/{contribution_id}/actions", json={"action": "merged", "reason": "No confirmed provider handoff."}, headers=self.csrf(maintainer)).status_code, 422)
+            with sessions()() as db:
+                row = db.get(Contribution, contribution_id); actor = db.scalar(select(User).where(User.email == "community-d@example.test"))
+                self.assertEqual(handoff_to_git(db, actor, row, MockGitProvider("network-timeout")).status, "failed")
+                self.assertEqual(row.github_handoff_status, "failed")
+                self.assertEqual(handoff_to_git(db, actor, row, MockGitProvider()).status, "created"); db.commit()
+            self.assertEqual(maintainer.post(f"/api/v1/community/maintain/contributions/{contribution_id}/actions", json={"action": "merged", "reason": "Mock provider confirmed a pull request."}, headers=self.csrf(maintainer)).status_code, 200)
+            published = maintainer.post(f"/api/v1/community/maintain/contributions/{contribution_id}/actions", json={"action": "published", "reason": "Synthetic CI and human review completion."}, headers=self.csrf(maintainer))
+            self.assertEqual(published.status_code, 200); self.assertEqual(published.json()["status"], "published")
+            public = self.client.get("/api/v1/community/profile/synthetic_contributor")
+            self.assertEqual(public.status_code, 200); self.assertNotIn("email", public.json()); self.assertGreaterEqual(public.json()["approved_contributions"], 1)
+            report = self.client.post("/api/v1/me/reports", json={"report_type": "security-concern", "entity_id": "nmap", "description": "Synthetic private security report."}, headers=self.csrf())
+            self.assertEqual(report.status_code, 200); report_id = report.json()["id"]
+            self.assertEqual(other.get("/api/v1/me/reports").json()["items"], [])
+            self.assertEqual(administrator.post(f"/api/v1/community/admin/users/{self.client.get('/api/v1/me').json()['user']['id']}/moderation", json={"status": "suspended", "reason": "Synthetic moderation test."}, headers=self.csrf(administrator)).status_code, 200)
+            self.assertEqual(self.client.post("/api/v1/me/contributions", json={"contribution_type": "source", "title": "Blocked proposal", "description": "Suspended accounts cannot submit.", "proposed_data": {"source_url": "https://example.test/source", "source_kind": "official", "reason": "test"}}, headers=self.csrf()).status_code, 401)
+            self.assertEqual(administrator.post(f"/api/v1/community/admin/reports/{report_id}/resolve", json={"status": "resolved", "resolution": "Synthetic private resolution."}, headers=self.csrf(administrator)).status_code, 200)
+            with sessions()() as db:
+                self.assertGreater(db.scalar(select(func.count()).select_from(AuditEvent).where(AuditEvent.target_id == contribution_id)), 0)
+                self.assertEqual(db.get(CommunityReport, report_id).status, "resolved")
+        finally:
+            other.close(); reviewer.close(); maintainer.close(); administrator.close()
+
+    def test_phase10_account_deletion_removes_drafts_preserves_published_history(self):
+        password = self.create_and_verify("community-delete@example.test")
+        self.login("community-delete@example.test", password)
+        self.assertEqual(self.client.post("/api/v1/me/community/profile", json={"username": "synthetic_delete", "is_public": True}, headers=self.csrf()).status_code, 200)
+        draft = self.client.post("/api/v1/me/contributions", json={"contribution_type": "source", "title": "Private draft source", "description": "Synthetic draft for deletion test.", "proposed_data": {"source_url": "https://example.test/draft", "source_kind": "official", "reason": "test"}}, headers=self.csrf()).json()["id"]
+        user_id = self.client.get("/api/v1/me").json()["user"]["id"]
+        with sessions()() as db:
+            published = Contribution(user_id=user_id, contribution_type="source", title="Published history", description="Synthetic published history.", proposed_data={}, status="published", validation={}, duplicate_candidates=[], impact={}, knowledge_version_before="test", knowledge_version_after="test")
+            db.add(published); db.commit(); published_id = published.id
+        self.assertEqual(self.client.delete("/api/v1/me", headers=self.csrf()).status_code, 200)
+        with sessions()() as db:
+            self.assertIsNone(db.get(Contribution, draft))
+            preserved = db.get(Contribution, published_id)
+            self.assertIsNotNone(preserved); self.assertIsNone(preserved.user_id)

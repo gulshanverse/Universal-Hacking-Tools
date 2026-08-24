@@ -21,7 +21,7 @@ def rate_guard(request: Request) -> None:
 
 
 def public_user(user: User) -> dict:
-    return {"id": user.id, "status": user.status, "email_verified": bool(user.email_verified_at), "created_at": user.created_at}
+    return {"id": user.id, "status": user.status, "role": user.role, "email_verified": bool(user.email_verified_at), "created_at": user.created_at}
 
 
 @router.post("/register", status_code=202, summary="Register a pending-verification account")
