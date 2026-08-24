@@ -41,3 +41,12 @@
 - [x] Update API/web contracts, CI gates, governance, and deployment/runbook documentation with explicit not-configured/configured/validated/verified/blocked statuses.
 - [x] Run local production-readiness, migration, restore, regression, safety, security, artifact, web, browser, and documentation validation without claiming unperformed external operations.
 - [x] Commit logically, push, fetch/compare the final remote SHA, verify remote CI, and record the exact evidence.
+
+# Phase 12A Infrastructure Readiness Checklist
+
+- [x] Inventory the completed repository’s web, API, database, authentication, graph, community, health, migration, CI, configuration, and operational surfaces without changing behavior or provisioning resources.
+- [x] Extract exact build/start/runtime, environment-variable, secret, CORS, URL, database, seed, backup, restore, monitoring, email, Git-provider, DNS, TLS, and safe-lab requirements from repository evidence.
+- [x] Research and compare free/low-cost provider strategies without opening accounts, creating resources, or fabricating availability, pricing, domain, certificate, or database claims.
+- [x] Write `docs/phase-12-infrastructure-readiness.md` with explicit status matrices, external prerequisites, provider-selection criteria, and Phase 12B preconditions.
+- [x] Run all preserved Phase 1–11 validation suites and confirm the readiness document introduces no application behavior changes.
+- [ ] Create the focused documentation commit, push, compare the final remote SHA, and verify remote CI.
