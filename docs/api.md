@@ -1,4 +1,4 @@
-# Phase 7–9 API Contract and Operations
+# Phase 7–10 API Contract and Operations
 
 The API is a local-first compatibility layer for repository-generated contracts plus tightly bounded private learning application state. It is versioned under `/api/v1` so future changes can preserve the stable public surface while the Markdown/YAML source model continues to evolve.
 
@@ -11,10 +11,10 @@ generated JSON contracts + existing deterministic engines
         ↓ read-only public FastAPI adapter
 versioned public API and responsive web client
         ↓ owner-scoped references only
-PostgreSQL private application state
+PostgreSQL private application and collaboration state
 ```
 
-The adapter watches contract content fingerprints and refreshes cached derived structures when a generated artifact changes. It never writes Markdown, YAML, generated reports, verification fields, source fields, relationship fields, lab definitions, or cybersecurity knowledge content to PostgreSQL.
+The adapter watches contract content fingerprints and refreshes cached derived structures when a generated artifact changes. It never writes Markdown, YAML, generated reports, verification fields, source fields, relationship fields, lab definitions, or cybersecurity knowledge content to PostgreSQL. Phase 10 collaboration records are workflow evidence around a possible future repository pull request; they are never a second knowledge source.
 
 ## Endpoint groups
 
@@ -29,6 +29,9 @@ The adapter watches contract content fingerprints and refreshes cached derived s
 | Labs | `GET /labs`, `POST /labs/{id}/instances`, `POST /lab-instances/{id}/*` | Approved local-fixture metadata and lifecycle only |
 | Account | `POST /auth/register`, `/verify-email`, `/login`, `/logout`, password reset routes | Argon2id passwords, opaque server-side sessions, generic enumeration-resistant responses, and one-time token hashes |
 | Private learning | `GET/PATCH/DELETE /me`, `/me/goals`, `/me/progress`, `/me/bookmarks`, `/me/notes`, `/me/recommendations`, `/me/knowledge-gaps` | Authenticated owner-only references, plain-text notes, deterministic explanations, CSRF-protected mutations, and generated-learning-path gap analysis |
+| Community profiles | `GET /community`, `/community/profile/{username}`, `/me/community/profile` | Opt-in public aggregates only; private profile fields remain owner-scoped |
+| Proposals and reports | `/me/contributions/*`, `/me/reports`, `/community/contributions/{id}` | Bounded plain-text proposal workflow, version history, and private reports; records are explicitly non-canonical |
+| Restricted review | `/community/review/*`, `/community/maintain/*`, `/community/admin/*` | Server-enforced reviewer, maintainer, and administrator actions with audit records, conflict checks, rate limits, and CSRF on mutation |
 
 The OpenAPI document in `apps/api/openapi.json` is committed and checked for freshness. Clients should tolerate only additive fields under minor API revisions and should check explicit versioned paths rather than reverse engineering generated JSON layouts.
 
@@ -39,3 +42,7 @@ Every handler returns a stable error envelope and deliberate status code for inv
 ## Operational safety
 
 Run behind HTTPS in deployment, set explicit CORS origins, and terminate only with a reverse proxy that does not rewrite the documented error envelope. The public generated-contract layer remains readable when PostgreSQL is unavailable; private routes fail closed with a service-unavailable response. Sessions use secure, HttpOnly, SameSite cookies outside development, and unsafe authenticated methods require Origin checks plus a double-submit CSRF header. Lab lifecycle state is local and disposable; only authenticated completion summaries may be persisted, never raw evidence, fixture paths, or session identifiers.
+
+Community input rejects markup and NUL characters, restricts proposal fields to controlled templates, validates safe HTTPS links, bounds pagination, and makes security reports private. Author ownership, reviewer self-review prohibition, role checks, and audit logging are enforced by the server rather than route visibility. Reputation is deterministic recognition only and cannot grant a role.
+
+The default Git-provider adapter is unavailable by design. A maintainer may request a handoff only for an approved proposal; a missing, queued, failed, or unconfigured provider must not be described as a pull request. The web client receives no provider credential or repository write capability. Use the manual pull-request workflow in [the contribution workflow](contribution-workflow.md) until a separately configured server-side provider is available.

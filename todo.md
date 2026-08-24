@@ -19,3 +19,14 @@
 - [x] Build accessible graph explorer, graph-aware search, relationship context, prerequisite, and learning-route web views without introducing alternate knowledge content.
 - [x] Add unit, contract, API, ownership, accessibility, browser, regression, safety, and generated-artifact validation.
 - [x] Update OpenAPI, documentation, roadmap, contributor guidance, CI, commit logically, push, and verify remote CI.
+
+# Phase 10 Implementation Checklist
+
+- [x] Read the complete Phase 10 specification and map its governance requirements to the Phase 9 baseline.
+- [x] Document the community threat model, moderation governance, privacy model, contribution lifecycle, and Git handoff boundaries.
+- [x] Define a migration-backed application-state schema for profiles, proposals, revisions, reviews, reports, reputation, audit records, and roles without storing canonical knowledge.
+- [x] Implement deterministic proposal validation, contributor trust controls, moderation, audit, reputation, and strict contribution-state transitions.
+- [x] Add owner-scoped, public-safe, reviewer, and maintainer collaboration APIs without direct canonical knowledge mutation.
+- [x] Build accessible public profiles, discovery, proposals, reviews, reports, moderation, and contributor dashboard flows.
+- [x] Add lifecycle, authorization, privacy, anti-abuse, API, accessibility, browser, regression, migration, and safety validation.
+- [ ] Update OpenAPI, documentation, roadmap, CI, commit logically, push, and verify remote CI.
