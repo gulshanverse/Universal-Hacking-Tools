@@ -15,6 +15,10 @@ export type Lab = Entity & {
   allowed_actions?: string[]; knowledge_relationship_targets?: Record<string, string[]>;
 };
 export type ApiError = { error?: { code: string; message: string; details?: Record<string, unknown> } };
+export type AuthSession = { authenticated: boolean; csrf_required?: boolean; user?: { id: string; status: string; email_verified: boolean; created_at: string } };
+export type Goal = { id: string; name: string; learning_path_id: string; description: string; is_primary: boolean };
+export type Skill = { skill: string; level: "novice" | "beginner" | "intermediate" | "advanced"; completion: number; evidence: Record<string, number> };
+export type PrivateNote = { id: string; entity_id?: string | null; body: string; created_at: string; updated_at: string };
 
 const base = process.env.NEXT_PUBLIC_API_URL || process.env.UHT_API_URL || "http://127.0.0.1:8000/api/v1";
 
@@ -33,11 +37,20 @@ export async function api<T>(path: string, params?: Record<string, string | numb
   return response.json() as Promise<T>;
 }
 
-export async function clientApi<T>(path: string, init?: RequestInit, session?: string): Promise<T> {
+function csrfToken() {
+  if (typeof document === "undefined") return undefined;
+  return document.cookie.split("; ").find(item => item.startsWith("uht_csrf="))?.split("=").slice(1).join("=");
+}
+
+export async function clientApi<T>(path: string, init?: RequestInit, session?: string, csrf = false): Promise<T> {
   const headers = new Headers(init?.headers);
-  headers.set("Content-Type", "application/json");
+  if (init?.body) headers.set("Content-Type", "application/json");
   if (session) headers.set("X-Lab-Session", session);
-  const response = await fetch(apiUrl(path), { ...init, headers, credentials: "omit" });
+  if (csrf) {
+    const token = csrfToken();
+    if (token) headers.set("X-CSRF-Token", token);
+  }
+  const response = await fetch(apiUrl(path), { ...init, headers, credentials: "include" });
   if (!response.ok) {
     const body = await response.json().catch(() => ({})) as ApiError;
     throw new Error(body.error?.message || "The requested action could not be completed.");
